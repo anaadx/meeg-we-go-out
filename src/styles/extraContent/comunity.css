@@ -1,0 +1,158 @@
+.home .comunity {
+    background-color: var(--neutral5);
+    border-radius: 10px;
+    display: flex;
+    height: 423px;
+    align-content: center;
+    gap: 130px;
+    margin-top: 100px;
+    position: relative;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.home .comunity .backgroundWave {
+    position: absolute;
+    bottom: 0px;
+}
+
+.home .comunity .smokeEffect {
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    right: 0px;
+    z-index: 2;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ededed+0,ededed+56,ededed+56,f3f3f3+81,ffffff+96,ffffff+96,ffffff+96 */
+    background: rgb(255, 255, 255);
+    /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 0.74) 56%, rgba(237, 237, 237, 0.76) 56%, rgba(243, 243, 243, 1) 81%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 0.74) 56%, rgba(237, 237, 237, 0.76) 56%, rgba(243, 243, 243, 1) 81%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 0.74) 56%, rgba(237, 237, 237, 0.76) 56%, rgba(243, 243, 243, 1) 81%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
+    /* IE6-9 */
+}
+
+.home .comunity .carouselComunity {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: calc(50% - 130px);
+    align-self: center;
+    z-index: 1;
+}
+
+.home .comunity .carouselComunity .item a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home .comunity .carouselComunity .item a p {
+    line-height: 20px;
+}
+
+.home .comunity .carouselComunity .item img {
+    width: 150px;
+}
+
+.home .comunity .text {
+    align-self: center;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    margin-left: 100px;
+    line-height: 40px;
+    z-index: 1;
+}
+
+
+.home .comunity .text a {
+    width: max-content;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    color: var(--neutral6);
+    background-color: var(--main1);
+    border-radius: 5px;
+    text-decoration: none;
+    align-self: flex-start;
+}
+
+.home .comunity .text a:hover {
+    background-color: var(--pinkHover);
+    cursor: pointer;
+}
+
+.home .comunity .owl-carousel.owl-drag .owl-item {
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.home .comunity .owl-carousel.owl-drag .owl-item.active {
+    opacity: 1;
+}
+
+
+@media(max-width: 1024px) {
+    .home .comunity {
+        flex-direction: column;
+        justify-content: space-between;
+        height: min-content;
+        gap: 20px;
+        margin: 0px;
+        border-radius: 10px;
+        padding-bottom: 36px;
+        margin-bottom: 50px;
+    }
+
+    .home .comunity .carouselComunity {
+        align-self: flex-start;
+        margin-left: 40px;
+        width: 80%;
+    }
+
+    .home .comunity .text {
+        margin: 40px 0px 40px 0px;
+        width: 80%;
+        line-height: 25px;
+    }
+
+    .home .comunity .backgroundWave {
+        left: -350px;
+        bottom: -40px;
+    }
+
+    .home .comunity .carouselComunity .item a {
+        width: 150px;
+    }
+
+    .home .comunity .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+
+}
+
+@media(max-width: 650px) {
+
+    .home .comunity .carouselComunity {
+        width: 340px;
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+
+    .home .comunity .carouselComunity .item img {
+        width: 100px;
+    }
+
+    .home .comunity .carouselComunity .item a {
+        width: 100px;
+    }
+
+    .home .comunity .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+}

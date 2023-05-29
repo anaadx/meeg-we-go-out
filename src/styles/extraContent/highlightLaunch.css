@@ -1,0 +1,120 @@
+.home .highlightLaunch {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.home .highlightLaunch .title {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.home .highlightLaunch .content {
+    display: flex;
+    gap: 20px;
+}
+
+.home .highlightLaunch .text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.home .highlightLaunch .content .icon:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/icone-musica-dark.svg");
+}
+
+.home .highlightLaunch iframe {
+    width: 350px;
+}
+
+
+.home .highlightLaunch .carouselHighlightLaunch {
+    width: calc(100% - 370px)
+}
+
+.home .highlightLaunch .carouselHighlightLaunch .item {
+    width: 290px;
+    border-radius: 10px;
+    height: min-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.home .highlightLaunch .carouselHighlightLaunch .item a {
+    width: 290px;
+    height: 290px;
+    border-radius: 10px;
+}
+
+.home .highlightLaunch .carouselHighlightLaunch .item a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.home .highlightLaunch .owl-carousel .owl-nav {
+    position: absolute;
+    top: -63px;
+    right: 0px;
+    margin-top: 0px;
+}
+
+.home .highlightLaunch .owl-nav img {
+    width: 15px;
+    height: 16px;
+}
+
+.home .highlightLaunch .owl-carousel.owl-drag .owl-item {
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.home .highlightLaunch .owl-carousel.owl-drag .owl-item.active {
+    opacity: 1;
+}
+
+.home .highlightLaunch .owl-carousel .owl-stage-outer {
+    overflow: hidden;
+}
+
+@media(max-width: 1024px) {
+
+    .home .highlightLaunch .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .home .highlightLaunch .carouselHighlightLaunch {
+        width: 350px;
+    }
+
+    .home .highlightLaunch .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+}
+
+@media(max-width: 460px) {
+    .home .highlightLaunch .content iframe {
+        width: 100%;
+    }
+
+    .home .highlightLaunch .carouselHighlightLaunch .item {
+        width: 100%;
+    }
+
+}

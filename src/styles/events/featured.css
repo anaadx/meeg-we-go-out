@@ -1,0 +1,294 @@
+.home .featured {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-content: baseline;
+}
+
+/* featured-emphasis */
+
+.home .emphasis {
+    z-index: 1;
+    width: calc(60% - 30px);
+}
+
+.home .emphasis .title {
+    padding: 20px 0px;
+}
+
+.home .emphasis .carouselEvents .item {
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    position: relative;
+    background-color: var(--neutral2);
+    border-radius: 10px;
+    height: 270px;
+    width: 90%;
+}
+
+.home .emphasis .carouselEvents .item:hover {
+    background-color: var(--greyHover);
+}
+
+.home .emphasis .carouselEvents a {
+    width: 270px;
+    display: block;
+    position: relative;
+}
+
+.home .emphasis .owl-carousel .owl-item .littleIcon {
+    width: 16px;
+}
+
+.home .emphasis .owl-carousel .owl-stage {
+    padding: 20px 0px;
+}
+
+.home .emphasis .owl-carousel .owl-nav {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    margin-top: 0px;
+}
+
+.home .emphasis .owl-nav img {
+    width: 8px;
+    height: 16px;
+}
+
+.home .emphasis .carouselEvents a img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .emphasis .carouselEvents .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(60% - 15px);
+}
+
+.home .emphasis .carouselEvents .text h2 {
+    margin-bottom: 10px;
+}
+
+.home .emphasis .carouselEvents .text div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.home .emphasis .carouselEvents .text .iconWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: baseline;
+}
+
+.home .emphasis .iconWrapper .house {
+    align-self: baseline;
+}
+
+.home .emphasis .seAll {
+    margin-top: 20px;
+    display: block;
+}
+
+.home .emphasis .owl-carousel.owl-drag .owl-item {
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.home .emphasis .owl-carousel.owl-drag .owl-item.active {
+    opacity: 1;
+}
+
+/* featured-countdown */
+
+.home .countdown {
+    z-index: 1;
+    width: calc(60% - 30px);
+    overflow: hidden;
+    height: 100%;
+
+}
+
+.home .countdown .item .card:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.home .countdown .card {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    background-color: var(--neutral2);
+    position: relative;
+}
+
+.home .countdown .card a {
+    position: relative;
+    text-decoration: none;
+    width: 100px;
+    display: block;
+}
+
+.home .countdown a img {
+    width: 100%;
+}
+
+.home .countdown .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
+}
+
+.home .countdown .title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.home .countdown .title button {
+    width: 20px;
+    background-color: var(--neutral1);
+    border: none;
+}
+
+.home .countdown .date {
+    border-radius: 3px;
+    display: flex;
+    width: fit-content;
+    gap: 5px;
+    padding: 5px;
+    background-color: var(--greyOpacity);
+    align-items: center;
+}
+
+.home .countdown .place {
+    display: flex;
+    gap: 10px;
+}
+
+.home .countdown .place div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.home .countdown .owl-carousel .owl-item .littleIcon {
+    width: 16px;
+}
+
+.home .countdown .owl-carousel .owl-stage {
+    padding: 20px 0px;
+}
+
+.home .countdown .owl-carousel .owl-nav {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    margin-top: 0px;
+}
+
+
+.home .countdown .owl-nav img {
+    width: 8px;
+    height: 16px;
+}
+
+.home .countdown .seAll {
+    display: block;
+    margin-top: 20px;
+}
+
+.home .countdown .owl-carousel.owl-drag .owl-item {
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.home .countdown .owl-carousel.owl-drag .owl-item.active {
+    opacity: 1;
+}
+
+
+@media(max-width: 1024px) {
+    .home .featured {
+        flex-direction: column;
+    }
+
+    .home .emphasis {
+        width: 100%;
+        height: min-content;
+        margin-top: 80px;
+    }
+
+    .home .emphasis .carouselEvents .item {
+        flex-direction: column;
+        width: 280px;
+        min-width: 280px;
+        background-color: var(--neutral2);
+        border-radius: 5px;
+        padding: 20px;
+        height: min-content;
+    }
+
+    .home .emphasis .carouselEvents .item .music {
+        display: none;
+    }
+
+    .home .emphasis .carouselEvents .item .star {
+        display: none;
+    }
+
+    .home .emphasis .carouselEvents .item .calendar {
+        border-radius: 3px;
+        background-color: var(--greyOpacity);
+        width: fit-content;
+        padding: 5px;
+    }
+
+    .home .emphasis .iconWrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .home .emphasis .carouselEvents a img {
+        width: 280px;
+    }
+
+
+    .home .emphasis .carouselEvents .item a {
+        width: 100%;
+    }
+
+    .home .emphasis .carouselEvents .calendar {
+        margin-top: 30px;
+    }
+
+    .home .emphasis .carouselEvents {
+        max-height: 1000px;
+        height: fit-content;
+        background-color: var(--neutral1);
+        width: 320px;
+    }
+
+    .home .emphasis .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+
+    .home .emphasis .carouselEvents .text {
+        width: calc(100% - 10px);
+    }
+
+    .home .countdown {
+        width: 100%;
+    }
+}

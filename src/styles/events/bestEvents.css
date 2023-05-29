@@ -1,0 +1,133 @@
+.home .bestEvents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 70px;
+}
+
+.home .bestEvents .title {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.home .bestEvents .title div {
+    display: flex;
+}
+
+
+.home .bestEvents .title button {
+    width: 20px;
+    background-color: var(--neutral1);
+    border: none;
+}
+
+.home .bestEvents .title .btn-next img {
+    width: 100%;
+}
+
+.home .bestEvents .title .btn-prev img {
+    width: 100%;
+}
+
+.home .bestEvents .carouselBestEvents {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.home .bestEvents .carouselBestEvents a {
+    align-items: center;
+    width: 90%;
+    display: flex;
+    gap: 5px;
+    background-color: var(--neutral2);
+    padding: 30px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    gap: 20px;
+}
+
+.home .bestEvents .carouselBestEvents a:hover {
+    background-color: var(--greyHover);
+}
+
+.home .bestEvents .carouselBestEvents a:active {
+    background-color: var(--main1);
+}
+
+
+.home .bestEvents .owl-carousel .owl-item img {
+    width: 29px;
+    height: 40px;
+}
+
+.home .bestEvents .owl-nav img {
+    width: 8px;
+    height: 16px;
+}
+
+
+.home .bestEvents .owl-carousel .owl-nav {
+    position: absolute;
+    top: -55px;
+    right: 0;
+    margin-top: 0px;
+}
+
+.home .bestEvents .owl-nav img {
+    width: 8px;
+    height: 16px;
+}
+
+.home .bestEvents .owl-carousel.owl-drag .owl-item {
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.home .bestEvents .owl-carousel.owl-drag .owl-item.active {
+    opacity: 1;
+}
+
+
+@media(max-width: 1024px) {
+
+    .home .bestEvents {
+        margin-bottom: 50px;
+    }
+
+    .home .bestEvents .carouselBestEvents {
+        flex-direction: column;
+        gap: 20px;
+        width: 270px;
+    }
+
+    .home .bestEvents .carouselBestEvents .item {
+        width: 100%;
+    }
+
+    .home .bestEvents .button {
+        width: 100%;
+    }
+
+    .home .bestEvents .carouselBestEvents a {
+        align-items: center;
+        display: flex;
+        gap: 5px;
+        background-color: var(--neutral2);
+        padding: 30px 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        gap: 20px;
+        width: 250px;
+    }
+
+    .home .bestEvents .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+
+}

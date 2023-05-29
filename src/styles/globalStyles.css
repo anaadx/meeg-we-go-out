@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    width: 100%;
+    background-color: var(--neutral7);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* neutral a mais? #373434 */
+:root {
+    --neutral1: #211E1E;
+    --neutral2: #2C2929;
+    --neutral3: #707070;
+    --neutral4: #E3E3E3;
+    --neutral5: #F2F2F2;
+    --neutral6: #F4F4F4;
+    --neutral7: #FFFFFF;
+    --main1: #F83A80;
+    --main2: #672DBF;
+    --main3: #D1FF00;
+    --main4: #FFEC1C;
+    --main5: #4DCB6D;
+    --main6: #F04242;
+    --pinkHover: #DB2065;
+    --greyHover: rgb(255, 255, 255, 10%);
+    --greyOpacity: #373434
+}
+
+.fontColor1 {
+    color: var(--neutral1)
+}
+
+.fontColor2 {
+    color: var(--neutral3)
+}
+
+.fontColor3 {
+    color: var(--neutral6)
+}
+
+.fontColor4 {
+    color: var(--main1)
+}
+
+/* fonts */
+.font1 {
+    font-family: 'Fugaz One';
+    ;
+}
+
+.font2 {
+    font-family: 'Lato';
+}
+
+.fontSize1 {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.fontSize2 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.fontSize3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fontSize4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.fontSize5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.fontSize6 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.fontSize7 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+/* tag */
+
+.tag {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    padding: 3px;
+    border-radius: 0px 3px 3px 0px;
+    padding: 7px;
+    width: fit-content;
+}
+
+.tagPromoDiv {
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+    top: -17px;
+}
+
+.tagPromo {
+    display: block;
+    color: var(--neutral6);
+    background-color: var(--main1);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.tagPromoTip {
+    position: absolute;
+    display: block;
+    padding-bottom: 10px;
+    background-color: var(--main1);
+    width: 12px;
+    transform: rotate(-45deg);
+    bottom: -3px;
+    right: 45%;
+    z-index: -1;
+}
+
+.home figure {
+    position: relative;
+}
+
+.home .disabled {
+    display: none;
+}
+
+footer .disabled {
+    display: none;
+}
+
+/* background */
+
+.backgroundPink {
+    background-color: var(--main1);
+}
+
+.backgroundPurple {
+    background-color: var(--main2);
+    color: var(--neutral6);
+}
+
+.backgroundGreen {
+    background-color: var(--main3);
+    color: var(--neutral1);
+}
+
+.backgroundYellow {
+    background-color: var(--main4);
+    color: var(--neutral1);
+}
+
+.backgroundDarkGreen {
+    background-color: var(--main5);
+    color: var(--neutral1);
+}
+
+.backgroundRed {
+    background-color: var(--main6);
+    color: var(--neutral1);
+}
+
+.backgroundWhite {
+    background-color: var(--neutral7);
+    color: var(--neutral1);
+}
+
+.backgroundGrey {
+    background-color: var(--neutral4);
+    color: var(--neutral1);
+}
+
+/* icon */
+
+.littleIcon {
+    width: 16px;
+}
+
+a {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* button */
+
+.buttonPinkLarge {
+    width: 100%;
+    align-self: center;
+    padding: 20px;
+    margin-bottom: 5px;
+    color: var(--neutral6);
+    background-color: var(--main1);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.buttonPinkLarge:hover {
+    background-color: var(--pinkHover);
+}
+
+
+.buttonPinkSmall {
+    width: fit-content;
+    align-self: center;
+    padding: 20px;
+    margin-bottom: 5px;
+    color: var(--neutral6);
+    background-color: var(--main1);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.buttonBlackLarge {
+    width: 100%;
+    align-self: center;
+    padding: 20px;
+    margin-bottom: 5px;
+    color: var(--neutral7);
+    background-color: var(--neutral1);
+    border: 3px solid var(--neutral7);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.buttonBlackLarge:hover {
+    background-color: var(--greyHover);
+}
+
+.buttonXClose {
+    cursor: pointer;
+    width: 30px;
+    height: 22px;
+    max-height: 22px;
+    margin-left: 20px;
+}
+
+.buttonXClose span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.buttonXClose span:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+.buttonXClose span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+
+@media(max-width: 1024px) {
+    .fontSize1 {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .fontSize2 {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .fontSize3 {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .fontSize4 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .fontSize5 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .fontSize6 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .fontSize7 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
