@@ -12,6 +12,11 @@
     margin: auto 0;
 }
 
+.filterSearchMode .releases .advertisement {
+    position: absolute;
+    left: -10000px;
+}
+
 @media(min-width: 1025px) {
     .releases .advertisement {
         height: 130px;
@@ -20,12 +25,5 @@
 
     .releases .advertisement a {
         height: min-content;
-    }
-
-    .lastWave {
-        position: absolute;
-        z-index: -1;
-        top: -359px;
-        right: -426px;
     }
 }

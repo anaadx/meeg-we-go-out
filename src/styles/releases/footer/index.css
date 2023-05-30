@@ -37,6 +37,10 @@ footer .container {
         margin-top: 50px;
     }
 
+    .filterSearchMode footer {
+        display: none;
+    }
+
     footer .rights .politics {
         width: 100%;
         gap: 40px;

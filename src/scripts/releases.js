@@ -24,6 +24,7 @@ $(document).ready(function () {
 
   $(".goSearch").click(function () {
     $("body").addClass("filterSearchMode");
+    $("body").removeClass("searchEventsModalActive");
   });
 
   disableFixedItems();

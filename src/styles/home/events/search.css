@@ -23,11 +23,12 @@
 
 .home .searchEvents form button {
     width: 95px;
-    padding: 15px 20px;
+    padding: 18px 20px;
     align-self: flex-end;
     color: var(--neutral5);
     background-color: var(--main1);
     border-radius: 5px;
+    border: none;
 }
 
 .home .searchEvents form button:hover {

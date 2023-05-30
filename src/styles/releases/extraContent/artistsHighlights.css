@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+.filterSearchMode .releases .artistHighlights {
+    display: none;
+}
+
 .releases .artistHighlights .title {
     margin-bottom: 20px;
     position: relative;
