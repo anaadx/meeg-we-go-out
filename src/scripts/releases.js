@@ -83,7 +83,6 @@ $(document).ready(function () {
 
   $(".searchModalClose").click(function () {
     $("body").removeClass("searchEventsModalActive");
-    $(".searchModalButton").removeClass("disabled");
   });
 
   $(".lupa").click(function () {
