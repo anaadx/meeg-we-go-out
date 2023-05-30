@@ -4,6 +4,11 @@
     height: 440px;
 }
 
+.filterSearchMode .releases .launchOnTheSite {
+    display: none;
+}
+
+
 .releases .launchOnTheSite .launchWave1 {
     position: absolute;
     top: -1px;

@@ -7,6 +7,10 @@
     margin-bottom: 50px;
 }
 
+.filterSearchMode .releases .searchEvents h2 {
+    display: none;
+}
+
 .releases .searchEvents h2 {
     margin-bottom: 10px;
 }
@@ -23,11 +27,12 @@
 
 .releases .searchEvents form button {
     width: 95px;
-    padding: 15px 20px;
+    padding: 18px 20px;
     align-self: flex-end;
     color: var(--neutral5);
     background-color: var(--main1);
     border-radius: 5px;
+    border: none;
 }
 
 .releases .searchEvents form button:hover {
