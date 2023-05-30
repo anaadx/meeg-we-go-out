@@ -206,6 +206,7 @@ button {
     background-color: var(--main1);
     border-radius: 5px;
     text-decoration: none;
+    border: none;
 }
 
 .buttonPinkLarge:hover {
