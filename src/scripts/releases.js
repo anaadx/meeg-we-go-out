@@ -72,7 +72,6 @@ $(document).ready(function () {
 
   $(".modal").click(function () {
     $("body").toggleClass("menuDrop");
-    $(".searchModalButton").addClass("disabled");
   });
 
   $(".searchModalButton").click(function () {
@@ -83,6 +82,7 @@ $(document).ready(function () {
 
   $(".searchModalClose").click(function () {
     $("body").removeClass("searchEventsModalActive");
+    $(".searchModalButton").removeClass("disabled");
   });
 
   $(".lupa").click(function () {
