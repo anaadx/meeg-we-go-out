@@ -22,6 +22,10 @@ $(document).ready(function () {
     }
   }
 
+  $(".goSearch").click(function () {
+    $("body").addClass("filterSearchMode");
+  });
+
   disableFixedItems();
 
   function disableItems() {
@@ -72,6 +76,13 @@ $(document).ready(function () {
 
   $(".modal").click(function () {
     $("body").toggleClass("menuDrop");
+    if ($(window).width() <= 1024) {
+      if ($("body").hasClass("menuDrop")) {
+        $(".searchModalButton").addClass("disabled");
+      } else {
+        $(".searchModalButton").removeClass("disabled");
+      }
+    }
   });
 
   $(".searchModalButton").click(function () {

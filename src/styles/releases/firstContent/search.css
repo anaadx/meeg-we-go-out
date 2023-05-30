@@ -215,22 +215,27 @@
 }
 
 @media(max-width: 1024px) {
+    .releases .searchEvents .SumoSelect>.optWrapper>.options {
+        max-height: 100px;
+    }
+
     .releases .searchEvents {
         border-radius: 5px;
         position: fixed;
         left: 0px;
         right: 0px;
-        top: -10000px;
+        bottom: -10000px;
         background-color: var(--neutral1);
         z-index: 10;
         box-shadow: 2px -70px 5px 0px var(--greyOpacity);
         border-radius: 10px;
         height: calc(100vh - 65px);
         overflow-y: scroll;
+        margin-bottom: 0px
     }
 
     .searchEventsModalActive .searchEvents {
-        top: 25px;
+        bottom: 0px;
         transition: all 1s;
     }
 
@@ -257,8 +262,8 @@
     }
 
     .releases .searchEvents form button {
-        margin-top: 100px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 10px;
         width: 100%;
         border: none;
     }
