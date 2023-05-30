@@ -7,22 +7,17 @@
     border-radius: 10px;
 }
 
+.releases .advertisement.disabled {
+    display: none;
+}
+
 .releases .advertisement a {
     height: 90%;
     margin: auto 0;
 }
 
-.filterSearchMode .releases .advertisement {
-    position: absolute;
-    top: -10000px;
-}
 
 @media(min-width: 1025px) {
-
-    .filterSearchMode .releases .advertisement {
-        position: absolute;
-        top: 0px;
-    }
 
     .releases .advertisement {
         height: 130px;

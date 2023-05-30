@@ -25,6 +25,9 @@ $(document).ready(function () {
   $(".goSearch").click(function () {
     $("body").addClass("filterSearchMode");
     $("body").removeClass("searchEventsModalActive");
+    if ($(window).width() <= 1024) {
+      $(".advertisement").addClass("disabled");
+    }
   });
 
   disableFixedItems();
