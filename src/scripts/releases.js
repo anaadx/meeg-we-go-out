@@ -14,9 +14,18 @@ $(document).ready(function () {
     }
   });
 
-  function disableItems() {
+  function disableFixedItems() {
     if ($(window).width() <= 1024) {
       $(".searchModalButton").removeClass("disabled");
+    } else {
+      $(".searchModalButton").addClass("disabled");
+    }
+  }
+
+  disableFixedItems();
+
+  function disableItems() {
+    if ($(window).width() <= 1024) {
       $(".footerWave3").removeClass("disabled");
       $(".footerWave2").addClass("disabled");
       $(".lastWave").addClass("disabled");
@@ -43,7 +52,6 @@ $(document).ready(function () {
       $(".launchWave").removeClass("disabled");
       $(".findEvent").removeClass("disabled");
       $(".footerWave3").addClass("disabled");
-      $(".searchModalButton").addClass("disabled");
       $(".pictureMobile").addClass("disabled");
     }
   }
@@ -68,11 +76,13 @@ $(document).ready(function () {
 
   $(".searchModalButton").click(function () {
     $("body").addClass("searchEventsModalActive");
+    $(".searchModalButton").addClass("disabled");
     $("body").removeClass("placeTipActive");
   });
 
   $(".searchModalClose").click(function () {
     $("body").removeClass("searchEventsModalActive");
+    $(".searchModalButton").removeClass("disabled");
   });
 
   $(".lupa").click(function () {

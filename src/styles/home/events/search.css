@@ -257,6 +257,7 @@
         margin-top: 100px;
         margin-bottom: 30px;
         width: 100%;
+        border: none;
     }
 
     .searchEvents .searchModalClose {

@@ -149,8 +149,12 @@
 }
 
 .releases .searchModalButton {
-    position: relative;
-    margin-bottom: 40px;
+    width: 105%;
+    position: fixed;
+    bottom: 0px;
+    border: none;
+    z-index: 5;
+    margin-bottom: 0px
 }
 
 .releases .searchModalButton:hover {
@@ -210,7 +214,6 @@
     background-image: url(../../assets/mini-icone-local.svg);
 }
 
-
 @media(max-width: 1024px) {
     .releases .searchEvents {
         border-radius: 5px;
@@ -257,6 +260,7 @@
         margin-top: 100px;
         margin-bottom: 30px;
         width: 100%;
+        border: none;
     }
 
     .searchEvents .searchModalClose {
