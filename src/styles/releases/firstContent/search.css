@@ -232,10 +232,9 @@
         bottom: -10000px;
         background-color: var(--neutral1);
         z-index: 10;
-        box-shadow: 2px -70px 5px 0px var(--greyOpacity);
+        box-shadow: 0px -213px 0px 0px var(--greyOpacity);
+        height: min-content;
         border-radius: 10px;
-        height: calc(100vh - 65px);
-        overflow-y: scroll;
         margin-bottom: 0px
     }
 
@@ -268,7 +267,7 @@
 
     .releases .searchEvents form button {
         margin-top: 40px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         width: 100%;
         border: none;
     }
