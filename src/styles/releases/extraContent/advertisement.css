@@ -14,10 +14,16 @@
 
 .filterSearchMode .releases .advertisement {
     position: absolute;
-    left: -10000px;
+    top: -10000px;
 }
 
 @media(min-width: 1025px) {
+
+    .filterSearchMode .releases .advertisement {
+        position: absolute;
+        top: 0px;
+    }
+
     .releases .advertisement {
         height: 130px;
         position: relative;
