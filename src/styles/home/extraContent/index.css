@@ -19,5 +19,6 @@
 @media(max-width: 1024px) {
     .home .containerExtra {
         margin-top: 0px;
+        gap: 50px;
     }
 }

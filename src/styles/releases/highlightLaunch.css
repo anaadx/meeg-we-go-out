@@ -3,6 +3,7 @@
     gap: 20px;
     flex-direction: column;
     width: 100%;
+    margin: 80px 0px;
 }
 
 .home .highlightLaunch .title {
@@ -32,16 +33,11 @@
     margin-right: 10px;
     background-size: 15px;
     background-repeat: no-repeat;
-    background-image: url("../../assets/icone-musica-dark.svg");
+    background-image: url("../../assets/icone-musica.svg");
 }
-
-.home .highlightLaunch iframe {
-    width: 350px;
-}
-
 
 .home .highlightLaunch .carouselHighlightLaunch {
-    width: calc(100% - 370px)
+    width: 100%
 }
 
 .home .highlightLaunch .carouselHighlightLaunch .item {
@@ -51,13 +47,18 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+}
+
+.home .highlightLaunch .carouselHighlightLaunch .item h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .home .highlightLaunch .carouselHighlightLaunch .item a {
     width: 290px;
     height: 290px;
     border-radius: 10px;
+    margin-bottom: 5px;
 }
 
 .home .highlightLaunch .carouselHighlightLaunch .item a img {
@@ -94,13 +95,17 @@
 
 @media(max-width: 1024px) {
 
+    .home .highlightLaunch {
+        margin-top: 100px;
+    }
+
     .home .highlightLaunch .content {
         flex-direction: column;
         gap: 30px;
     }
 
     .home .highlightLaunch .carouselHighlightLaunch {
-        width: 350px;
+        width: 310px;
     }
 
     .home .highlightLaunch .owl-carousel .owl-stage-outer {

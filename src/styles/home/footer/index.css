@@ -33,6 +33,11 @@ footer .container {
 }
 
 @media(max-width: 1024px) {
+
+    footer {
+        margin-top: 50px;
+    }
+
     footer .rights .politics {
         width: 100%;
         gap: 40px;

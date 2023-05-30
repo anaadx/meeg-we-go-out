@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/home/header/index.css"> 
+    <link rel="stylesheet" href="../styles/home/header/menuButton.css">
+    <link rel="stylesheet" href="../styles/home/events/index.css"> 
+    <link rel="stylesheet" href="../styles/home/events/featured.css">
+    <link rel="stylesheet" href="../styles/releases/search.css">  
+    <link rel="stylesheet" href="../styles/home/events/bestEvents.css"> 
+    <link rel="stylesheet" href="../styles/releases/extraContent/index.css"> 
+    <link rel="stylesheet" href="../styles/home/extraContent/advertisement.css"> 
+    <link rel="stylesheet" href="../styles/home/extraContent/artistsHighlights.css"> 
+    <link rel="stylesheet" href="../styles/home/extraContent/comunity.css"> 
+    <link rel="stylesheet" href="../styles/home/extraContent/featuredNews.css"> 
+    <link rel="stylesheet" href="../styles/home/extraContent/guide.css"> 
+    <link rel="stylesheet" href="../styles/releases/highlightLaunch.css"> 
+    <link rel="stylesheet" href="../styles/releases/lastLaunch.css"> 
+    <link rel="stylesheet" href="../styles/releases/launchOnTheSite.css"> 
+    <link rel="stylesheet" href="../styles/releases/footer/rights.css">
+    <link rel="stylesheet" href="../styles/releases/footer/utils.css">
+    <link rel="stylesheet" href="../styles/releases/footer/index.css">
+    <link rel="stylesheet" href="../styles/libs/sumoselect.min.css"> 
+    <link rel="stylesheet" href="../styles/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="../styles/libs/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../styles/libs/animate.css"/>
+    <link rel="stylesheet" href="../styles/libs/daterangepicker.css">
+    <title>We Go Out</title>
+    <script src="../scripts/jquery-3.7.0.min.js"></script>
+    <script src="../scripts/releases.js"></script>
+</head> 
+<body>
+    <header class="menu static">
+        <nav>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <div class="links">
+                <a href="src/pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
+                <a href="src/pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
+                <a href="src/pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
+                <a href="src/pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
+                <a href="src/pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
+                <a href="src/pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
+            </div>
+            <button class="lupa"><img src="../assets/lupa.svg" alt="lupa"></button>
+        </nav>
+    </header>   
+    <header class="menu floated">
+        <nav class="navStatic">
+            <div class="modal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <button class="lupa"><img src="../assets/lupa.svg" alt="lupa"></button>
+        </nav>
+        <div class="modalMenu">
+            <ul>
+                <li><a href="../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
+                <li><a href="../pages/events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
+                <li><a href="../pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
+                <li><a href="../pages/communities.html" class="font1 fontSize4 fontColor3">COMUNIDADES</a></li>
+                <li><a href="../pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
+                <li><a href="../pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
+                <li><a href="../pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
+            </ul> 
+            <div class="buttons">
+                <button class="font1 fontSize3 fontColor3 buttonBlackLarge">ENVIE UM LANÇAMENTO</button>
+                <button class="font1 fontSize3 buttonPinkLarge">ENVIE UM EVENTO</button>
+            </div> 
+                <h2 class="font1 fontSize4 fontColor3">SIGA O WE GO OUT</h2>
+                <div class="icons">
+                <a class="littleIcon" href="https://www.instagram.com/wegoout/">
+                    <img class="littleIcon"  src="../assets/icone-instagram.svg">
+                </a>
+                <a class="littleIcon" href="https://www.facebook.com/wegoout.br/?locale=pt_BR" >
+                    <img class="littleIcon" src="../assets/icone-facebook.svg">
+                </a>
+                <a class="littleIcon" href="https://www.youtube.com/@WeGoOut">
+                    <img class="littleIcon" src="../assets/icone-youtube.svg">
+                </a>
+                <a class="littleIcon" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                    <img class="littleIcon" src="../assets/icone-spotify.svg">
+                </a>
+            </div>
+        </div>
+    </header> 
+    <main class="home">
+        <section class="events">
+            <div class="container">
+                <div class="highlightLaunch">
+                    <div class="title">
+                        <div class="text">
+                            <h2 class="font1 fontSize6 fontColor3">LANÇAMENTOS EM DESTAQUE</h2>
+                        </div>
+                    </div>
+                    <div class="content"> 
+                        <div class="carouselHighlightLaunch owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="releases.html"> 
+                                    <img src="../assets/lançamento1.svg">
+                                </a>
+                                <span class="font2 icon fontSize4 fontColor3">Pop, Dance, Eletro</span>
+                                <h3 class="font1 fontSize4 fontColor3">STRONG</h3>
+                                <p class="font2 fontSize4 fontColor3">Romy, Fred again</p>
+                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
+                            </div>
+                            <div class="item">        
+                                <a href="releases.html">
+                                    <img src="../assets/lançamento2.svg">
+                                </a>
+                                <span class="font2 icon fontSize4 fontColor3">Techno, Dance, Eletro</span>
+                                <h3 class="font1 fontSize4 fontColor3">W0KE UP IN LOVE</h3>
+                                <p class="font2 fontSize4 fontColor3">Kygo, Gryffin, Calum Scott</p>
+                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
+                            </div>
+                            <div class="item">
+                                <a href="releases.html">
+                                    <img src="../assets/lançamento3.svg">
+                                </a>
+                                <span class="font2 icon fontSize4 fontColor3">Rap, Pop, Eletro</span>
+                                <h3 class="font1 fontSize4 fontColor3">FAMILY (DOWNTEMPO DANCE REMIX)</h3>
+                                <p class="font2 fontSize4 fontColor3">Bebe Rexha, Ty Dolla Sigh, David Guetta</p>
+                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
+                            </div>   
+                            <div class="item">
+                                <a href="releases.html"> 
+                                    <img src="../assets/lançamento4.svg">
+                                </a>
+                                <span class="font2 icon fontSize4 fontColor3">Techno, Dance, Eletro</span>
+                                <h3 class="font1 fontSize4 fontColor3">TALK IT OVER</h3>
+                                <p class="font2 fontSize4 fontColor3">Elderbrook, Vintage Culture</p>
+                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
+                            </div>
+                            <div class="item">
+                                <a href="releases.html"> 
+                                    <img src="../assets/lançamento1.svg">
+                                </a>
+                                <span class="font2 icon fontSize4 fontColor3">Pop, Dance, Eletro</span>
+                                <h3 class="font1 fontSize4 fontColor3">STRONG</h3>
+                                <p class="font2 fontSize4 fontColor3">Romy, Fred again</p>
+                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
+                            </div>    
+                            <div class="item">        
+                                <a href="releases.html">
+                                    <img src="../assets/lançamento2.svg">
+                                </a>
+                                <span class="font2 icon fontSize4 fontColor3">Techno, Dance, Eletro</span>
+                                <h3 class="font1 fontSize4 fontColor3">W0KE UP IN LOVE</h3>
+                                <p class="font2 fontSize4 fontColor3">Kygo, Gryffin, Calum Scott</p>
+                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
+                            </div> 
+                            <div class="item">
+                                <a href="releases.html">
+                                    <img src="../assets/lançamento3.svg">
+                                </a>
+                                <span class="font2 icon fontSize4 fontColor3">Rap, Pop, Eletro</span>
+                                <h3 class="font1 fontSize4 fontColor3">FAMILY (DOWNTEMPO DANCE REMIX)</h3>
+                                <p class="font2 fontSize4 fontColor3">Bebe Rexha, Ty Dolla Sigh, David Guetta</p>
+                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
+                            </div>       
+                        </div>
+                    </div>
+                </div>
+                <div class="searchEvents">
+                    <div class="searchModalClose buttonXClose">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <h2 class="font1 fontSize6 fontColor3">PESQUISE LANÇAMENTOS</h2>
+                    <form>
+                        <div class="field">
+                            <label class="font2 fontSize4 fontColor3" for="key-word">Palavra-chave</label>
+                            <input type="text" name="key-word" class="font2 fontSize2 fontColor2" placeholder="Digite o nome do artista, música ou álbum">
+                        </div>
+                        <div class="field">    
+                            <label class="font2 fontSize4 fontColor3" for="daterange">Data</label>
+                            <input placeholder="Selecione a data" type="text" name="daterange" class="font2 fontSize2 fontColor2">
+                        </div>
+                        <div class="field">
+                            <label class="font2 fontSize4 fontColor3" for="gender">Gênero Musical</label>
+                            <select name="gender" class="selectGender arrowOff fontColor2" multiple="multiple">
+                                <option value="Funk">Funk</option>
+                                <option value="Eletrônica">Eletrônica</option>
+                                <option value="MPB">MPB</option>
+                                <option value="Rap">Rap</option>
+                                <option value="Rock">Rock</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label class="font2 fontSize4 fontColor3" for="record">Gravadora</label>
+                            <select name="record" class="selectShow arrowOff fontColor2" multiple="multiple">
+                                <option value="MK Music">MK Music</option>
+                                <option value="Music Brokers">Music Brokers</option>
+                                <option value="Sony Music">Sony Music</option>
+                                <option value="Universal Music">Universal Music</option>
+                                <option value="Warner Music Brasil">Warner Music Brasil</option>
+                            </select>
+                        </div>
+                        <button>Go</button>
+                    </form>
+                    <button class="buttonPinkLarge searchModalButton font1 fontSize2">PESQUISAR EVENTOS
+                        <img src="./src/assets/seta-vertical-cima.svg">
+                    </button>
+                    <img src="src/assets/darkWave.svg" class="darkWave" alt="icone de fundo">
+                </div>
+            </div>
+        </section>
+        <section class="extraContent">
+            <div class="containerExtra">
+                <div class="lastLaunch">
+                    <div class="title">
+                        <div class="text">
+                            <h2 class="font1 fontSize6 fontColor1">ÚLTIMOS LANÇAMENTOS</h2>
+                        </div>
+                    </div>
+                    <div class="content"> 
+                        <div class="item">
+                            <a href="releases.html"> 
+                                <img src="../assets/ultimo-lancamento1.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="font2 icon fontSize4 fontColor1">Eletrônica, Dance, House</span>
+                                <h3 class="font1 fontSize4 fontColor1">NEW TO YOU</h3>
+                                <p class="font2 fontSize4 fontColor1">Calvin Harris, Normani, Tinashe & Offset</p>
+                            </div>
+                        </div>
+                        <div class="item">        
+                            <a href="releases.html">
+                                <img src="../assets/ultimo-lancamento2.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="font2 icon fontSize4 fontColor1">Pop</span>
+                                <h3 class="font1 fontSize4 fontColor1">DESPECHÁ</h3>
+                                <p class="font2 fontSize4 fontColor1">Rosalía</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="releases.html">
+                                <img src="../assets/ultimo-lancamento3.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="font2 icon fontSize4 fontColor1">Rap, Pop, Hip-hop</span>
+                                <h3 class="font1 fontSize4 fontColor1">RENAISSANCE</h3>
+                                <p class="font2 fontSize4 fontColor1">Beyonce</p>
+                            </div>
+                        </div>   
+                        <div class="item">
+                            <a href="releases.html"> 
+                                <img src="../assets/ultimo-lancamento4.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="font2 icon fontSize4 fontColor1">Reggaeton, Rap</span>
+                                <h3 class="font1 fontSize4 fontColor1">UN VERANO SIN TI</h3>
+                                <p class="font2 fontSize4 fontColor1">Bad Bunny</p>
+                            </div>
+                        </div>    
+                        <div class="item">        
+                            <a href="releases.html">
+                                <img src="../assets/ultimo-lancamento5.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="font2 icon fontSize4 fontColor1">Eletrônica</span>
+                                <h3 class="font1 fontSize4 fontColor1">STRONGER</h3>
+                                <p class="font2 fontSize4 fontColor1">Cat Dealers, Hertz</p>
+                            </div>
+                        </div> 
+                        <div class="item">
+                            <a href="releases.html">
+                                <img src="../assets/ultimo-lancamento6.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="font2 icon fontSize4 fontColor1">Pop</span>
+                                <h3 class="font1 fontSize4 fontColor1">FOLLOW ME</h3>
+                                <p class="font2 fontSize4 fontColor1">Pablo Vittar, Rina Sawayama</p>
+                            </div>
+                        </div>      
+                        <div class="item">
+                            <a href="releases.html">
+                                <img src="../assets/ultimo-lancamento7.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="font2 icon fontSize4 fontColor1">Eletrônica, Pop</span>
+                                <h3 class="font1 fontSize4 fontColor1">RUN INTO TROUBLE</h3>
+                                <p class="font2 fontSize4 fontColor1">Alok, Bastille</p>
+                            </div>
+                        </div> 
+                        <div class="item">
+                            <a href="releases.html"> 
+                                <img src="../assets/ultimo-lancamento8.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="font2 icon fontSize4 fontColor1">Eletrônica</span>
+                                <h3 class="font1 fontSize4 fontColor1">BABY AGAIN..</h3>
+                                <p class="font2 fontSize4 fontColor1">Fred Again, Skrillex, Four Set</p>
+                            </div>
+                        </div>     
+                    </div>
+                    <button class="font1 fontSize3">CARREGAR MAIS</button>
+                </div>
+                <div class="advertisement"> 
+                    <a class="pictureMobile" href="src/pages/events.html">
+                        <img src="../assets/anuncio-mobile.svg">
+                    </a>
+                    <a class="pictureDesk" href="src/pages/events.html">
+                        <img src="../assets/anuncio.svg">
+                    </a> 
+                </div> 
+                <div class="artistHighlights">
+                    <div class="title">
+                        <div class="text">
+                            <h2 class="font1 fontSize6 fontColor1">ARTISTAS EM DESTAQUE</h2>
+                            <a href="src/pages/artists.html" class="font1 fontSize3 fontColor4">VER TUDO</a>
+                        </div>
+                    </div>
+                    <div class="carouselArtists owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista1.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista2.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ASHIBAH</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista3.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">DIMITRI VIEGAS</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista4.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ELDERBROOK</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista5.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">FLUME</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista6.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">JAMIE XX</h3>
+                        </div>
+                        <div div class="item"> 
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista7.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">RUFUS DU SOL</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista8.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">PEGGY GOU</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista8.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">PEGGY GOU</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="launchOnTheSite">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4C2RPf3HTrOhYWVtJnphHj?utm_source=generator&theme=0" width="350px" height="400px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="content">
+                        <div>
+                            <h2 class="font1 fontSize6 fontColor1">ENVIE SEU LANÇAMENTO PARA O WE GO OUT</h2>
+                            <p class="font2 fontColor2 fontSize5">Preencha o formulário do envio do lançamento e mostre a sua música para milhares de pessoas</p>
+                            <button class="font1 fontSize3 fontColor3">
+                                ENVIAR LANCAMENTO
+                            </button>
+                        </div>
+                        <img class="launchWave1" src="../assets/onda-lancamento-release1.svg">
+                        <!-- <img class="launchWave2" src="../assets/onda-lancamento-release2.svg"> -->
+                    </div>
+                </div>
+            </div> 
+        </section>
+    </main> 
+     <footer>
+        <div class="container">
+            <section class="utils">
+                <nav class="navigation">
+                    <a class="font1 fontSize4 fontColor2" href="../../index.html">INICIO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/events.html">EVENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="">ENVIE UM EVENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/news.html">NOTICIAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/communities.html">COMUNIDADES</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/artists.html">ARTISTAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="releases.html">LANÇAMENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="">ENVIE UM LANÇAMENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/about.html">SOBRE</a>
+                </nav>
+                <div class="highlightEvents">
+                    <h2 class="font1 fontSize5 fontColor3">EVENTOS EM DESTAQUE</h2>
+                    <ul>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Goptun com Jamie xx</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">NAFF SP | Fisher & Chris Lake</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Mita festival São Paulo</a>
+                        </li>
+                    </ul>
+                    <a class="font1 fontSize3 fontColor4 seeAll">VER TUDO</a>
+                </div>
+                <div class="follow">
+                    <h2 class="font1 fontSize5 fontColor3">SIGA O WE GO OUT</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/wegoout/">
+                                <img src="../assets/icone-instagram.svg">
+                            </a>
+                            <p class="font2 fontSize4 fontColor3">@wegoout</p>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/wegoout.br/?locale=pt_BR">
+                                <img src="../assets/icone-facebook.svg">
+                            </a>
+                            <p class="font2 fontSize4 fontColor3">/wegoout.br</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@WeGoOut">
+                                <img src="../assets/icone-youtube.svg">
+                            </a>
+                            <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                                <img src="../assets/icone-spotify.svg">
+                            </a>
+                            <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                        </li>
+                    </ul>
+                </div>
+                <form class="newsletter">
+                    <h2 class="font1 fontSize5 fontColor3">NEWSLETTER</h2>
+                    <p class="font2 fontSize3 fontColor2">Quer receber descontos e mais informações sobre festas e festivais?</p>                  
+                    <input class="font2 fontSize3 fontColor2" type="text" name="name" placeholder="Nome e sobrenome"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="email" placeholder="Email"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="whatsapp" placeholder="Whatsapp"/>
+                    <button class="font1 fontSize3 fontColor3" type="submit">CADASTRAR</button>
+                </form>
+            </section>
+            <section class="rights">  
+                <div class="logo">
+                    <img src="../assets/logo-dark.svg">
+                    <div class="text">
+                        <p class="font2 fontSize2 fontColor2">Todos os direitos reservados a We Go Out 2023®
+                            CNPJ: 12.345.678/0001-10</p>
+                        <p class="font2 fontSize2 fontColor2">A We Go Out Ltda, inscrita sob o CNPJ: 12.345.678/0001-10 é uma instituição devidamente habilitada e autorizada. Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo impedir ou prejudicar o envio ou a recepção de informações atualizadas.</p>
+                        <p class="font2 fontSize2 fontColor2">contato@wegoout.com</p>
+                    </div>
+                </div>
+                <div class="politics">
+                    <a class="font1 fontSize2 fontColor2">POLÍTICA DE PRIVACIADE</a>
+                    <a class="font1 fontSize2 fontColor2">POLÍTICA DE COOKIES</a>
+                </div>
+                <img class="footerWave2" src="src/assets/onda-footer-2.svg">
+                <img class="footerWave3" src="src/assets/onda-footer-mobile.svg">
+            </section>
+        </div>
+    </footer> 
+    <script src="../scripts/jquery.sumoselect.min.js"></script> 
+    <script src="../scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+         $(document).ready(function () {
+             $('.selectName').SumoSelect({search: true, searchText:"Pesquise o nome", placeholder:"Pesquise o nome", noMatch:"Não encontrado",  floatWidth: 0,});
+             $('.selectPlace').SumoSelect({search: true, searchText:"Espaço, estado, cidade...", placeholder:"Espaço, estado, cidade...", noMatch:"Não encontrado", floatWidth: 0,});
+             $('.selectType').SumoSelect({search: false, searchText:"Selecione o tipo", placeholder:"Selecione o tipo", floatWidth: 0,});
+             $('.selectGender').SumoSelect({search: true, searchText:"Selecione o gênero", placeholder:"Selecione o gênero", noMatch:"Não encontrado", floatWidth: 0,});
+             $('.selectShow').SumoSelect({search: true, searchText:"Nome da atração", placeholder:"Nome da atração", noMatch:"Não encontrado", floatWidth: 0,});
+        });
+    </script>
+</body>
+</html>

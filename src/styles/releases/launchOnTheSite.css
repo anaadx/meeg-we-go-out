@@ -1,0 +1,81 @@
+.home .launchOnTheSite {
+    display: flex;
+    gap: 30px;
+    height: 440px;
+}
+
+.home .launchOnTheSite .launchWave1 {
+    position: absolute;
+    top: -1px;
+}
+
+/* .home .launchOnTheSite .launchWave2 {
+    position: absolute;
+    top: 10px;
+} */
+
+.home .launchOnTheSite button {
+    padding: 15px 20px;
+    background-color: var(--main1);
+    border-radius: 5px;
+    border: none;
+    z-index: 1;
+    width: max-content;
+}
+
+.home .launchOnTheSite button:hover {
+    background-color: var(--pinkHover);
+}
+
+.home .launchOnTheSite .content {
+    border-radius: 10px;
+    background-color: var(--neutral5);
+    position: relative;
+    z-index: 1;
+    width: calc(50% - 30px);
+    height: 100%;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+
+.home .launchOnTheSite iframe {
+    width: calc(50% - 30px);
+    height: 100%;
+    z-index: 1;
+}
+
+.home .launchOnTheSite .content div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0px 50px;
+    z-index: 1;
+}
+
+@media(max-width: 1024px) {
+    .home .launchOnTheSite {
+        flex-direction: column;
+        height: min-content;
+    }
+
+    .home .launchOnTheSite .content {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .home .launchOnTheSite .content div {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .home .launchOnTheSite iframe {
+        height: 440px;
+        width: 100%;
+    }
+
+    .home .launchOnTheSite p {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+}
