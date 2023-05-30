@@ -1,0 +1,31 @@
+.releases .advertisement {
+    width: 100%;
+    height: 400px;
+    background-color: var(--neutral5);
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+}
+
+.releases .advertisement a {
+    height: 90%;
+    margin: auto 0;
+}
+
+@media(min-width: 1025px) {
+    .releases .advertisement {
+        height: 130px;
+        position: relative;
+    }
+
+    .releases .advertisement a {
+        height: min-content;
+    }
+
+    .lastWave {
+        position: absolute;
+        z-index: -1;
+        top: -359px;
+        right: -426px;
+    }
+}

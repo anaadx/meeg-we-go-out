@@ -1,0 +1,61 @@
+.home .launchOnTheSite {
+    height: 90px;
+    background-color: var(--neutral5);
+    justify-content: space-between;
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+    align-items: center;
+    padding: 40px;
+}
+
+.home .launchOnTheSite .launchWave {
+    position: absolute;
+    top: 10px;
+}
+
+.home .launchOnTheSite button {
+    padding: 20px;
+    background-color: var(--main1);
+    border-radius: 5px;
+    border: none;
+    z-index: 1;
+}
+
+.home .launchOnTheSite button:hover {
+    background-color: var(--pinkHover);
+}
+
+.home .launchOnTheSite div {
+    z-index: 1;
+    width: 40%;
+}
+
+.home .launchOnTheSite h2 {
+    margin-bottom: 10px;
+}
+
+.home .launchOnTheSite p {
+    line-height: 30px;
+}
+
+@media(max-width: 1024px) {
+    .home .launchOnTheSite {
+        flex-direction: column;
+        padding: 30px;
+        height: 170px;
+    }
+
+    .home .launchOnTheSite div {
+        width: 100%;
+    }
+
+    .home .launchOnTheSite p {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .home .launchOnTheSite button {
+        width: 100%;
+    }
+}

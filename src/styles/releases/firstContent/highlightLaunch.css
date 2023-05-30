@@ -1,0 +1,125 @@
+.releases .highlightLaunch {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%;
+    margin: 80px 0px;
+}
+
+.releases .highlightLaunch .title {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.releases .highlightLaunch .content {
+    display: flex;
+    gap: 20px;
+}
+
+.releases .highlightLaunch .text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.releases .highlightLaunch .content .icon:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-image: url("../../../assets/icone-musica.svg");
+}
+
+.releases .highlightLaunch .carouselHighlightLaunch {
+    width: 100%
+}
+
+.releases .highlightLaunch .carouselHighlightLaunch .item {
+    width: 290px;
+    border-radius: 10px;
+    height: min-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.releases .highlightLaunch .carouselHighlightLaunch .item h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.releases .highlightLaunch .carouselHighlightLaunch .item a {
+    width: 290px;
+    height: 290px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.releases .highlightLaunch .carouselHighlightLaunch .item a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.releases .highlightLaunch .owl-carousel .owl-nav {
+    position: absolute;
+    top: -63px;
+    right: 0px;
+    margin-top: 0px;
+}
+
+.releases .highlightLaunch .owl-nav img {
+    width: 15px;
+    height: 16px;
+}
+
+.releases .highlightLaunch .owl-carousel.owl-drag .owl-item {
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.releases .highlightLaunch .owl-carousel.owl-drag .owl-item.active {
+    opacity: 1;
+}
+
+.releases .highlightLaunch .owl-carousel .owl-stage-outer {
+    overflow: hidden;
+}
+
+@media(max-width: 1024px) {
+
+    .releases .highlightLaunch {
+        margin-top: 100px;
+    }
+
+    .releases .highlightLaunch .content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .releases .highlightLaunch .carouselHighlightLaunch {
+        width: 310px;
+    }
+
+    .releases .highlightLaunch .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+}
+
+@media(max-width: 460px) {
+    .releases .highlightLaunch .content iframe {
+        width: 100%;
+    }
+
+    .releases .highlightLaunch .carouselHighlightLaunch .item {
+        width: 100%;
+    }
+
+}

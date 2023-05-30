@@ -1,0 +1,281 @@
+.releases .searchEvents {
+    margin-top: 40px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.releases .searchEvents h2 {
+    margin-bottom: 10px;
+}
+
+.releases .searchEvents form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.releases .searchEvents form div {
+    width: 100%;
+}
+
+.releases .searchEvents form button {
+    width: 95px;
+    padding: 15px 20px;
+    align-self: flex-end;
+    color: var(--neutral5);
+    background-color: var(--main1);
+    border-radius: 5px;
+}
+
+.releases .searchEvents form button:hover {
+    background-color: var(--pinkHover);
+}
+
+.releases .searchEvents form input {
+    background-color: var(--enutral1);
+    border: 3px solid var(--neutral2);
+    padding: 14.5px 8px;
+    border-radius: 3px;
+}
+
+.releases .searchEvents form input:hover,
+.releases .searchEvents form input:focus {
+    box-shadow: 0 0 2px var(--neutral7);
+    border-color: var(--neutral7)
+}
+
+.searchEvents form .field {
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-content: center;
+}
+
+.searchEvents form .name {
+    width: 20%;
+}
+
+.searchEvents form .placeTip {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: relative;
+}
+
+.searchEvents form .placeTip img {
+    width: 15px;
+}
+
+.searchEvents form .placeTip .placeTipOpen {
+    width: 290px;
+    height: 225px;
+    padding: 10px 20px;
+    background-color: var(--neutral3);
+    position: absolute;
+    top: -20000px;
+    z-index: 3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.placeTipActive .searchEvents form .placeTip .placeTipOpen {
+    top: -263px;
+    left: -111px;
+    transition: all 1s;
+}
+
+.searchEvents form .placeTip .placeTipOpen .description {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+}
+
+.searchEvents form .placeTip .placeTipOpen p,
+.searchEvents form .placeTip .placeTipOpen h4 {
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.searchEvents form .placeTip .placeTipOpen h4 {
+    margin-top: 30px;
+}
+
+
+.searchEvents form .placeTip .placeTipOpen .buttonXClose {
+    background-color: var(--neutral3);
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    width: 20px;
+    max-height: min-content;
+}
+
+.searchEvents form .placeTip .placeTipOpen .buttonXClose span {
+    background-color: var(--greyOpacity);
+    max-height: min-content;
+}
+
+.searchEvents form .borderTip {
+    display: block;
+    background-color: var(--neutral3);
+    transform: rotate(-45deg);
+    padding: 10px 10px;
+    position: absolute;
+    bottom: -10px;
+    right: 160px;
+}
+
+.searchEvents form .arrowOff label {
+    display: none;
+}
+
+.searchEvents .searchModalClose {
+    background-color: var(--neutral1);
+    position: absolute;
+    top: -10000px;
+    transition: all 1s;
+    margin-top: 10px;
+}
+
+.searchEvents .searchModalClose span {
+    background-color: var(--greyOpacity);
+}
+
+.releases .searchModalButton {
+    width: 105%;
+    position: fixed;
+    bottom: 0px;
+    border: none;
+    z-index: 5;
+    margin-bottom: 0px
+}
+
+.releases .searchModalButton:hover {
+    background-color: var(--pinkHover);
+}
+
+.releases .searchModalButton img {
+    position: absolute;
+    right: 30px;
+}
+
+.searchEvents form .field {
+    width: 100%;
+}
+
+.searchEvents::-webkit-scrollbar {
+    width: 8px;
+}
+
+.searchEvents::-webkit-scrollbar-track {
+    background: var(--neutral1);
+}
+
+.searchEvents::-webkit-scrollbar-thumb {
+    background-color: var(--main1);
+    border-radius: 20px;
+}
+
+.sumo_place>.optWrapper>.options li.opt label {
+    overflow: hidden;
+}
+
+.sumo_place>.optWrapper>.options li.opt label:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
+.sumo_place>.optWrapper>.options li.opt.lugar label:before {
+    background-image: url(../../assets/mini-icone-casa.svg);
+}
+
+.sumo_place>.optWrapper>.options li.opt.pais label:before {
+    background-image: url(../../assets/mini-icone-pais.svg);
+}
+
+.sumo_place>.optWrapper>.options li.opt.estado label:before {
+    background-image: url(../../assets/mini-icone-estado.svg);
+}
+
+.sumo_place>.optWrapper>.options li.opt.cidade label:before {
+    background-image: url(../../assets/mini-icone-local.svg);
+}
+
+@media(max-width: 1024px) {
+    .releases .searchEvents .SumoSelect>.optWrapper>.options {
+        max-height: 100px;
+    }
+
+    .releases .searchEvents {
+        border-radius: 5px;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        bottom: -10000px;
+        background-color: var(--neutral1);
+        z-index: 10;
+        box-shadow: 2px -70px 5px 0px var(--greyOpacity);
+        border-radius: 10px;
+        height: calc(100vh - 65px);
+        overflow-y: scroll;
+        margin-bottom: 0px
+    }
+
+    .searchEventsModalActive .searchEvents {
+        bottom: 0px;
+        transition: all 1s;
+    }
+
+    .releases .searchEvents h2 {
+        font-size: 18px;
+        margin: 50px 0px 20px 20px;
+    }
+
+    .releases .searchEvents form {
+        width: calc(100% - 40px);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .releases .searchEvents form .field {
+        width: 100%;
+    }
+
+    .releases .searchEvents form label {
+        font-size: 14px;
+    }
+
+    .releases .searchEvents form button {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        width: 100%;
+        border: none;
+    }
+
+    .searchEvents .searchModalClose {
+        right: 20px;
+        top: 18px;
+    }
+
+    .placeTipActive .searchEvents form .placeTip .placeTipOpen {
+        top: -210px;
+        left: 0px;
+    }
+
+}

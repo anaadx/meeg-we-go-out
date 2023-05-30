@@ -1,0 +1,24 @@
+.releases .extraContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.releases .containerExtra {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: calc(100% - 80px);
+    flex-direction: column;
+    gap: 100px;
+    align-self: center;
+}
+
+@media(max-width: 1024px) {
+    .releases .containerExtra {
+        margin-top: 0px;
+        gap: 50px;
+    }
+}
