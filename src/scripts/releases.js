@@ -72,6 +72,7 @@ $(document).ready(function () {
 
   $(".modal").click(function () {
     $("body").toggleClass("menuDrop");
+    $(".searchModalButton").addClass("disabled");
   });
 
   $(".searchModalButton").click(function () {
