@@ -8,19 +8,14 @@
     <link rel="stylesheet" href="../styles/globalStyles.css">
     <link rel="stylesheet" href="../styles/home/header/index.css"> 
     <link rel="stylesheet" href="../styles/home/header/menuButton.css">
-    <link rel="stylesheet" href="../styles/home/events/index.css"> 
-    <link rel="stylesheet" href="../styles/home/events/featured.css">
-    <link rel="stylesheet" href="../styles/releases/search.css">  
-    <link rel="stylesheet" href="../styles/home/events/bestEvents.css"> 
+    <link rel="stylesheet" href="../styles/releases/firstContent/index.css"> 
+    <link rel="stylesheet" href="../styles/releases/firstContent/search.css">  
+    <link rel="stylesheet" href="../styles/releases/firstContent/highlightLaunch.css"> 
     <link rel="stylesheet" href="../styles/releases/extraContent/index.css"> 
-    <link rel="stylesheet" href="../styles/home/extraContent/advertisement.css"> 
-    <link rel="stylesheet" href="../styles/home/extraContent/artistsHighlights.css"> 
-    <link rel="stylesheet" href="../styles/home/extraContent/comunity.css"> 
-    <link rel="stylesheet" href="../styles/home/extraContent/featuredNews.css"> 
-    <link rel="stylesheet" href="../styles/home/extraContent/guide.css"> 
-    <link rel="stylesheet" href="../styles/releases/highlightLaunch.css"> 
-    <link rel="stylesheet" href="../styles/releases/lastLaunch.css"> 
-    <link rel="stylesheet" href="../styles/releases/launchOnTheSite.css"> 
+    <link rel="stylesheet" href="../styles/releases/extraContent/advertisement.css"> 
+    <link rel="stylesheet" href="../styles/releases/extraContent/artistsHighlights.css"> 
+    <link rel="stylesheet" href="../styles/releases/extraContent/lastLaunch.css"> 
+    <link rel="stylesheet" href="../styles/releases/extraContent/launchOnTheSite.css"> 
     <link rel="stylesheet" href="../styles/releases/footer/rights.css">
     <link rel="stylesheet" href="../styles/releases/footer/utils.css">
     <link rel="stylesheet" href="../styles/releases/footer/index.css">
@@ -89,7 +84,7 @@
             </div>
         </div>
     </header> 
-    <main class="home">
+    <main class="releases">
         <section class="events">
             <div class="container">
                 <div class="highlightLaunch">
@@ -193,7 +188,7 @@
                         </div>
                         <div class="field">
                             <label class="font2 fontSize4 fontColor3" for="record">Gravadora</label>
-                            <select name="record" class="selectShow arrowOff fontColor2" multiple="multiple">
+                            <select name="record" class="selectRecord arrowOff fontColor2" multiple="multiple">
                                 <option value="MK Music">MK Music</option>
                                 <option value="Music Brokers">Music Brokers</option>
                                 <option value="Sony Music">Sony Music</option>
@@ -497,11 +492,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script>
          $(document).ready(function () {
-             $('.selectName').SumoSelect({search: true, searchText:"Pesquise o nome", placeholder:"Pesquise o nome", noMatch:"Não encontrado",  floatWidth: 0,});
-             $('.selectPlace').SumoSelect({search: true, searchText:"Espaço, estado, cidade...", placeholder:"Espaço, estado, cidade...", noMatch:"Não encontrado", floatWidth: 0,});
-             $('.selectType').SumoSelect({search: false, searchText:"Selecione o tipo", placeholder:"Selecione o tipo", floatWidth: 0,});
              $('.selectGender').SumoSelect({search: true, searchText:"Selecione o gênero", placeholder:"Selecione o gênero", noMatch:"Não encontrado", floatWidth: 0,});
-             $('.selectShow').SumoSelect({search: true, searchText:"Nome da atração", placeholder:"Nome da atração", noMatch:"Não encontrado", floatWidth: 0,});
+             $('.selectRecord').SumoSelect({search: true, searchText:"Nome da gravadora", placeholder:"Nome da atração", noMatch:"Não encontrado", floatWidth: 0,});
         });
     </script>
 </body>

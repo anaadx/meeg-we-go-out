@@ -1,18 +1,18 @@
-.home .lastLaunch {
+.releases .lastLaunch {
     display: flex;
     gap: 20px;
     flex-direction: column;
     width: 100%;
 }
 
-.home .lastLaunch .title {
+.releases .lastLaunch .title {
     display: flex;
     justify-content: space-between;
     position: relative;
     margin-bottom: 20px;
 }
 
-.home .lastLaunch .content {
+.releases .lastLaunch .content {
     display: flex;
     gap: 20px;
     width: 100%;
@@ -20,13 +20,13 @@
     row-gap: 50px;
 }
 
-.home .lastLaunch .text {
+.releases .lastLaunch .text {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.home .lastLaunch .content .icon:before {
+.releases .lastLaunch .content .icon:before {
     content: "";
     display: block;
     width: 15px;
@@ -38,11 +38,11 @@
     background-image: url("../../assets/icone-musica-dark.svg");
 }
 
-.home .lastLaunch {
+.releases .lastLaunch {
     width: 100%
 }
 
-.home .lastLaunch .item {
+.releases .lastLaunch .item {
     padding: 20px;
     background-color: var(--neutral5);
     border-radius: 10px;
@@ -54,27 +54,27 @@
     max-width: 350px;
 }
 
-.home .lastLaunch .item div {
+.releases .lastLaunch .item div {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.home .lastLaunch .item a {
+.releases .lastLaunch .item a {
     width: 100%;
     /* height: 290px; */
     border-radius: 10px;
     position: relative;
 }
 
-.home .lastLaunch .item a img {
+.releases .lastLaunch .item a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.home .lastLaunch button {
+.releases .lastLaunch button {
     align-self: center;
     width: max-content;
     padding: 10px 20px;
@@ -85,7 +85,7 @@
     border: none;
 }
 
-.home .lastLaunch button:hover {
+.releases .lastLaunch button:hover {
     background-color: var(--pinkHover);
     cursor: pointer;
 }
@@ -94,22 +94,22 @@
 
 @media(max-width: 1024px) {
 
-    .home .lastLaunch {
+    .releases .lastLaunch {
         margin-top: 50px;
     }
 
-    .home .lastLaunch .item {
+    .releases .lastLaunch .item {
         flex-direction: row;
         width: calc(100% - 40px);
     }
 
-    .home .lastLaunch .item a {
+    .releases .lastLaunch .item a {
         width: calc(40% - 15px);
         min-width: 100px;
         max-width: 130px;
     }
 
-    .home .lastLaunch .content {
+    .releases .lastLaunch .content {
         flex-direction: column;
         gap: 30px;
     }

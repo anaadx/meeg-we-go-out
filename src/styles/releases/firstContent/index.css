@@ -1,0 +1,28 @@
+.releases .events {
+    background-color: var(--neutral1);
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 20px 20px;
+    position: relative;
+}
+
+.releases .container {
+    width: calc(100% - 80px);
+    max-width: calc(100% - 80px);
+    gap: 50px;
+}
+
+.releases .darkWave {
+    position: absolute;
+    top: 87px;
+    right: -194px;
+}
+
+
+@media(max-width: 1024px) {
+
+    .releases .darkWave {
+        display: none;
+    }
+
+}

@@ -1,4 +1,4 @@
-.home .searchEvents {
+.releases .searchEvents {
     margin-top: 40px;
     max-width: 100%;
     display: flex;
@@ -7,21 +7,21 @@
     margin-bottom: 50px;
 }
 
-.home .searchEvents h2 {
+.releases .searchEvents h2 {
     margin-bottom: 10px;
 }
 
-.home .searchEvents form {
+.releases .searchEvents form {
     display: flex;
     gap: 10px;
     width: 100%;
 }
 
-.home .searchEvents form div {
+.releases .searchEvents form div {
     width: 100%;
 }
 
-.home .searchEvents form button {
+.releases .searchEvents form button {
     width: 95px;
     padding: 15px 20px;
     align-self: flex-end;
@@ -30,19 +30,19 @@
     border-radius: 5px;
 }
 
-.home .searchEvents form button:hover {
+.releases .searchEvents form button:hover {
     background-color: var(--pinkHover);
 }
 
-.home .searchEvents form input {
+.releases .searchEvents form input {
     background-color: var(--enutral1);
     border: 3px solid var(--neutral2);
     padding: 14.5px 8px;
     border-radius: 3px;
 }
 
-.home .searchEvents form input:hover,
-.home .searchEvents form input:focus {
+.releases .searchEvents form input:hover,
+.releases .searchEvents form input:focus {
     box-shadow: 0 0 2px var(--neutral7);
     border-color: var(--neutral7)
 }
@@ -148,16 +148,16 @@
     background-color: var(--greyOpacity);
 }
 
-.home .searchModalButton {
+.releases .searchModalButton {
     position: relative;
     margin-bottom: 40px;
 }
 
-.home .searchModalButton:hover {
+.releases .searchModalButton:hover {
     background-color: var(--pinkHover);
 }
 
-.home .searchModalButton img {
+.releases .searchModalButton img {
     position: absolute;
     right: 30px;
 }
@@ -212,7 +212,7 @@
 
 
 @media(max-width: 1024px) {
-    .home .searchEvents {
+    .releases .searchEvents {
         border-radius: 5px;
         position: fixed;
         left: 0px;
@@ -231,12 +231,12 @@
         transition: all 1s;
     }
 
-    .home .searchEvents h2 {
+    .releases .searchEvents h2 {
         font-size: 18px;
         margin: 50px 0px 20px 20px;
     }
 
-    .home .searchEvents form {
+    .releases .searchEvents form {
         width: calc(100% - 40px);
         display: flex;
         flex-direction: column;
@@ -245,15 +245,15 @@
         margin-right: 20px;
     }
 
-    .home .searchEvents form .field {
+    .releases .searchEvents form .field {
         width: 100%;
     }
 
-    .home .searchEvents form label {
+    .releases .searchEvents form label {
         font-size: 14px;
     }
 
-    .home .searchEvents form button {
+    .releases .searchEvents form button {
         margin-top: 100px;
         margin-bottom: 30px;
         width: 100%;

@@ -136,11 +136,7 @@ main {
     position: relative;
 }
 
-.home .disabled {
-    display: none;
-}
-
-footer .disabled {
+.disabled {
     display: none;
 }
 

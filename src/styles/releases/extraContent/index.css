@@ -1,4 +1,4 @@
-.home .extraContent {
+.releases .extraContent {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -6,7 +6,7 @@
     flex-direction: column;
 }
 
-.home .containerExtra {
+.releases .containerExtra {
     display: flex;
     justify-content: center;
     margin-top: 100px;
@@ -17,7 +17,7 @@
 }
 
 @media(max-width: 1024px) {
-    .home .containerExtra {
+    .releases .containerExtra {
         margin-top: 0px;
         gap: 50px;
     }

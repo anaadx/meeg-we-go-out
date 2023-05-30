@@ -1,20 +1,20 @@
-.home .launchOnTheSite {
+.releases .launchOnTheSite {
     display: flex;
     gap: 30px;
     height: 440px;
 }
 
-.home .launchOnTheSite .launchWave1 {
+.releases .launchOnTheSite .launchWave1 {
     position: absolute;
     top: -1px;
 }
 
-/* .home .launchOnTheSite .launchWave2 {
+/* .releases .launchOnTheSite .launchWave2 {
     position: absolute;
     top: 10px;
 } */
 
-.home .launchOnTheSite button {
+.releases .launchOnTheSite button {
     padding: 15px 20px;
     background-color: var(--main1);
     border-radius: 5px;
@@ -23,11 +23,11 @@
     width: max-content;
 }
 
-.home .launchOnTheSite button:hover {
+.releases .launchOnTheSite button:hover {
     background-color: var(--pinkHover);
 }
 
-.home .launchOnTheSite .content {
+.releases .launchOnTheSite .content {
     border-radius: 10px;
     background-color: var(--neutral5);
     position: relative;
@@ -39,13 +39,13 @@
     overflow: hidden;
 }
 
-.home .launchOnTheSite iframe {
+.releases .launchOnTheSite iframe {
     width: calc(50% - 30px);
     height: 100%;
     z-index: 1;
 }
 
-.home .launchOnTheSite .content div {
+.releases .launchOnTheSite .content div {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -54,27 +54,27 @@
 }
 
 @media(max-width: 1024px) {
-    .home .launchOnTheSite {
+    .releases .launchOnTheSite {
         flex-direction: column;
         height: min-content;
     }
 
-    .home .launchOnTheSite .content {
+    .releases .launchOnTheSite .content {
         width: 100%;
         justify-content: center;
     }
 
-    .home .launchOnTheSite .content div {
+    .releases .launchOnTheSite .content div {
         margin-top: 30px;
         margin-bottom: 30px;
     }
 
-    .home .launchOnTheSite iframe {
+    .releases .launchOnTheSite iframe {
         height: 440px;
         width: 100%;
     }
 
-    .home .launchOnTheSite p {
+    .releases .launchOnTheSite p {
         line-height: 20px;
         margin-bottom: 20px;
     }

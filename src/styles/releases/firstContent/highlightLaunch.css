@@ -1,4 +1,4 @@
-.home .highlightLaunch {
+.releases .highlightLaunch {
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -6,25 +6,25 @@
     margin: 80px 0px;
 }
 
-.home .highlightLaunch .title {
+.releases .highlightLaunch .title {
     display: flex;
     justify-content: space-between;
     position: relative;
     margin-bottom: 20px;
 }
 
-.home .highlightLaunch .content {
+.releases .highlightLaunch .content {
     display: flex;
     gap: 20px;
 }
 
-.home .highlightLaunch .text {
+.releases .highlightLaunch .text {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.home .highlightLaunch .content .icon:before {
+.releases .highlightLaunch .content .icon:before {
     content: "";
     display: block;
     width: 15px;
@@ -36,11 +36,11 @@
     background-image: url("../../assets/icone-musica.svg");
 }
 
-.home .highlightLaunch .carouselHighlightLaunch {
+.releases .highlightLaunch .carouselHighlightLaunch {
     width: 100%
 }
 
-.home .highlightLaunch .carouselHighlightLaunch .item {
+.releases .highlightLaunch .carouselHighlightLaunch .item {
     width: 290px;
     border-radius: 10px;
     height: min-content;
@@ -49,76 +49,76 @@
     flex-direction: column;
 }
 
-.home .highlightLaunch .carouselHighlightLaunch .item h3 {
+.releases .highlightLaunch .carouselHighlightLaunch .item h3 {
     margin-top: 15px;
     margin-bottom: 5px;
 }
 
-.home .highlightLaunch .carouselHighlightLaunch .item a {
+.releases .highlightLaunch .carouselHighlightLaunch .item a {
     width: 290px;
     height: 290px;
     border-radius: 10px;
     margin-bottom: 5px;
 }
 
-.home .highlightLaunch .carouselHighlightLaunch .item a img {
+.releases .highlightLaunch .carouselHighlightLaunch .item a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.home .highlightLaunch .owl-carousel .owl-nav {
+.releases .highlightLaunch .owl-carousel .owl-nav {
     position: absolute;
     top: -63px;
     right: 0px;
     margin-top: 0px;
 }
 
-.home .highlightLaunch .owl-nav img {
+.releases .highlightLaunch .owl-nav img {
     width: 15px;
     height: 16px;
 }
 
-.home .highlightLaunch .owl-carousel.owl-drag .owl-item {
+.releases .highlightLaunch .owl-carousel.owl-drag .owl-item {
     opacity: 0.3;
     transition: all 0.3s;
 }
 
-.home .highlightLaunch .owl-carousel.owl-drag .owl-item.active {
+.releases .highlightLaunch .owl-carousel.owl-drag .owl-item.active {
     opacity: 1;
 }
 
-.home .highlightLaunch .owl-carousel .owl-stage-outer {
+.releases .highlightLaunch .owl-carousel .owl-stage-outer {
     overflow: hidden;
 }
 
 @media(max-width: 1024px) {
 
-    .home .highlightLaunch {
+    .releases .highlightLaunch {
         margin-top: 100px;
     }
 
-    .home .highlightLaunch .content {
+    .releases .highlightLaunch .content {
         flex-direction: column;
         gap: 30px;
     }
 
-    .home .highlightLaunch .carouselHighlightLaunch {
+    .releases .highlightLaunch .carouselHighlightLaunch {
         width: 310px;
     }
 
-    .home .highlightLaunch .owl-carousel .owl-stage-outer {
+    .releases .highlightLaunch .owl-carousel .owl-stage-outer {
         overflow: visible;
     }
 }
 
 @media(max-width: 460px) {
-    .home .highlightLaunch .content iframe {
+    .releases .highlightLaunch .content iframe {
         width: 100%;
     }
 
-    .home .highlightLaunch .carouselHighlightLaunch .item {
+    .releases .highlightLaunch .carouselHighlightLaunch .item {
         width: 100%;
     }
 
