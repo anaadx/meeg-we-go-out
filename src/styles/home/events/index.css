@@ -7,8 +7,8 @@
 }
 
 .home .container {
-    width: calc(100% - 80px);
-    max-width: calc(100% - 80px);
+    width: calc(100% - 120px);
+    width: calc(100% - 120px);
     gap: 50px;
 }
 
@@ -20,6 +20,10 @@
 
 
 @media(max-width: 1024px) {
+    .home .container {
+        width: calc(100% - 40px);
+        gap: 50px;
+    }
 
     .home .darkWave {
         display: none;

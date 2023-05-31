@@ -196,15 +196,15 @@ $(document).ready(function () {
         nav: false,
         margin: 0,
       },
-      500: {
-        items: 1,
+      700: {
+        items: 2,
         nav: false,
         margin: 0,
       },
-      800: {
-        items: 2,
+      950: {
+        items: 3,
       },
-      1150: {
+      1350: {
         items: 4,
       },
       1500: {

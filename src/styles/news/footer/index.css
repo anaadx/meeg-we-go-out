@@ -16,7 +16,7 @@ footer .container {
 .footerWave1 {
     position: absolute;
     top: -91px;
-    left: -75px;
+    left: -47px;
 }
 
 .footerWave2 {
@@ -33,13 +33,14 @@ footer .container {
 }
 
 @media(max-width: 1024px) {
-
     footer .container {
         width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+        gap: 50px;
     }
 
     footer {
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
     footer .rights .politics {

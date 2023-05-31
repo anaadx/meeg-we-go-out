@@ -1,4 +1,4 @@
-.releases .advertisement {
+.artists .advertisement {
     width: 100%;
     height: 400px;
     background-color: var(--neutral5);
@@ -7,23 +7,23 @@
     border-radius: 10px;
 }
 
-.releases .advertisement.disabled {
+.artists .advertisement.disabled {
     display: none;
 }
 
-.releases .advertisement a {
+.artists .advertisement a {
     height: 90%;
     margin: auto 0;
 }
 
 @media(min-width: 1025px) {
 
-    .releases .advertisement {
+    .artists .advertisement {
         height: 130px;
         position: relative;
     }
 
-    .releases .advertisement a {
+    .artists .advertisement a {
         height: min-content;
     }
 }

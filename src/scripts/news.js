@@ -16,15 +16,16 @@ $(document).ready(function () {
 
   function disableFixedItems() {
     if ($(window).width() <= 1024) {
-      $(".searchModalButton").removeClass("disabled");
+      $(".advertisement").addClass("disabled");
+      $(".moreItems").addClass("disabled");
     } else {
-      $(".searchModalButton").addClass("disabled");
+      $(".moreItems").removeClass("disabled");
+      $(".advertisement").removeClass("disabled");
     }
   }
 
   $(".goSearch").click(function () {
     $("body").addClass("filterSearchMode");
-    $("body").removeClass("searchEventsModalActive");
     if ($(window).width() <= 1024) {
       $(".advertisement").addClass("disabled");
     }
@@ -36,6 +37,7 @@ $(document).ready(function () {
     if ($(window).width() <= 1024) {
       $(".footerWave3").removeClass("disabled");
       $(".footerWave2").addClass("disabled");
+      $(".orderby").addClass("disabled");
       $(".lastWave").addClass("disabled");
       $(".launchWave").addClass("disabled");
       $(".pictureDesk").addClass("disabled");
@@ -59,6 +61,7 @@ $(document).ready(function () {
       $(".pictureDesk").removeClass("disabled");
       $(".launchWave").removeClass("disabled");
       $(".findEvent").removeClass("disabled");
+      $(".orderby").removeClass("disabled");
       $(".footerWave3").addClass("disabled");
       $(".pictureMobile").addClass("disabled");
     }
@@ -74,94 +77,12 @@ $(document).ready(function () {
     $("body").toggleClass("menuDrop");
     if ($(window).width() <= 1024) {
       if ($("body").hasClass("menuDrop")) {
-        $(".searchModalButton").addClass("disabled");
       } else {
-        $(".searchModalButton").removeClass("disabled");
       }
     }
   });
 
-  $(".searchModalButton").click(function () {
-    $("body").addClass("searchEventsModalActive");
-    $(".searchModalButton").addClass("disabled");
-    $("body").removeClass("placeTipActive");
-  });
-
-  $(".searchModalClose").click(function () {
-    $("body").removeClass("searchEventsModalActive");
-    $(".searchModalButton").removeClass("disabled");
-  });
-
   $(".lupa").click(function () {
     $("body").toggleClass("menuDropLupa");
-  });
-
-  $('input[name="daterange"]').daterangepicker({
-    autoApply: true,
-  });
-
-  $(".carouselArtists").owlCarousel({
-    navSpeed: 500,
-    loop: false,
-    center: false,
-    margin: 20,
-    responsiveClass: true,
-    nav: true,
-    navText: [prevBtnDark, nextBtnDark],
-    dots: false,
-    autoWidth: false,
-    responsive: {
-      0: {
-        items: 2,
-        nav: false,
-        margin: 0,
-      },
-      450: {
-        items: 3,
-        nav: false,
-      },
-      940: {
-        items: 5,
-      },
-      1080: {
-        items: 6,
-      },
-      1500: {
-        items: 8,
-      },
-    },
-  });
-
-  $(".carouselHighlightLaunch").owlCarousel({
-    navSpeed: 500,
-    loop: false,
-    center: false,
-    margin: 20,
-    responsiveClass: true,
-    nav: true,
-    navText: [prevBtn, nextBtn],
-    dots: false,
-    autoWidth: false,
-    responsive: {
-      0: {
-        items: 1,
-        nav: false,
-        margin: 0,
-      },
-      600: {
-        items: 1,
-        margin: 0,
-        nav: false,
-      },
-      1024: {
-        items: 3,
-      },
-      1350: {
-        items: 4,
-      },
-      1600: {
-        items: 4,
-      },
-    },
   });
 });

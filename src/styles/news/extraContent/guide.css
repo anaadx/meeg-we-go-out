@@ -1,0 +1,171 @@
+.news .guide .title {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.news .guide .title h2 {
+    margin-bottom: 10px;
+}
+
+.news .guide .text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 30px);
+}
+
+.news .guide .text h3 {
+    font-size: 16px;
+}
+
+.news .guide .SumoSelect p {
+    border: none;
+}
+
+.news .guide .SumoSelect>.CaptionCont>label>i {
+    background-image: url(../../../assets/seta-pink.svg);
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.news .guide .SumoSelect>.optWrapper>.options {
+    background-color: var(--neutral6);
+    color: var(--neutral1);
+    padding: 0px 5px;
+}
+
+.news .guide .SumoSelect>.optWrapper>.options li {
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.news .guide .SumoSelect>.optWrapper {
+    margin-top: 0px;
+    width: 122px;
+    left: -65px;
+}
+
+.news .guide .SumoSelect>.optWrapper>.options:hover {
+    color: var(--neutral7);
+}
+
+.news .guide .text .filterAZ {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.news .guide .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 450px;
+    min-width: 150px;
+    width: calc(25% - 15px);
+    height: 305px;
+    margin-top: 10px;
+}
+
+.news .guide .item div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    gap: 5px;
+}
+
+.news .guide .item h2 {
+    line-height: 25px;
+}
+
+.news .guide .item a {
+    width: 100%;
+    height: 220px;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+}
+
+.news .guide a img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.news .guide .listGuide {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.news .guide button.disabled {
+    display: none;
+}
+
+.news .guide button {
+    width: max-content;
+    padding: 10px 20px;
+    margin-top: 30px;
+    color: var(--neutral6);
+    background-color: var(--main1);
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.news .guide button:hover {
+    background-color: var(--pinkHover);
+    cursor: pointer;
+}
+
+.filterSearchMode .news .guide button {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .news .guide .item {
+        width: 100%;
+        display: flex;
+        border-radius: 5px;
+        background-color: var(--neutral5);
+        flex-direction: row;
+        max-width: 100%;
+        height: 100px;
+        gap: 0px;
+    }
+
+    .news .guide .item a {
+        width: 130px;
+        border-radius: 5px 0px 0px 5px;
+        height: 100%;
+    }
+
+    .news .guide .item div {
+        display: block;
+
+        width: calc(55% - 10px);
+        padding: 10px;
+    }
+
+    .news .guide .item div h3,
+    .news .guide .item div span {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .news .guide .item h2 {
+        line-height: 20px;
+    }
+
+    .news .guide .item a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px 0px 0px 5px;
+    }
+}
