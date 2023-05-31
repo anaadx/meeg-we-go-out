@@ -8,8 +8,8 @@
     margin-top: 100px;
     position: relative;
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .home .comunity .backgroundWave {
@@ -50,6 +50,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    text-decoration: none;
 }
 
 .home .comunity .carouselComunity .item a p {
@@ -112,12 +113,12 @@
     .home .comunity .carouselComunity {
         align-self: flex-start;
         margin-left: 40px;
-        width: 80%;
+        width: calc(100% - 40px);
     }
 
     .home .comunity .text {
         margin: 40px 0px 40px 0px;
-        width: 80%;
+        width: calc(100% - 40px);
         line-height: 25px;
     }
 

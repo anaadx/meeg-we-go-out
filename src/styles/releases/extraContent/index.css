@@ -10,15 +10,25 @@
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    width: calc(100% - 80px);
+    width: calc(100% - 120px);
     flex-direction: column;
     gap: 100px;
     align-self: center;
 }
 
+.filterSearchMode .releases .containerExtra {
+    width: calc(100% - 80px);
+}
+
+
 @media(max-width: 1024px) {
     .releases .containerExtra {
         margin-top: 0px;
         gap: 50px;
+        width: calc(100% - 40px);
+    }
+
+    .filterSearchMode .releases .containerExtra {
+        width: calc(100% - 40px);
     }
 }

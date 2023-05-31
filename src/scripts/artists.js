@@ -36,6 +36,7 @@ $(document).ready(function () {
     if ($(window).width() <= 1024) {
       $(".footerWave3").removeClass("disabled");
       $(".footerWave2").addClass("disabled");
+      $(".orderby").addClass("disabled");
       $(".lastWave").addClass("disabled");
       $(".launchWave").addClass("disabled");
       $(".pictureDesk").addClass("disabled");
@@ -59,6 +60,7 @@ $(document).ready(function () {
       $(".pictureDesk").removeClass("disabled");
       $(".launchWave").removeClass("disabled");
       $(".findEvent").removeClass("disabled");
+      $(".orderby").removeClass("disabled");
       $(".footerWave3").addClass("disabled");
       $(".pictureMobile").addClass("disabled");
     }
@@ -107,7 +109,7 @@ $(document).ready(function () {
     margin: 20,
     responsiveClass: true,
     nav: true,
-    navText: [prevBtnDark, nextBtnDark],
+    navText: [prevBtn, nextBtn],
     dots: false,
     autoWidth: false,
     responsive: {
@@ -116,18 +118,18 @@ $(document).ready(function () {
         nav: false,
         margin: 0,
       },
-      450: {
+      950: {
         items: 3,
         nav: false,
       },
-      940: {
+      1200: {
+        items: 4,
+      },
+      1490: {
         items: 5,
       },
-      1080: {
-        items: 6,
-      },
       1500: {
-        items: 8,
+        items: 5,
       },
     },
   });

@@ -57,6 +57,7 @@
 .home .highlightNews ul li div h3 {
     margin-left: 20px;
     margin-right: 20px;
+    line-height: 25px;
 }
 
 .home .highlightNews ul li a {
@@ -92,7 +93,7 @@
 .home .launch ul {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     max-height: 700px;
     width: 100%;
 }
@@ -106,12 +107,8 @@
 }
 
 .home .launch li a {
-    border-radius: 5px;
-    height: 100px;
     gap: 5px;
-    width: 200px;
     position: relative;
-    border-radius: 10px 0px 0px 10px;
     width: 130px;
     border-radius: 5px 0px 0px 5px;
 }
@@ -120,8 +117,13 @@
     display: flex;
     flex-direction: column;
     width: calc(55% - 10px);
-    gap: 5px;
     padding: 10px 20px;
+}
+
+.home .launch li div h3,
+.home .launch li div span {
+    font-size: 12px;
+    line-height: 20px;
 }
 
 .home .launch li a img {
@@ -130,8 +132,6 @@
     object-fit: cover;
     border-radius: 5px 0px 0px 5px;
 }
-
-
 
 @media(min-width: 1024px) {
     .home .featuredNews {
@@ -159,6 +159,12 @@
         row-gap: 20px;
         width: 100%;
         max-height: 100%;
+    }
+
+    .home .launch li div h3,
+    .home .launch li div span {
+        font-size: 14px;
+        line-height: 20px;
     }
 
     .home .launch {

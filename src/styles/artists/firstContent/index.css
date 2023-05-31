@@ -1,4 +1,4 @@
-.releases .events {
+.artists .events {
     background-color: var(--neutral1);
     display: flex;
     justify-content: center;
@@ -6,33 +6,35 @@
     position: relative;
 }
 
-.releases .container {
+.artists .container {
     width: calc(100% - 120px);
+    max-width: calc(100% - 120px);
     gap: 50px;
 }
 
-.releases .darkWave {
+.filterSearchMode .artists .container {
+    width: calc(100% - 80px);
+    max-width: calc(100% - 80px);
+}
+
+.artists .darkWave {
     position: absolute;
     top: 87px;
     right: -194px;
 }
 
-.filterSearchMode .container {
-    width: calc(100% - 80px);
-}
-
 
 @media(max-width: 1024px) {
-    .releases .container {
-        width: calc(100% - 40px);
-        gap: 50px;
-    }
-
-    .filterSearchMode .container {
+    .artists .container {
         width: calc(100% - 40px);
     }
 
-    .releases .darkWave {
+    .filterSearchMode .artists .container {
+        width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
+
+    .artists .darkWave {
         display: none;
     }
 
