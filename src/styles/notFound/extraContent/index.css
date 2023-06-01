@@ -1,0 +1,89 @@
+.search .extraContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+}
+
+.search .containerExtra {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: calc(100% - 120px);
+    flex-direction: column;
+    align-self: center;
+}
+
+
+.filterSearchMode .search .containerExtra {
+    width: calc(100% - 80px);
+}
+
+.search .containerExtra .notFoundImg {
+    align-self: center;
+    width: 300px;
+    margin-bottom: 50px;
+    margin-top: 150px;
+}
+
+.search .containerExtra h1 {
+    font-size: 36px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.search .containerExtra h2 {
+    font-size: 24px;
+}
+
+.search .containerExtra h4 {
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.search .containerExtra .leftWave {
+    position: absolute;
+    top: 324px;
+    left: -484px;
+    transition: 45g;
+    transform: rotate(-15deg);
+}
+
+.search .containerExtra .rightWave {
+    position: absolute;
+    top: 185px;
+    right: -492px;
+    transform: rotate(32deg);
+}
+
+@media(max-width: 1024px) {
+    .filterSearchMode .search .containerExtra {
+        width: calc(100% - 40px);
+    }
+
+    .search .containerExtra h1 {
+        margin-bottom: 0px;
+    }
+
+    .search .containerExtra {
+        width: calc(100% - 40px);
+        margin-top: 0px;
+        gap: 20px;
+    }
+
+    .search .containerExtra .leftWave,
+    .search .containerExtra .rightWave {
+        display: none;
+    }
+
+    .search .containerExtra .notFoundImg {
+        margin-top: 50px;
+    }
+}
