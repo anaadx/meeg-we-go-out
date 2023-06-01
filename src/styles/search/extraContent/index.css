@@ -1,0 +1,45 @@
+.search .extraContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.search .containerExtra {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: calc(100% - 120px);
+    flex-direction: column;
+    align-self: center;
+}
+
+.search .containerExtra .searchResultText {
+    font-size: 24px;
+}
+
+.filterSearchMode .search .containerExtra {
+    width: calc(100% - 80px);
+}
+
+.search .seeAll {
+    position: absolute;
+    right: 5px;
+    bottom: -35px;
+}
+
+@media(max-width: 1024px) {
+    .filterSearchMode .search .containerExtra {
+        width: calc(100% - 40px);
+    }
+
+    .search .containerExtra {
+        width: calc(100% - 40px);
+        margin-top: 0px;
+    }
+
+    .search .containerExtra {
+        gap: 20px;
+    }
+}

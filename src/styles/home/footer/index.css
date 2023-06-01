@@ -36,6 +36,8 @@ footer .container {
 
     footer .container {
         width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+        gap: 50px;
     }
 
     footer {

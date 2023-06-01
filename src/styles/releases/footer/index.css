@@ -33,6 +33,12 @@ footer .container {
 }
 
 @media(max-width: 1024px) {
+    footer .container {
+        width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+        gap: 50px;
+    }
+
     footer {
         margin-top: 50px;
     }

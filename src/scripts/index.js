@@ -9,8 +9,16 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() >= 300) {
       $("body").addClass("menuActive");
+      if ($(window).width() > 1024) {
+        $(".containerLupaStatic").addClass("disabled");
+        $(".lupaStatic").removeClass("disabled");
+      }
     } else {
       $("body").removeClass("menuActive");
+      if ($(window).width() > 1024) {
+        $(".containerLupaFloated").addClass("disabled");
+        $(".lupaFloated").removeClass("disabled");
+      }
     }
   });
 
@@ -60,6 +68,37 @@ $(document).ready(function () {
 
   $(".placeTipX").click(function () {
     $("body").removeClass("placeTipActive");
+  });
+
+  $(".lupaStatic").click(function () {
+    $("body").addClass("modalLupaActive");
+    $(".lupaStatic").addClass("disabled");
+    $(".containerLupaStatic").removeClass("disabled");
+  });
+
+  $(".closeLupaStatic").click(function () {
+    $("body").removeClass("modalLupaActive");
+    $(".lupaStatic").removeClass("disabled");
+    $(".containerLupaStatic").addClass("disabled");
+    $("body").removeClass("inputLupaActive");
+  });
+
+  $(".lupaFloated").click(function () {
+    $("body").addClass("modalLupaActive");
+    $(".lupaFloated").addClass("disabled");
+    $(".containerLupaStatic").addClass("disabled");
+    $(".containerLupaFloated").removeClass("disabled");
+  });
+
+  $(".closeLupaFloated").click(function () {
+    $("body").removeClass("modalLupaActive");
+    $(".lupaFloated").removeClass("disabled");
+    $(".containerLupaFloated").addClass("disabled");
+    $("body").removeClass("inputLupaActive");
+  });
+
+  $(".inputLupa").click(function () {
+    $("body").addClass("inputLupaActive");
   });
 
   $(".modal").click(function () {
@@ -155,7 +194,7 @@ $(document).ready(function () {
     autoApply: true,
   });
 
-  $(".carouselComunity").owlCarousel({
+  $(".carouselCommunity").owlCarousel({
     navSpeed: 500,
     loop: false,
     center: false,

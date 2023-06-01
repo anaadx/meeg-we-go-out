@@ -23,6 +23,7 @@
     display: flex;
     gap: 10px;
     width: 100%;
+    z-index: 4;
 }
 
 .news .searchEvents form div {
@@ -245,7 +246,6 @@
         border-radius: 5px;
         background-color: var(--neutral1);
         z-index: 10;
-        box-shadow: 0px -213px 0px 0px var(--greyOpacity);
         border-radius: 10px;
         margin-bottom: 0px
     }

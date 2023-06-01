@@ -9,6 +9,7 @@
 .releases .container {
     width: calc(100% - 120px);
     gap: 50px;
+    margin-top: 50px;
 }
 
 .releases .darkWave {

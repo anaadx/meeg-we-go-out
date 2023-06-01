@@ -1,4 +1,4 @@
-.home .comunity {
+.home .community {
     background-color: var(--neutral5);
     border-radius: 10px;
     display: flex;
@@ -12,12 +12,12 @@
     margin-right: 60px;
 }
 
-.home .comunity .backgroundWave {
+.home .community .backgroundWave {
     position: absolute;
     bottom: 0px;
 }
 
-.home .comunity .smokeEffect {
+.home .community .smokeEffect {
     position: absolute;
     height: 100%;
     width: 60px;
@@ -37,7 +37,7 @@
     /* IE6-9 */
 }
 
-.home .comunity .carouselComunity {
+.home .community .carouselCommunity {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -46,22 +46,22 @@
     z-index: 1;
 }
 
-.home .comunity .carouselComunity .item a {
+.home .community .carouselCommunity .item a {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-decoration: none;
 }
 
-.home .comunity .carouselComunity .item a p {
+.home .community .carouselCommunity .item a p {
     line-height: 20px;
 }
 
-.home .comunity .carouselComunity .item img {
+.home .community .carouselCommunity .item img {
     width: 150px;
 }
 
-.home .comunity .text {
+.home .community .text {
     align-self: center;
     display: flex;
     gap: 40px;
@@ -72,34 +72,34 @@
 }
 
 
-.home .comunity .text a {
+.home .community .text a {
     width: max-content;
     padding: 10px 20px;
     margin-bottom: 5px;
     color: var(--neutral6);
     background-color: var(--main1);
-    border-radius: 5px;
+    border-radius: 10px;
     text-decoration: none;
     align-self: flex-start;
 }
 
-.home .comunity .text a:hover {
+.home .community .text a:hover {
     background-color: var(--pinkHover);
     cursor: pointer;
 }
 
-.home .comunity .owl-carousel.owl-drag .owl-item {
+.home .community .owl-carousel.owl-drag .owl-item {
     opacity: 0.3;
     transition: all 0.3s;
 }
 
-.home .comunity .owl-carousel.owl-drag .owl-item.active {
+.home .community .owl-carousel.owl-drag .owl-item.active {
     opacity: 1;
 }
 
 
 @media(max-width: 1024px) {
-    .home .comunity {
+    .home .community {
         flex-direction: column;
         justify-content: space-between;
         height: min-content;
@@ -110,28 +110,28 @@
         margin-bottom: 50px;
     }
 
-    .home .comunity .carouselComunity {
+    .home .community .carouselCommunity {
         align-self: flex-start;
         margin-left: 40px;
         width: calc(100% - 40px);
     }
 
-    .home .comunity .text {
+    .home .community .text {
         margin: 40px 0px 40px 0px;
         width: calc(100% - 40px);
         line-height: 25px;
     }
 
-    .home .comunity .backgroundWave {
+    .home .community .backgroundWave {
         left: -350px;
         bottom: -40px;
     }
 
-    .home .comunity .carouselComunity .item a {
+    .home .community .carouselCommunity .item a {
         width: 150px;
     }
 
-    .home .comunity .owl-carousel .owl-stage-outer {
+    .home .community .owl-carousel .owl-stage-outer {
         overflow: visible;
     }
 
@@ -139,21 +139,21 @@
 
 @media(max-width: 650px) {
 
-    .home .comunity .carouselComunity {
+    .home .community .carouselCommunity {
         width: 340px;
         align-self: flex-start;
         margin-left: 20px;
     }
 
-    .home .comunity .carouselComunity .item img {
+    .home .community .carouselCommunity .item img {
         width: 100px;
     }
 
-    .home .comunity .carouselComunity .item a {
+    .home .community .carouselCommunity .item a {
         width: 100px;
     }
 
-    .home .comunity .owl-carousel .owl-stage-outer {
+    .home .community .owl-carousel .owl-stage-outer {
         overflow: visible;
     }
 }
