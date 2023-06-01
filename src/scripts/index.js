@@ -306,7 +306,7 @@ $(document).ready(function () {
         nav: false,
       },
       1024: {
-        items: 2,
+        items: 3,
       },
       1350: {
         items: 3,
