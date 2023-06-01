@@ -1,0 +1,128 @@
+.search .lastLaunch {
+    width: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.filterSearchMode .search .lastLaunch button {
+    display: none;
+}
+
+.search .lastLaunch .title {
+    margin: 20px 0px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search .lastLaunch .title h3 {
+    font-size: 18px;
+}
+
+.search .lastLaunch .title p {
+    font-size: 14px;
+}
+
+.search .lastLaunch .carouselLaunch {
+    width: 100%;
+}
+
+.search .lastLaunch .text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search .lastLaunch .carouselLaunch .icon:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-image: url("../../../assets/icone-musica-dark.svg");
+}
+
+.search .lastLaunch .item {
+    padding: 20px;
+    background-color: var(--neutral5);
+    border-radius: 10px;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 350px;
+}
+
+.search .lastLaunch .item div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search .lastLaunch .item div span,
+.search .lastLaunch .item div p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.search .lastLaunch .item a {
+    height: calc(100% - 40px);
+    width: 100%;
+    /* height: 290px; */
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.search .lastLaunch .item a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.search .lastLaunch .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+.search .lastLaunch .owl-carousel.owl-drag .owl-item {
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.search .lastLaunch .owl-carousel.owl-drag .owl-item.active {
+    opacity: 1;
+}
+
+@media(max-width: 1024px) {
+
+    .search .lastLaunch {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .search .lastLaunch .item {
+        flex-direction: row;
+        width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
+
+    .search .lastLaunch .item a {
+        width: calc(40% - 20px);
+        max-width: 170px;
+        min-width: 130px;
+    }
+
+    .search .lastLaunch .carouselLaunch {
+        flex-direction: column;
+        gap: 30px;
+        width: calc(100% - 50px);
+    }
+
+    .search .lastLaunch .item div {
+        gap: 5px;
+    }
+}

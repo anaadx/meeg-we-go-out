@@ -95,11 +95,6 @@
     align-self: baseline;
 }
 
-.home .emphasis .seAll {
-    margin-top: 20px;
-    display: block;
-}
-
 .home .emphasis .owl-carousel.owl-drag .owl-item {
     opacity: 0.3;
     transition: all 0.3s;
@@ -205,11 +200,6 @@
     height: 16px;
 }
 
-.home .countdown .seAll {
-    display: block;
-    margin-top: 20px;
-}
-
 .home .countdown .owl-carousel.owl-drag .owl-item {
     opacity: 0.3;
     transition: all 0.3s;
@@ -243,16 +233,7 @@
         min-width: 280px;
         background-color: var(--neutral2);
         border-radius: 5px;
-        padding: 20px;
         height: min-content;
-    }
-
-    .home .emphasis .carouselEvents .item .music {
-        display: none;
-    }
-
-    .home .emphasis .carouselEvents .item .star {
-        display: none;
     }
 
     .home .emphasis .carouselEvents .item .calendar {
@@ -260,6 +241,7 @@
         background-color: var(--greyOpacity);
         width: fit-content;
         padding: 5px;
+        margin-top: 30px;
     }
 
     .home .emphasis .carouselEvents .text .iconWrapper {
@@ -272,10 +254,6 @@
 
     .home .emphasis .carouselEvents .item a {
         width: 100%;
-    }
-
-    .home .emphasis .carouselEvents .calendar {
-        margin-top: 30px;
     }
 
     .home .emphasis .carouselEvents {

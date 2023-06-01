@@ -9,6 +9,7 @@
 .news .container {
     width: calc(100% - 120px);
     gap: 50px;
+    margin-top: 50px;
 }
 
 .filterSearchMode .news .container {
@@ -18,8 +19,9 @@
 
 .news .darkWave {
     position: absolute;
-    top: -148px;
-    right: -255px;
+    top: -66px;
+    right: -320px;
+    z-index: 3;
 }
 
 
@@ -31,6 +33,7 @@
 
     .news .container {
         width: calc(100% - 40px);
+        margin-top: 0px;
     }
 
     .filterSearchMode .news .container {

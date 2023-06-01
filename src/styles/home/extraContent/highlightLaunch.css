@@ -41,7 +41,7 @@
 
 
 .home .highlightLaunch .carouselHighlightLaunch {
-    width: calc(100% - 370px)
+    width: 100%
 }
 
 .home .highlightLaunch .carouselHighlightLaunch .item {

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/libs/sumoselect.min.css"> 
+    <link rel="stylesheet" href="../styles/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="../styles/libs/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../styles/libs/animate.css"/>
+    <link rel="stylesheet" href="../styles/libs/daterangepicker.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/search/header/index.css"> 
+    <link rel="stylesheet" href="../styles/search/header/menuButton.css">
+    <link rel="stylesheet" href="../styles/search/firstContent/index.css"> 
+    <link rel="stylesheet" href="../styles/search/firstContent/search.css">  
+    <link rel="stylesheet" href="../styles/search/extraContent/index.css"> 
+    <link rel="stylesheet" href="../styles/search/extraContent/emphasis.css">
+    <link rel="stylesheet" href="../styles/search/extraContent/allArtists.css">
+    <link rel="stylesheet" href="../styles/search/extraContent/lastLaunch.css">
+    <link rel="stylesheet" href="../styles/search/extraContent/community.css">
+    <link rel="stylesheet" href="../styles/search/extraContent/guide.css"> 
+    <link rel="stylesheet" href="../styles/search/footer/rights.css">
+    <link rel="stylesheet" href="../styles/search/footer/utils.css">
+    <link rel="stylesheet" href="../styles/search/footer/index.css">
+    <title>We Go Out</title>
+    <script src="../scripts/jquery-3.7.0.min.js"></script>
+    <script src="../scripts/search.js"></script>
+</head> 
+<body>
+    <header class="menu static">
+        <nav>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <div class="links">
+                <a href="./events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
+                <a href="./news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
+                <a href="./communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
+                <a href="./artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
+                <a href="./releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
+                <a href="./about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
+            </div>
+            <button class="lupa"><img src="../assets/lupa.svg" alt="lupa"></button>
+        </nav>
+    </header>   
+    <header class="menu floated">
+        <nav class="navStatic">
+            <div class="modal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <button class="lupa"><img src="../assets/lupa.svg" alt="lupa"></button>
+        </nav>
+        <div class="modalMenu">
+            <ul>
+                <li><a href="../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
+                <li><a href="../pages/events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
+                <li><a href="../pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
+                <li><a href="../pages/communities.html" class="font1 fontSize4 fontColor3">COMUNIDADES</a></li>
+                <li><a href="../pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
+                <li><a href="../pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
+                <li><a href="../pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
+            </ul> 
+            <div class="buttons">
+                <button class="font1 fontSize3 fontColor3 buttonBlackLarge">ENVIE UM LANÇAMENTO</button>
+                <button class="font1 fontSize3 buttonPinkLarge">ENVIE UM EVENTO</button>
+            </div> 
+                <h2 class="font1 fontSize4 fontColor3">SIGA O WE GO OUT</h2>
+                <div class="icons">
+                <a class="littleIcon" href="https://www.instagram.com/wegoout/">
+                    <img class="littleIcon"  src="../assets/icone-instagram.svg">
+                </a>
+                <a class="littleIcon" href="https://www.facebook.com/wegoout.br/?locale=pt_BR" >
+                    <img class="littleIcon" src="../assets/icone-facebook.svg">
+                </a>
+                <a class="littleIcon" href="https://www.youtube.com/@WeGoOut">
+                    <img class="littleIcon" src="../assets/icone-youtube.svg">
+                </a>
+                <a class="littleIcon" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                    <img class="littleIcon" src="../assets/icone-spotify.svg">
+                </a>
+            </div>
+        </div>
+    </header> 
+    <main class="search">
+        <section class="events">
+            <div class="container">
+                <div class="searchEvents"> 
+                    <form> 
+                        <div class="field">
+                            <label class="font2 fontSize4 fontColor3" for="key-word">Palavra-chave</label>
+                            <input type="text" name="key-word" class="font2 fontSize2 fontColor2" placeholder="Digite a palavra-chave">
+                        </div>
+                        <div class="field">
+                            <label class="font2 fontSize4 fontColor3" for="category">Categoria de Conteúdo</label>
+                            <select name="category" class="selectCategory fontColor2" multiple="multiple">
+                                <option value="Eventos">Eventos</option>
+                                <option value="Festivais">Festivais</option>
+                                <option value="Festas">Festas</option>
+                                <option value="Música">Música</option>      
+                            </select>
+                        </div>
+                        <button type="button" class="goSearch">Go</button>
+                    </form>
+                    <img src="../assets/darkWave.svg" class="darkWave" alt="icone de fundo">
+                </div>
+            </div>
+        </section>
+        <section class="extraContent">
+            <div class="containerExtra">
+                <h2 class="font1 fontColor1 searchResultText">RESULTADOS DA BUSCA</h2>
+                <div class="emphasis">
+                    <div class="title">
+                        <h3 class="font1 fontColor1">EVENTOS</h3>
+                        <p class="font2 fontColor1">12 resultados</p>
+                    </div>
+                    <div class="carouselEvents owl-carousel owl-theme">
+                        <div class="item">  
+                            <a href="./events.html">
+                                <img class="" src="../assets/emphasis1.svg" alt="DON L & BANDA">
+                                <span class="font2 fontSize2 fontColor1 tag backgroundYellow">SHOWS</span>
+                            </a>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">DON L & BANDA</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Rap</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Don L</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Casa Natura Musical</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localização">
+                                        <p class="font2 fontColor1 fontSize3">São Paulo - SP</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">06 e 7 de abril</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                        </div>
+                        <div class="item">  
+                            <a href="./events.html">
+                                <img class="" src="../assets/emphasis2.svg" alt="FESTA PLUMA">
+                                <span class="font2 fontSize2 fontColor1 tag backgroundGreen">FESTAS</span>
+                            </a>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">FESTA PLUMA</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Música brasileira, Eletrônica</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Mônica Silva, Fábio Prado</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Baralto</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localizacao">
+                                        <p class="font2 fontColor1 fontSize3">São Paulo - SP</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">07 de abril</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                        </div>
+                        <div class="item">  
+                            <a href="./events.html">
+                                <img class="" src="../assets/emphasis3.svg" alt="CLUBE DOS 30">
+                                <span class="font2 fontSize2 fontColor1 tag backgroundGreen">FESTAS</span>
+                            </a>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">CLUBE DOS 30</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Música brasileira, Eletrônica</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Dj residentes</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Baralto</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localizacao">
+                                        <p class="font2 fontColor1 fontSize3">São Paulo - SP</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">08 de abril</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                        </div>
+                        <div class="item">  
+                            <a href="./events.html">
+                                <img class="" src="../assets/emphasis4.svg" alt="Mita Festival">
+                                <span class="font2 fontSize2 fontColor1 tag backgroundGreen">FESTAS</span>
+                            </a>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">NOISE JUMPERS NO MARAFAS
+                                    HOUSE</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Dance, Eletrônica, House</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Noise Jumpers</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Marafas House</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localizacao">
+                                        <p class="font2 fontColor1 fontSize3">Indaiatuba - SP</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">08 de abril</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                        </div>
+                        <div class="item">  
+                            <a href="./events.html">
+                                <img class="" src="../assets/emphasis2.svg" alt="FESTA PLUMA">
+                                <span class="font2 fontSize2 fontColor1 tag backgroundGreen">FESTAS</span>
+                            </a>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">FESTA PLUMA</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Música brasileira, Eletrônica</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Mônica Silva, Fábio Prado</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Baralto</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localizacao">
+                                        <p class="font2 fontColor1 fontSize3">São Paulo - SP</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">07 de abril</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                        </div>
+                        <div class="item">  
+                            <a href="./events.html">
+                                <img class="" src="../assets/emphasis2.svg" alt="FESTA PLUMA">
+                                <span class="font2 fontSize2 fontColor1 tag backgroundGreen">FESTAS</span>
+                            </a>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">FESTA PLUMA</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Música brasileira, Eletrônica</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Mônica Silva, Fábio Prado</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Baralto</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localizacao">
+                                        <p class="font2 fontColor1 fontSize3">São Paulo - SP</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">07 de abril</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                        </div>
+                        <div class="item">  
+                            <a href="./events.html">
+                                <img class="" src="../assets/emphasis2.svg" alt="FESTA PLUMA">
+                                <span class="font2 fontSize2 fontColor1 tag backgroundGreen">FESTAS</span>
+                            </a>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">FESTA PLUMA</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Música brasileira, Eletrônica</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Mônica Silva, Fábio Prado</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Baralto</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localizacao">
+                                        <p class="font2 fontColor1 fontSize3">São Paulo - SP</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">07 de abril</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="font1 fontSize3 fontColor4 seeAll" href="./events.html">VER TUDO</a>
+                </div>
+                <div class="guide">
+                    <div class="title">
+                        <h3 class="font1 fontColor1">NOTÍCIAS</h3>
+                        <p class="font2 fontColor1">5 resultados</p>
+                    </div> 
+                    <div class="owl-carousel owl-theme carouselGuide">
+                        <div class="item">
+                            <a href="./events.html">
+                                <img src="../assets/guia1.svg" alt="XXXPERIENCE 2023">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </a>
+                            <h2 class="font1 fontSize5 fontColor1">XXXPERIENCE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER</h2>
+                            <span class="font2 fontSize3 fontColor2">03 de março</span>
+                        </div>
+                        <div class="item">
+                            <a href="./events.html">
+                                <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </a>
+                            <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                            <span class="font2 fontSize3 fontColor2">05 de março</span>
+                        </div>
+                        <div class="item">
+                            <a href="./events.html">
+                                <img src="../assets/guia3.svg" alt="COACHELLA 2023">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </a>
+                            <h2 class="font1 fontSize5 fontColor1">COACHELLA 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                            <span class="font2 fontSize3 fontColor2">06 de março</span>
+                        </div>
+                        <div class="item">
+                            <a href="./events.html">
+                                <img src="../assets/guia4.svg" alt="PRIMAVERA SOUND PORTO 2023">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </a>
+                            <h2 class="font1 fontSize5 fontColor1">PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                            <span class="font2 fontSize3 fontColor2">06 de março</span>
+                        </div>
+                        <div class="item">
+                            <a href="./events.html">
+                                <img src="../assets/guia4.svg" alt="PRIMAVERA SOUND PORTO 2023">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </a>
+                            <h2 class="font1 fontSize5 fontColor1">PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                            <span class="font2 fontSize3 fontColor2">06 de março</span>
+                        </div>
+                        <div class="item">
+                            <a href="./events.html">
+                                <img src="../assets/guia4.svg" alt="">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </a>
+                            <h2 class="font1 fontSize5 fontColor1">PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                            <span class="font2 fontSize3 fontColor2">06 de março</span>
+                        </div>
+                        <div class="item">
+                            <a href="./events.html">
+                                <img src="../assets/guia4.svg" alt="">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </a>
+                            <h2 class="font1 fontSize5 fontColor1">PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                            <span class="font2 fontSize3 fontColor2">06 de março</span>
+                        </div>
+                        <div class="item">
+                            <a href="./events.html">
+                                <img src="../assets/guia4.svg" alt="">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </a>
+                            <h2 class="font1 fontSize5 fontColor1">PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                            <span class="font2 fontSize3 fontColor2">06 de março</span>
+                        </div>
+                        <div class="item">
+                            <a href="./events.html">
+                                <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </a>
+                            <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                            <span class="font2 fontSize3 fontColor2">05 de março</span>
+                        </div>
+                        <div class="item">
+                            <a href="./events.html">
+                                <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </a>
+                            <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                            <span class="font2 fontSize3 fontColor2">05 de março</span>
+                        </div>
+                        <div class="item">
+                            <a href="./events.html">
+                                <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </a>
+                            <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                            <span class="font2 fontSize3 fontColor2">05 de março</span>
+                        </div>
+                    </div>
+                    <a class="font1 fontSize3 fontColor4 seeAll" href="./events.html">VER TUDO</a>
+                </div>   
+                <div class="lastLaunch">
+                    <div class="title">
+                        <h3 class="font1 fontColor1">LANÇAMENTOS</h3>
+                        <p class="font2 fontColor1">5 resultados</p>
+                    </div>  
+                    <div class="owl-carousel owl-theme carouselLaunch">                  
+                        <div class="item">
+                            <a href="releases.html"> 
+                                <img src="../assets/ultimo-lancamento1.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="icon font2 icon fontSize4 fontColor1">Eletrônica, Dance, House</span>
+                                <h3 class="font1 fontSize4 fontColor1">NEW TO YOU</h3>
+                                <p class="font2 fontSize4 fontColor1">Calvin Harris, Normani, Tinashe & Offset</p>
+                            </div>
+                        </div>
+                        <div class="item">        
+                            <a href="releases.html">
+                                <img src="../assets/ultimo-lancamento2.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="icon font2 icon fontSize4 fontColor1">Pop</span>
+                                <h3 class="font1 fontSize4 fontColor1">DESPECHÁ</h3>
+                                <p class="font2 fontSize4 fontColor1">Rosalía</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="releases.html">
+                                <img src="../assets/ultimo-lancamento3.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="icon font2 icon fontSize4 fontColor1">Rap, Pop, Hip-hop</span>
+                                <h3 class="font1 fontSize4 fontColor1">RENAISSANCE</h3>
+                                <p class="font2 fontSize4 fontColor1">Beyonce</p>
+                            </div>
+                        </div>   
+                        <div class="item">
+                            <a href="releases.html"> 
+                                <img src="../assets/ultimo-lancamento4.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="icon font2 icon fontSize4 fontColor1">Reggaeton, Rap</span>
+                                <h3 class="font1 fontSize4 fontColor1">UN VERANO SIN TI</h3>
+                                <p class="font2 fontSize4 fontColor1">Bad Bunny</p>
+                            </div>
+                        </div>    
+                        <div class="item">        
+                            <a href="releases.html">
+                                <img src="../assets/ultimo-lancamento5.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="icon font2 icon fontSize4 fontColor1">Eletrônica</span>
+                                <h3 class="font1 fontSize4 fontColor1">STRONGER</h3>
+                                <p class="font2 fontSize4 fontColor1">Cat Dealers, Hertz</p>
+                            </div>
+                        </div> 
+                        <div class="item">
+                            <a href="releases.html">
+                                <img src="../assets/ultimo-lancamento6.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="icon font2 icon fontSize4 fontColor1">Pop</span>
+                                <h3 class="font1 fontSize4 fontColor1">FOLLOW ME</h3>
+                                <p class="font2 fontSize4 fontColor1">Pablo Vittar, Rina Sawayama</p>
+                            </div>
+                        </div>      
+                        <div class="item">
+                            <a href="releases.html">
+                                <img src="../assets/ultimo-lancamento7.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="icon font2 icon fontSize4 fontColor1">Eletrônica, Pop</span>
+                                <h3 class="font1 fontSize4 fontColor1">RUN INTO TROUBLE</h3>
+                                <p class="font2 fontSize4 fontColor1">Alok, Bastille</p>
+                            </div>
+                        </div> 
+                        <div class="item">
+                            <a href="releases.html"> 
+                                <img src="../assets/ultimo-lancamento8.svg">
+                                <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                            </a>
+                            <div>
+                                <span class="icon font2 icon fontSize4 fontColor1">Eletrônica</span>
+                                <h3 class="font1 fontSize4 fontColor1">BABY AGAIN..</h3>
+                                <p class="font2 fontSize4 fontColor1">Fred Again, Skrillex, Four Set</p>
+                            </div>
+                        </div>     
+                    </div>
+                    <a class="font1 fontSize3 fontColor4 seeAll" href="./events.html">VER TUDO</a>
+                </div>
+                <div class="allArtists">
+                    <div class="title">
+                        <h3 class="font1 fontColor1">ARTISTAS</h3>
+                        <p class="font2 fontColor1">40 resultados</p>
+                    </div> 
+                    <div class="carouselArtists owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista1.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista2.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ASHIBAH</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista3.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">DIMITRI VIEGAS</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista4.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ELDERBROOK</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista5.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">FLUME</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista6.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">JAMIE XX</h3>
+                        </div>
+                        <div div class="item"> 
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista7.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">RUFUS DU SOL</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista8.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">PEGGY GOU</h3>
+                        </div>
+                        <div div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista8.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">PEGGY GOU</h3>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista1.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista1.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista1.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista1.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista1.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista1.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista1.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista1.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/artists.html">
+                                <img src="../assets/artista1.svg">
+                            </a>
+                            <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
+                        </div>
+                    </div>
+                    <a class="font1 fontSize3 fontColor4 seeAll" href="./events.html">VER TUDO</a>
+                </div>
+                <div class="community">
+                    <div class="title">
+                        <h3 class="font1 fontColor1">COMUNIDADE</h3>
+                        <p class="font2 fontColor1">15 resultados</p>
+                    </div> 
+                    <div class="carouselCommunity owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="events.html">
+                                <img src="../assets/FRev1.svg" alt="Festa de Reveillon">
+                            </a>
+                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023</h2>
+                        </div>
+                        <div class="item">
+                            <a href="events.html">
+                                <img src="../assets/FRev2.svg" alt="Festa de Reveillon">
+                            </a>
+                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023 2</h2>
+                        </div>
+                        <div class="item">
+                            <a href="events.html">
+                                <img src="../assets/FRev3.svg" alt="Festa de Reveillon">
+                            </a>
+                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE 2023</h2>
+                        </div>
+                        <div class="item">
+                            <a href="events.html">
+                                <img src="../assets/FRev4.svg" alt="Festa de Reveillon">
+                            </a>
+                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE 2023 2</h2>
+                        </div>
+                        <div class="item">
+                            <a href="events.html">
+                                <img src="../assets/FRev5.svg" alt="Festa de Reveillon">
+                            </a>
+                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON RIO DE JANEIRO</h2>
+                        </div>
+                        <div class="item">
+                            <a href="events.html">
+                                <img src="../assets/FRev6.svg" alt="Festa de Reveillon">
+                            </a>
+                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SÃO PAULO</h2>
+                        </div>
+                        <div class="item">
+                            <a href="events.html">
+                                <img src="../assets/FRev7.svg" alt="Festa de Reveillon">
+                            </a>
+                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
+                        </div> 
+                        <div class="item">
+                            <a href="events.html">
+                                <img src="../assets/FRev1.svg" alt="Festa de Reveillon">
+                            </a>
+                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023</h2>
+                        </div>
+                        <div class="item">
+                            <a href="events.html">
+                                <img src="../assets/FRev1.svg" alt="Festa de Reveillon">
+                            </a>
+                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023</h2>
+                        </div>
+                        <div class="item">
+                            <a href="events.html">
+                                <img src="../assets/FRev1.svg" alt="Festa de Reveillon">
+                            </a>
+                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023</h2>
+                        </div>
+                        <div class="item">
+                            <a href="events.html">
+                                <img src="../assets/FRev1.svg" alt="Festa de Reveillon">
+                            </a>
+                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023</h2>
+                        </div>
+                        <div class="item">
+                            <a href="events.html">
+                                <img src="../assets/FRev1.svg" alt="Festa de Reveillon">
+                            </a>
+                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023</h2>
+                        </div>
+                    </div>  
+                    <a class="font1 fontSize3 fontColor4 seeAll" href="./events.html">VER TUDO</a> 
+                </div>    
+            </div> 
+        </section>
+    </main> 
+     <footer>
+        <div class="container">
+            <section class="utils">
+                <nav class="navigation">
+                    <a class="font1 fontSize4 fontColor2" href="../../index.html">INICIO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/events.html">EVENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="">ENVIE UM EVENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/news.html">NOTICIAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/communities.html">COMUNIDADES</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/artists.html">ARTISTAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="releases.html">LANÇAMENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="">ENVIE UM LANÇAMENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/about.html">SOBRE</a>
+                </nav>
+                <div class="highlightEvents">
+                    <h2 class="font1 fontSize5 fontColor3">EVENTOS EM DESTAQUE</h2>
+                    <ul>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Goptun com Jamie xx</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">NAFF SP | Fisher & Chris Lake</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Mita festival São Paulo</a>
+                        </li>
+                    </ul>
+                    <a class="font1 fontSize3 fontColor4 seeAll">VER TUDO</a>
+                </div>
+                <div class="follow">
+                    <h2 class="font1 fontSize5 fontColor3">SIGA O WE GO OUT</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/wegoout/">
+                                <img src="../assets/icone-instagram.svg">
+                            </a>
+                            <p class="font2 fontSize4 fontColor3">@wegoout</p>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/wegoout.br/?locale=pt_BR">
+                                <img src="../assets/icone-facebook.svg">
+                            </a>
+                            <p class="font2 fontSize4 fontColor3">/wegoout.br</p>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@WeGoOut">
+                                <img src="../assets/icone-youtube.svg">
+                            </a>
+                            <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                        </li>
+                        <li>
+                            <a href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                                <img src="../assets/icone-spotify.svg">
+                            </a>
+                            <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                        </li>
+                    </ul>
+                </div>
+                <form class="newsletter">
+                    <h2 class="font1 fontSize5 fontColor3">NEWSLETTER</h2>
+                    <p class="font2 fontSize3 fontColor2">Quer receber descontos e mais informações sobre festas e festivais?</p>                  
+                    <input class="font2 fontSize3 fontColor2" type="text" name="name" placeholder="Nome e sobrenome"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="email" placeholder="Email"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="whatsapp" placeholder="Whatsapp"/>
+                    <button class="font1 fontSize3 fontColor3" type="submit">CADASTRAR</button>
+                </form>
+            </section>
+            <section class="rights">  
+                <div class="logo">
+                    <img src="../assets/logo-dark.svg">
+                    <div class="text">
+                        <p class="font2 fontSize2 fontColor2">Todos os direitos reservados a We Go Out 2023®
+                            CNPJ: 12.345.678/0001-10</p>
+                        <p class="font2 fontSize2 fontColor2">A We Go Out Ltda, inscrita sob o CNPJ: 12.345.678/0001-10 é uma instituição devidamente habilitada e autorizada. Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo impedir ou prejudicar o envio ou a recepção de informações atualizadas.</p>
+                        <p class="font2 fontSize2 fontColor2">contato@wegoout.com</p>
+                    </div>
+                </div>
+                <div class="politics">
+                    <a class="font1 fontSize2 fontColor2">POLÍTICA DE PRIVACIADE</a>
+                    <a class="font1 fontSize2 fontColor2">POLÍTICA DE COOKIES</a>
+                </div>
+                <img class="footerWave2" src="../assets/onda-footer-2.svg">
+                <img class="footerWave3" src="../assets/onda-footer-mobile.svg">
+            </section>
+        </div>
+    </footer> 
+    <script src="../scripts/jquery.sumoselect.min.js"></script> 
+    <script src="../scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+         $(document).ready(function () {
+             $('.selectCategory').SumoSelect({search: false, placeholder:"Selecione a categoria", floatWidth: 0,});
+             $('.selectAZ').SumoSelect({search: false, placeholder:"Mais recentes", floatWidth: 0,});
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+.search .emphasis {
+    width: 100%;
+    height: min-content;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.search .emphasis .title {
+    margin: 20px 0px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search .emphasis .title h3 {
+    font-size: 18px;
+}
+
+.search .emphasis .title p {
+    font-size: 14px;
+}
+
+.search .emphasis .carouselEvents {
+    max-height: 1000px;
+    height: fit-content;
+    width: 100%
+}
+
+.search .emphasis .carouselEvents .item {
+    display: flex;
+    gap: 15px;
+    position: relative;
+    flex-direction: column;
+    width: 280px;
+    min-width: 280px;
+    background-color: var(--neutral5);
+    border-radius: 10px;
+    padding: 20px;
+    height: 500px;
+}
+
+.search .emphasis .carouselEvents .item .calendar {
+    border-radius: 3px;
+    background-color: var(--neutral4);
+    width: fit-content;
+    padding: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.search .emphasis .carouselEvents .text .iconWrapper {
+    flex-direction: row;
+}
+
+.search .emphasis .carouselEvents a {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.search .emphasis .owl-carousel .owl-item .littleIcon {
+    width: 16px;
+}
+
+.search .emphasis .owl-carousel .owl-stage {
+    padding: 20px 0px;
+}
+
+.search .emphasis .owl-carousel .owl-nav {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    margin-top: 0px;
+}
+
+.search .emphasis .owl-nav img {
+    width: 8px;
+    height: 16px;
+}
+
+.search .emphasis .carouselEvents a img {
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+    width: 280px;
+}
+
+.search .emphasis .carouselEvents .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(100% - 10px);
+    line-height: 20px;
+    position: relative;
+    height: 100%;
+}
+
+.search .emphasis .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+.search .emphasis .carouselEvents .text h2 {
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.search .emphasis .carouselEvents .text div {
+    display: flex;
+    gap: 10px;
+}
+
+.search .emphasis .carouselEvents .text .iconWrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search .emphasis .iconWrapper .house {
+    display: flex;
+    align-items: center;
+}
+
+.search .emphasis .iconWrapper .location {
+    display: flex;
+    align-items: center;
+}
+
+.search .emphasis .owl-carousel.owl-drag .owl-item {
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.search .emphasis .owl-carousel.owl-drag .owl-item.active {
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+
+    .search .emphasis {
+        margin-bottom: 20px;
+    }
+
+    .search .emphasis .carouselEvents .item {
+        flex-direction: row;
+        width: calc(100% - 40px);
+        height: min-content
+    }
+
+    .search .emphasis .carouselEvents {
+        width: calc(100% - 30px);
+    }
+
+    .search .emphasis .carouselEvents .text .star,
+    .search .emphasis .carouselEvents .text .music {
+        display: none;
+    }
+
+    .search .emphasis .carouselEvents .text .calendar {
+        bottom: -20px;
+    }
+
+    .search .emphasis .carouselEvents .text .iconWrapper {
+        flex-direction: column;
+        align-self: baseline;
+    }
+
+    .search .emphasis .carouselEvents .text {
+        gap: 0px;
+    }
+
+    .search .emphasis .carouselEvents .item a {
+        width: calc(40% - 20px);
+        max-width: 170px;
+        min-width: 130px;
+        height: calc(100% - 40px);
+    }
+
+    .search .emphasis .carouselEvents a img {
+        width: 100%;
+        /* height: 100%;
+        object-fit: cover; */
+    }
+}
