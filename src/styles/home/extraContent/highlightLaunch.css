@@ -58,6 +58,7 @@
     width: 290px;
     height: 290px;
     border-radius: 10px;
+    display: block;
 }
 
 .home .highlightLaunch .carouselHighlightLaunch .item a img {

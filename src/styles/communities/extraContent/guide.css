@@ -82,6 +82,7 @@
     border-radius: 10px;
     text-decoration: none;
     position: relative;
+    display: block;
 }
 
 .communities .guide a img {

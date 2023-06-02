@@ -70,6 +70,7 @@
     /* height: 290px; */
     border-radius: 10px;
     position: relative;
+    display: block;
 }
 
 

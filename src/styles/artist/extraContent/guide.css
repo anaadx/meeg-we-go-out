@@ -1,13 +1,13 @@
-.news .guide .title {
+.artist .guide .title {
     margin-bottom: 10px;
     font-size: 24px;
 }
 
-.news .guide .title h2 {
+.artist .guide .title h2 {
     margin-bottom: 10px;
 }
 
-.news .guide .text {
+.artist .guide .text {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -15,48 +15,48 @@
     width: calc(100% - 30px);
 }
 
-.news .guide .text h3 {
+.artist .guide .text h3 {
     font-size: 16px;
 }
 
-.news .guide .SumoSelect p {
+.artist .guide .SumoSelect p {
     border: none;
 }
 
-.news .guide .SumoSelect>.CaptionCont>label>i {
+.artist .guide .SumoSelect>.CaptionCont>label>i {
     background-image: url(../../../assets/seta-pink.svg);
     margin-left: 30px;
     cursor: pointer;
 }
 
-.news .guide .SumoSelect>.optWrapper>.options {
+.artist .guide .SumoSelect>.optWrapper>.options {
     background-color: var(--neutral6);
     color: var(--neutral1);
     padding: 0px 5px;
 }
 
-.news .guide .SumoSelect>.optWrapper>.options li {
+.artist .guide .SumoSelect>.optWrapper>.options li {
     margin: 5px 0px;
     border-radius: 5px;
 }
 
-.news .guide .SumoSelect>.optWrapper {
+.artist .guide .SumoSelect>.optWrapper {
     margin-top: 0px;
     width: 122px;
     left: -65px;
 }
 
-.news .guide .SumoSelect>.optWrapper>.options:hover {
+.artist .guide .SumoSelect>.optWrapper>.options:hover {
     color: var(--neutral7);
 }
 
-.news .guide .text .filterAZ {
+.artist .guide .text .filterAZ {
     display: flex;
     gap: 5px;
     align-items: center;
 }
 
-.news .guide .item {
+.artist .guide .item {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -67,7 +67,7 @@
     margin-top: 10px;
 }
 
-.news .guide .item div {
+.artist .guide .item div {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -75,11 +75,11 @@
     gap: 5px;
 }
 
-.news .guide .item h2 {
+.artist .guide .item h2 {
     line-height: 25px;
 }
 
-.news .guide .item a {
+.artist .guide .item a {
     width: 100%;
     height: 220px;
     border-radius: 5px;
@@ -88,14 +88,14 @@
     display: block;
 }
 
-.news .guide a img {
+.artist .guide a img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 5px;
 }
 
-.news .guide .listGuide {
+.artist .guide .listGuide {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -103,11 +103,11 @@
     margin-bottom: 40px;
 }
 
-.news .guide button.disabled {
+.artist .guide button.disabled {
     display: none;
 }
 
-.news .guide button {
+.artist .guide button {
     width: max-content;
     padding: 10px 20px;
     margin-top: 30px;
@@ -119,17 +119,17 @@
     margin: 0 auto;
 }
 
-.news .guide button:hover {
+.artist .guide button:hover {
     background-color: var(--pinkHover);
     cursor: pointer;
 }
 
-.filterSearchMode .news .guide button {
+.filterSearchMode .artist .guide button {
     display: none;
 }
 
 @media (max-width: 1024px) {
-    .news .guide .item {
+    .artist .guide .item {
         width: 100%;
         display: flex;
         border-radius: 5px;
@@ -140,30 +140,30 @@
         gap: 0px;
     }
 
-    .news .guide .item a {
+    .artist .guide .item a {
         width: 130px;
         border-radius: 5px 0px 0px 5px;
         height: 100%;
     }
 
-    .news .guide .item div {
+    .artist .guide .item div {
         display: block;
 
         width: calc(55% - 10px);
         padding: 10px;
     }
 
-    .news .guide .item div h3,
-    .news .guide .item div span {
+    .artist .guide .item div h3,
+    .artist .guide .item div span {
         font-size: 12px;
         line-height: 20px;
     }
 
-    .news .guide .item h2 {
+    .artist .guide .item h2 {
         line-height: 20px;
     }
 
-    .news .guide .item a img {
+    .artist .guide .item a img {
         width: 100%;
         height: 100%;
         object-fit: cover;
