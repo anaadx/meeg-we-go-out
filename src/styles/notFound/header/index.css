@@ -1,7 +1,7 @@
 .menu {
     background-color: var(--neutral1);
     position: fixed;
-    z-index: 3;
+    z-index: 5;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -9,7 +9,7 @@
 }
 
 .menu.floated {
-    z-index: 5;
+    z-index: 6;
     position: fixed;
     top: -100px;
     left: 0px;

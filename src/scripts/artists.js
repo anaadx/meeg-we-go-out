@@ -106,7 +106,7 @@ $(document).ready(function () {
     navSpeed: 500,
     loop: false,
     center: false,
-    margin: 20,
+    margin: 10,
     responsiveClass: true,
     nav: true,
     navText: [prevBtn, nextBtn],
@@ -114,11 +114,16 @@ $(document).ready(function () {
     autoWidth: false,
     responsive: {
       0: {
+        items: 1,
+        nav: false,
+        margin: 0,
+      },
+      700: {
         items: 2,
         nav: false,
         margin: 0,
       },
-      950: {
+      960: {
         items: 3,
         nav: false,
       },
@@ -127,42 +132,6 @@ $(document).ready(function () {
       },
       1490: {
         items: 5,
-      },
-      1500: {
-        items: 5,
-      },
-    },
-  });
-
-  $(".carouselHighlightLaunch").owlCarousel({
-    navSpeed: 500,
-    loop: false,
-    center: false,
-    margin: 20,
-    responsiveClass: true,
-    nav: true,
-    navText: [prevBtn, nextBtn],
-    dots: false,
-    autoWidth: false,
-    responsive: {
-      0: {
-        items: 1,
-        nav: false,
-        margin: 0,
-      },
-      600: {
-        items: 1,
-        margin: 0,
-        nav: false,
-      },
-      1024: {
-        items: 3,
-      },
-      1350: {
-        items: 4,
-      },
-      1600: {
-        items: 4,
       },
     },
   });

@@ -1,0 +1,29 @@
+.artist .advertisement {
+    width: 100%;
+    height: 400px;
+    background-color: var(--neutral5);
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+}
+
+.artist .advertisement.disabled {
+    display: none;
+}
+
+.artist .advertisement a {
+    height: 90%;
+    margin: auto 0;
+}
+
+@media(min-width: 1025px) {
+
+    .artist .advertisement {
+        height: 130px;
+        position: relative;
+    }
+
+    .artist .advertisement a {
+        height: min-content;
+    }
+}

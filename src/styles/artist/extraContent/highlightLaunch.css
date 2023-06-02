@@ -1,4 +1,4 @@
-.artists .highlightLaunch {
+.artist .highlightLaunch {
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -6,29 +6,29 @@
     margin: 80px 0px;
 }
 
-.filterSearchMode .artists .highlightLaunch {
+.filterSearchMode .artist .highlightLaunch {
     display: none;
 }
 
-.artists .highlightLaunch .title {
+.artist .highlightLaunch .title {
     display: flex;
     justify-content: space-between;
     position: relative;
     margin-bottom: 20px;
 }
 
-.artists .highlightLaunch .content {
+.artist .highlightLaunch .content {
     display: flex;
     gap: 20px;
 }
 
-.artists .highlightLaunch .text {
+.artist .highlightLaunch .text {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.artists .highlightLaunch .content .icon:before {
+.artist .highlightLaunch .content .icon:before {
     content: "";
     display: block;
     width: 15px;
@@ -40,11 +40,11 @@
     background-image: url("../../../assets/icone-musica.svg");
 }
 
-.artists .highlightLaunch .carouselHighlightLaunch {
+.artist .highlightLaunch .carouselHighlightLaunch {
     width: 100%
 }
 
-.artists .highlightLaunch .carouselHighlightLaunch .item {
+.artist .highlightLaunch .carouselHighlightLaunch .item {
     width: 290px;
     border-radius: 10px;
     height: min-content;
@@ -53,76 +53,77 @@
     flex-direction: column;
 }
 
-.artists .highlightLaunch .carouselHighlightLaunch .item h3 {
+.artist .highlightLaunch .carouselHighlightLaunch .item h3 {
     margin-top: 15px;
     margin-bottom: 5px;
 }
 
-.artists .highlightLaunch .carouselHighlightLaunch .item a {
+.artist .highlightLaunch .carouselHighlightLaunch .item a {
     width: 290px;
     height: 290px;
     border-radius: 10px;
     margin-bottom: 5px;
+    display: block;
 }
 
-.artists .highlightLaunch .carouselHighlightLaunch .item a img {
+.artist .highlightLaunch .carouselHighlightLaunch .item a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.artists .highlightLaunch .owl-carousel .owl-nav {
+.artist .highlightLaunch .owl-carousel .owl-nav {
     position: absolute;
     top: -63px;
     right: 0px;
     margin-top: 0px;
 }
 
-.artists .highlightLaunch .owl-nav img {
+.artist .highlightLaunch .owl-nav img {
     width: 15px;
     height: 16px;
 }
 
-.artists .highlightLaunch .owl-carousel.owl-drag .owl-item {
+.artist .highlightLaunch .owl-carousel.owl-drag .owl-item {
     opacity: 0.3;
     transition: all 0.3s;
 }
 
-.artists .highlightLaunch .owl-carousel.owl-drag .owl-item.active {
+.artist .highlightLaunch .owl-carousel.owl-drag .owl-item.active {
     opacity: 1;
 }
 
-.artists .highlightLaunch .owl-carousel .owl-stage-outer {
+.artist .highlightLaunch .owl-carousel .owl-stage-outer {
     overflow: hidden;
 }
 
 @media(max-width: 1024px) {
 
-    .artists .highlightLaunch {
+    .artist .highlightLaunch {
         margin-top: 100px;
     }
 
-    .artists .highlightLaunch .content {
+    .artist .highlightLaunch .content {
         flex-direction: column;
         gap: 30px;
     }
 
-    .artists .highlightLaunch .carouselHighlightLaunch {
+    .artist .highlightLaunch .carouselHighlightLaunch {
         width: 310px;
     }
 
-    .artists .highlightLaunch .owl-carousel .owl-stage-outer {
+    .artist .highlightLaunch .owl-carousel .owl-stage-outer {
         overflow: visible;
     }
 }
 
 @media(max-width: 460px) {
-    .artists .highlightLaunch .content iframe {
+    .artist .highlightLaunch .content iframe {
         width: 100%;
     }
 
-    .artists .highlightLaunch .carouselHighlightLaunch .item {
+    .artist .highlightLaunch .carouselHighlightLaunch .item {
         width: 100%;
     }
 

@@ -29,6 +29,10 @@
     bottom: -35px;
 }
 
+.search .owl-carousel .owl-stage {
+    padding: 20px 0px;
+}
+
 @media(max-width: 1024px) {
     .filterSearchMode .search .containerExtra {
         width: calc(100% - 40px);

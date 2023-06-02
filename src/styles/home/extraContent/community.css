@@ -51,6 +51,7 @@
     flex-direction: column;
     gap: 10px;
     text-decoration: none;
+    display: block;
 }
 
 .home .community .carouselCommunity .item a p {

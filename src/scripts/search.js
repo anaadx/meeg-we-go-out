@@ -215,12 +215,10 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 2,
-        nav: false,
         margin: 0,
       },
-      450: {
+      350: {
         items: 3,
-        nav: false,
       },
       940: {
         items: 5,
@@ -246,12 +244,10 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 2,
-        nav: false,
         margin: 0,
       },
-      450: {
+      350: {
         items: 3,
-        nav: false,
       },
       940: {
         items: 3,

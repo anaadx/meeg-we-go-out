@@ -1,0 +1,104 @@
+.artist .artitstMain {
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.artist .artitstMain .photo {
+    padding: 0px 20px;
+    width: calc(50% - 40px);
+}
+
+.artist .artitstMain .photo a {
+    display: block;
+    width: 100%;
+    background-image: url(../../../assets/foto-artista.svg);
+    background-size: 100%;
+    height: 720px;
+    background-repeat: no-repeat;
+}
+
+.artist .artitstMain .photo .icons {
+    display: none;
+}
+
+.artist .artitstMain .content {
+    width: calc(50% - 40px);
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.artist .artitstMain .content .icons {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.artist .artitstMain .content .icons a {
+    padding: 10px;
+    display: block;
+    display: flex;
+    background-color: var(--neutral1);
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+}
+
+.artist .artitstMain .content h1 {
+    font-size: 56px;
+}
+
+.artist .artitstMain .content p {
+    font-size: 14px;
+}
+
+.artist .artitstMain .content .country {
+    border-bottom: 1px solid var(--greyHover);
+    padding: 10px 0px;
+}
+
+.artist .artitstMain .content .iconWrapper {
+    display: flex;
+    border-bottom: 1px solid var(--greyHover);
+    padding: 10px 0px;
+    margin-bottom: 40px;
+}
+
+.artist .artitstMain .content .music:before {
+    background-image: url(../../../assets/icone-musica.svg);
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.artist .artitstMain .content .record:before {
+    background-image: url(../../../assets/icone-gravadora.svg);
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.artist .artitstMain .content .country:before {
+    background-image: url(../../../assets/icone-localizacao.svg);
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,29 @@
+.artist {
+    background-color: var(--neutral2);
+}
+
+.artist .events {
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 20px 20px;
+    position: relative;
+}
+
+.artist .container {
+    width: calc(100% - 120px);
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.artist .darkWave {
+    position: absolute;
+    top: 87px;
+    right: -194px;
+}
+
+@media(max-width: 1024px) {
+    .artist .container {
+        width: calc(100% - 40px);
+        gap: 50px;
+    }
+}
