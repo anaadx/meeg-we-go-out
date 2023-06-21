@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11.275" height="10.972" viewBox="0 0 11.275 10.972">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="11.275" height="10.972" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect width="3.423" height="10.865" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repetição_de_grade_2" data-name="Repetição de grade 2" clip-path="url(#clip-path)">
+    <g transform="translate(-32 -38.017)">
+      <path id="Caminho_3985" data-name="Caminho 3985" d="M32.407,40.313a.805.805,0,0,0-.407.7v7.469a.805.805,0,0,0,1.183.714l.032-.019,2.118-1.385a.2.2,0,0,0,.091-.169v-9a.2.2,0,0,0-.315-.167Z" transform="translate(0 -0.4)" fill="#fff"/>
+      <path id="Caminho_3986" data-name="Caminho 3986" d="M200.311,38.05a.2.2,0,0,0-.311.168v9a.2.2,0,0,0,.091.169l2.416,1.571a.2.2,0,0,0,.311-.169V39.8a.2.2,0,0,0-.092-.169Z" transform="translate(-163.772)" fill="#fff"/>
+      <g id="Repetição_de_grade_1" data-name="Repetição de grade 1" transform="translate(39.852 38.113)" clip-path="url(#clip-path-2)">
+        <g transform="translate(-39.852 -38.113)">
+          <path id="Caminho_3987" data-name="Caminho 3987" d="M347.033,41.934a.8.8,0,0,0-.793-.022l-.031.019-2.118,1.384a.2.2,0,0,0-.091.169v9a.2.2,0,0,0,.315.167L347.01,50.8a.805.805,0,0,0,.413-.7v-7.45A.824.824,0,0,0,347.033,41.934Z" transform="translate(-304.148 -3.704)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

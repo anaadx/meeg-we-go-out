@@ -1,0 +1,81 @@
+.terms .info .share {
+    width: calc(100% - 80px);
+    background-color: var(--neutral7);
+    overflow: hidden;
+    padding: 0px 40px;
+    padding-bottom: 60px;
+}
+
+.terms .info .share h3 {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 16px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.terms .info .share nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 174px;
+    float: left;
+}
+
+.terms .info .share nav a {
+    padding: 8px;
+    display: block;
+    background-color: var(--main1);
+    border-radius: 5px;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.terms .info .share nav .link {
+    background-image: url(../../../../../assets/icone-link.svg);
+}
+
+.terms .info .share nav .facebook {
+    background-image: url(../../../../../assets/icone-facebook.svg);
+}
+
+.terms .info .share nav .whatsapp {
+    background-image: url(../../../../../assets/icone-whatsapp-pink.svg);
+}
+
+.terms .info .share nav .message {
+    background-image: url(../../../../../assets/icone-mensagem-pink.svg);
+}
+
+.terms .info .share .border {
+    width: 100%;
+    border-top: 3px solid var(--neutral5);
+    padding-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .terms .info .share {
+        width: calc(100% - 40px);
+        padding: 0px 20px;
+        padding-bottom: 10px;
+    }
+
+    .terms .info .share h3 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .terms .info .share nav {
+        width: 150px;
+    }
+
+    .terms .info .share nav a {
+        padding: 8px;
+        background-size: 15px;
+        width: 15px;
+        height: 15px;
+    }
+}

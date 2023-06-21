@@ -1,0 +1,17 @@
+<svg id="Componente_9_1" data-name="Componente 9 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10.97" height="10.97" viewBox="0 0 10.97 10.97">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="10.97" height="10.97" fill="none"/>
+    </clipPath>
+  </defs>
+  <path id="Caminho_3988" data-name="Caminho 3988" d="M16.039,8.954H13.915A1.415,1.415,0,0,1,12.5,7.539V5.415A1.415,1.415,0,0,1,13.915,4h2.123a1.415,1.415,0,0,1,1.415,1.415V7.539A1.415,1.415,0,0,1,16.039,8.954Z" transform="translate(-6.484 -4)" fill="#fff"/>
+  <g id="Componente_8_1" data-name="Componente 8 – 1">
+    <g id="Repetição_de_grade_3" data-name="Repetição de grade 3" clip-path="url(#clip-path)">
+      <g transform="translate(-291 2323)">
+        <path id="Caminho_3989" data-name="Caminho 3989" d="M7.539,8.954H5.415A1.415,1.415,0,0,1,4,7.539V5.415A1.415,1.415,0,0,1,5.415,4H7.539A1.415,1.415,0,0,1,8.954,5.415V7.539A1.415,1.415,0,0,1,7.539,8.954Z" transform="translate(287 -2327)" fill="#fff"/>
+        <path id="Caminho_3994" data-name="Caminho 3994" d="M16.039,17.454H13.915A1.415,1.415,0,0,1,12.5,16.039V13.915A1.415,1.415,0,0,1,13.915,12.5h2.123a1.415,1.415,0,0,1,1.415,1.415v2.123A1.415,1.415,0,0,1,16.039,17.454Z" transform="translate(284.516 -2329.484)" fill="#fff"/>
+        <path id="Caminho_3995" data-name="Caminho 3995" d="M7.539,17.454H5.415A1.415,1.415,0,0,1,4,16.039V13.915A1.415,1.415,0,0,1,5.415,12.5H7.539a1.415,1.415,0,0,1,1.415,1.415v2.123A1.415,1.415,0,0,1,7.539,17.454Z" transform="translate(287 -2329.484)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

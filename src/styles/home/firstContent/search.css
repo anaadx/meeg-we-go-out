@@ -1,0 +1,42 @@
+.home .searchEvents {
+    margin-top: 40px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+}
+
+.home .searchEvents .title {
+    margin-bottom: 30px;
+}
+
+.placeTipActive .searchTool form .placeTip .placeTipOpen {
+    padding-bottom: 20px;
+}
+
+@media(max-width: 1024px) {
+    .home .searchEvents {
+        border-radius: 5px;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: -10000px;
+        background-color: var(--neutral1);
+        z-index: 10;
+        box-shadow: 2px -70px 5px 0px var(--greyOpacity);
+        border-radius: 10px;
+        height: calc(100vh - 65px);
+        overflow-y: scroll;
+    }
+
+    .searchEventsModalActive .searchEvents {
+        top: 25px;
+        transition: all 1s;
+    }
+
+    .home .searchModalButton {
+        margin-bottom: 35px;
+        position: relative;
+    }
+
+}

@@ -20,7 +20,8 @@
 }
 
 .news .searchEvents form {
-    display: flex;
+    display: grid;
+    grid-template-columns: 3fr 1fr 140px;
     gap: 10px;
     width: 100%;
     z-index: 4;
@@ -31,7 +32,7 @@
 }
 
 .news .searchEvents form button {
-    width: 95px;
+    width: 140px;
     padding: 18px 20px;
     align-self: flex-end;
     color: var(--neutral5);
@@ -67,79 +68,6 @@
 
 .searchEvents form .name {
     width: 20%;
-}
-
-.searchEvents form .placeTip {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    position: relative;
-}
-
-.searchEvents form .placeTip img {
-    width: 15px;
-}
-
-.searchEvents form .placeTip .placeTipOpen {
-    width: 290px;
-    height: 225px;
-    padding: 10px 20px;
-    background-color: var(--neutral3);
-    position: absolute;
-    top: -20000px;
-    z-index: 3;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.placeTipActive .searchEvents form .placeTip .placeTipOpen {
-    top: -263px;
-    left: -111px;
-    transition: all 1s;
-}
-
-.searchEvents form .placeTip .placeTipOpen .description {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    width: 100%;
-}
-
-.searchEvents form .placeTip .placeTipOpen p,
-.searchEvents form .placeTip .placeTipOpen h4 {
-    font-weight: bold;
-    line-height: 20px;
-}
-
-.searchEvents form .placeTip .placeTipOpen h4 {
-    margin-top: 30px;
-}
-
-
-.searchEvents form .placeTip .placeTipOpen .buttonXClose {
-    background-color: var(--neutral3);
-    position: absolute;
-    right: 20px;
-    top: 18px;
-    width: 20px;
-    max-height: min-content;
-}
-
-.searchEvents form .placeTip .placeTipOpen .buttonXClose span {
-    background-color: var(--greyOpacity);
-    max-height: min-content;
-}
-
-.searchEvents form .borderTip {
-    display: block;
-    background-color: var(--neutral3);
-    transform: rotate(-45deg);
-    padding: 10px 10px;
-    position: absolute;
-    bottom: -10px;
-    right: 160px;
 }
 
 .searchEvents form .arrowOff label {
@@ -178,19 +106,6 @@
 
 .searchEvents form .field {
     width: 100%;
-}
-
-.searchEvents::-webkit-scrollbar {
-    width: 8px;
-}
-
-.searchEvents::-webkit-scrollbar-track {
-    background: var(--neutral1);
-}
-
-.searchEvents::-webkit-scrollbar-thumb {
-    background-color: var(--main1);
-    border-radius: 20px;
 }
 
 .sumo_place>.optWrapper>.options li.opt label {
@@ -266,9 +181,12 @@
 
     .news .searchEvents form {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
         gap: 10px;
+        width: 100%;
+        z-index: 4;
         margin-bottom: 50px;
     }
 

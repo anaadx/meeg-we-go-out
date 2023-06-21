@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/components/header/index.css"> 
+    <link rel="stylesheet" href="../styles/components/header/menuButton.css">
+    <link rel="stylesheet" href="../styles/events/firstContent/index.css"> 
+    <link rel="stylesheet" href="../styles/events/firstContent/featured.css">
+    <link rel="stylesheet" href="../styles/events/firstContent/search.css"> 
+    <link rel="stylesheet" href="../styles/components/search.css">
+    <link rel="stylesheet" href="../styles/events/firstContent/bestEvents.css"> 
+    <link rel="stylesheet" href="../styles/events/extraContent/index.css"> 
+    <link rel="stylesheet" href="../styles/events/extraContent/advertisement.css"> 
+    <link rel="stylesheet" href="../styles/components/advertisement.css"> 
+    <link rel="stylesheet" href="../styles/events/extraContent/nextEvents.css"> 
+    <link rel="stylesheet" href="../styles/events/extraContent/launchOnTheSite.css"> 
+    <link rel="stylesheet" href="../styles/components/footer2/index.css">
+    <link rel="stylesheet" href="../styles/components/footer2/utils.css">
+    <link rel="stylesheet" href="../styles/components/footer2/rights.css">
+    <link rel="stylesheet" href="../styles/components/guide.css"> 
+    <link rel="stylesheet" href="../styles/libs/sumoselect.min.css"> 
+    <link rel="stylesheet" href="../styles/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="../styles/libs/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../styles/libs/daterangepicker.css">
+    <link rel="icon" href="../assets/icon-logo.png" type="image/x-icon">
+    <title>Eventos</title>
+    <script src="../scripts/jquery-3.7.0.min.js"></script>
+    <script src="../scripts/events.js"></script>
+    <script src="../scripts/header.js"></script>
+</head> 
+<body>
+    <div class="backgroundModal"></div>
+    <header class="menu bigLogo static">
+        <nav>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <div class="links activeHighlight">
+                <a href="events.html" class="font1 fontColor3 fontSize4 highlightLink">EVENTOS</a>
+                <a href="../pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
+                <a href="../pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
+                <a href="../pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
+                <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
+                <a href="../pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
+            </div>
+            <button class="lupa lupaStatic"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaStatic disabled">
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaStatic"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav> 
+    </header>   
+    <header class="menu bigLogo floated">
+        <nav class="navStatic">
+            <div class="modal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <button class="lupa lupaFloated"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaFloated disabled">
+                <button class="closeButtonModal"></button>
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaFloated"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav>
+        <div class="modalMenu activeHighlight">
+            <ul>
+                <li><a href="../../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
+                <li><a href="events.html" class="font1 fontSize4 fontColor3 highlightLink">EVENTOS</a></li>
+                <li><a href="../pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
+                <li><a href="../pages/communities.html" class="font1 fontSize4 fontColor3">COMUNIDADES</a></li>
+                <li><a href="../pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
+                <li><a href="../pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
+                <li><a href="../pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
+            </ul> 
+            <div class="buttons">
+                <button class="font1 fontSize3 fontColor3 buttonBlackLarge">ENVIE UM LANÇAMENTO</button>
+                <button class="font1 fontSize3 buttonPinkLarge">ENVIE UM EVENTO</button>
+            </div> 
+                <h2 class="font1 fontSize4 fontColor3">SIGA O WE GO OUT</h2>
+                <div class="icons">
+                <a class="littleIcon" href="https://www.instagram.com/wegoout/">
+                    <img class="littleIcon"  src="../assets/icone-instagram.svg">
+                </a>
+                <a class="littleIcon" href="https://www.facebook.com/wegoout.br/?locale=pt_BR" >
+                    <img class="littleIcon" src="../assets/icone-facebook.svg">
+                </a>
+                <a class="littleIcon" href="https://www.youtube.com/@WeGoOut">
+                    <img class="littleIcon" src="../assets/icone-youtube.svg">
+                </a>
+                <a class="littleIcon" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                    <img class="littleIcon" src="../assets/icone-spotify.svg">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="events">
+        <section class="firstContent">
+            <div class="wave1"></div>
+            <div class="container">
+                <div class="featured">
+                    <div class="emphasis">
+                        <div class="title ">
+                            <h1 class="font1 fontColor3 fontSize6">EVENTOS EM DESTAQUE</h1>
+                        </div>
+                        <div class="carouselEvents owl-carousel owl-theme">
+                            <div class="item">  
+                                <a href="../pages/event.html">
+                                    <figure>
+                                        <img src="../assets/destaque.svg" alt="Mita Festival">
+                                        <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                    </figure>
+                                    <div class="text">
+                                        <h2 class="font1 fontColor3 fontSize7">MITA FESTIVAL RIO DE JANEIRO</h2>
+                                        <p class="music icon">Indie rock, Pop, Dance, Instrumental… +5</p>
+                                        <p class="icon star">Lana Del Rey, Florence + The Machine, Haim, Badba… + 11</p>
+                                        <div class="iconWrapper">
+                                            <p class="icon house">Jockey Club</p>
+                                            <p class="icon location">Rio de Janeiro - RJ</p>
+                                        </div>
+                                        <div class="calendar">
+                                            <p class="icon calendar">03 e 04 de junho</p>
+                                        </div>
+                                    </div>
+                                    <div class="tagPromoDiv">
+                                        <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                        <span class="fontColor3 tagPromoTip"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">  
+                                <a href="../pages/event.html">
+                                    <figure>
+                                        <img src="../assets/destaque-eventos2.svg" alt="Mita Festival">
+                                        <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                    </figure>
+                                    <div class="text">
+                                        <h2 class="font1 fontColor3 fontSize7">ULTRA BRASIL 2023</h2>
+                                        <p class="music icon">Dance, House, Eletro, Pop... +5</p>
+                                        <p class="icon star">Above & Beyond, Axwell, DJ Snake, Marsh... +10</p>
+                                        <div class="iconWrapper">
+                                            <p class="icon house">Vale do Anhangabaú</p>
+                                            <p class="icon location">São Paulo - SP</p>
+                                        </div>
+                                        <div class="calendar">
+                                            <p class="icon calendar">21 e 22 de abril</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">  
+                                <a href="../pages/event.html">
+                                    <figure>
+                                        <img src="../assets/destaque.svg" alt="Mita Festival">
+                                        <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                    </figure>
+                                    <div class="text">
+                                        <h2 class="font1 fontColor3 fontSize7">MITA FESTIVAL RIO DE JANEIRO</h2>
+                                        <p class="music icon">Indie rock, Pop, Dance, Instrumental… +5</p>
+                                        <p class="icon star">Lana Del Rey, Florence + The Machine, Haim, Badba… + 11</p>
+                                        <div class="iconWrapper">
+                                            <p class="icon house">Jockey Club</p>
+                                            <p class="icon location">Rio de Janeiro - RJ</p>
+                                        </div>
+                                        <div class="calendar">
+                                            <p class="icon calendar">03 e 04 de junho</p>
+                                        </div>
+                                    </div>
+                                    <div class="tagPromoDiv">
+                                        <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                        <span class="fontColor3 tagPromoTip"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="font1 fontSize3 fontColor4 seeAll" href="../pages/events.html">VER TUDO</a>
+                    </div>
+                </div>
+                <div class="bestEvents">
+                    <div class="title">
+                        <h2 class="font1 fontColor3 fontSize6">ENCONTRE OS MELHORES EVENTOS</h2>
+                    </div>
+                    <div class="carouselBestEvents owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="../pages/search.html">
+                                <p class="font1 fontSize4 fontColor3 placeIcon">FESTAS EM SÃO PAULO</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/search.html">
+                                <p class="font1 fontSize4 fontColor3 placeIcon">CARNAVAL DO NORDESTE</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/search.html">     
+                                <p class="font1 fontSize4 fontColor3 fireIcon">REVEILLON NA PRAIA</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/search.html">
+                                <p class="font1 fontSize4 fontColor3 placeIcon">REVEILLON NO NORDESTE</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/search.html">
+                                <p class="font1 fontSize4 fontColor3 placeIcon">REVEILLON NO NORDESTE</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/search.html">
+                                <p class="font1 fontSize4 fontColor3 placeIcon">REVEILLON NO NORDESTE</p>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/search.html">
+                                <p class="font1 fontSize4 fontColor3 placeIcon">REVEILLON NO NORDESTE</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="searchEvents searchTool">
+                    <div class="searchModalClose buttonXClose">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <h2 class="font1 title fontColor3 fontSize6">PESQUISE EVENTOS</h2>
+                    <form>
+                        <div class="name field">
+                            <label class="font2 fontSize4 fontColor3" for="name">Nome</label>
+                            <select id="name" name="name" class="selectName fontColor2 arrowOff">
+                                <option value="Lollapalooza">
+                                    Lollapalooza
+                                </option>
+                                <option value="Tomorrowland">Tomorrowland</option>
+                                <option value="XXXPerience">XXXPerience</option>
+                                <option value="festa Mol">festa Mol</option>
+                                <option value="Coachella">Coachella</option>
+                                <option value="Mita Festival">Mita Festival</option>
+                                <option value="Goptun">Goptun</option>
+                            </select>
+                        </div>
+                        <div class="field">    
+                            <label class="font2 fontSize4 fontColor3" for="date">Data</label>
+                            <input type="text" name="daterange" class="font2 fontSize2 fontColor2">
+                        </div>
+                        <div class="field">
+                            <div class="placeTip">
+                                <label class="font2 fontSize4 fontColor3" for="place">Local</label>
+                                <img class="placeTipImg" src="../assets/info.svg">
+                                <div class="placeTipOpen">
+                                    <div class="buttonXClose placeTipX">
+                                    </div>
+                                    <h4 class="font2 fontSize2 fontColor3">
+                                        No campo de "Local" você encontrará resultados de espaços físicos, países, estados e cidades. Cada resultado é mostrado com os seguintes ícones:
+                                    </h4>
+                                    <p class="font2 fontSize2 fontColor3 description place">Local, por exemplo: Arena de São Paulo</p>
+                                    <p class="font2 fontSize2 fontColor3 description city">Cidade, por exemplo São Paulo/SP</p>
+                                    <p class="font2 fontSize2 fontColor3 description state">Estado, por exemplo São Paulo</p>
+                                    <p class="font2 fontSize2 fontColor3 description country">País, por exemplo Brasil</p>
+                                    <span class="borderTip"></span>
+                                </div>
+                            </div>
+                            <select id="place" name="place" class="selectPlace arrowOff fontColor2" multiple="multiple">
+                                <option class="estado" value="São Paulo">São Paulo</option>
+                                <option class="estado" value="Paraná">Paraná</option>
+                                <option class="estado" value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                <option class="cidade" value="São Paulo">São Paulo</option>
+                                <option class="cidade" value="Curitiba">Curitiba</option>
+                                <option class="cidade" value="Porto Alegre">Porto Alegre</option>
+                                <option class="pais" value="Brasil">Brasil</option>
+                                <option class="pais" value="Argentina">Argentina</option>
+                                <option class="lugar" value="Pepsi On Stage">Pepsi On Stage</option>
+                                <option class="lugar" value="Beira Rio">Beira Rio</option>
+                            </select>
+                        </div> 
+                        <div class="field">
+                            <label class="font2 fontSize4 fontColor3" for="eventType">Tipo de Evento</label>
+                            <select id="eventType" name="eventType" class="selectType fontColor2" multiple="multiple">
+                                <option value="Festival">Festival</option>
+                                <option value="Festa">Festa</option>
+                                <option value="Show">Show</option>
+                                <option value="Música">Música</option>      
+                                <option value="Evento">Evento</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label class="font2 fontSize4 fontColor3" for="gender">Genero</label>
+                            <select id="gender" name="gender" class="selectGender arrowOff fontColor2" multiple="multiple">
+                                <option value="Funk">Funk</option>
+                                <option value="Eletrônica">Eletrônica</option>
+                                <option value="MPB">MPB</option>
+                                <option value="Rap">Rap</option>
+                                <option value="Rock">Rock</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label class="font2 fontSize4 fontColor3" for="show">Atração</label>
+                            <select id="show" name="show" class="selectShow arrowOff fontColor2" multiple="multiple">
+                                <option value="Beatles">Beatles</option>
+                                <option value="Ed Sheeran">Ed Sheeran</option>
+                                <option value="Mc Tha">Mc Tha</option>
+                                <option value="Rihanna">Rihanna</option>
+                                <option value="Beyonce">Beyonce</option>
+                            </select>
+                        </div>
+                        <button>Go</button>
+                    </form>
+                    <div class="filter">
+                        <h4>Nenhum filtro aplicado</h4>
+                        <div class="viewMode">
+                            <h3>Modo de visualização</h3>
+                            <div>
+                                <button><p class="list">Lista</p></button>
+                                <button><p class="map">Mapa</p></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="buttonPinkLarge searchModalButton font1 fontSize2">PESQUISAR EVENTOS
+                    <img src="../assets/seta-vertical-cima.svg">
+                </button>
+                <div class="darkWave" alt="icone de fundo"></div>
+            </div>
+        </section>
+        <section class="extraContent">
+            <div class="containerExtra">
+                <div class="nextEvents">
+                    <div class="title">
+                        <h2 class="font1 fontColor1">PRÓXIMOS EVENTOS</h2>
+                    </div>
+                    <div class="listItems">
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                                <figure>
+                                    <img src="../assets/emphasis1.svg" alt="DON L & BANDA">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundYellow">SHOWS</span>
+                                </figure>
+                                <div class="text">
+                                    <h2 class="font1 fontColor3 fontSize7">DON L & BANDA</h2>
+                                    <p class="music icon">Rap</p>
+                                    <p class="icon star">Don L</p>
+                                    <div class="iconWrapper">
+                                        <p class="icon house">Casa Natura Musical</p>
+                                        <p class="icon location">São Paulo - SP</p>
+                                    </div>
+                                    <div class="calendar">
+                                        <p class="icon calendar">06 e 07 de abril</p>
+                                    </div>
+                                </div>
+                                <div class="tagPromoDiv">
+                                    <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                    <span class="fontColor3 tagPromoTip"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                                <figure>
+                                    <img src="../assets/emphasis2.svg" alt="FESTA PLUMA">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                </figure>
+                                <div class="text">
+                                    <h2 class="font1 fontColor3 fontSize7">FESTA PLUMA</h2>
+                                    <p class="music icon">Música brasileira, Eletrônica</p>
+                                    <p class="icon star">Mônica Silva, Fábio Prado</p>
+                                    <div class="iconWrapper">
+                                        <p class="icon house">Baralto</p>
+                                        <p class="icon location">São Paulo - SP</p>
+                                    </div>
+                                    <div class="calendar">
+                                        <p class="icon calendar">07 de abril</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                                <figure>
+                                    <img src="../assets/emphasis3.svg" alt="CLUBE DOS 30">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundGreen">FESTAS</span>
+                                </figure>
+                                <div class="text">
+                                    <h2 class="font1 fontColor3 fontSize7">CLUBE DOS 30</h2>
+                                    <p class="music icon">Música brasileira, Eletrônica</p>
+                                    <p class="icon star">Dj residentes</p>
+                                    <div class="iconWrapper">
+                                        <p class="icon house">Baralto</p>
+                                        <p class="icon location">São Paulo - SP</p>
+                                    </div>
+                                    <div class="calendar">
+                                        <p class="icon calendar">08 de abril</p>
+                                    </div>
+                                </div>
+                                <div class="tagPromoDiv">
+                                    <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                    <span class="fontColor3 tagPromoTip"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                                <figure>
+                                    <img src="../assets/emphasis4.svg"alt="NOISE JUMPERS NO MARAFAS
+                                    HOUSE">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundGreen">FESTAS</span>
+                                </figure>
+                                <div class="text">
+                                    <h2 class="font1 fontColor3 fontSize7">NOISE JUMPERS NO MARAFAS
+                                        HOUSE</h2>
+                                    <p class="music icon">Dance, Eletrônica, House</p>
+                                    <p class="icon star">Noise Jumpers</p>
+                                    <div class="iconWrapper">
+                                        <p class="icon house">Marafas House</p>
+                                        <p class="icon location">Indaiatuba - SP</p>
+                                    </div>
+                                    <div class="calendar">
+                                        <p class="icon calendar">08 de abril</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                                <figure>
+                                    <img src="../assets/destaque.svg" alt="CLUBE DOS 30">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundGreen">FESTAS</span>
+                                </figure>
+                                <div class="text">
+                                    <h2 class="font1 fontColor3 fontSize7">CLUBE DOS 30</h2>
+                                    <p class="music icon">Música brasileira, Eletrônica</p>
+                                    <p class="icon star">Dj residentes</p>
+                                    <div class="iconWrapper">
+                                        <p class="icon house">Baralto</p>
+                                        <p class="icon location">São Paulo - SP</p>
+                                    </div>
+                                    <div class="calendar">
+                                        <p class="icon calendar">08 de abril</p>
+                                    </div>
+                                </div>
+                                <div class="tagPromoDiv">
+                                    <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                    <span class="fontColor3 tagPromoTip"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                                <figure>
+                                    <img src="../assets/destaque.svg" alt="CLUBE DOS 30">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundGreen">FESTAS</span>
+                                </figure>
+                                <div class="text">
+                                    <h2 class="font1 fontColor3 fontSize7">CLUBE DOS 30</h2>
+                                    <p class="music icon">Música brasileira, Eletrônica</p>
+                                    <p class="icon star">Dj residentes</p>
+                                    <div class="iconWrapper">
+                                        <p class="icon house">Baralto</p>
+                                        <p class="icon location">São Paulo - SP</p>
+                                    </div>
+                                    <div class="calendar">
+                                        <p class="icon calendar">08 de abril</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                                <figure>
+                                    <img src="../assets/destaque.svg" alt="CLUBE DOS 30">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundGreen">FESTAS</span>
+                                </figure>
+                                <div class="text">
+                                    <h2 class="font1 fontColor3 fontSize7">CLUBE DOS 30</h2>
+                                    <p class="music icon">Música brasileira, Eletrônica</p>
+                                    <p class="icon star">Dj residentes</p>
+                                    <div class="iconWrapper">
+                                        <p class="icon house">Baralto</p>
+                                        <p class="icon location">São Paulo - SP</p>
+                                    </div>
+                                    <div class="calendar">
+                                        <p class="icon calendar">08 de abril</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ads">  
+                            <a href="../pages/event.html">
+                                <img src="../assets/anuncio-eventos.svg">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="font1 fontSize3 moreItems">CARREGAR MAIS</button>
+                </div>
+                <div class="launchOnTheSite">
+                    <div>
+                        <h2 class="font1 fontSize6 fontColor1">ENVIE SEU LANÇAMENTO PARA O WE GO OUT</h2>
+                        <p class="font2 fontColor2 fontSize5">Preencha o formulário do envio do lançamento e mostre a sua música para milhares de pessoas</p>
+                    </div>
+                    <a class="font1 fontSize3 fontColor3" href="../pages/releaseForm.html">
+                        ENVIE SEU LANÇAMENTO
+                    </a>
+                    <div class="launchWave"></div>
+                </div>
+            </div> 
+        </section>
+    </main> 
+    <footer>
+        <div class="container">
+            <section class="utils">
+                <nav class="navigation">
+                    <a class="font1 fontSize4 fontColor2" href="../../index.html">INICIO</a>
+                    <a class="font1 fontSize4 fontColor2 highlightLink" href="events.html">EVENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/eventForm.html">ENVIE UM EVENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/news.html">NOTICIAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/communities.html">COMUNIDADES</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/artists.html">ARTISTAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../releases.html">LANÇAMENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/releaseForm.html">ENVIE UM LANÇAMENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/about.html">SOBRE</a>
+                </nav>
+                <div class="highlightEvents">
+                    <h2 class="font1 fontSize5 fontColor3">EVENTOS EM DESTAQUE</h2>
+                    <ul>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Goptun com Jamie xx</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">NAFF SP | Fisher & Chris Lake</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival São Paulo</a>
+                        </li>
+                    </ul>
+                    <a class="font1 fontSize3 fontColor4 seeAll" href="../pages/events.html">VER TUDO</a>
+                </div>
+                <div class="follow">
+                    <h2 class="font1 fontSize5 fontColor3">SIGA O WE GO OUT</h2>
+                    <ul>
+                        <li>
+                            <a class="icone insta" href="//www.instagram.com/wegoout/">
+                                <p class="font2 fontSize4 fontColor3">@wegoout</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone facebook" href="https://www.facebook.com/wegoout.br/?locale=pt_BR">
+                                <p class="font2 fontSize4 fontColor3">/wegoout.br</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone youtube" href="https://www.youtube.com/@WeGoOut">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone spotify" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="newsletter">
+                    <h2 class="font1 fontSize5 fontColor3">NEWSLETTER</h2>
+                    <p class="font2 fontSize3 fontColor2">Quer receber descontos e mais informações sobre festas e festivais?</p>                  
+                    <input class="font2 fontSize3 fontColor2" type="text" name="name" placeholder="Nome e sobrenome"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="email" placeholder="Email"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="whatsapp" placeholder="Whatsapp"/>
+                    <button class="font1 fontSize3 fontColor3" type="submit">CADASTRAR</button>
+                </form>
+            </section>
+            <section class="rights">  
+                <div class="logo">
+                    <img src="../assets/logo-dark.svg">
+                    <div class="text">
+                        <p class="font2 fontSize2 fontColor2">Todos os direitos reservados a We Go Out 2023®
+                            CNPJ: 12.345.678/0001-10</p>
+                        <p class="font2 fontSize2 fontColor2">A We Go Out Ltda, inscrita sob o CNPJ: 12.345.678/0001-10 é uma instituição devidamente habilitada e autorizada. Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo impedir ou prejudicar o envio ou a recepção de informações atualizadas.</p>
+                        <a class="font2 fontSize2" href="mailto:contato@wegoout.com">contato@wegoout.com</a>
+                    </div>
+                </div>
+                <div class="politics">
+                    <a class="font1 fontSize2 fontColor2" href="../pages/politicsAndTerms.html">POLÍTICA DE PRIVACIDADE</a>
+                    <a class="font1 fontSize2 fontColor2" href="../pages/cookiesPolitics.html">POLÍTICA DE COOKIES</a>
+                </div>
+                <div class="footerWave2"></div>
+                <div class="footerWave3"></div>
+            </section>
+        </div>
+    </footer>  
+    <script src="../scripts/jquery.sumoselect.min.js"></script> 
+    <script src="../scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+         $(document).ready(function () {
+             $('.selectName').SumoSelect({search: true, searchText:"Pesquise o nome", placeholder:"Pesquise o nome", noMatch:"Não encontrado",  floatWidth: 0,});
+             $('.selectPlace').SumoSelect({search: true, searchText:"Espaço, estado, cidade...", placeholder:"Espaço, estado, cidade...", noMatch:"Não encontrado", floatWidth: 0,});
+             $('.selectType').SumoSelect({search: false, searchText:"Selecione o tipo", placeholder:"Selecione o tipo", floatWidth: 0,});
+             $('.selectGender').SumoSelect({search: true, searchText:"Selecione o gênero", placeholder:"Selecione o gênero", noMatch:"Não encontrado", floatWidth: 0,});
+             $('.selectShow').SumoSelect({search: true, searchText:"Nome da atração", placeholder:"Nome da atração", noMatch:"Não encontrado", floatWidth: 0,});
+        });
+    </script>
+</body>
+</html>

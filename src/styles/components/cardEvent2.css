@@ -1,0 +1,139 @@
+.cardEvent2 .icon {
+    font-family: var(--font2);
+    color: var(--neutral7);
+    font-size: 14px;
+}
+
+.cardEvent2 .icon:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.cardEvent2 .music:before {
+    background-image: url("../../assets/icone-musica.svg");
+}
+
+.cardEvent2 .star:before {
+    background-image: url("../../assets/icone-estrela.svg");
+}
+
+.cardEvent2 .house:before {
+    background-image: url("../../assets/icone-casa.svg");
+}
+
+.cardEvent2 .location:before {
+    background-image: url("../../assets/icone-localizacao.svg");
+    margin-top: -5px;
+}
+
+.cardEvent2 .calendar:before {
+    background-image: url("../../assets/icone-calendario.svg");
+}
+
+.cardEvent2 .calendar {
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+    background-color: var(--greyOpacity);
+    display: flex;
+    align-items: center;
+}
+
+.cardEvent2 .item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardEvent2 .item {
+    list-style-type: none;
+}
+
+.cardEvent2 .listItems {
+    width: 100%;
+}
+
+.cardEvent2 .card {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.cardEvent2 .card figure {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cardEvent2 .listItems .text h2 {
+    line-height: 1.28em;
+}
+
+.cardEvent2 .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cardEvent2 .date {
+    border-radius: 3px;
+    display: flex;
+    width: fit-content;
+    gap: 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+.cardEvent2 .iconWrapper {
+    display: flex;
+    gap: 10px;
+}
+
+@media(max-width: 1024px) {
+    .cardEvent2 .listItems .text h2 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .cardEvent2 .text {
+        gap: 10px;
+    }
+
+    .cardEvent2 .listItems .text p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .cardEvent2 .place {
+        flex-direction: column;
+    }
+
+    .cardEvent2 {
+        width: 100%;
+    }
+
+    .cardEvent2 .card figure {
+        width: 130px;
+        height: 130px;
+    }
+
+    .cardEvent2 .card img {
+        width: 130px;
+    }
+
+    .cardEvent2 .card {
+        gap: 15px;
+    }
+}

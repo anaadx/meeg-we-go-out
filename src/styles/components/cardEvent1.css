@@ -1,0 +1,170 @@
+.emphasis .owl-carousel .owl-stage {
+    padding: 20px 0px;
+}
+
+.emphasis .owl-carousel .owl-nav {
+    top: -40px;
+}
+
+.emphasis .carouselEvents {
+    width: calc(100% - 50px);
+}
+
+.emphasis .carouselEvents .item {
+    padding: 20px;
+    padding-bottom: 60px;
+    position: relative;
+    background-color: var(--neutral2);
+    border-radius: 10px;
+    min-height: 450px;
+    height: max-content;
+    width: 100%;
+    transition: var(--transitionFast);
+}
+
+.emphasis .carouselEvents .item:hover {
+    margin-top: -3px;
+}
+
+.emphasis .carouselEvents .item:hover figure img {
+    margin-top: -5px;
+    margin-left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 5px);
+}
+
+
+.emphasis .carouselEvents a {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 450px;
+    text-decoration: none;
+}
+
+.emphasis .icon {
+    font-family: var(--font2);
+    color: var(--neutral7);
+    font-size: 14px;
+}
+
+.emphasis .icon:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.emphasis .music:before {
+    background-image: url("../../assets/icone-musica.svg");
+}
+
+.emphasis .star:before {
+    background-image: url("../../assets/icone-estrela.svg");
+}
+
+.emphasis .house:before {
+    background-image: url("../../assets/icone-casa.svg");
+}
+
+.emphasis .location:before {
+    background-image: url("../../assets/icone-localizacao.svg");
+    margin-top: -5px;
+}
+
+.emphasis .calendar:before {
+    background-image: url("../../assets/icone-calendario.svg");
+}
+
+.emphasis .calendar {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--greyOpacity);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    width: max-content;
+}
+
+.emphasis .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+.emphasis .iconWrapper {
+    display: flex;
+    gap: 10px;
+    align-self: baseline;
+}
+
+.emphasis .iconWrapper .house {
+    align-self: baseline;
+}
+
+.emphasis .carouselEvents figure {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 260px;
+}
+
+.emphasis .carouselEvents figure img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.emphasis .carouselEvents .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: calc(100% - 10px);
+    line-height: 20px;
+}
+
+.emphasis .carouselEvents .text p {
+    font-size: 14px;
+    line-height: 1.5em;
+    font-family: var(--font2);
+    color: var(--neutral7);
+}
+
+.emphasis .carouselEvents .text h2 {
+    margin-bottom: 10px;
+    line-height: 1.27em;
+    font-family: var(--font1);
+    color: var(--neutral7);
+    font-size: 18px;
+}
+
+.emphasis .carouselEvents .text div {
+    display: flex;
+    gap: 10px;
+}
+
+
+@media(max-width: 1024px) {
+    .emphasis .carouselEvents .text h2 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .emphasis .carouselEvents .item a {
+        gap: 10px;
+    }
+
+    .emphasis .carouselEvents .item .star,
+    .emphasis .carouselEvents .item .music {
+        display: none;
+    }
+
+    .emphasis .carouselEvents .text p {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,37 @@
+.singleNews {
+    background-color: var(--neutral2);
+}
+
+.singleNews .firstContent {
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 20px 20px;
+    position: relative;
+}
+
+.singleNews .container {
+    width: 100%;
+    margin: 0px 40px;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.singleNews .darkWave {
+    position: absolute;
+    top: 87px;
+    right: -194px;
+}
+
+.tag2 {
+    position: absolute;
+    left: -10000px;
+}
+
+@media(max-width: 1024px) {
+    .singleNews .container {
+        width: 100%;
+        gap: 50px;
+        margin-bottom: 0px;
+        width: calc(100% - 40px);
+    }
+}

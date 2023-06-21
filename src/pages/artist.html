@@ -6,45 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/globalStyles.css">
-    <link rel="stylesheet" href="../styles/home/header/index.css"> 
-    <link rel="stylesheet" href="../styles/home/header/menuButton.css">
+    <link rel="stylesheet" href="../styles/components/header/index.css"> 
+    <link rel="stylesheet" href="../styles/components/header/menuButton.css">
     <link rel="stylesheet" href="../styles/artist/firstContent/index.css"> 
     <link rel="stylesheet" href="../styles/artist/firstContent/artist.css">  
     <link rel="stylesheet" href="../styles/artist/extraContent/highlightLaunch.css"> 
     <link rel="stylesheet" href="../styles/artist/extraContent/index.css"> 
+    <link rel="stylesheet" href="../styles/artist/extraContent/info/index.css"> 
     <link rel="stylesheet" href="../styles/artist/extraContent/info/about.css"> 
+    <link rel="stylesheet" href="../styles/artist/extraContent/info/artistNews.css"> 
+    <link rel="stylesheet" href="../styles/components/advertisement.css"> 
+    <link rel="stylesheet" href="../styles/artist/extraContent/info/nextEvents.css"> 
+    <link rel="stylesheet" href="../styles/components/cardEvent2.css"> 
+    <link rel="stylesheet" href="../styles/artist/extraContent/info/lastLaunch.css"> 
     <link rel="stylesheet" href="../styles/artist/extraContent/advertisement.css"> 
-    <link rel="stylesheet" href="../styles/artist/extraContent/artistsHighlights.css"> 
     <link rel="stylesheet" href="../styles/artist/extraContent/emphasis.css"> 
-    <link rel="stylesheet" href="../styles/artist/extraContent/guide.css"> 
-    <link rel="stylesheet" href="../styles/artist/footer/rights.css">
-    <link rel="stylesheet" href="../styles/artist/footer/utils.css">
-    <link rel="stylesheet" href="../styles/artist/footer/index.css">
+    <link rel="stylesheet" href="../styles/artist/extraContent/artistsHighlights.css">
+    <link rel="stylesheet" href="../styles/components/artistsHighlights.css">
+    <link rel="stylesheet" href="../styles/components/footer2/rights.css">
+    <link rel="stylesheet" href="../styles/components/footer2/utils.css">
+    <link rel="stylesheet" href="../styles/components/footer2/index.css">
     <link rel="stylesheet" href="../styles/libs/sumoselect.min.css"> 
     <link rel="stylesheet" href="../styles/libs/owl.carousel.min.css">
     <link rel="stylesheet" href="../styles/libs/owl.theme.default.min.css">
     <link rel="stylesheet" href="../styles/libs/animate.css"/>
     <link rel="stylesheet" href="../styles/libs/daterangepicker.css">
-    <title>We Go Out</title>
+    <link rel="icon" href="../assets/icon-logo.png" type="image/x-icon">
+    <title>Artista</title>
     <script src="../scripts/jquery-3.7.0.min.js"></script>
-    <script src="../scripts/releases.js"></script>
+    <!-- <script src="../scripts/artist.js"></script> -->
+    <script src="../scripts/header.js"></script>
 </head> 
 <body>
-    <header class="menu static">
+    <div class="backgroundModal"></div>
+    <header class="menu bigLogo static">
         <nav>
             <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
-            <div class="links">
-                <a href="src/pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
-                <a href="src/pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
-                <a href="src/pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
-                <a href="src/pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
-                <a href="src/pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
-                <a href="src/pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
+            <div class="links activeHighlight">
+                <a href="../pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
+                <a href="../pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
+                <a href="../pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
+                <a href="artists.html" class="font1 fontColor3 fontSize4 highlightLink">ARTISTAS</a>
+                <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
+                <a href="../pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
             </div>
-            <button class="lupa"><img src="../assets/lupa.svg" alt="lupa"></button>
-        </nav>
+            <button class="lupa lupaStatic"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaStatic disabled">
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaStatic"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav> 
     </header>   
-    <header class="menu floated">
+    <header class="menu bigLogo floated">
         <nav class="navStatic">
             <div class="modal">
                 <span></span>
@@ -52,15 +129,84 @@
                 <span></span>
             </div>
             <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
-            <button class="lupa"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <button class="lupa lupaFloated"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaFloated disabled">
+                <button class="closeButtonModal"></button>
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaFloated"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
         </nav>
-        <div class="modalMenu">
+        <div class="modalMenu activeHighlight">
             <ul>
-                <li><a href="../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
+                <li><a href="../../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
                 <li><a href="../pages/events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
                 <li><a href="../pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
                 <li><a href="../pages/communities.html" class="font1 fontSize4 fontColor3">COMUNIDADES</a></li>
-                <li><a href="../pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
+                <li><a href="artists.html" class="font1 fontSize4 fontColor3  highlightLink">ARTISTAS</a></li>
                 <li><a href="../pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
                 <li><a href="../pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
             </ul> 
@@ -86,39 +232,27 @@
         </div>
     </header> 
     <main class="artist">
-        <section class="events">
+        <section class="firstContent">
             <div class="container">
                 <div class="artitstMain">
                     <div class="photo">
-                        <a href="artist.html"></a>
-                        <div class="icons">
-                            <a href="">
-                                <img src="../assets/icone-spotify.svg">
-                            </a>
-                            <a href="" >
-                                <img  src="../assets/icone-instagram.svg">
-                            </a>
-                            <a href="">
-                                <img src="../assets/icone-tiktok.svg">
-                            </a>
-                            <a href="">
-                                <img src="../assets/icone-facebook.svg">
-                            </a>
+                        <div class="photoBackground">
+                        </div>
+                        <div class="photoArtist">
+                            <figure>
+                                <img src="../assets/foto-artista.svg" alt="foto do artista"/>
+                            </figure>
                         </div>
                     </div>
                     <div class="content">
                         <div class="icons">
-                            <a href="">
-                                <img src="../assets/icone-spotify.svg">
+                            <a class="spotify" href="">
                             </a>
-                            <a href="" >
-                                <img  src="../assets/icone-instagram.svg">
+                            <a class="insta" href="" >
                             </a>
-                            <a href="">
-                                <img src="../assets/icone-tiktok.svg">
+                            <a class="tiktok" href="">    
                             </a>
-                            <a href="">
-                                <img src="../assets/icone-facebook.svg">
+                            <a class="facebook" href="">
                             </a>
                         </div>
                         <h1 class="font1 fontColor3">PEGGY GOU</h1>
@@ -137,411 +271,295 @@
                 <div class="info">
                     <div class="about">
                         <h2 class="font1 fontColor1">SOBRE</h2>
-                        <p class="font2 fontColor1">Peggy Gou é uma DJ e produtora musical sul-coreana baseada na Alemanha. Ela lançou sete EPs em gravadoras, incluindo Ninja Tune e Phonica . Em 2019, ela lançou sua própria gravadora independente, Gudu Records, e lançou uma compilação DJ-Kicks , DJ-Kicks: Peggy Gou , pela !k7 Records.</p>
-                        <p class="font2 fontColor1">Gou nasceu Kim Min-ji, em Incheon , Coreia do Sul, em 3 de julho de 1991. Seu pai, Kim Chang-yong, é um ex-jornalista, professor de comunicação de massa na Universidade Inje e comissário permanente da Korea Communications Commission . Gou começou a ter aulas de piano clássico aos 8 anos. Aos 14 anos, seus pais a enviaram para Londres , Inglaterra, para estudar inglês. </p>
-                        <p class="font2 fontColor1">Ela voltou para a Coréia quando tinha 18 anos, mas seis meses depois ela voltou para Londres para estudar moda no London College of Fashion.. Depois de se formar, ela trabalhou como editora correspondente em Londres para a Harper’s Bazaar Korea e depois se mudou para Berlim, Alemanha.</p>
+                        <p>Peggy Gou é uma DJ e produtora musical sul-coreana baseada na Alemanha. Ela lançou sete EPs em gravadoras, incluindo Ninja Tune e Phonica . Em 2019, ela lançou sua própria gravadora independente, Gudu Records, e lançou uma compilação DJ-Kicks , DJ-Kicks: Peggy Gou , pela !k7 Records.</p>
+                        <p>Gou nasceu Kim Min-ji, em Incheon , Coreia do Sul, em 3 de julho de 1991. Seu pai, Kim Chang-yong, é um ex-jornalista, professor de comunicação de massa na Universidade Inje e comissário permanente da Korea Communications Commission . Gou começou a ter aulas de piano clássico aos 8 anos. Aos 14 anos, seus pais a enviaram para Londres , Inglaterra, para estudar inglês. </p>
+                        <p>Ela voltou para a Coréia quando tinha 18 anos, mas seis meses depois ela voltou para Londres para estudar moda no London College of Fashion.. Depois de se formar, ela trabalhou como editora correspondente em Londres para a Harper’s Bazaar Korea e depois se mudou para Berlim, Alemanha.</p>
+                        <button class="moreInfo font1 fontSize2">SABER MAIS</button>
                     </div>
-                    <!-- <div class="nextEvents">
+                    <div class="nextEvents cardEvent2">
                         <div class="title">
                             <h2 class="font1 fontColor1">PRÓXIMOS EVENTOS</h2>
-                            <a href="../pages/events.html">VER TUDO</a>
+                            <a class="font1 fontSize3 fontColor4 seeAll" href="../pages/events.html">VER TUDO</a>
                         </div>
-                        <ul class="listItems">
-                            <li class="item">  
-                                <a href="./events.html">
-                                    <img class="" src="../assets/emphasis1.svg" alt="DON L & BANDA">
-                                    <span class="font2 fontSize2 fontColor1 tag backgroundYellow">SHOWS</span>
+                        <div class="listItems">
+                            <li class="item">
+                                <a href="../pages/event.html" class="card">
+                                    <figure>
+                                        <img src="../assets/evento-artista1.svg" alt="Goptun com Jamie xx">
+                                        <span class="font2 fontSize2 fontColor3 tag backgroundGreen">FESTAS</span>
+                                    </figure>
+                                    <div class="text">
+                                        <h2 class="font1 fontColor3 fontSize5">RA.607 - PEGGY GOU</h2>
+                                        <p class="music icon">Eletrônica, house</p>
+                                        <div class="iconWrapper">
+                                            <p class="house icon">R.A</p>
+                                            <p class="location icon">Sao Paulo - SP</p>
+                                        </div>
+                                        <p class="calendar icon">24 de março</p> 
+                                    </div>
                                 </a>
-                                <div class="text">
-                                    <h2 class="font1 fontColor1 fontSize7">DON L & BANDA</h2>
-                                    <div class="music">
-                                        <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
-                                        <p class="font2 fontColor1 fontSize3">Rap</p>
-                                    </div>
-                                    <div class="star">
-                                        <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
-                                        <p class="font2 fontColor1 fontSize3">Don L</p>
-                                    </div>
-                                    <div class="iconWrapper">
-                                        <div class="house">
-                                            <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
-                                            <p class="font2 fontColor1 fontSize3">Casa Natura Musical</p>
-                                        </div>
-                                        <div class="location">
-                                            <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localização">
-                                            <p class="font2 fontColor1 fontSize3">São Paulo - SP</p>
-                                        </div>
-                                    </div>
-                                    <div class="calendar">
-                                        <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
-                                        <p class="font2 fontColor1 fontSize3">06 e 7 de abril</p>
-                                    </div>
-                                </div>
-                                <div class="tagPromoDiv">
-                                    <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
-                                    <span class="fontColor3 tagPromoTip"></span>
-                                </div>
                             </li>
-                            <li class="item">  
-                                <a href="./events.html">
-                                    <img class="" src="../assets/emphasis2.svg" alt="FESTA PLUMA">
-                                    <span class="font2 fontSize2 fontColor1 tag backgroundGreen">FESTAS</span>
+                            <li class="item">
+                                <a href="../pages/event.html" class="card">
+                                    <figure>
+                                        <img src="../assets/evento-artista2.svg" alt="">
+                                        <span class="font2 fontSize2 fontColor3 tag backgroundGreen">FESTAS</span>
+                                    </figure>
+                                    <div class="text">
+                                        <h2 class="font1 fontColor3 fontSize5">GOP TUN FESTIVAL</h2>
+                                        <p class="music icon">Eletrônica, House, Acid, Garage… +5</p>
+                                        <div class="iconWrapper">
+                                            <p class="house icon">Canindé</p>
+                                            <p class="location icon">São Paulo - SP</p>
+                                        </div>
+                                        <p class="calendar icon">22 de abril</p> 
+                                    </div>
+                                    <div class="tagPromoDiv">
+                                        <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                        <span class="fontColor3 tagPromoTip"></span>
+                                    </div>
                                 </a>
-                                <div class="text">
-                                    <h2 class="font1 fontColor1 fontSize7">FESTA PLUMA</h2>
-                                    <div class="music">
-                                        <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
-                                        <p class="font2 fontColor1 fontSize3">Música brasileira, Eletrônica</p>
-                                    </div>
-                                    <div class="star">
-                                        <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
-                                        <p class="font2 fontColor1 fontSize3">Mônica Silva, Fábio Prado</p>
-                                    </div>
-                                    <div class="iconWrapper">
-                                        <div class="house">
-                                            <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
-                                            <p class="font2 fontColor1 fontSize3">Baralto</p>
-                                        </div>
-                                        <div class="location">
-                                            <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localizacao">
-                                            <p class="font2 fontColor1 fontSize3">São Paulo - SP</p>
-                                        </div>
-                                    </div>
-                                    <div class="calendar">
-                                        <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
-                                        <p class="font2 fontColor1 fontSize3">07 de abril</p>
-                                    </div>
-                                </div>
                             </li>
-                            <li class="item">  
-                                <a href="./events.html">
-                                    <img class="" src="../assets/emphasis3.svg" alt="CLUBE DOS 30">
-                                    <span class="font2 fontSize2 fontColor1 tag backgroundGreen">FESTAS</span>
+                            <li class="item">
+                                <a href="../pages/event.html" class="card">
+                                    <figure>
+                                        <img  src="../assets/evento-artista-3.svg" alt="Goptun com Jamie xx">
+                                        <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                    </figure>
+                                    <div class="text">
+                                        <h2 class="font1 fontColor3 fontSize5">FUTUR FESTIVAL
+                                        </h2>
+                                        <p class="music icon">Eletrônica, house</p>
+                                        <div class="iconWrapper">
+                                            <p class="house icon">Audio clube</p>
+                                            <p class="location icon">Sao Paulo - SP</p>
+                                        </div>
+                                        <p class="calendar icon">29 de abril</p> 
+                                    </div>
                                 </a>
-                                <div class="text">
-                                    <h2 class="font1 fontColor1 fontSize7">CLUBE DOS 30</h2>
-                                    <div class="music">
-                                        <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
-                                        <p class="font2 fontColor1 fontSize3">Música brasileira, Eletrônica</p>
-                                    </div>
-                                    <div class="star">
-                                        <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
-                                        <p class="font2 fontColor1 fontSize3">Dj residentes</p>
-                                    </div>
-                                    <div class="iconWrapper">
-                                        <div class="house">
-                                            <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
-                                            <p class="font2 fontColor1 fontSize3">Baralto</p>
-                                        </div>
-                                        <div class="location">
-                                            <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localizacao">
-                                            <p class="font2 fontColor1 fontSize3">São Paulo - SP</p>
-                                        </div>
-                                    </div>
-                                    <div class="calendar">
-                                        <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
-                                        <p class="font2 fontColor1 fontSize3">08 de abril</p>
-                                    </div>
-                                </div>
                             </li>
-                        </ul>
+                        </div>
                     </div>
                     <div class="lastLaunch">
                         <div class="title">
-                            <h2>ÚLTIMOS LANÇAMENTOS</h2>
-                            <a>VER MAIS</a>
+                            <h2 class="font1 fontColor1">ULTIMOS LANCAMENTOS</h2>
+                            <a class="font1 fontSize3 fontColor4 seeAll" href="../pages/releases.html">VER TUDO</a>
                         </div>
-                        <div class="listItems">
-                            <div class="item">
-                                <a href="releases.html"> 
-                                    <img src="../assets/lançamento1.svg">
+                        <div class="listLaunchItems">
+                            <div class="item">        
+                                <a href="release.html">
+                                    <figure>
+                                        <img src="../assets/ultimo-lancamento-artista1.svg">
+                                        <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                                    </figure>
+                                    <span class="font2 icon fontSize4 fontColor1">Eletrônica, Dance</span>
+                                    <h3 class="font1 fontSize4 fontColor1">STARRY NIGHT</h3>
+                                    <p class="font2 fontSize4 fontColor1">Peggy Gou</p>
                                 </a>
-                                <span class="font2 icon fontSize4 fontColor3">Pop, Dance, Eletro</span>
-                                <h3 class="font1 fontSize4 fontColor3">STRONG</h3>
-                                <p class="font2 fontSize4 fontColor3">Romy, Fred again</p>
-                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
                             </div>
                             <div class="item">        
-                                <a href="releases.html">
-                                    <img src="../assets/lançamento2.svg">
+                                <a href="release.html">
+                                    <figure>
+                                        <img src="../assets/ultimo-lancamento-artista2.svg">
+                                        <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                                    </figure>
+                                    <span class="font2 icon fontSize4 fontColor1">Eletrônica, Dance</span>
+                                    <h3 class="font1 fontSize4 fontColor1">STARRY NIGHT</h3>
+                                    <p class="font2 fontSize4 fontColor1">Peggy Gou</p>
                                 </a>
-                                <span class="font2 icon fontSize4 fontColor3">Techno, Dance, Eletro</span>
-                                <h3 class="font1 fontSize4 fontColor3">W0KE UP IN LOVE</h3>
-                                <p class="font2 fontSize4 fontColor3">Kygo, Gryffin, Calum Scott</p>
-                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
-                            </div>
-                            <div class="item">
-                                <a href="releases.html">
-                                    <img src="../assets/lançamento3.svg">
-                                </a>
-                                <span class="font2 icon fontSize4 fontColor3">Rap, Pop, Eletro</span>
-                                <h3 class="font1 fontSize4 fontColor3">FAMILY (DOWNTEMPO DANCE REMIX)</h3>
-                                <p class="font2 fontSize4 fontColor3">Bebe Rexha, Ty Dolla Sigh, David Guetta</p>
-                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
                             </div>   
-                            <div class="item">
-                                <a href="releases.html"> 
-                                    <img src="../assets/lançamento4.svg">
-                                </a>
-                                <span class="font2 icon fontSize4 fontColor3">Techno, Dance, Eletro</span>
-                                <h3 class="font1 fontSize4 fontColor3">TALK IT OVER</h3>
-                                <p class="font2 fontSize4 fontColor3">Elderbrook, Vintage Culture</p>
-                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
-                            </div>
-                            <div class="item">
-                                <a href="releases.html"> 
-                                    <img src="../assets/lançamento1.svg">
-                                </a>
-                                <span class="font2 icon fontSize4 fontColor3">Pop, Dance, Eletro</span>
-                                <h3 class="font1 fontSize4 fontColor3">STRONG</h3>
-                                <p class="font2 fontSize4 fontColor3">Romy, Fred again</p>
-                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
-                            </div>    
                             <div class="item">        
-                                <a href="releases.html">
-                                    <img src="../assets/lançamento2.svg">
+                                <a href="release.html">
+                                    <figure>
+                                        <img src="../assets/ultimo-lancamento-artista3.svg">
+                                        <span class="tag backgroundGrey font2 fontSize1">SINGLE</span>
+                                    </figure>
+                                    <span class="font2 icon fontSize4 fontColor1">Eletrônica, Dance</span>
+                                    <h3 class="font1 fontSize4 fontColor1">STARRY NIGHT</h3>
+                                    <p class="font2 fontSize4 fontColor1">Peggy Gou</p>
                                 </a>
-                                <span class="font2 icon fontSize4 fontColor3">Techno, Dance, Eletro</span>
-                                <h3 class="font1 fontSize4 fontColor3">W0KE UP IN LOVE</h3>
-                                <p class="font2 fontSize4 fontColor3">Kygo, Gryffin, Calum Scott</p>
-                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
-                            </div> 
-                            <div class="item">
-                                <a href="releases.html">
-                                    <img src="../assets/lançamento3.svg">
-                                </a>
-                                <span class="font2 icon fontSize4 fontColor3">Rap, Pop, Eletro</span>
-                                <h3 class="font1 fontSize4 fontColor3">FAMILY (DOWNTEMPO DANCE REMIX)</h3>
-                                <p class="font2 fontSize4 fontColor3">Bebe Rexha, Ty Dolla Sigh, David Guetta</p>
-                                <span class="tag backgroundGrey font2 fontSize1"> SINGLE</span>
-                            </div>       
+                            </div>   
                         </div>
                     </div>
                     <div class="artistNews">
                         <div class="title">
-                            <h2>NOTÍCIAS SOBRE O ARTISTA</h2>
-                            <a href="../pages/news.html">VER TUDO</a>
+                            <h2 class="font1 fontColor1">NOTICIAS SOBRE O ARTISTA</h2>
+                            <a class="font1 fontSize3 fontColor4 seeAll" href="../pages/news.html">VER TUDO</a>
                         </div>
-                        <div class="listGuide">
+                        <ul class="listItems">
                             <div class="item">
-                                <a href="events.html">
-                                    <img src="../assets/guia1.svg" alt="XXXPERIENCE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                <a href="../pages/singleNews.html">
+                                    <figure>
+                                        <img src="../assets/noticia-artista1.svg" alt="notícia peggy gou">
+                                        <span class="font2 fontColor3 fontSize2 tag backgroundWhite">MUSICA</span>
+                                    </figure>
+                                    <div>
+                                        <h2 class="font1 fontSize5 fontColor1">HOURGLASS CONFIRMA PEGGY GOU, JACK-E E SILVA EM TRANCOSO</h2>
+                                        <span class="font2 fontColor2 date">04 de abril</span>
+                                    </div>
                                 </a>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">XXXPERIENCE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER</h2>
-                                    <span class="font2 fontSize3 fontColor2">03 de março</span>
-                                </div>
                             </div>
                             <div class="item">
-                                <a href="events.html">
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                <a href="../pages/singleNews.html">
+                                    <figure>
+                                        <img src="../assets/noticia-artista2.svg" alt="notícia peggy gou">
+                                        <span class="font2 fontColor3 fontSize2 tag backgroundPurple">FESTIVAIS</span>
+                                    </figure>
+                                    <div>
+                                        <h2 class="font1 fontSize5 fontColor1">GOP TUN 2024 ANUNCIA SEU LINE UP COM PARTICIPAÇÃO DE DJS INTERNACIONAIS...</h2>
+                                        <span class="font2 fontColor2 date">15 de abril</span>
+                                    </div>
                                 </a>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">05 de março</span>
-                                </div>
                             </div>
                             <div class="item">
-                                <a href="events.html">
-                                    <img src="../assets/guia3.svg" alt="COACHELLA 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                <a href="../pages/singleNews.html">
+                                    <figure>
+                                        <img src="../assets/noticia-artista-3.svg" alt="notícia peggy gou">
+                                        <span class="font2 fontColor3 fontSize2 tag backgroundWhite">MUSICA</span>
+                                    </figure>
+                                    <div>
+                                        <h2 class="font1 fontSize5 fontColor1">PEGGY GOU LANÇA DUAS FAIXAS COM O EP ‘MOMENT’ E ANUNCIA ‘GUDU RECORDS’, SEU MAIS...</h2>
+                                        <span class="font2 fontColor2 date">04 de abril</span>
+                                    </div>
                                 </a>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">COACHELLA 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">06 de março</span>
-                                </div>
                             </div>
-                            <div class="item">
-                                <a href="events.html">
-                                    <img src="../assets/guia4.svg" alt="PRIMAVERA SOUND PORTO 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </a>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">06 de março</span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <a href="events.html">
-                                    <img src="../assets/guia4.svg" alt="PRIMAVERA SOUND PORTO 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </a>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">06 de março</span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <a href="events.html">
-                                    <img src="../assets/guia4.svg" alt="">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </a>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">06 de março</span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <a href="events.html">
-                                    <img src="../assets/guia4.svg" alt="">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </a>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">06 de março</span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <a href="events.html">
-                                    <img src="../assets/guia4.svg" alt="">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </a>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">06 de março</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                        </ul>
+                        <div class="blankPart"></div>
+                    </div> 
                 </div>
-                <div class="artistHighlights">
+                <div class="artistsHighlights">
                     <div class="title">
                         <div class="text">
-                            <h2 class="font1 fontSize6 fontColor1">ARTISTAS RELACIONADOS</h2>
-                            <a href="src/pages/artists.html" class="font1 fontSize3 fontColor4">VER TUDO</a>
+                            <h2 class="font1 fontColor1">ARTISTAS RELACIONADOS</h2>
                         </div>
                     </div>
                     <div class="carouselArtists owl-carousel owl-theme">
                         <div class="item">
-                            <a href="../pages/artists.html">
+                            <a href="../pages/artist.html">
                                 <img src="../assets/artista1.svg">
+                                <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
                             </a>
-                            <h3 class="font1 fontSize4 fontColor1">ADANA TWINS</h3>
                         </div>
                         <div div class="item">
-                            <a href="../pages/artists.html">
+                            <a href="../pages/artist.html">
                                 <img src="../assets/artista2.svg">
+                                <h3 class="font1 fontSize4 fontColor1">ASHIBAH</h3>
                             </a>
-                            <h3 class="font1 fontSize4 fontColor1">ASHIBAH</h3>
                         </div>
                         <div div class="item">
-                            <a href="../pages/artists.html">
+                            <a href="../pages/artist.html">
                                 <img src="../assets/artista3.svg">
+                                <h3 class="font1 fontSize4 fontColor1">DIMITRI VIEGAS</h3>
                             </a>
-                            <h3 class="font1 fontSize4 fontColor1">DIMITRI VIEGAS</h3>
                         </div>
                         <div div class="item">
-                            <a href="../pages/artists.html">
+                            <a href="../pages/artist.html">
                                 <img src="../assets/artista4.svg">
+                                <h3 class="font1 fontSize4 fontColor1">ELDERBROOK</h3>
                             </a>
-                            <h3 class="font1 fontSize4 fontColor1">ELDERBROOK</h3>
                         </div>
                         <div div class="item">
-                            <a href="../pages/artists.html">
+                            <a href="../pages/artist.html">
                                 <img src="../assets/artista5.svg">
+                                <h3 class="font1 fontSize4 fontColor1">FLUME</h3>
                             </a>
-                            <h3 class="font1 fontSize4 fontColor1">FLUME</h3>
                         </div>
                         <div div class="item">
-                            <a href="../pages/artists.html">
+                            <a href="../pages/artist.html">
                                 <img src="../assets/artista6.svg">
+                                <h3 class="font1 fontSize4 fontColor1">JAMIE XX</h3>
                             </a>
-                            <h3 class="font1 fontSize4 fontColor1">JAMIE XX</h3>
                         </div>
                         <div div class="item"> 
-                            <a href="../pages/artists.html">
+                            <a href="../pages/artist.html">
                                 <img src="../assets/artista7.svg">
+                                <h3 class="font1 fontSize4 fontColor1">RUFUS DU SOL</h3>
                             </a>
-                            <h3 class="font1 fontSize4 fontColor1">RUFUS DU SOL</h3>
                         </div>
                         <div div class="item">
-                            <a href="../pages/artists.html">
+                            <a href="../pages/artist.html">
                                 <img src="../assets/artista8.svg">
+                                <h3 class="font1 fontSize4 fontColor1">PEGGY GOU</h3>
                             </a>
-                            <h3 class="font1 fontSize4 fontColor1">PEGGY GOU</h3>
                         </div>
                         <div div class="item">
-                            <a href="../pages/artists.html">
+                            <a href="../pages/artist.html">
                                 <img src="../assets/artista8.svg">
+                                <h3 class="font1 fontSize4 fontColor1">PEGGY GOU</h3>
                             </a>
-                            <h3 class="font1 fontSize4 fontColor1">PEGGY GOU</h3>
                         </div>
                     </div>
                 </div>
                 <div class="advertisement"> 
-                    <a class="pictureMobile" href="src/pages/events.html">
-                        <img src="../assets/anuncio-mobile.svg">
+                    <a class="container" href="../pages/event.html">
+                        <figure class="pictureMobile">
+                            <img src="../assets/anuncio-mobile.svg">
+                        </figure>
+                        <figure class="pictureDesk">
+                            <img src="../assets/anuncio.svg">
+                        </figure> 
                     </a>
-                    <a class="pictureDesk" href="src/pages/events.html">
-                        <img src="../assets/anuncio.svg">
-                    </a> 
                 </div> 
             </div> 
         </section>
     </main> 
-     <footer>
+    <footer>
         <div class="container">
             <section class="utils">
                 <nav class="navigation">
                     <a class="font1 fontSize4 fontColor2" href="../../index.html">INICIO</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/events.html">EVENTOS</a>
-                    <a class="font1 fontSize4 fontColor2" href="">ENVIE UM EVENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/eventForm.html">ENVIE UM EVENTO</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/news.html">NOTICIAS</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/communities.html">COMUNIDADES</a>
-                    <a class="font1 fontSize4 fontColor2" href="../pages/artists.html">ARTISTAS</a>
-                    <a class="font1 fontSize4 fontColor2" href="releases.html">LANÇAMENTOS</a>
-                    <a class="font1 fontSize4 fontColor2" href="">ENVIE UM LANÇAMENTO</a>
+                    <a class="font1 fontSize4 fontColor2 highlightLink" href="artists.html">ARTISTAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../releases.html">LANÇAMENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/releaseForm.html">ENVIE UM LANÇAMENTO</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/about.html">SOBRE</a>
                 </nav>
                 <div class="highlightEvents">
                     <h2 class="font1 fontSize5 fontColor3">EVENTOS EM DESTAQUE</h2>
                     <ul>
                         <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Mita festival Rio de Janeiro</a>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
                         </li>
                         <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Goptun com Jamie xx</a>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Goptun com Jamie xx</a>
                         </li>
                         <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">NAFF SP | Fisher & Chris Lake</a>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">NAFF SP | Fisher & Chris Lake</a>
                         </li>
                         <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Mita festival Rio de Janeiro</a>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
                         </li>
                         <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Mita festival São Paulo</a>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival São Paulo</a>
                         </li>
                     </ul>
-                    <a class="font1 fontSize3 fontColor4 seeAll">VER TUDO</a>
+                    <a class="font1 fontSize3 fontColor4 seeAll" href="../pages/events.html">VER TUDO</a>
                 </div>
                 <div class="follow">
                     <h2 class="font1 fontSize5 fontColor3">SIGA O WE GO OUT</h2>
                     <ul>
                         <li>
-                            <a href="https://www.instagram.com/wegoout/">
-                                <img src="../assets/icone-instagram.svg">
+                            <a class="icone insta" href="//www.instagram.com/wegoout/">
+                                <p class="font2 fontSize4 fontColor3">@wegoout</p>
                             </a>
-                            <p class="font2 fontSize4 fontColor3">@wegoout</p>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/wegoout.br/?locale=pt_BR">
-                                <img src="../assets/icone-facebook.svg">
+                            <a class="icone facebook" href="https://www.facebook.com/wegoout.br/?locale=pt_BR">
+                                <p class="font2 fontSize4 fontColor3">/wegoout.br</p>
                             </a>
-                            <p class="font2 fontSize4 fontColor3">/wegoout.br</p>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/@WeGoOut">
-                                <img src="../assets/icone-youtube.svg">
+                            <a class="icone youtube" href="https://www.youtube.com/@WeGoOut">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
                             </a>
-                            <p class="font2 fontSize4 fontColor3">/wegoout</p>
                         </li>
                         <li>
-                            <a href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
-                                <img src="../assets/icone-spotify.svg">
+                            <a class="icone spotify" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
                             </a>
-                            <p class="font2 fontSize4 fontColor3">/wegoout</p>
                         </li>
                     </ul>
                 </div>
@@ -561,15 +579,15 @@
                         <p class="font2 fontSize2 fontColor2">Todos os direitos reservados a We Go Out 2023®
                             CNPJ: 12.345.678/0001-10</p>
                         <p class="font2 fontSize2 fontColor2">A We Go Out Ltda, inscrita sob o CNPJ: 12.345.678/0001-10 é uma instituição devidamente habilitada e autorizada. Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo impedir ou prejudicar o envio ou a recepção de informações atualizadas.</p>
-                        <p class="font2 fontSize2 fontColor2">contato@wegoout.com</p>
+                        <a class="font2 fontSize2" href="mailto:contato@wegoout.com">contato@wegoout.com</a>
                     </div>
                 </div>
                 <div class="politics">
-                    <a class="font1 fontSize2 fontColor2">POLÍTICA DE PRIVACIADE</a>
-                    <a class="font1 fontSize2 fontColor2">POLÍTICA DE COOKIES</a>
+                    <a class="font1 fontSize2 fontColor2" href="../pages/politicsAndTerms.html">POLÍTICA DE PRIVACIDADE</a>
+                    <a class="font1 fontSize2 fontColor2" href="../pages/cookiesPolitics.html">POLÍTICA DE COOKIES</a>
                 </div>
-                <img class="footerWave2" src="../assets/onda-footer-2.svg">
-                <img class="footerWave3" src="../assets/onda-footer-mobile.svg">
+                <div class="footerWave2"></div>
+                <div class="footerWave3"></div>
             </section>
         </div>
     </footer> 

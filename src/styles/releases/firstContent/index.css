@@ -1,4 +1,8 @@
-.releases .events {
+* {
+    box-sizing: border-box;
+}
+
+.releases .firstContent {
     background-color: var(--neutral1);
     display: flex;
     justify-content: center;
@@ -27,6 +31,7 @@
     .releases .container {
         width: calc(100% - 40px);
         gap: 50px;
+        margin-top: 20px;
     }
 
     .filterSearchMode .container {

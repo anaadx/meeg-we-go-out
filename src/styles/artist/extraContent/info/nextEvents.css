@@ -1,0 +1,90 @@
+.artist .info .nextEvents {
+    width: 100%;
+    padding: 40px 40px 10px 40px;
+    background-color: var(--neutral7);
+}
+
+.artist .info .nextEvents .title {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.artist .info .nextEvents .title h2 {
+    font-size: 24px
+}
+
+.artist .info .nextEvents .title .seeAll {
+    font-size: 14px;
+}
+
+.artist .info .cardEvent2 .calendar {
+    background-color: var(--neutral4);
+}
+
+.artist .info .cardEvent2 .icon {
+    color: var(--neutral1);
+}
+
+.artist .info .cardEvent2 .listItems .text h2 {
+    color: var(--neutral1);
+}
+
+.artist .info .cardEvent2 .card {
+    background-color: var(--neutral5);
+}
+
+.artist .info .cardEvent2 .card:hover {
+    margin-top: -3px;
+}
+
+.artist .info .cardEvent2 .card:hover img {
+    margin-top: -5px;
+    margin-left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 5px);
+}
+
+.artist .info .cardEvent2 .music:before {
+    background-image: url("../../../../assets/icone-musica-dark.svg");
+}
+
+.artist .info .cardEvent2 .star:before {
+    background-image: url("../../../../assets/icone-estrela-dark.svg");
+}
+
+.artist .info .cardEvent2 .house:before {
+    background-image: url("../../../../assets/icone-casa-dark.svg");
+}
+
+.artist .info .cardEvent2 .location:before {
+    background-image: url("../../../../assets/icone-localizacao-dark.svg");
+}
+
+.artist .info .cardEvent2 .calendar:before {
+    background-image: url("../../../../assets/icone-calendario-dark.svg");
+}
+
+.artist .info .cardEvent2 .calendar {
+    margin-top: 5px;
+}
+
+.artist .info .cardEvent2 h2 {
+    margin-bottom: 5px;
+}
+
+
+@media(max-width: 1024px) {
+    .artist .info .nextEvents {
+        padding: 25px 20px 10px 20px;
+    }
+
+    .artist .info .cardEvent2 .text {
+        gap: 5px;
+    }
+
+    .artist .info .nextEvents .title h2 {
+        font-size: 18px;
+    }
+}

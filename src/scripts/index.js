@@ -22,45 +22,29 @@ $(document).ready(function () {
     }
   });
 
-  function disableItems() {
-    if ($(window).width() <= 1024) {
-      $(".searchModalButton").removeClass("disabled");
-      $(".footerWave3").removeClass("disabled");
-      $(".footerWave2").addClass("disabled");
-      $(".lastWave").addClass("disabled");
-      $(".launchWave").addClass("disabled");
-      $(".pictureDesk").addClass("disabled");
-      $(".findEvent").addClass("disabled");
-      $(".sendEventImg").addClass("disabled");
-      $(".highlightEvents").addClass("disabled");
-      $(".follow").addClass("disabled");
-      $(".navigation").addClass("disabled");
-      $(".footerSearch").addClass("disabled");
-      $(".footerWave1").addClass("disabled");
-      $(".footerWave2").addClass("disabled");
-    } else {
-      $(".footerWave2").removeClass("disabled");
-      $(".footerWave1").removeClass("disabled");
-      $(".footerSearch").removeClass("disabled");
-      $(".highlightEvents").removeClass("disabled");
-      $(".follow").removeClass("disabled");
-      $(".navigation").removeClass("disabled");
-      $(".sendEventImg").removeClass("disabled");
-      $(".lastWave").removeClass("disabled");
-      $(".pictureDesk").removeClass("disabled");
-      $(".launchWave").removeClass("disabled");
-      $(".findEvent").removeClass("disabled");
-      $(".footerWave3").addClass("disabled");
-      $(".searchModalButton").addClass("disabled");
-      $(".pictureMobile").addClass("disabled");
-    }
-  }
-
-  $(window).resize(function () {
-    disableItems();
+  $(document).click(function () {
+    $("body").removeClass("placeTipActive");
   });
 
-  disableItems();
+  $(".closeButtonModal").click(function () {
+    if ($(window).width() <= 1024) {
+      $("body").removeClass("modalLupaActive");
+      $("body").removeClass("inputLupaActive");
+      $(".lupaFloated").removeClass("disabled");
+      $(".lupaStatic").removeClass("disabled");
+      $(".containerLupaFloated").addClass("disabled");
+    }
+  });
+
+  $(".backgroundModal").click(function () {
+    if ($(window).width() > 1024) {
+      $("body").removeClass("modalLupaActive");
+      $("body").removeClass("inputLupaActive");
+      $(".lupaFloated").removeClass("disabled");
+      $(".lupaStatic").removeClass("disabled");
+      $(".containerLupaStatic").addClass("disabled");
+    }
+  });
 
   $(".placeTipImg").mouseover(function () {
     $("body").addClass("placeTipActive");
@@ -76,25 +60,11 @@ $(document).ready(function () {
     $(".containerLupaStatic").removeClass("disabled");
   });
 
-  $(".closeLupaStatic").click(function () {
-    $("body").removeClass("modalLupaActive");
-    $(".lupaStatic").removeClass("disabled");
-    $(".containerLupaStatic").addClass("disabled");
-    $("body").removeClass("inputLupaActive");
-  });
-
   $(".lupaFloated").click(function () {
     $("body").addClass("modalLupaActive");
     $(".lupaFloated").addClass("disabled");
     $(".containerLupaStatic").addClass("disabled");
     $(".containerLupaFloated").removeClass("disabled");
-  });
-
-  $(".closeLupaFloated").click(function () {
-    $("body").removeClass("modalLupaActive");
-    $(".lupaFloated").removeClass("disabled");
-    $(".containerLupaFloated").addClass("disabled");
-    $("body").removeClass("inputLupaActive");
   });
 
   $(".inputLupa").click(function () {
@@ -131,6 +101,10 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        nav: false,
+      },
+      800: {
+        items: 2,
         nav: false,
       },
       1024: {
@@ -198,7 +172,7 @@ $(document).ready(function () {
     navSpeed: 500,
     loop: false,
     center: false,
-    margin: 10,
+    margin: 20,
     responsiveClass: true,
     nav: false,
     dots: false,
@@ -206,12 +180,14 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 3,
+        margin: 10,
+      },
+      550: {
+        items: 3,
+        margin: 10,
       },
       1024: {
-        items: 2,
-      },
-      1300: {
-        items: 3,
+        items: 4,
       },
       1670: {
         items: 4,
@@ -233,12 +209,10 @@ $(document).ready(function () {
       0: {
         items: 1,
         nav: false,
-        margin: 0,
       },
       700: {
         items: 2,
         nav: false,
-        margin: 0,
       },
       950: {
         items: 3,
@@ -264,16 +238,18 @@ $(document).ready(function () {
     autoWidth: false,
     responsive: {
       0: {
-        items: 2,
+        items: 3,
         nav: false,
-        margin: 0,
+        margin: 10,
       },
       450: {
         items: 3,
         nav: false,
+        margin: 10,
       },
       940: {
         items: 5,
+        margin: 10,
       },
       1080: {
         items: 6,
@@ -298,11 +274,9 @@ $(document).ready(function () {
       0: {
         items: 1,
         nav: false,
-        margin: 0,
       },
       600: {
         items: 1,
-        margin: 0,
         nav: false,
       },
       1024: {

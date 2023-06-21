@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/components/header/index.css"> 
+    <link rel="stylesheet" href="../styles/components/header/menuButton.css">
+    <link rel="stylesheet" href="../styles/politicsAndTerms/firstContent/index.css"> 
+    <link rel="stylesheet" href="../styles/politicsAndTerms/firstContent/politicsAndTerms.css">  
+    <link rel="stylesheet" href="../styles/politicsAndTerms/extraContent/index.css"> 
+    <link rel="stylesheet" href="../styles/politicsAndTerms/extraContent/firstExtraContent/info/index.css"> 
+    <link rel="stylesheet" href="../styles/politicsAndTerms/extraContent/firstExtraContent/info/content.css"> 
+    <link rel="stylesheet" href="../styles/politicsAndTerms/extraContent/firstExtraContent/info/seeMore.css"> 
+    <link rel="stylesheet" href="../styles/politicsAndTerms/extraContent/firstExtraContent/info/share.css"> 
+    <link rel="stylesheet" href="../styles/politicsAndTerms/extraContent/firstExtraContent/menuExtra.css"> 
+    <link rel="stylesheet" href="../styles/politicsAndTerms/extraContent/firstExtraContent/index.css"> 
+    <link rel="stylesheet" href="../styles/politicsAndTerms/extraContent/advertisement.css"> 
+    <link rel="stylesheet" href="../styles/politicsAndTerms/extraContent/guide.css"> 
+    <link rel="stylesheet" href="../styles/components/footer2/rights.css">
+    <link rel="stylesheet" href="../styles/components/footer2/utils.css">
+    <link rel="stylesheet" href="../styles/components/footer2/index.css">
+    <link rel="stylesheet" href="../styles/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="../styles/libs/owl.theme.default.min.css">
+    <link rel="icon" href="../assets/icon-logo.png" type="image/x-icon">
+    <title>Políticas e Termos</title>
+    <script src="../scripts/jquery-3.7.0.min.js"></script>
+    <script src="../scripts/politicsAndTerms.js"></script>
+    <script src="../scripts/header.js"></script>
+</head> 
+<body>
+    <div class="backgroundModal"></div>
+    <header class="menu scroll static">
+        <nav>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <div class="links">
+                <a href="../pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
+                <a href="../pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
+                <a href="../pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
+                <a href="../pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
+                <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
+                <a href="../pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
+            </div>
+            <button class="lupa lupaStatic"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaStatic disabled">
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaStatic"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav> 
+    </header>   
+    <header class="menu scroll floated">
+        <nav class="navStatic">
+            <div class="modal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <button class="lupa lupaFloated"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaFloated disabled">
+                <button class="closeButtonModal"></button>
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaFloated"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav>
+        <div class="modalMenu">
+            <ul>
+                <li><a href="../../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
+                <li><a href="events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
+                <li><a href="../pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
+                <li><a href="../pages/communities.html" class="font1 fontSize4 fontColor3">COMUNIDADES</a></li>
+                <li><a href="../pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
+                <li><a href="../pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
+                <li><a href="../pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
+            </ul> 
+            <div class="buttons">
+                <button class="font1 fontSize3 fontColor3 buttonBlackLarge">ENVIE UM LANÇAMENTO</button>
+                <button class="font1 fontSize3 buttonPinkLarge">ENVIE UM EVENTO</button>
+            </div> 
+                <h2 class="font1 fontSize4 fontColor3">SIGA O WE GO OUT</h2>
+                <div class="icons">
+                <a class="littleIcon" href="https://www.instagram.com/wegoout/">
+                    <img class="littleIcon"  src="../assets/icone-instagram.svg">
+                </a>
+                <a class="littleIcon" href="https://www.facebook.com/wegoout.br/?locale=pt_BR" >
+                    <img class="littleIcon" src="../assets/icone-facebook.svg">
+                </a>
+                <a class="littleIcon" href="https://www.youtube.com/@WeGoOut">
+                    <img class="littleIcon" src="../assets/icone-youtube.svg">
+                </a>
+                <a class="littleIcon" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                    <img class="littleIcon" src="../assets/icone-spotify.svg">
+                </a>
+            </div>
+        </div>
+    </header> 
+    <main class="terms">
+        <section class="extraContent">
+            <div class="beforeMobile">
+                <h1>POLÍTICAS DO SITE E TERMOS DE USO
+                </h1>
+            </div>
+            <div class="containerExtra">
+                <div class="firstExtraContent">
+                    <div class="info">
+                        <div class="content">
+                            <h2>Termos de Uso</h2>
+                            <p>Este termo regulamenta a utilizacão do portal We Go Out e suas redes sociais, e serve para notificar os usuários de que a plataforma possui apenas o escopo de divulgar festas, festivais e outros eventos do Brasil e do mundo bem como fornecer dicas sobre viagens e turismo. O site não se responsabiliza pela realização de nenhum tipo de evento, venda de ingressos, bem como fornecimento de hospedagens ou transportes cuja responsabilidades são exclusivas dos produtores, fornecedores e contratantes de publicidade no site.</p>
+                            <p>A utilização do portal implica na aceitação integral e plena do presente termo. Deste modo, é importante que você o leia com atenção e fique atento às atualizações disponibilizadas no portal.</p>
+                            <h2>Condições de acesso e utilização do portal</h2>
+                            <p>Para navegar no portal, não é exigido a realização de cadastro. Você terá acesso ao We Go Out  pelo celular, computador ou tablet. A má utilização, infração de leis ou de disposições deste Termo de Uso pode causar a suspenção ou interrupção de serviços prestados pelo site.</p>
+                            <p>A utilização do portal ou dos serviços não lhe permite reproduzir, copiar, distribuir, vender, permitir o acesso público, transformar e/ou modificar os conteúdos deste, a menos que possua a prévia autorização do titular ou que o faça com permissão legal. Não há, por meio do uso do portal ou dos serviços, qualquer transferência ou conferência de propriedade intelectual sob o conteúdo acessado.</p>
+                            <p>O portal We Go Out não exibe a você apenas conteúdos próprios, mas também de terceiros parceiros. Os conteúdos disponibilizados por terceiros são de responsabilidade destes. Se você for criança ou adolescente , ou compartilhar o computador com pessoas nestas condições, lembre-se de que, para navegar no portal We Go Out , precisa de permissão ou supervisão dos pais ou responsáveis legais durante a navegação.</p>
+                            <h2>Das responsabilidades</h2>
+                            <p>O We Go Out disponibilizará o seu portal de modo a oferecer informações de qualidade, sendo que quaisquer interrupções na prestação destes serviços, em razão de ocorrências técnicas, operacionais ou imprevisíveis em razão de sua natureza, serão solucionadas de maneira mais célere e efetiva possível. Caso constate qualquer problema ou inconsistência  na utilização do portal  não deixe de nos contatar por e-mail: contato@wegoout.com.br.</p>
+                            <p>O We Go Out concede a terceiros parceiros espaço para publicação de anúncios, por isso, é de responsabilidade destes os conteúdos veiculados. O portal possui ainda dispositivos técnicos denominados “links de acesso”, tais como banners, botões, diretórios e ferramentas de busca, que permitem aos usuários ter acesso a páginas pertencentes a terceiros. Assim, você deve estar ciente de que, ao clicar em um desses “links de acesso”, será direcionado a páginas externas e que não são de titularidade do Wegoout, motivo pelo qual não garantimos nem assumimos qualquer tipo de responsabilidade pelos danos e prejuízos de qualquer natureza que possam decorrer do acesso a estas páginas ou aos conteúdos ali disponibilizados.</p>
+                            <p>O We Go Out poderá disponibilizar em seu portal ou produtos espaços interativos para comentários dos internautas. Os conteúdos publicados por assinantes ou visitantes nos produtos interativos é de inteira responsabilidade de quem os publicou, não havendo qualquer revisão ou fiscalização pelo We Go Out nos referidos conteúdos. Caso você identifique algum conteúdo ofensivo disponibilizado no portal ou nos serviços, comunique por meio do endereço eletrônico contato@wegoout.com.br</p>
+                            <h2>Segurança</h2>
+                            <p>O We Go Out preza pela segurança, sigilo e inviolabilidade de todos os dados fornecidos por você. No entanto, você deve estar ciente que as medidas de segurança na internet não são infalíveis, principalmente em razão da rápida evolução do ambiente virtual. Deste modo, o We Go Out não se responsabiliza por danos e/ou prejuízos decorrentes de caso fortuito ou força maior.</p>
+                            <h2>Uso Indevido</h2>
+                            <p>Se, durante a utilização do portal ou de qualquer serviço, você constatar a ocorrência de alguma atividade ilícita, contrária a este termo, a preceitos éticos ou à lei, poderá enviar uma comunicação por meio do endereço contato@wegoout.com.br, contendo os seguintes dados:</p>
+                            <p>a &AElig; Dados pessoais: nome, endereço, número de telefone e endereço eletrônico;<br/>
+                                b &AElig; Especificação da suposta atividade ilícita ocorrida no portal e, em particular, quando se tratar de suposta violação de direitos autorais, indicação precisa e completa dos conteúdos protegidos e supostamente infringidos;<br/>
+                                c &AElig; Fatos e/ou circunstâncias que revelam o caráter ilícito de tal atividade;<br/>
+                                d &AElig; Declaração expressa e clara de que a utilização dos conteúdos foi realizada sem o consentimento do titular dos direitos de propriedade intelectual supostamente infringidos.</p><br/>
+                        </div>     
+                    </div>
+                    <div class="menuExtra">
+                        <h1>POLÍTICAS DO SITE E TERMOS DE USO</h1>
+                        <h2>Termos de uso</h2>
+                        <nav>
+                            <a>Condições de acesso e utilização do portal</a>
+                            <a>Das responsabilidades</a>
+                            <a>Segurança</a>
+                            <a>Uso Indevido</a>
+                            <a>Sobre estes termos</a>
+                        </nav>
+                    </div>    
+                </div>
+            </div>
+            <button class="indexButton">ÍNDICE</button>
+        </section>
+    </main> 
+    <footer>
+        <div class="container">
+            <section class="utils">
+                <nav class="navigation">
+                    <a class="font1 fontSize4 fontColor2" href="../../index.html">INICIO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/events.html">EVENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/eventForm.html">ENVIE UM EVENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/news.html">NOTICIAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/communities.html">COMUNIDADES</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/artists.html">ARTISTAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../releases.html">LANÇAMENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/releaseForm.html">ENVIE UM LANÇAMENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/about.html">SOBRE</a>
+                </nav>
+                <div class="highlightEvents">
+                    <h2 class="font1 fontSize5 fontColor3">EVENTOS EM DESTAQUE</h2>
+                    <ul>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Goptun com Jamie xx</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">NAFF SP | Fisher & Chris Lake</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival São Paulo</a>
+                        </li>
+                    </ul>
+                    <a class="font1 fontSize3 fontColor4 seeAll" href="../pages/events.html">VER TUDO</a>
+                </div>
+                <div class="follow">
+                    <h2 class="font1 fontSize5 fontColor3">SIGA O WE GO OUT</h2>
+                    <ul>
+                        <li>
+                            <a class="icone insta" href="//www.instagram.com/wegoout/">
+                                <p class="font2 fontSize4 fontColor3">@wegoout</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone facebook" href="https://www.facebook.com/wegoout.br/?locale=pt_BR">
+                                <p class="font2 fontSize4 fontColor3">/wegoout.br</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone youtube" href="https://www.youtube.com/@WeGoOut">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone spotify" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="newsletter">
+                    <h2 class="font1 fontSize5 fontColor3">NEWSLETTER</h2>
+                    <p class="font2 fontSize3 fontColor2">Quer receber descontos e mais informações sobre festas e festivais?</p>                  
+                    <input class="font2 fontSize3 fontColor2" type="text" name="name" placeholder="Nome e sobrenome"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="email" placeholder="Email"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="whatsapp" placeholder="Whatsapp"/>
+                    <button class="font1 fontSize3 fontColor3" type="submit">CADASTRAR</button>
+                </form>
+            </section>
+            <section class="rights">  
+                <div class="logo">
+                    <img src="../assets/logo-dark.svg">
+                    <div class="text">
+                        <p class="font2 fontSize2 fontColor2">Todos os direitos reservados a We Go Out 2023®
+                            CNPJ: 12.345.678/0001-10</p>
+                        <p class="font2 fontSize2 fontColor2">A We Go Out Ltda, inscrita sob o CNPJ: 12.345.678/0001-10 é uma instituição devidamente habilitada e autorizada. Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo impedir ou prejudicar o envio ou a recepção de informações atualizadas.</p>
+                        <a class="font2 fontSize2" href="mailto:contato@wegoout.com">contato@wegoout.com</a>
+                    </div>
+                </div>
+                <div class="politics">
+                    <a class="font1 fontSize2 fontColor2 highlightLink" href="../pages/politicsAndTerms.html">POLÍTICA DE PRIVACIDADE</a>
+                    <a class="font1 fontSize2 fontColor2" href="../pages/cookiesPolitics.html">POLÍTICA DE COOKIES</a>
+                </div>
+                <div class="footerWave2"></div>
+                <div class="footerWave3"></div>
+            </section>
+        </div>
+    </footer> 
+    <script src="../scripts/owl.carousel.min.js"></script>
+</body>
+</html>

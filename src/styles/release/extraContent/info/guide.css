@@ -1,0 +1,116 @@
+.release .guide {
+    width: 100%;
+    padding: 40px 40px 10px 40px;
+    background-color: var(--neutral7);
+}
+
+.release .guide .title {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.release .guide .title h2 {
+    margin-bottom: 10px;
+}
+
+.release .guide .text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 30px);
+}
+
+.release .guide .text h3 {
+    font-size: 16px;
+}
+
+.release .guide .item {
+    margin-top: 10px;
+}
+
+.release .guide .item:hover {
+    margin-top: -3px
+}
+
+.release .guide .item div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    gap: 5px;
+}
+
+.release .guide .item h2 {
+    line-height: 20px;
+}
+
+.release .guide .item a {
+    width: 100%;
+    border-radius: 10px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+
+.release .guide a img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.release .guide .listGuide {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.release .guide button.disabled {
+    display: none;
+}
+
+.release .guide button {
+    width: max-content;
+    padding: 10px 20px;
+    margin-top: 30px;
+    color: var(--neutral6);
+    background-color: var(--main1);
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.release .guide button:hover {
+    background-color: var(--pinkHover);
+    cursor: pointer;
+}
+
+.filterSearchMode .release .guide button {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+
+    .release .guide {
+        padding: 40px 20px 10px 20px;
+    }
+
+    .release .guide .listGuide {
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .release .guide .item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .release .guide .item h2 {
+        font-size: 9px;
+    }
+}

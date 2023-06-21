@@ -46,6 +46,11 @@ body.menuDrop .menu.floated {
 
 .menu .links a {
     text-decoration: none;
+    filter: brightness(0.9);
+}
+
+.menu .links a:hover {
+    filter: brightness(3);
 }
 
 

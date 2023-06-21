@@ -1,37 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
 .artist .extraContent {
     width: 100%;
     display: flex;
     justify-content: center;
-    overflow: hidden;
     flex-direction: column;
-    background-size: 430px;
-    height: 430px;
-    background-repeat: no-repeat;
 }
 
 .artist .containerExtra {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
-    width: calc(100% - 120px);
+    width: 100%;
     flex-direction: column;
-    gap: 100px;
     align-self: center;
 }
 
-.filterSearchMode .artist .containerExtra {
-    width: calc(100% - 80px);
+.seeAll:hover {
+    color: var(--pinkHover);
 }
 
-
-@media(max-width: 1024px) {
-    .artist .containerExtra {
-        margin-top: 0px;
-        gap: 50px;
-        width: calc(100% - 40px);
-    }
-
-    .filterSearchMode .artist .containerExtra {
-        width: calc(100% - 40px);
-    }
-}
+@media(max-width: 1024px) {}

@@ -1,0 +1,241 @@
+.events .featured {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-content: baseline;
+    margin-bottom: 30px;
+}
+
+.events .featured .owl-carousel .owl-stage {
+    padding: 20px 0px;
+}
+
+.events .featured .owl-carousel .owl-nav {
+    top: -40px;
+}
+
+/* featured-emphasis */
+
+.events .emphasis {
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.events .emphasis .title {
+    margin-bottom: 10px;
+}
+
+.events .emphasis .carouselEvents {
+    width: 100%;
+}
+
+.events .emphasis .carouselEvents .item {
+    padding: 20px;
+    position: relative;
+    background-color: var(--neutral2);
+    border-radius: 10px;
+    height: 420px;
+    width: 100%;
+    transition: var(--transitionFast);
+}
+
+.events .emphasis .carouselEvents a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    gap: 15px;
+}
+
+.events .emphasis .carouselEvents .item:hover {
+    margin-top: -3px;
+}
+
+.events .emphasis .carouselEvents .item:hover img {
+    width: calc(100% + 10px);
+    margin-left: -5px;
+    margin-top: -5px;
+    height: calc(100% + 5px);
+}
+
+.events .featured .icon {
+    font-family: var(--font2);
+    color: var(--neutral7);
+    font-size: 14px;
+}
+
+.events .featured .icon:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.events .featured .music:before {
+    background-image: url("../../../assets/icone-musica.svg");
+}
+
+.events .featured .star:before {
+    background-image: url("../../../assets/icone-estrela.svg");
+}
+
+.events .featured .house:before {
+    background-image: url("../../../assets/icone-casa.svg");
+}
+
+.events .featured .location:before {
+    background-image: url("../../../assets/icone-localizacao.svg");
+    margin-top: -5px;
+}
+
+.events .featured .calendar:before {
+    background-image: url("../../../assets/icone-calendario.svg");
+}
+
+.events .featured .calendar {
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+    background-color: var(--greyOpacity);
+    display: flex;
+    align-items: center;
+}
+
+.events .emphasis .iconWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: baseline;
+}
+
+.events .emphasis .iconWrapper .house {
+    align-self: baseline;
+}
+
+.events .emphasis .carouselEvents figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.events .emphasis .carouselEvents figure img {
+    width: 100%;
+    object-fit: cover;
+    transition: var(--transitionFast);
+    height: 100%;
+}
+
+.events .emphasis .carouselEvents .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(60% - 15px);
+    line-height: 20px;
+}
+
+.events .emphasis .carouselEvents .text p {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.events .emphasis .carouselEvents .text h2 {
+    margin-bottom: 10px;
+    line-height: 1.27em;
+}
+
+.events .emphasis .carouselEvents .text div {
+    display: flex;
+    gap: 10px;
+}
+
+@media(max-width: 1024px) {
+    .events .featured {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .events .emphasis {
+        width: 100%;
+        height: min-content;
+        margin-top: 80px;
+    }
+
+    .events .emphasis .carouselEvents .item {
+        min-height: 450px;
+        height: max-content;
+        padding-bottom: 60px;
+    }
+
+    .events .emphasis .carouselEvents .text p {
+        font-size: 10px;
+    }
+
+    .events .emphasis .carouselEvents .text h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .events .emphasis .title {
+        margin-bottom: 0px;
+    }
+
+    .events .emphasis .title h1 {
+        font-size: 18px;
+    }
+
+    .events .emphasis .carouselEvents .item a {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .events .emphasis .carouselEvents .item .star,
+    .events .emphasis .carouselEvents .item .music {
+        display: none;
+    }
+
+    .events .emphasis .carouselEvents .item figure {
+        width: 100%;
+        height: 260px;
+        max-width: 100%;
+    }
+
+    .events .emphasis .carouselEvents .item figure img {
+        height: min-content;
+    }
+
+    .events .emphasis .carouselEvents {
+        background-color: var(--neutral1);
+        width: calc(100% - 50px)
+    }
+
+    .events .emphasis .carouselEvents .item .calendar {
+        position: absolute;
+        bottom: 10px;
+        width: max-content;
+    }
+
+    .events .emphasis .carouselEvents .text .iconWrapper {
+        flex-direction: row;
+    }
+
+    .events .emphasis .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+
+    .events .emphasis .carouselEvents .text {
+        width: calc(100% - 10px);
+        gap: 10px;
+    }
+
+    .events .emphasis .carouselEvents .text p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

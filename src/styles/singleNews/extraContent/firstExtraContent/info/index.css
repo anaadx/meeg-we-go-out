@@ -1,0 +1,41 @@
+.singleNews .info {
+    width: 50%;
+    position: relative;
+    background-color: var(--neutral7);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.singleNews .info .moreInfo {
+    margin: 0 auto;
+    padding: 15px;
+    color: var(--neutral6);
+    background-color: var(--main1);
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    top: -47px;
+    border: none;
+    z-index: 2;
+    left: 0px;
+    right: 0px;
+    width: 130px;
+    background-image: url(../../../../../assets/seta-vertical-cima.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right 11% bottom 55%;
+    text-align: initial;
+}
+
+.singleNews .info .moreInfo:hover {
+    background-color: var(--pinkHover);
+}
+
+@media (max-width: 1024px) {
+    .singleNews .info {
+        width: 100%;
+        min-width: 300px
+    }
+
+    .singleNews .info .moreInfo {
+        display: none;
+    }
+}

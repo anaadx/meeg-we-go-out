@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+.terms .firstExtraContent {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+}
+
+@media(max-width: 1025px) {
+    .terms .firstExtraContent {
+        margin-top: 0px;
+    }
+}

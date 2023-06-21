@@ -1,0 +1,257 @@
+.events .nextEvents {
+    width: 100%;
+    height: min-content;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.events .nextEvents .listItems {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    gap: 20px;
+}
+
+.events .nextEvents .listItems .text p {
+    font-size: 14px;
+    line-height: 1.5em;
+    font-family: var(--font2);
+    color: var(--neutral7);
+    display: flex;
+    align-items: center;
+}
+
+.events .nextEvents .listItems .text h2 {
+    margin-bottom: 10px;
+    line-height: 1.27em;
+    font-family: var(--font1);
+    color: var(--neutral7);
+    font-size: 18px;
+}
+
+.events .nextEvents .listItems .text h2,
+.events .nextEvents .listItems .text p {
+    color: var(--neutral1);
+}
+
+.events .nextEvents .listItems .item {
+    padding: 20px;
+    padding-bottom: 60px;
+    position: relative;
+    border-radius: 10px;
+    height: 560px;
+    background-color: var(--neutral5);
+    width: 100%;
+    transition: var(--transitionFast);
+}
+
+.events .nextEvents .listItems a {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 450px;
+    text-decoration: none;
+}
+
+.events .nextEvents .listItems .item .calendar {
+    background-color: var(--neutral4);
+}
+
+.events .nextEvents .music:before {
+    background-image: url("../../../assets/icone-musica-dark.svg");
+}
+
+.events .nextEvents .star:before {
+    background-image: url("../../../assets/icone-estrela-dark.svg");
+}
+
+.events .nextEvents .house:before {
+    background-image: url("../../../assets/icone-casa-dark.svg");
+}
+
+.events .nextEvents .icon.location:before {
+    background-image: url("../../../assets/icone-localizacao-dark.svg");
+    margin-top: -5px;
+    height: 20px;
+}
+
+.events .nextEvents .calendar:before {
+    background-image: url("../../../assets/icone-calendario-dark.svg");
+}
+
+.events .nextEvents .icon {
+    font-family: var(--font2);
+    color: var(--neutral7);
+    font-size: 14px;
+}
+
+.events .nextEvents .icon:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.events .nextEvents .calendar {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--greyOpacity);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    width: max-content;
+}
+
+.events .nextEvents .iconWrapper {
+    display: flex;
+    gap: 10px;
+    align-self: baseline;
+}
+
+.events .nextEvents .iconWrapper .house {
+    align-self: baseline;
+}
+
+.events .nextEvents .listItems figure {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.events .nextEvents .listItems figure img {
+    width: 100%;
+    border-radius: 10px;
+    height: 260px;
+    object-fit: cover;
+    transition: var(--transitionFast);
+}
+
+.events .nextEvents .listItems .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: calc(100% - 10px);
+    line-height: 20px;
+}
+
+.events .nextEvents .listItems .text div {
+    display: flex;
+    gap: 10px;
+}
+
+.events .nextEvents button {
+    width: max-content;
+    padding: 10px 20px;
+    color: var(--neutral6);
+    background-color: var(--main1);
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+}
+
+.events .nextEvents button:hover {
+    background-color: var(--pinkHover);
+    cursor: pointer;
+}
+
+.filterSearchMode .events .nextEvents button {
+    display: none;
+}
+
+.events .nextEvents .listItems a img {
+    width: 100%;
+    height: 100%;
+    transition: var(--transitionFast);
+}
+
+.events .nextEvents .listItems .item:hover img {
+    margin-left: -5px;
+    margin-top: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 5px);
+}
+
+.events .nextEvents .listItems .item:hover {
+    margin-top: -3px;
+}
+
+@media (max-width: 1024px) {
+
+    .events .nextEvents button {
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+    .events .nextEvents .listItems .item {
+        flex-direction: row;
+        height: min-content;
+        min-height: min-content;
+        padding: 15px;
+    }
+
+    .events .nextEvents .listItems {
+        grid-template-columns: 1fr;
+        grid-row-gap: 15px;
+    }
+
+    .events .nextEvents .listItems .text .star,
+    .events .nextEvents .listItems .text .music {
+        display: none;
+    }
+
+    .events .nextEvents .listItems .text .calendar {
+        bottom: 15px;
+    }
+
+    .events .nextEvents .listItems .text .iconWrapper {
+        flex-direction: column;
+        align-self: baseline;
+    }
+
+    .events .nextEvents .listItems .text {
+        gap: 0px;
+    }
+
+    .events .nextEvents .listItems .item figure {
+        width: calc(40% - 20px);
+        max-width: 170px;
+        min-width: 130px;
+        height: calc(100% - 40px);
+    }
+
+    .events .nextEvents .listItems a img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .events .nextEvents .listItems a {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .events .nextEvents .listItems .text h2 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .events .nextEvents .listItems .item a {
+        gap: 10px;
+    }
+
+    .events .nextEvents .listItems .text p {
+        font-size: 10px;
+    }
+}

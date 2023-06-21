@@ -11,34 +11,105 @@
     <link rel="stylesheet" href="../styles/libs/daterangepicker.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/globalStyles.css">
-    <link rel="stylesheet" href="../styles/communities/header/index.css"> 
-    <link rel="stylesheet" href="../styles/communities/header/menuButton.css">
+    <link rel="stylesheet" href="../styles/components/header/index.css"> 
+    <link rel="stylesheet" href="../styles/components/header/menuButton.css">
     <link rel="stylesheet" href="../styles/communities/firstContent/index.css"> 
-    <link rel="stylesheet" href="../styles/communities/firstContent/bestEvents.css">  
+    <link rel="stylesheet" href="../styles/communities/firstContent/bestEvents.css">
+    <link rel="stylesheet" href="../styles/components/bestEvents.css">
     <link rel="stylesheet" href="../styles/communities/extraContent/index.css"> 
-    <link rel="stylesheet" href="../styles/communities/extraContent/advertisement.css">
     <link rel="stylesheet" href="../styles/communities/extraContent/guide.css"> 
-    <link rel="stylesheet" href="../styles/communities/footer/rights.css">
-    <link rel="stylesheet" href="../styles/communities/footer/utils.css">
-    <link rel="stylesheet" href="../styles/communities/footer/index.css">
-    <title>We Go Out</title>
+    <link rel="stylesheet" href="../styles/components/footer2/rights.css">
+    <link rel="stylesheet" href="../styles/components/footer2/utils.css">
+    <link rel="stylesheet" href="../styles/components/footer2/index.css">
+    <link rel="icon" href="../assets/icon-logo.png" type="image/x-icon">
+    <title>Comunidades</title>
     <script src="../scripts/jquery-3.7.0.min.js"></script>
-    <script src="../scripts/communities.js"></script>
+    <!-- <script src="../scripts/communities.js"></script> -->
+    <script src="../scripts/header.js"></script>
 </head> 
 <body>
+    <div class="backgroundModal"></div>
     <header class="menu static">
         <nav>
             <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
-            <div class="links">
-                <a href="src/pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
-                <a href="src/pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
-                <a href="src/pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
-                <a href="src/pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
-                <a href="src/pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
-                <a href="src/pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
+            <div class="links activeHighlight">
+                <a href="../pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
+                <a href="../pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
+                <a href="communities.html" class="font1 fontColor3 fontSize4 highlightLink">COMUNIDADES</a>
+                <a href="../pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
+                <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
+                <a href="../pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
             </div>
-            <button class="lupa"><img src="../assets/lupa.svg" alt="lupa"></button>
-        </nav>
+            <button class="lupa lupaStatic"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaStatic disabled">
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaStatic"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav> 
     </header>   
     <header class="menu floated">
         <nav class="navStatic">
@@ -48,14 +119,83 @@
                 <span></span>
             </div>
             <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
-            <button class="lupa"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <button class="lupa lupaFloated"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaFloated disabled">
+                <button class="closeButtonModal"></button>
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaFloated"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
         </nav>
-        <div class="modalMenu">
+        <div class="modalMenu activeHighlight">
             <ul>
-                <li><a href="../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
-                <li><a href="../pages/events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
+                <li><a href="../../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
+                <li><a href="../events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
                 <li><a href="../pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
-                <li><a href="../pages/communities.html" class="font1 fontSize4 fontColor3">COMUNIDADES</a></li>
+                <li><a href="communities.html" class="font1 fontSize4 fontColor3 highlightLink">COMUNIDADES</a></li>
                 <li><a href="../pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
                 <li><a href="../pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
                 <li><a href="../pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
@@ -82,7 +222,7 @@
         </div>
     </header> 
     <main class="communities">
-        <section class="events">
+        <section class="firstContent">
             <div class="container">
                 <div class="bestEvents">
                     <h2 class="font1 fontColor3 titleName">COMUNIDADES</h2>
@@ -94,50 +234,43 @@
                     </div>
                     <div class="carouselBestEvents owl-carousel owl-theme">
                         <div class="item">
-                            <a href="../pages/events.html">
-                                <img src="../assets/icone-localizacao.svg" alt="festas em São Paulo">
-                                <p class="font1 fontSize4 fontColor3">FESTAS EM SÃO PAULO</p>
+                            <a href="../pages/search.html">
+                                <p class="font1 fontSize4 fontColor3 icon">FESTAS EM SÃO PAULO</p>
                             </a>
                         </div>
                         <div class="item">
-                            <a href="../pages/events.html">
-                                <img src="../assets/icone-localizacao.svg" alt="carnaval no nordeste">
-                                <p class="font1 fontSize4 fontColor3">CARNAVAL DO NORDESTE</p>
+                            <a href="../pages/search.html">
+                                <p class="font1 fontSize4 fontColor3 icon">CARNAVAL DO NORDESTE</p>
                             </a>
                         </div>
                         <div class="item">
-                            <a href="../pages/events.html">     
-                                <img src="../assets/icone-fogo.svg" alt="reveillon na praia">
-                                <p class="font1 fontSize4 fontColor3">REVEILLON NA PRAIA</p>
+                            <a href="../pages/search.html">     
+                                <p class="font1 fontSize4 fontColor3 icon">REVEILLON NA PRAIA</p>
                             </a>
                         </div>
                         <div class="item">
-                            <a href="../pages/events.html">
-                                <img src="../assets/icone-localizacao.svg" alt="reveillon no nordeste">
-                                <p class="font1 fontSize4 fontColor3">REVEILLON NO NORDESTE</p>
+                            <a href="../pages/search.html">
+                                <p class="font1 fontSize4 fontColor3 icon">REVEILLON NO NORDESTE</p>
                             </a>
                         </div>
                         <div class="item">
-                            <a href="../pages/events.html">
-                                <img src="../assets/icone-localizacao.svg" alt="reveillon no nordeste">
-                                <p class="font1 fontSize4 fontColor3">REVEILLON NO NORDESTE</p>
+                            <a href="../pages/search.html">
+                                <p class="font1 fontSize4 fontColor3 icon">REVEILLON NO NORDESTE</p>
                             </a>
                         </div>
                         <div class="item">
-                            <a href="../pages/events.html">
-                                <img src="../assets/icone-localizacao.svg" alt="reveillon no nordeste">
-                                <p class="font1 fontSize4 fontColor3">REVEILLON NO NORDESTE</p>
+                            <a href="../pages/search.html">
+                                <p class="font1 fontSize4 fontColor3 icon">REVEILLON NO NORDESTE</p>
                             </a>
                         </div>
                         <div class="item">
-                            <a href="../pages/events.html">
-                                <img src="../assets/icone-localizacao.svg" alt="reveillon no nordeste">
-                                <p class="font1 fontSize4 fontColor3">REVEILLON NO NORDESTE</p>
+                            <a href="../pages/search.html">
+                                <p class="font1 fontSize4 fontColor3 icon">REVEILLON NO NORDESTE</p>
                             </a>
                         </div>
                     </div>
                 </div>
-                <img src="../assets/darkWave.svg" class="darkWave" alt="icone de fundo">
+                <div class="darkWave" alt="icone de fundo"></div>
             </div>
         </section>
         <section class="extraContent">
@@ -150,44 +283,44 @@
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev1.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev2.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023 2</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023 2</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev3.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE 2023</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE 2023</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev4.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE 2023 2</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE 2023 2</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev5.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON RIO DE JANEIRO</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON RIO DE JANEIRO</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev6.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SÃO PAULO</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SÃO PAULO</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev7.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                         </div> 
                     </div>   
                     <div class="title">
@@ -197,80 +330,80 @@
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN1.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON AMORÉ</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON AMORÉ</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN2.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON AMORÉ 2</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON AMORÉ 2</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN3.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON CAFE DE LA MUSIQUE MACEIÓ</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON CAFE DE LA MUSIQUE MACEIÓ</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN4.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON CELEBRATION</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON CELEBRATION</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN4.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON DAS EMOÇÕES</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON DAS EMOÇÕES</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN4.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON DO GOSTOSO</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON DO GOSTOSO</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN4.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON LETS PIPA I</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON LETS PIPA I</h2>
                         </div> 
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN4.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON LETS PIPA II</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON LETS PIPA II</h2>
                         </div> 
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN4.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON MIL SORRISOS</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON MIL SORRISOS</h2>
                         </div> 
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN4.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON MILAGRES</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON MILAGRES</h2>
                         </div> 
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN4.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON MILAGRES II</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON MILAGRES II</h2>
                         </div> 
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN4.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUNDANCE FESTIVAL</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUNDANCE FESTIVAL</h2>
                         </div> 
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/RN4.svg" alt="Festa de Reveillon no Nordeste">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON VIRA JERI</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON VIRA JERI</h2>
                         </div> 
                     </div>   
                     <div class="title">
@@ -280,74 +413,74 @@
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/F1.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON </h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON </h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/F2.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON  2</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON  2</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/F3.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE </h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE </h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/F4.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE  2</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE  2</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/F5.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON RIO DE JANEIRO</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON RIO DE JANEIRO</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/F6.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SÃO PAULO</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SÃO PAULO</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/F7.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                             </a> 
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                         </div> 
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/F8.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                             </a> 
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                         </div> 
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/F9.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                             </a> 
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                         </div> 
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/F10.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                             </a> 
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                         </div> 
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/F11.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                             </a> 
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                         </div> 
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/F12.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                             </a> 
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                         </div> 
                     </div>   
                     <div class="title">
@@ -357,111 +490,107 @@
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev1.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev2.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023 2</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">FESTAS DE RÉVEILLON 2023 2</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev3.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE 2023</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE 2023</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev4.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE 2023 2</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON NORDESTE 2023 2</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev5.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON RIO DE JANEIRO</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON RIO DE JANEIRO</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev6.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SÃO PAULO</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SÃO PAULO</h2>
                         </div>
                         <div class="item">
                             <a href="events.html">
                                 <img src="../assets/FRev7.svg" alt="Festa de Reveillon">
+                                <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                             </a>
-                            <h2 class="font1 fontSize3 fontColor1">RÉVEILLON SUL</h2>
                         </div> 
                     </div>   
                 </div>  
             </div> 
         </section>
     </main> 
-     <footer>
+    <footer>
         <div class="container">
             <section class="utils">
                 <nav class="navigation">
                     <a class="font1 fontSize4 fontColor2" href="../../index.html">INICIO</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/events.html">EVENTOS</a>
-                    <a class="font1 fontSize4 fontColor2" href="">ENVIE UM EVENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/eventForm.html">ENVIE UM EVENTO</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/news.html">NOTICIAS</a>
-                    <a class="font1 fontSize4 fontColor2" href="../pages/communities.html">COMUNIDADES</a>
+                    <a class="font1 fontSize4 fontColor2 highlightLink" href="../pages/communities.html">COMUNIDADES</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/artists.html">ARTISTAS</a>
-                    <a class="font1 fontSize4 fontColor2" href="releases.html">LANÇAMENTOS</a>
-                    <a class="font1 fontSize4 fontColor2" href="">ENVIE UM LANÇAMENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../releases.html">LANÇAMENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/releaseForm.html">ENVIE UM LANÇAMENTO</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/about.html">SOBRE</a>
                 </nav>
                 <div class="highlightEvents">
                     <h2 class="font1 fontSize5 fontColor3">EVENTOS EM DESTAQUE</h2>
                     <ul>
                         <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Mita festival Rio de Janeiro</a>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
                         </li>
                         <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Goptun com Jamie xx</a>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Goptun com Jamie xx</a>
                         </li>
                         <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">NAFF SP | Fisher & Chris Lake</a>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">NAFF SP | Fisher & Chris Lake</a>
                         </li>
                         <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Mita festival Rio de Janeiro</a>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
                         </li>
                         <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/events.html">Mita festival São Paulo</a>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival São Paulo</a>
                         </li>
                     </ul>
-                    <a class="font1 fontSize3 fontColor4 seeAll">VER TUDO</a>
+                    <a class="font1 fontSize3 fontColor4 seeAll" href="../pages/events.html">VER TUDO</a>
                 </div>
                 <div class="follow">
                     <h2 class="font1 fontSize5 fontColor3">SIGA O WE GO OUT</h2>
                     <ul>
                         <li>
-                            <a href="https://www.instagram.com/wegoout/">
-                                <img src="../assets/icone-instagram.svg">
+                            <a class="icone insta" href="//www.instagram.com/wegoout/">
+                                <p class="font2 fontSize4 fontColor3">@wegoout</p>
                             </a>
-                            <p class="font2 fontSize4 fontColor3">@wegoout</p>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/wegoout.br/?locale=pt_BR">
-                                <img src="../assets/icone-facebook.svg">
+                            <a class="icone facebook" href="https://www.facebook.com/wegoout.br/?locale=pt_BR">
+                                <p class="font2 fontSize4 fontColor3">/wegoout.br</p>
                             </a>
-                            <p class="font2 fontSize4 fontColor3">/wegoout.br</p>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/@WeGoOut">
-                                <img src="../assets/icone-youtube.svg">
+                            <a class="icone youtube" href="https://www.youtube.com/@WeGoOut">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
                             </a>
-                            <p class="font2 fontSize4 fontColor3">/wegoout</p>
                         </li>
                         <li>
-                            <a href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
-                                <img src="../assets/icone-spotify.svg">
+                            <a class="icone spotify" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
                             </a>
-                            <p class="font2 fontSize4 fontColor3">/wegoout</p>
                         </li>
                     </ul>
                 </div>
@@ -481,18 +610,18 @@
                         <p class="font2 fontSize2 fontColor2">Todos os direitos reservados a We Go Out 2023®
                             CNPJ: 12.345.678/0001-10</p>
                         <p class="font2 fontSize2 fontColor2">A We Go Out Ltda, inscrita sob o CNPJ: 12.345.678/0001-10 é uma instituição devidamente habilitada e autorizada. Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo impedir ou prejudicar o envio ou a recepção de informações atualizadas.</p>
-                        <p class="font2 fontSize2 fontColor2">contato@wegoout.com</p>
+                        <a class="font2 fontSize2" href="mailto:contato@wegoout.com">contato@wegoout.com</a>
                     </div>
                 </div>
                 <div class="politics">
-                    <a class="font1 fontSize2 fontColor2">POLÍTICA DE PRIVACIADE</a>
-                    <a class="font1 fontSize2 fontColor2">POLÍTICA DE COOKIES</a>
+                    <a class="font1 fontSize2 fontColor2" href="../pages/politicsAndTerms.html">POLÍTICA DE PRIVACIDADE</a>
+                    <a class="font1 fontSize2 fontColor2" href="../pages/cookiesPolitics.html">POLÍTICA DE COOKIES</a>
                 </div>
-                <img class="footerWave2" src="../assets/onda-footer-2.svg">
-                <img class="footerWave3" src="../assets/onda-footer-mobile.svg">
+                <div class="footerWave2"></div>
+                <div class="footerWave3"></div>
             </section>
         </div>
-    </footer> 
+    </footer>  
     <script src="../scripts/jquery.sumoselect.min.js"></script> 
     <script src="../scripts/owl.carousel.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/components/header/index.css"> 
+    <link rel="stylesheet" href="../styles/components/header/menuButton.css">
+    <link rel="stylesheet" href="../styles/event/firstContent/index.css"> 
+    <link rel="stylesheet" href="../styles/event/firstContent/event.css">  
+    <link rel="stylesheet" href="../styles/event/extraContent/index.css"> 
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/index.css"> 
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/content.css"> 
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/seeMore.css"> 
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/share.css"> 
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/artists.css"> 
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/tickets.css">
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/hotels.css">
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/getInTheMood.css">
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/together.css">
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/other.css">
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/questions.css">
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/more.css">
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/info/news.css">
+    <link rel="stylesheet" href="../styles/event/extraContent/similar.css">
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/menuExtra.css"> 
+    <link rel="stylesheet" href="../styles/event/extraContent/firstExtraContent/index.css"> 
+    <link rel="stylesheet" href="../styles/event/extraContent/guide.css"> 
+    <link rel="stylesheet" href="../styles/components/footer2/rights.css">
+    <link rel="stylesheet" href="../styles/components/footer2/utils.css">
+    <link rel="stylesheet" href="../styles/components/footer2/index.css">
+    <link rel="stylesheet" href="../styles/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="../styles/libs/owl.theme.default.min.css">
+    <link rel="icon" href="../assets/icon-logo.png" type="image/x-icon">
+    <title>Evento</title>
+    <script src="../scripts/jquery-3.7.0.min.js"></script>
+    <!-- <script src="../scripts/event.js"></script> -->
+    <script src="../scripts/header.js"></script>
+</head> 
+<body>
+    <div class="backgroundModal"></div>
+    <header class="menu bigLogo static">
+        <nav>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <div class="links activeHighlight">
+                <a href="events.html" class="font1 fontColor3 fontSize4 highlightLink">EVENTOS</a>
+                <a href="../pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
+                <a href="../pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
+                <a href="../pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
+                <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
+                <a href="../pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
+            </div>
+            <button class="lupa lupaStatic"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaStatic disabled">
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaStatic"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav> 
+    </header>   
+    <header class="menu bigLogo floated">
+        <nav class="navStatic">
+            <div class="modal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <button class="lupa lupaFloated"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaFloated disabled">
+                <button class="closeButtonModal"></button>
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaFloated"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav>
+        <div class="modalMenu activeHighlight">
+            <ul>
+                <li><a href="../../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
+                <li><a href="events.html" class="font1 fontSize4 fontColor3 highlightLink">EVENTOS</a></li>
+                <li><a href="../pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
+                <li><a href="../pages/communities.html" class="font1 fontSize4 fontColor3">COMUNIDADES</a></li>
+                <li><a href="../pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
+                <li><a href="../pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
+                <li><a href="../pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
+            </ul> 
+            <div class="buttons">
+                <button class="font1 fontSize3 fontColor3 buttonBlackLarge">ENVIE UM LANÇAMENTO</button>
+                <button class="font1 fontSize3 buttonPinkLarge">ENVIE UM EVENTO</button>
+            </div> 
+                <h2 class="font1 fontSize4 fontColor3">SIGA O WE GO OUT</h2>
+                <div class="icons">
+                <a class="littleIcon" href="https://www.instagram.com/wegoout/">
+                    <img class="littleIcon"  src="../assets/icone-instagram.svg">
+                </a>
+                <a class="littleIcon" href="https://www.facebook.com/wegoout.br/?locale=pt_BR" >
+                    <img class="littleIcon" src="../assets/icone-facebook.svg">
+                </a>
+                <a class="littleIcon" href="https://www.youtube.com/@WeGoOut">
+                    <img class="littleIcon" src="../assets/icone-youtube.svg">
+                </a>
+                <a class="littleIcon" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                    <img class="littleIcon" src="../assets/icone-spotify.svg">
+                </a>
+            </div>
+        </div>
+    </header> 
+    <main class="event">
+        <section class="firstContent">
+            <div class="container">
+                <div class="eventMain">
+                    <div class="photo">
+                        <div class="photoBackground">
+                        </div>
+                        <div class="photoArtist">
+                            <figure>
+                                <span class="tag2">FESTIVAIS</span>
+                                <img src="../assets/destaque.svg" alt="foto do festival"/>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h1>MITA FESTIVAL RIO DE 
+                            JANEIRO <span class="tag1">FESTIVAIS</span></h1>
+                        <div class="description">
+                            <div class="calendarWrapper">
+                                <p class="calendar icon">03 e 04 de junho</p>
+                                <p class="clock icon">12:00 - 23:30</p>
+                            </div>
+                            <p class="music icon">Indie rock, Pop, Dance, Instrumental, Eletro, R&B, Música brasileira.</p>
+                            <div class="houseWrapper">
+                                <div class="linkWrapper">
+                                    <p class="house icon">Jockey Club - Praça Santos Dumont, 31 - Gávea</p>
+                                    <p class="place icon">Rio de Janeiro - RJ</p>
+                                </div>
+                                <a href="">Como chegar</a>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="timeCounter">Faltam <strong>40 dias, 23 horas e 34 minutos</strong> para o evento. </p>
+                            <button>COMPRAR COM DESCONTO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <section class="extraContent">
+            <div class="containerExtra">
+                <div class="firstExtraContent">
+                    <div class="info">
+                        <div class="content">
+                            <h2 class="title">SOBRE</h2>
+                            <p>O festival acontece novamente no Jockey Clube, na área aberta conhecida como Pião do Prado, com total de 110 mil m2. Um dos cartões postais da cidade, o espaço tem uma vista privilegiada para o Cristo Redentor, e está bem ao lado da Lagoa Rodrigo de Freitas. De fácil acesso para chegada com a utilização de transportes coletivos, inclusive de metrô, o espaço está também ao lado da ciclovia.</p>                          
+                            <p>O ingresso do evento dá acesso aos dois palcos – Palco Corcovado e Palco Deezer. A área de Pista Premium existirá somente em frente ao Palco Corcovado.</p>
+                            <div>
+                                <figure>
+                                    <img src="../assets/foto-event-info1.svg" alt="foto mita">
+                                    <figcaption>O MITA acontece em um dos pontos 
+                                        turísticos mais famosos do Rio de Janeiro.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../assets/foto-event-info2.svg" alt="mapa dos palcos">
+                                    <figcaption>Confira o mapa das localizações dos palcos.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../assets/foto-event-info3.svg" alt="dia de sol no mita">
+                                    <figcaption>Dia de sol no MITA Festival.</figcaption>
+                                </figure>
+                            </div>
+                            <p>O festival acontece novamente no Jockey Clube, na área aberta conhecida como Pião do Prado, com total de 110 mil m2. Um dos cartões postais da cidade, o espaço tem uma vista privilegiada para o Cristo Redentor, e está bem ao lado da Lagoa Rodrigo de Freitas. De fácil acesso para chegada com a utilização de transportes coletivos, inclusive de metrô, o espaço está também ao lado da ciclovia.</p>
+                            <p>O ingresso do evento dá acesso aos dois palcos – Palco Corcovado e Palco Deezer. A área de Pista Premium existirá somente em frente ao Palco Corcovado.</p>
+                            <figure>
+                                <img src="../assets/foto-event-info12.svg" alt="mita festival">
+                                <figcaption>O MITA acontece em um dos pontos  turísticos mais famosos do Rio de Janeiro.</figcaption>
+                            </figure>
+                            <h3>Alimentação e custos</h3>
+                            <p>O festival acontece novamente no Jockey Clube, na área aberta conhecida como Pião do Prado, com total de 110 mil m2. Um dos cartões postais da cidade, o espaço tem uma vista privilegiada para o Cristo Redentor, e está bem ao lado da Lagoa Rodrigo de Freitas. De fácil acesso para chegada com a utilização de transportes coletivos, inclusive de metrô, o espaço está também ao lado da ciclovia.</p>
+                            <p>O ingresso do evento dá acesso aos dois palcos – Palco Corcovado e Palco Deezer. A área de Pista Premium existirá somente em frente ao Palco Corcovado.</p>
+                            <button>GUIA DO EVENTO</button>
+                        </div>    
+                        <div class="artists">
+                            <div class="title">
+                                <h2>ARTISTAS</h2>
+                                <span>(20)</span>
+                            </div>
+                            <ul>
+                                <li class="item">
+                                    <a href="../pages/artists.html">
+                                        <img src="../assets/artista1.svg">
+                                        <h3 class="font1 fontSize4 fontColor1">EXCURSÃO SP</h3>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="../pages/artists.html">
+                                        <img src="../assets/artista2.svg">
+                                        <h3 class="font1 fontSize4 fontColor1">ASHIBAH</h3>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="../pages/artists.html">
+                                        <img src="../assets/artista3.svg">
+                                        <h3 class="font1 fontSize4 fontColor1">DIMITRI VIEGAS</h3>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="../pages/artists.html">
+                                        <img src="../assets/artista4.svg">
+                                        <h3 class="font1 fontSize4 fontColor1">ELDERBROOK</h3>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="../pages/artists.html">
+                                        <img src="../assets/artista5.svg">
+                                        <h3 class="font1 fontSize4 fontColor1">FLUME</h3>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="../pages/artists.html">
+                                        <img src="../assets/artista6.svg">
+                                        <h3 class="font1 fontSize4 fontColor1">JAMIE XX</h3>
+                                    </a>
+                                </li>
+                                <li class="item"> 
+                                    <a href="../pages/artists.html">
+                                        <img src="../assets/artista7.svg">
+                                        <h3 class="font1 fontSize4 fontColor1">RUFUS DU SOL</h3>
+                                    </a>
+                                </li>
+                                <li li class="item">
+                                    <a href="../pages/artists.html">
+                                        <img src="../assets/artista8.svg">
+                                        <h3 class="font1 fontSize4 fontColor1">PEGGY GOU</h3>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="../pages/artists.html">
+                                        <img src="../assets/artista8.svg">
+                                        <h3 class="font1 fontSize4 fontColor1">PEGGY GOU</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="../pages/artists.html" class="seeAll">EXIBIT TODOS</a>
+                        </div>
+                        <div class="tickets">
+                            <div class="title">
+                                <h2>INGRESSOS</h2>
+                            </div>
+                            <p>Para comprar, basta entrar no site do Lolla e escolher a melhor opção para você! Lembrando que se você for comprar online, estes valores ainda tem um acréscimo da Taxa de Conveniência.</p>
+                            <a>Comprar agora</a>
+                        </div>
+                        <div class="hotels">
+                            <div class="title">
+                                <h2>ONDE SE HOSPEDAR</h2>
+                            </div>
+                            <div class="option">
+                                <div class="textWrapper">
+                                    <h3>Booking</h3>
+                                    <p>Hotéis próximos do festival com desconto</p>
+                                </div>
+                                <a>Reservar</a>
+                            </div>
+                            <div class="option">
+                                <div div class="textWrapper">
+                                    <h3>Airbnb</h3>
+                                    <p>Hospedagens populares</p>
+                                </div>
+                                <a>Reservar</a>
+                            </div>
+                        </div>
+                        <div class="together">
+                            <div class="title">
+                                <h2>WE GO OUT TOGETHER</h2>
+                            </div>
+                            <p>Faça parte do nosso grupo de WhatsApp desse evento para ter benefícios exclusivos, cupons de 
+                                desconto e acesso as melhores dicas até o evento.<a>Clique aqui</a> e veja todos os nosso grupos.</p>
+                            <ul>
+                                <li class="item">
+                                    <a href="../pages/communities.html">
+                                        <img src="../assets/event-together1.svg">
+                                        <h3 class="font1 fontSize4 fontColor1">EXCURSÃO SP</h3>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="../pages/communities.html">
+                                        <img src="../assets/event-together2.svg">
+                                        <h3 class="font1 fontSize4 fontColor1">HOSPEDAGENS</h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="getInTheMood">
+                            <div class="title">
+                                <h2>ENTRE NO CLIMA</h2>
+                            </div>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4C2RPf3HTrOhYWVtJnphHj?utm_source=generator&theme=0" width="350px" height="400px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                        <div class="questions">
+                            <div class="title">
+                                <h2>DÚVIDAS FREQUENTES</h2>
+                            </div>
+                            <h3>Como chegar até o evento?</h3>
+                            <div>
+                                <p>O evento acontece na Gávea, no Jockey Club - Praça Santos Dumont, 31. O acesso ao local é bem fácil através do transporte público, podendo utilizar as linhas de ônibus A4101 Norte de quem vem do centro para a região ou a linha  A402 Leste para quem vem do leste. </p>
+                                <p>Outra forma de chegar até o local do evento é por meio de aplicativos. A 99Pop é uma das patrocinadoras do MITA e está disponibilizando alguns cupons de desconto por localidade. Quando chegar na região, ative seu aplicativo e fique de olho, o trajeto deve ganhar ativações e promoções durante o período.</p>
+                            </div>
+                            <h3>Políticas de meia-entrada e entrada solidária</h3>
+                            <h3>Quais itens posso levar para o evento?</h3>
+                            <h3>É proibida a entra dade menores de idade?</h3>
+                        </div>
+                        <div class="more">
+                            <h2 class="title">MAIS DETALHES</h2>
+                            <p>O festival acontece novamente no Jockey Clube, na área aberta conhecida como Pião do Prado, com total de 110 mil m2. Um dos cartões postais da cidade, o espaço tem uma vista privilegiada para o Cristo Redentor, e está bem ao lado da Lagoa Rodrigo de Freitas. De fácil acesso para chegada com a utilização de transportes coletivos, inclusive de metrô, o espaço está também ao lado da ciclovia.</p>
+                            <div>
+                                <figure>
+                                    <img src="../assets/foto-event-info1.svg" alt="foto mita">
+                                    <figcaption>O MITA acontece em um dos pontos 
+                                        turísticos mais famosos do Rio de Janeiro.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../assets/foto-event-info2.svg" alt="mapa dos palcos">
+                                    <figcaption>Confira o mapa das localizações dos palcos.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img src="../assets/foto-event-info3.svg" alt="dia de sol no mita">
+                                    <figcaption>Dia de sol no MITA Festival.</figcaption>
+                                </figure>
+                            </div>
+                            <p>O festival acontece novamente no Jockey Clube, na área aberta conhecida como Pião do Prado, com total de 110 mil m2. Um dos cartões postais da cidade, o espaço tem uma vista privilegiada para o Cristo Redentor, e está bem ao lado da Lagoa Rodrigo de Freitas. De fácil acesso para chegada com a utilização de transportes coletivos, inclusive de metrô, o espaço está também ao lado da ciclovia.</p>
+                            <h3>Acesse o site oficial do evento <a>mitafestival.com.br</a></h3>
+                        </div>
+                        <div class="other">
+                            <h2 class="title">OUTRAS EDIÇÕES</h2>
+                            <div>
+                                <h2>Mita festival Rio de Janeiro 2022</h2>
+                            </div>
+                            <div>
+                                <h2>Mita festival São Paulo 2022</h2>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div class="title">
+                                <h2 class="font1 fontSize6 fontColor1">NOTÍCIAS SOBRE O EVENTO</h2>
+                                <a href="../pages/news.html" class="seeAll">VER TUDO</a>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="../pages/releases.html">
+                                        <figure>
+                                            <img src="../assets/lançamento1.svg">
+                                            <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                        </figure>
+                                        <div>
+                                            <h3 class="font1 fontSize5 fontColor1">FESTA MÓL DESEMBARCA EM 3 CIDADES PARA REALIZAR O SEU TOUR!</h3>
+                                            <span class="font2 fontColor2">07 de março</span>
+                                        </div> 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../pages/releases.html">
+                                        <figure>
+                                            <img src="../assets/lançamento1.svg">
+                                            <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                        </figure>
+                                        <div>
+                                            <h3 class="font1 fontSize5 fontColor1">FESTA MÓL DESEMBARCA EM 3 CIDADES PARA REALIZAR O SEU TOUR!</h3>
+                                            <span class="font2 fontColor2">07 de março</span>
+                                        </div> 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="moreInfo font1 fontSize2">SABER MAIS</button>
+                    </div>
+                    <div class="menuExtra">
+                    </div> 
+                </div>  
+                <div class="similar">
+                    <h2 class="title">EVENTOS SEMELHANTES</h2>
+                    <div class="carouselEvents owl-carousel owl-theme">
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                            <figure href="../pages/events.html">
+                                <img class="" src="../assets/event-similar1.svg" alt="Mita Festival">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </figure>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">MITA FESTIVAL RIO DE JANEIRO</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Indie rock, Pop, Dance, Instrumental… +5</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Lana Del Rey, Florence + The Machine, Haim, Badba… + 11</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Jockey Club</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localização">
+                                        <p class="font2 fontColor1 fontSize3">Rio de Janeiro - RJ</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">03 e 04 de junho</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                            <figure href="../pages/events.html">
+                                <img class="" src="../assets/event-similar2.svg" alt="Mita Festival">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </figure>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">MITA FESTIVAL RIO DE JANEIRO</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Indie rock, Pop, Dance, Instrumental… +5</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Lana Del Rey, Florence + The Machine, Haim, Badba… + 11</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Jockey Club</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localização">
+                                        <p class="font2 fontColor1 fontSize3">Rio de Janeiro - RJ</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">03 e 04 de junho</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                            <figure href="../pages/events.html">
+                                <img class="" src="../assets/event-similar3.svg" alt="Mita Festival">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </figure>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">MITA FESTIVAL RIO DE JANEIRO</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Indie rock, Pop, Dance, Instrumental… +5</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Lana Del Rey, Florence + The Machine, Haim, Badba… + 11</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Jockey Club</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localização">
+                                        <p class="font2 fontColor1 fontSize3">Rio de Janeiro - RJ</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">03 e 04 de junho</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                            <figure href="../pages/events.html">
+                                <img class="" src="../assets/event-similar4.svg" alt="Mita Festival">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </figure>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">MITA FESTIVAL RIO DE JANEIRO</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Indie rock, Pop, Dance, Instrumental… +5</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Lana Del Rey, Florence + The Machine, Haim, Badba… + 11</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Jockey Club</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localização">
+                                        <p class="font2 fontColor1 fontSize3">Rio de Janeiro - RJ</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">03 e 04 de junho</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                            <figure href="../pages/events.html">
+                                <img class="" src="../assets/destaque.svg" alt="Mita Festival">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </figure>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">MITA FESTIVAL RIO DE JANEIRO</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Indie rock, Pop, Dance, Instrumental… +5</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Lana Del Rey, Florence + The Machine, Haim, Badba… + 11</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Jockey Club</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localização">
+                                        <p class="font2 fontColor1 fontSize3">Rio de Janeiro - RJ</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">03 e 04 de junho</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="item">  
+                            <a href="../pages/event.html">
+                            <figure href="../pages/events.html">
+                                <img class="" src="../assets/destaque.svg" alt="Mita Festival">
+                                <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                            </figure>
+                            <div class="text">
+                                <h2 class="font1 fontColor1 fontSize7">MITA FESTIVAL RIO DE JANEIRO</h2>
+                                <div class="music">
+                                    <img class="littleIcon" src="../assets/icone-musica-dark.svg" alt="icone música">
+                                    <p class="font2 fontColor1 fontSize3">Indie rock, Pop, Dance, Instrumental… +5</p>
+                                </div>
+                                <div class="star">
+                                    <img class="littleIcon" src="../assets/icone-estrela-dark.svg" alt="icone estrela">
+                                    <p class="font2 fontColor1 fontSize3">Lana Del Rey, Florence + The Machine, Haim, Badba… + 11</p>
+                                </div>
+                                <div class="iconWrapper">
+                                    <div class="house">
+                                        <img class="littleIcon" src="../assets/icone-casa-dark.svg" alt="icone casa">
+                                        <p class="font2 fontColor1 fontSize3">Jockey Club</p>
+                                    </div>
+                                    <div class="location">
+                                        <img class="littleIcon" src="../assets/icone-localizacao-dark.svg" alt="icone localização">
+                                        <p class="font2 fontColor1 fontSize3">Rio de Janeiro - RJ</p>
+                                    </div>
+                                </div>
+                                <div class="calendar">
+                                    <img class="littleIcon date" src="../assets/icone-calendario-dark.svg" alt="icone calendário">
+                                    <p class="font2 fontColor1 fontSize3">03 e 04 de junho</p>
+                                </div>
+                            </div>
+                            <div class="tagPromoDiv">
+                                <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                <span class="fontColor3 tagPromoTip"></span>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+    <footer>
+        <div class="container">
+            <section class="utils">
+                <nav class="navigation">
+                    <a class="font1 fontSize4 fontColor2" href="../../index.html">INICIO</a>
+                    <a class="font1 fontSize4 fontColor2 highlightLink" href="events.html">EVENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/eventForm.html">ENVIE UM EVENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/news.html">NOTICIAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/communities.html">COMUNIDADES</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/artists.html">ARTISTAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../releases.html">LANÇAMENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/releaseForm.html">ENVIE UM LANÇAMENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/about.html">SOBRE</a>
+                </nav>
+                <div class="highlightEvents">
+                    <h2 class="font1 fontSize5 fontColor3">EVENTOS EM DESTAQUE</h2>
+                    <ul>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Goptun com Jamie xx</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">NAFF SP | Fisher & Chris Lake</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival São Paulo</a>
+                        </li>
+                    </ul>
+                    <a class="font1 fontSize3 fontColor4 seeAll" href="../pages/events.html">VER TUDO</a>
+                </div>
+                <div class="follow">
+                    <h2 class="font1 fontSize5 fontColor3">SIGA O WE GO OUT</h2>
+                    <ul>
+                        <li>
+                            <a class="icone insta" href="//www.instagram.com/wegoout/">
+                                <p class="font2 fontSize4 fontColor3">@wegoout</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone facebook" href="https://www.facebook.com/wegoout.br/?locale=pt_BR">
+                                <p class="font2 fontSize4 fontColor3">/wegoout.br</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone youtube" href="https://www.youtube.com/@WeGoOut">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone spotify" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="newsletter">
+                    <h2 class="font1 fontSize5 fontColor3">NEWSLETTER</h2>
+                    <p class="font2 fontSize3 fontColor2">Quer receber descontos e mais informações sobre festas e festivais?</p>                  
+                    <input class="font2 fontSize3 fontColor2" type="text" name="name" placeholder="Nome e sobrenome"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="email" placeholder="Email"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="whatsapp" placeholder="Whatsapp"/>
+                    <button class="font1 fontSize3 fontColor3" type="submit">CADASTRAR</button>
+                </form>
+            </section>
+            <section class="rights">  
+                <div class="logo">
+                    <img src="../assets/logo-dark.svg">
+                    <div class="text">
+                        <p class="font2 fontSize2 fontColor2">Todos os direitos reservados a We Go Out 2023®
+                            CNPJ: 12.345.678/0001-10</p>
+                        <p class="font2 fontSize2 fontColor2">A We Go Out Ltda, inscrita sob o CNPJ: 12.345.678/0001-10 é uma instituição devidamente habilitada e autorizada. Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo impedir ou prejudicar o envio ou a recepção de informações atualizadas.</p>
+                        <a class="font2 fontSize2" href="mailto:contato@wegoout.com">contato@wegoout.com</a>
+                    </div>
+                </div>
+                <div class="politics">
+                    <a class="font1 fontSize2 fontColor2" href="../pages/politicsAndTerms.html">POLÍTICA DE PRIVACIDADE</a>
+                    <a class="font1 fontSize2 fontColor2" href="../pages/cookiesPolitics.html">POLÍTICA DE COOKIES</a>
+                </div>
+                <div class="footerWave2"></div>
+                <div class="footerWave3"></div>
+            </section>
+        </div>
+    </footer> 
+    <script src="../scripts/owl.carousel.min.js"></script>
+    <script src="../scripts/header.js"></script>
+</body>
+</html>

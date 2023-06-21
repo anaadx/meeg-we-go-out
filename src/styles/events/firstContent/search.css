@@ -1,0 +1,127 @@
+.events .searchEvents {
+    margin-top: 40px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.events .searchEvents .title {
+    margin-bottom: 30px;
+}
+
+.events .searchEvents .filter {
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    height: 45px;
+}
+
+.events .searchEvents .filter h4 {
+    position: absolute;
+    left: 0px;
+    font-family: var(--font2);
+    font-size: 14px;
+    color: var(--neutral3);
+    margin-top: 13px;
+}
+
+.events .searchEvents .filter .viewMode {
+    position: absolute;
+    right: 0px;
+}
+
+.events .searchEvents .filter .viewMode div {
+    background-color: var(--neutral2);
+    padding: 5px;
+    border-radius: 20px;
+    float: left;
+    overflow: hidden;
+    width: 290px;
+}
+
+.events .searchEvents .filter .viewMode button {
+    width: 140px;
+    padding: 10px 0px;
+    border-radius: 20px;
+    border: none;
+}
+
+.events .searchEvents .filter .viewMode button:nth-child(1) {
+    float: left;
+    background-color: var(--neutral1);
+}
+
+.events .searchEvents .filter .viewMode button:nth-child(2) {
+    float: left;
+    background-color: var(--neutral2);
+    opacity: 40%;
+}
+
+.events .searchEvents .filter .viewMode h3 {
+    font-family: var(--font2);
+    font-size: 16px;
+    color: var(--neutral7);
+    display: inline;
+    margin-right: 10px;
+    float: left;
+    margin-top: 12px;
+}
+
+.events .searchEvents .filter .viewMode p {
+    font-family: var(--font2);
+    font-size: 12px;
+    color: var(--neutral7);
+    width: max-content;
+    margin: 0 auto;
+}
+
+.events .searchEvents .filter .viewMode p:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.events .searchEvents .filter .viewMode .list:before {
+    background-image: url(../../../assets/icone-lista-filtro.svg);
+}
+
+.events .searchEvents .filter .viewMode .map:before {
+    background-image: url(../../../assets/icone-mapa-filtro.svg);
+}
+
+.placeTipActive .searchTool form .placeTip .placeTipOpen {
+    padding-bottom: 20px;
+}
+
+@media(max-width: 1024px) {
+    .events .searchEvents {
+        border-radius: 5px;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: -10000px;
+        background-color: var(--neutral1);
+        z-index: 10;
+        box-shadow: 2px -70px 5px 0px var(--greyOpacity);
+        border-radius: 10px;
+        height: calc(100vh - 65px);
+        overflow-y: scroll;
+    }
+
+    .searchEventsModalActive .searchEvents {
+        top: 25px;
+        transition: all 1s;
+    }
+
+    .events .searchModalButton {
+        margin-bottom: 35px;
+        position: relative;
+    }
+
+}

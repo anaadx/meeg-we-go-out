@@ -1,0 +1,211 @@
+.singleNews .info .seeMore {
+    width: 100%;
+    background-color: var(--neutral7);
+    padding: 0px 40px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.singleNews .info .seeMore h2 {
+    width: 100%;
+    background-color: var(--neutral7);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.singleNews .info .seeMore .links {
+    width: 100%;
+    padding: 25px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: var(--neutral4);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 40px;
+    align-items: center;
+}
+
+.singleNews .info .seeMore h3 {
+    font-size: 16px;
+    font-family: "Lato";
+    color: var(--neutral1);
+    line-height: 1.5em;
+}
+
+.singleNews .info .seeMore a {
+    font-size: 16px;
+    font-family: "Lato";
+    text-decoration: underline;
+    color: var(--main1);
+    padding: 10px 8px;
+    display: block;
+    text-align: center;
+    justify-self: end;
+}
+
+
+.singleNews .info .seeMore a:hover {
+    color: var(--pinkHover);
+    transition: var(--transitionFast);
+}
+
+.singleNews .info .seeMore a.follow:hover {
+    background-color: var(--pinkHover);
+    transition: var(--transitionFast);
+    color: var(--neutral7);
+}
+
+.singleNews .info .seeMore .follow {
+    border-radius: 5px;
+    background-color: var(--main1);
+    color: var(--neutral7);
+    text-decoration: none;
+}
+
+.singleNews .info .seeMore .profile {
+    margin-top: 60px;
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    background-color: var(--neutral4);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.singleNews .info .seeMore .profile img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    float: left;
+    margin-right: 20px;
+}
+
+.singleNews .info .seeMore .profile div h2 {
+    font-size: 16px;
+    font-family: "Lato";
+    color: var(--neutral1);
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: var(--neutral4);
+}
+
+.singleNews .info .seeMore .profile div {
+    float: left;
+    width: calc(100% - 185px);
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.singleNews .info .seeMore .profile div p {
+    font-size: 14px;
+    font-family: "Lato";
+    color: var(--neutral3);
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+.singleNews .info .seeMore .profile nav {
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 74px;
+}
+
+.singleNews .info .seeMore .profile nav a {
+    display: block;
+    background-size: 18px;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px;
+    justify-self: start
+}
+
+.singleNews .info .seeMore .profile nav a:hover {
+    filter: brightness(0.8);
+    transition: var(--transitionFast);
+}
+
+.singleNews .info .seeMore .profile nav .instagram {
+    background-image: url(../../../../../assets/icone-instagram-pink.svg);
+}
+
+.singleNews .info .seeMore .profile nav .facebook {
+    background-image: url(../../../../../assets/icone-facebook-pink.svg);
+}
+
+.singleNews .info .seeMore .profile nav .spotify {
+    background-image: url(../../../../../assets/icone-spotify-pink.svg);
+}
+
+.singleNews .info .seeMore .blankPart {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: -140px;
+    background: var(--neutral2);
+    bottom: -10px;
+    border-radius: 20px;
+    box-shadow: -18px 52px 0px 0px #fff;
+}
+
+@media (max-width: 1024px) {
+
+    .singleNews .info .seeMore {
+        padding: 0px 20px;
+        padding-top: 10px;
+    }
+
+    .singleNews .info .seeMore h2 {
+        font-size: 18px;
+    }
+
+    .singleNews .info .seeMore .links {
+        padding: 15px;
+    }
+
+    .singleNews .info .seeMore a {
+        font-size: 14px;
+        padding: 0px;
+    }
+
+    .singleNews .info .seeMore .follow {
+        padding: 10px 8px;
+    }
+
+    .singleNews .info .seeMore h3 {
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    .singleNews .info .seeMore .profile {
+        position: relative;
+        padding: 15px;
+        margin-top: 35px
+    }
+
+    .singleNews .info .seeMore .profile img {
+        width: 60px;
+        height: 60px;
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .singleNews .info .seeMore .profile div {
+        width: 100%
+    }
+
+    .singleNews .info .seeMore .profile div h2 {
+        position: absolute;
+        top: 40px;
+        left: 90px;
+        float: none;
+        font-size: 14px;
+    }
+
+    .singleNews .info .seeMore .profile div p {
+        font-size: 12px;
+    }
+}

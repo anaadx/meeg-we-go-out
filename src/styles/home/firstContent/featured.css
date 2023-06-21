@@ -1,0 +1,375 @@
+.home .featured {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-content: baseline;
+    margin-bottom: 30px;
+}
+
+.home .featured .owl-carousel .owl-stage {
+    padding: 20px 0px;
+}
+
+.home .featured .owl-carousel .owl-nav {
+    top: -40px;
+}
+
+/* featured-emphasis */
+
+.home .emphasis {
+    z-index: 1;
+    width: calc(60% - 30px);
+    overflow: hidden;
+}
+
+.home .emphasis .title {
+    margin-bottom: 10px;
+}
+
+.home .emphasis .carouselEvents {
+    width: 100%;
+}
+
+.home .emphasis .carouselEvents .item {
+    padding: 20px;
+    position: relative;
+    background-color: var(--neutral2);
+    border-radius: 10px;
+    height: 420px;
+    width: 100%;
+    transition: var(--transitionFast);
+}
+
+.home .emphasis .carouselEvents a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    gap: 15px;
+}
+
+.home .emphasis .carouselEvents .item:hover {
+    margin-top: -3px;
+}
+
+.home .emphasis .carouselEvents .item:hover img {
+    width: calc(100% + 10px);
+    margin-left: -5px;
+    margin-top: -5px;
+    height: calc(100% + 5px);
+}
+
+.home .featured .icon {
+    font-family: var(--font2);
+    color: var(--neutral7);
+    font-size: 14px;
+}
+
+.home .featured .icon:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.home .featured .music:before {
+    background-image: url("../../../assets/icone-musica.svg");
+}
+
+.home .featured .star:before {
+    background-image: url("../../../assets/icone-estrela.svg");
+}
+
+.home .featured .house:before {
+    background-image: url("../../../assets/icone-casa.svg");
+}
+
+.home .featured .location:before {
+    background-image: url("../../../assets/icone-localizacao.svg");
+    margin-top: -5px;
+}
+
+.home .featured .calendar:before {
+    background-image: url("../../../assets/icone-calendario.svg");
+}
+
+.home .featured .calendar {
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+    background-color: var(--greyOpacity);
+    display: flex;
+    align-items: center;
+}
+
+.home .emphasis .iconWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: baseline;
+}
+
+.home .emphasis .iconWrapper .house {
+    align-self: baseline;
+}
+
+.home .emphasis .carouselEvents figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.home .emphasis .carouselEvents figure img {
+    width: 100%;
+    object-fit: cover;
+    transition: var(--transitionFast);
+    height: 100%;
+}
+
+.home .emphasis .carouselEvents .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(60% - 15px);
+    line-height: 20px;
+}
+
+.home .emphasis .carouselEvents .text p {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.home .emphasis .carouselEvents .text h2 {
+    margin-bottom: 10px;
+    line-height: 1.27em;
+}
+
+.home .emphasis .carouselEvents .text div {
+    display: flex;
+    gap: 10px;
+}
+
+/* featured-countdown */
+
+.home .countdown {
+    z-index: 1;
+    width: calc(60% - 30px);
+    overflow: hidden;
+    height: 100%;
+}
+
+.home .countdown .item .card:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.home .countdown .carouselCountdown {
+    width: 100%;
+}
+
+.home .countdown .card {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    background-color: var(--neutral2);
+    position: relative;
+    height: 200px;
+    text-decoration: none;
+    transition: var(--transitionFast);
+}
+
+
+.home .countdown .card img {
+    transition: var(--transitionFast);
+}
+
+.home .countdown .card:hover {
+    margin-top: -3px;
+}
+
+.home .countdown .card:hover img {
+    width: calc(100% + 10px);
+    margin-left: -5px;
+    margin-top: -5px;
+}
+
+.home .countdown .card figure {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.home .countdown .carouselCountdown .text h2 {
+    line-height: 1.28em;
+}
+
+.home .countdown .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home .countdown .title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.home .countdown .title button {
+    width: 20px;
+    background-color: var(--neutral1);
+    border: none;
+}
+
+.home .countdown .date {
+    border-radius: 3px;
+    display: flex;
+    width: fit-content;
+    gap: 5px;
+    padding: 5px;
+    background-color: var(--greyOpacity);
+    align-items: center;
+}
+
+.home .countdown .iconWrapper {
+    display: flex;
+    gap: 10px;
+}
+
+@media(max-width: 1024px) {
+    .home .featured {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .home .emphasis {
+        width: 100%;
+        height: min-content;
+        margin-top: 80px;
+    }
+
+    .home .emphasis .carouselEvents .item {
+        min-height: 450px;
+        height: max-content;
+        padding-bottom: 60px;
+    }
+
+    .home .emphasis .carouselEvents .text p {
+        font-size: 10px;
+    }
+
+    .home .emphasis .carouselEvents .text h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .home .emphasis .title {
+        margin-bottom: 0px;
+    }
+
+    .home .emphasis .title h1 {
+        font-size: 18px;
+    }
+
+    .home .emphasis .carouselEvents .item a {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home .emphasis .carouselEvents .item .star,
+    .home .emphasis .carouselEvents .item .music {
+        display: none;
+    }
+
+    .home .emphasis .carouselEvents .item figure {
+        width: 100%;
+        height: 260px;
+        max-width: 100%;
+    }
+
+    .home .emphasis .carouselEvents .item figure img {
+        height: min-content;
+    }
+
+    .home .emphasis .carouselEvents {
+        background-color: var(--neutral1);
+        width: calc(100% - 50px)
+    }
+
+    .home .emphasis .carouselEvents .item .calendar {
+        position: absolute;
+        bottom: 10px;
+        width: max-content;
+    }
+
+    .home .emphasis .carouselEvents .text .iconWrapper {
+        flex-direction: row;
+    }
+
+    .home .emphasis .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+
+    .home .emphasis .carouselEvents .text {
+        width: calc(100% - 10px);
+        gap: 10px;
+    }
+
+    .home .emphasis .carouselEvents .text p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .home .countdown .carouselCountdown .text h2 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .home .countdown .title {
+        margin-bottom: 0px;
+    }
+
+    .home .countdown .title h2 {
+        font-size: 18px;
+    }
+
+    .home .countdown .text {
+        gap: 10px;
+    }
+
+    .home .countdown .carouselCountdown .text p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .home .countdown .place {
+        flex-direction: column;
+    }
+
+    .home .countdown {
+        width: 100%;
+    }
+
+    .home .countdown .card figure {
+        width: 130px;
+        height: 130px;
+    }
+
+    .home .countdown .card img {
+        width: 130px;
+    }
+
+    .home .countdown .card {
+        height: 170px;
+        gap: 15px;
+    }
+}

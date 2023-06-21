@@ -12,6 +12,12 @@ $(document).ready(function () {
     } else {
       $("body").removeClass("menuActive");
     }
+
+    if ($(this).scrollTop() >= 5) {
+      $("body").addClass("backgroundMenu");
+    } else {
+      $("body").removeClass("backgroundMenu");
+    }
   });
 
   function disableFixedItems() {
@@ -106,7 +112,7 @@ $(document).ready(function () {
     navSpeed: 500,
     loop: false,
     center: false,
-    margin: 10,
+    margin: 20,
     responsiveClass: true,
     nav: true,
     navText: [prevBtn, nextBtn],
@@ -116,12 +122,10 @@ $(document).ready(function () {
       0: {
         items: 1,
         nav: false,
-        margin: 0,
       },
       700: {
         items: 2,
         nav: false,
-        margin: 0,
       },
       960: {
         items: 3,

@@ -1,0 +1,265 @@
+.eventForm form {
+    background-color: var(--neutral7);
+    border-radius: 20px 20px 0px 0px;
+    width: 50%;
+    margin-top: 120px;
+    padding-bottom: 200px;
+}
+
+.eventForm form .container {
+    margin: 80px 80px;
+    width: calc(100% - 160px);
+    overflow: hidden;
+}
+
+.eventForm form h2 {
+    font-family: var(--font1);
+    color: var(--neutral1);
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.eventForm form .picture {
+    width: 100%;
+    height: 60px;
+    background-image: url(../../assets/green-check.svg);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+.eventForm form h3 {
+    font-family: var(--font2);
+    color: var(--neutral1);
+    font-size: 18px;
+    margin-bottom: 35px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.eventForm form .middleContent {
+    padding: 35px 0px;
+    border-top: 3px solid var(--neutral4);
+    border-bottom: 3px solid var(--neutral4);
+    margin-bottom: 30px;
+}
+
+.eventForm form p {
+    font-family: var(--font2);
+    color: var(--neutral3);
+    font-size: 14px;
+    margin-bottom: 35px;
+    line-height: 1.5em;
+}
+
+.eventForm form .middleContent .buttonWrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.eventForm form .middleContent button:nth-child(1) {
+    width: calc(50% - 10px);
+    background-color: var(--main1);
+    color: var(--neutral7);
+    border: none;
+    font-family: var(--font1);
+    font-size: 14px;
+    border: 3px solid var(--main1);
+    margin-right: 20px;
+    float: left;
+    padding: 15px 0px;
+    border-radius: 5px;
+}
+
+form label {
+    color: var(--neutral1);
+}
+
+.eventForm form .middleContent button:nth-child(1):hover {
+    background-color: var(--pinkHover);
+    transition: var(--transitionFast);
+    border: 3px solid var(--pinkHover);
+}
+
+.eventForm form .middleContent button:nth-child(2):hover {
+    background-color: var(--neutral4);
+    transition: var(--transitionFast);
+}
+
+.eventForm form .lastContent button:hover {
+    background-color: var(--greenHover);
+    border: 3px solid var(--greenHover);
+    transition: var(--transitionFast);
+}
+
+.eventForm form .middleContent button:nth-child(2) {
+    width: calc(50% - 10px);
+    background-color: var(--neutral7);
+    color: var(--neutral1);
+    border: none;
+    font-family: var(--font1);
+    font-size: 14px;
+    border: 3px solid var(--neutral1);
+    float: left;
+    padding: 15px 0px;
+    border-radius: 5px;
+}
+
+.eventForm form .lastContent {
+    width: 100%;
+    overflow: hidden;
+}
+
+.eventForm form .lastContent p {
+    width: calc(50% - 5px);
+    margin-right: 10px;
+    float: left;
+}
+
+.eventForm form .lastContent button {
+    width: calc(50% - 10px);
+    background-color: var(--main5);
+    border: none;
+    border: 3px solid var(--main5);
+    padding: 15px 0px;
+    border-radius: 5px;
+    float: left;
+    padding-left: 30px;
+}
+
+.eventForm form .lastContent button p {
+    color: var(--neutral7);
+    font-family: var(--font1);
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    margin: 0px;
+    width: max-content;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+}
+
+.eventForm form .lastContent button p:before {
+    background-image: url(../../assets/icone-whatsapp-button.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 20px;
+    margin-right: 5px;
+    background-position: center;
+    height: 25px;
+    content: "";
+    position: absolute;
+    left: -28px;
+    bottom: 0px;
+}
+
+@media(max-width: 1024px) {
+    .eventForm form {
+        background-color: var(--neutral7);
+        border-radius: 0px;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .eventForm form .container {
+        margin: 20px;
+        margin-bottom: 70px;
+        width: calc(100% - 40px);
+        overflow: hidden;
+    }
+
+    .eventForm form h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .eventForm form h3 {
+        font-size: 14px;
+    }
+
+    .eventForm form p {
+        font-size: 12px;
+    }
+
+    .eventForm .lastContent p {
+        margin: 25px 0px;
+    }
+
+    .eventForm form .middleContent {
+        padding: 20px 0px;
+        margin-bottom: 0px;
+    }
+
+    .eventForm form .middleContent button:nth-child(1) {
+        margin-bottom: 15px;
+        margin-right: 0px;
+    }
+
+    .eventForm form .middleContent button:nth-child(2) {
+        margin-top: 0px;
+    }
+
+    .eventForm form .middleContent button:nth-child(2),
+    .eventForm form .middleContent button:nth-child(1),
+    .eventForm form .lastContent p,
+    .eventForm form .lastContent button {
+        width: 100%;
+        float: none;
+        font-size: 12px;
+    }
+
+    .eventForm form input {
+        margin-bottom: 10px;
+    }
+
+    .eventForm form .SumoSelect {
+        margin-bottom: 10px;
+    }
+
+    .eventForm form textarea {
+        margin-bottom: 10px;
+    }
+
+    .eventForm form .block .field {
+        float: none;
+        width: 100%;
+    }
+
+    .eventForm form .field label {
+        color: var(--neutral1);
+    }
+
+    .eventForm form .fieldWrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .eventForm form .fieldWrapper .explanation {
+        padding: 0px;
+        margin-bottom: 15px;
+    }
+
+    .eventForm form .imgInput .picture {
+        background-image: url(../../assets/adicionar-imagem-form.svg);
+        width: 121px;
+        height: 121px;
+        margin-right: 20px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: block;
+        float: left;
+    }
+
+    .eventForm form .imgInput .text h3 {
+        font-size: 14px
+    }
+
+    .eventForm form .imgInput .text p {
+        font-size: 10px
+    }
+}

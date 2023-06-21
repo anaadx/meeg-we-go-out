@@ -1,0 +1,446 @@
+.events-map .nextEvents {
+    width: 50%;
+    height: min-content;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    float: left;
+    margin-top: 270px;
+}
+
+.events-map .nextEvents .containerExtra {
+    position: relative;
+    margin: 40px 40px 0px 40px
+}
+
+.events-map .nextEvents .title h2 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: var(--font2);
+    color: var(--neutral1);
+}
+
+.events-map .nextEvents .listItems {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    gap: 20px;
+}
+
+.events-map .nextEvents .listItems .text p {
+    font-size: 14px;
+    line-height: 1.5em;
+    font-family: var(--font2);
+    color: var(--neutral7);
+    display: flex;
+    align-items: center;
+}
+
+.events-map .nextEvents .listItems .text h2 {
+    margin-bottom: 10px;
+    line-height: 1.27em;
+    font-family: var(--font1);
+    color: var(--neutral7);
+    font-size: 18px;
+}
+
+.events-map .nextEvents .listItems .text h2,
+.events-map .nextEvents .listItems .text p {
+    color: var(--neutral1);
+}
+
+.events-map .nextEvents .listItems .item {
+    padding: 20px;
+    padding-bottom: 60px;
+    position: relative;
+    border-radius: 10px;
+    height: 545px;
+    background-color: var(--neutral5);
+    width: 100%;
+    transition: var(--transitionFast);
+}
+
+.events-map .nextEvents .listItems .ads {
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    background-color: var(--neutral5);
+    width: 100%;
+    transition: var(--transitionFast);
+    height: 560px;
+}
+
+.events-map .nextEvents .listItems .ads a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.events-map .nextEvents .listItems .ads img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transitionFast);
+}
+
+.events-map .nextEvents .listItems a {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: 450px;
+    text-decoration: none;
+}
+
+.events-map .nextEvents .listItems .item .calendar {
+    background-color: var(--neutral4);
+}
+
+.events-map .nextEvents .music:before {
+    background-image: url("../../../assets/icone-musica-dark.svg");
+}
+
+.events-map .nextEvents .star:before {
+    background-image: url("../../../assets/icone-estrela-dark.svg");
+}
+
+.events-map .nextEvents .house:before {
+    background-image: url("../../../assets/icone-casa-dark.svg");
+}
+
+.events-map .nextEvents .icon.location:before {
+    background-image: url("../../../assets/icone-localizacao-dark.svg");
+    margin-top: -5px;
+    height: 20px;
+}
+
+.events-map .nextEvents .calendar:before {
+    background-image: url("../../../assets/icone-calendario-dark.svg");
+}
+
+.events-map .nextEvents .icon {
+    font-family: var(--font2);
+    color: var(--neutral7);
+    font-size: 14px;
+}
+
+.events-map .nextEvents .icon:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.events-map .nextEvents .calendar {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: var(--greyOpacity);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    width: max-content;
+}
+
+.events-map .nextEvents .iconWrapper {
+    display: flex;
+    gap: 10px;
+    align-self: baseline;
+}
+
+.events-map .nextEvents .iconWrapper .house {
+    align-self: baseline;
+}
+
+.events-map .nextEvents .listItems figure {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.events-map .nextEvents .listItems figure img {
+    width: 100%;
+    border-radius: 10px;
+    height: 260px;
+    object-fit: cover;
+    transition: var(--transitionFast);
+}
+
+.events-map .nextEvents .listItems .text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: calc(100% - 10px);
+    line-height: 20px;
+}
+
+.events-map .nextEvents .listItems .text div {
+    display: flex;
+    gap: 10px;
+}
+
+.events-map .nextEvents button {
+    width: max-content;
+    padding: 10px 20px;
+    color: var(--neutral6);
+    background-color: var(--main1);
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+}
+
+.events-map .nextEvents button:hover {
+    background-color: var(--pinkHover);
+    cursor: pointer;
+}
+
+.filterSearchMode .events-map .nextEvents button {
+    display: none;
+}
+
+.events-map .nextEvents .listItems a img {
+    width: 100%;
+    height: 100%;
+    transition: var(--transitionFast);
+}
+
+.events-map .nextEvents .listItems .item:hover img {
+    margin-left: -5px;
+    margin-top: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 5px);
+}
+
+
+.events-map .nextEvents .listItems .ads:hover img {
+    margin-left: -5px;
+    margin-top: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 5px);
+}
+
+.events-map .nextEvents .listItems .item:hover,
+.events-map .nextEvents .listItems .ads:hover {
+    margin-top: -3px;
+}
+
+.events-map .nextEvents .filter {
+    position: absolute;
+    bottom: 10000px;
+    overflow: hidden;
+}
+
+.events-map .nextEvents .filter .filterButton {
+    float: left;
+    width: 90px;
+    background-color: var(--main1);
+    margin-top: 0px;
+    padding: 15px 0px;
+}
+
+.events-map .nextEvents .filter .viewMode {
+    float: right;
+}
+
+.events-map .nextEvents .filter .viewMode div {
+    background-color: var(--neutral2);
+    padding: 5px;
+    border-radius: 20px;
+    float: left;
+    overflow: hidden;
+    width: 290px;
+}
+
+.events-map .nextEvents .filter .viewMode button {
+    padding: 10px 0px;
+    border-radius: 20px;
+    border: none;
+}
+
+.events-map .nextEvents .filter .viewMode button:nth-child(1) {
+    float: left;
+    background-color: var(--neutral2);
+    opacity: 40%;
+    margin-top: 0px;
+    width: 50%;
+}
+
+.events-map .nextEvents .filter .viewMode button:nth-child(2) {
+    background-color: var(--neutral1);
+    float: left;
+    margin-top: 0px;
+    width: 50%;
+}
+
+.events-map .nextEvents .filter .viewMode h3 {
+    font-family: var(--font2);
+    font-size: 16px;
+    color: var(--neutral7);
+    display: inline;
+    margin-right: 10px;
+    float: left;
+    margin-top: 12px;
+}
+
+.events-map .nextEvents .filter p {
+    font-family: var(--font2);
+    font-size: 12px;
+    color: var(--neutral7);
+    width: max-content;
+    margin: 0 auto;
+}
+
+.events-map .nextEvents .filter p:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.events-map .nextEvents .filter .filterIcon:before {
+    background-image: url(../../../assets/icone-filtro.svg);
+}
+
+.events-map .nextEvents .filter .viewMode .list:before {
+    background-image: url(../../../assets/icone-lista-filtro.svg);
+}
+
+.events-map .nextEvents .filter .viewMode .map:before {
+    background-image: url(../../../assets/icone-mapa-filtro.svg);
+}
+
+
+@media (max-width: 1024px) {
+
+    footer.hide {
+        display: none;
+    }
+
+    .events-map .nextEvents .filter .viewMode div {
+        width: 213px;
+    }
+
+    .events-map .nextEvents {
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        margin-top: 0px;
+    }
+
+    .events-map .nextEvents .filter {
+        bottom: 0px;
+        width: 100%;
+        bottom: 90px;
+    }
+
+    .events-map .nextEvents .containerExtra {
+        margin: 20px 20px 0px 20px;
+        height: 100%;
+    }
+
+    .events-map .nextEvents button {
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+        font-size: 12px;
+        border-radius: 50px;
+    }
+
+    .events-map .nextEvents .filter .viewMode h3,
+    .events-map .nextEvents .listItems .ads {
+        display: none;
+    }
+
+    .events-map .nextEvents .listItems .item {
+        flex-direction: row;
+        height: min-content;
+        min-height: min-content;
+        padding: 15px;
+    }
+
+    .events-map .nextEvents .listItems .title {
+        display: none
+    }
+
+    .events-map .owl-carousel .owl-stage-outer {
+        padding-top: 20px;
+        overflow: visible;
+    }
+
+    .events-map .nextEvents .listItems {
+        width: calc(100% - 50px);
+        display: block;
+        position: absolute;
+        bottom: 155px;
+    }
+
+    .events-map .nextEvents .listItems .text .star,
+    .events-map .nextEvents .listItems .text .music {
+        display: none;
+    }
+
+    .events-map .nextEvents .listItems .text .calendar {
+        bottom: 15px;
+    }
+
+    .events-map .nextEvents .listItems .text .iconWrapper {
+        flex-direction: column;
+        align-self: baseline;
+        padding-bottom: 35px;
+    }
+
+    .events-map .nextEvents .listItems .text {
+        gap: 0px;
+    }
+
+    .events-map .nextEvents .listItems .item figure {
+        width: calc(40% - 20px);
+        max-width: 170px;
+        min-width: 130px;
+        height: calc(100% - 40px);
+    }
+
+    .events-map .nextEvents .listItems a img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .events-map .nextEvents .listItems a {
+        flex-direction: row;
+        height: 100%;
+    }
+
+    .events-map .nextEvents .listItems .text h2 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .events-map .nextEvents .listItems .item a {
+        gap: 10px;
+    }
+
+    .events-map .nextEvents .listItems .text p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .events-map .nextEvents .listItems .text .calendar {
+        bottom: 8px;
+    }
+}

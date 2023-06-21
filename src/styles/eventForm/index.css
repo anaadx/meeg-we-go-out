@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+.eventForm {
+    display: flex;
+    width: 100%;
+    background-color: var(--neutral2);
+    flex-direction: row;
+}
+
+.menu .links .eventsLink {
+    opacity: 100%;
+}
+
+@media(max-width: 1024px) {
+    .eventForm {
+        flex-direction: column-reverse;
+        background-color: var(--neutral7);
+    }
+}

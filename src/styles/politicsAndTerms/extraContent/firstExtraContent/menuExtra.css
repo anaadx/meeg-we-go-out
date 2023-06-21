@@ -1,0 +1,70 @@
+.terms .menuExtra {
+    width: 50%;
+    position: relative;
+    background-color: var(--neutral2);
+    float: right;
+    padding: 40px;
+    padding-top: 0px;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.terms .menuExtra h1 {
+    width: 100%;
+    font-size: 56px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-family: var(--font1);
+    color: var(--neutral7);
+    line-height: 1.5em;
+}
+
+.terms .menuExtra h2 {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-family: "Lato";
+    color: var(--neutral5);
+    padding: 10px 0px;
+    border-bottom: 2px solid var(--neutral5);
+}
+
+.terms .menuExtra a {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    font-family: "Lato";
+    color: var(--neutral7);
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--greyOpacity);
+    opacity: 40%;
+}
+
+.terms .menuExtra a:hover {
+    opacity: 100%;
+}
+
+@media (max-width: 1024px) {
+
+    .terms .menuExtra h1 {
+        display: none;
+    }
+
+    .terms .menuExtra {
+        bottom: -10000px;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        height: min-content;
+        z-index: 10;
+        box-shadow: 0px -364px 0px 0px var(--boxShadowOpacity);
+        width: calc(100% - 40px);
+        padding: 20px;
+        padding-bottom: 380px;
+        border-radius: 0px;
+    }
+
+    .menuExtraActive .terms .menuExtra {
+        bottom: -50px;
+        transition: all 1s;
+    }
+}

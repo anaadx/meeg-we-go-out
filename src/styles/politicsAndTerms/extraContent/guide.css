@@ -1,0 +1,101 @@
+.terms .guide {
+    position: relative;
+    width: calc(100% - 80px);
+    background-color: var(--neutral7);
+    padding: 75px 40px;
+}
+
+.terms .guide .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.terms .guide .title p {
+    font-size: 14px;
+}
+
+.terms .guide .title h2 {
+    margin-bottom: 10px;
+}
+
+.terms .guide .text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.terms .guide .text h3 {
+    font-size: 16px;
+}
+
+.terms .guide .item {
+    width: calc(100% - 20px);
+}
+
+.terms .guide .item div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    gap: 5px;
+}
+
+.terms .guide .item h2 {
+    line-height: 25px;
+    margin: 15px 0px;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: "Fugaz One";
+    color: var(--neutral1);
+}
+
+.terms .guide .item figure {
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+}
+
+.terms .guide .item a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+.terms .guide figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.terms .guide .owl-carousel .owl-nav {
+    top: -55px;
+}
+
+.terms .guide .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+.terms .guide .carouselGuide {
+    width: calc(100% - 50px)
+}
+
+@media(max-width: 1025px) {
+
+    .terms .guide {
+        width: calc(100% - 40px);
+        padding: 35px 20px;
+    }
+
+    .terms .guide .title {
+        font-size: 18px;
+    }
+
+    .terms .guide .item h2 {
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+}

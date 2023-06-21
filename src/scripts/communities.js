@@ -12,6 +12,12 @@ $(document).ready(function () {
     } else {
       $("body").removeClass("menuActive");
     }
+
+    if ($(this).scrollTop() >= 5) {
+      $("body").addClass("backgroundMenu");
+    } else {
+      $("body").removeClass("backgroundMenu");
+    }
   });
 
   function disableItems() {
@@ -159,7 +165,7 @@ $(document).ready(function () {
     navSpeed: 500,
     loop: false,
     center: false,
-    margin: 10,
+    margin: 20,
     responsiveClass: true,
     nav: false,
     dots: false,
@@ -169,7 +175,7 @@ $(document).ready(function () {
         items: 3,
       },
       1024: {
-        items: 2,
+        items: 3,
       },
       1300: {
         items: 3,
@@ -202,7 +208,7 @@ $(document).ready(function () {
         margin: 0,
       },
       950: {
-        items: 3,
+        items: 4,
       },
       1350: {
         items: 4,

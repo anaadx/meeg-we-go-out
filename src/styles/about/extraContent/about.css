@@ -1,0 +1,170 @@
+.about .aboutTeam {
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+}
+
+.about .aboutTeam .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.about .aboutTeam ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 100%;
+}
+
+.about .aboutTeam ul li {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--neutral5);
+    position: relative;
+    padding-bottom: 90px;
+}
+
+.about .aboutTeam ul li h3 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Lato";
+    color: var(--neutral1);
+}
+
+.about .aboutTeam ul li p {
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 1.428em;
+    font-family: "Lato";
+    color: var(--neutral3);
+}
+
+.about .aboutTeam ul li .profile p {
+    margin-top: 5px;
+}
+
+.about .aboutTeam ul li .profile {
+    overflow: hidden;
+}
+
+.about .aboutTeam ul li .profile img {
+    margin-right: 10px;
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+
+.about .aboutTeam ul li .profile .text {
+    float: left;
+    padding-top: 15px;
+}
+
+.about .aboutTeam ul li nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: calc(20% - 25px);
+    margin-top: 10px;
+}
+
+.about .aboutTeam ul li nav a:hover {
+    transition: var(--transitionFast);
+    filter: brightness(0.8);
+}
+
+.about .aboutTeam ul li .lastContent {
+    position: absolute;
+    bottom: 20px;
+}
+
+.about .aboutTeam ul li nav .instagram {
+    background-image: url(../../../assets/icone-instagram-pink.svg);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.about .aboutTeam ul li nav .facebook {
+    background-image: url(../../../assets/icone-facebook-pink.svg);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.about .aboutTeam ul li nav .spotify {
+    background-image: url(../../../assets/icone-spotify-pink.svg);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.about .aboutTeam iframe {
+    margin-top: -338px;
+    border-radius: 10px;
+    width: 720px;
+    margin-bottom: 100px;
+}
+
+.about .aboutTeam iframe {
+    margin: 0 auto;
+    display: block;
+    margin-top: -393px;
+    border-radius: 10px;
+    width: 720px;
+    margin-bottom: 100px;
+    height: 405px;
+    z-index: 2;
+    position: relative;
+}
+
+@media(max-width: 450px) {
+    .about .aboutTeam iframe {
+        height: 200px;
+        margin-top: -195px;
+        margin-bottom: 50px;
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .about .aboutTeam iframe {
+        width: 100%;
+        margin-top: -195px;
+        margin-bottom: 60px;
+        max-width: 100%;
+    }
+
+    .about .aboutTeam {
+        margin-top: 50px;
+    }
+
+    .about .aboutTeam ul {
+        grid-template-columns: 1fr;
+    }
+
+    .about .aboutTeam .title {
+        font-size: 18px;
+    }
+
+    .about .aboutTeam ul li p {
+        font-size: 12px;
+    }
+
+    .about .aboutTeam ul li h3 {
+        font-size: 16px;
+    }
+
+    .about .aboutTeam ul li .profile img {
+        width: 60px;
+        height: 60px;
+    }
+}

@@ -16,16 +16,23 @@
     align-self: center;
 }
 
-
 .filterSearchMode .search .containerExtra {
     width: calc(100% - 80px);
 }
 
 .search .containerExtra .notFoundImg {
+    content: "";
+    display: block;
     align-self: center;
     width: 300px;
     margin-bottom: 50px;
     margin-top: 150px;
+    background-image: url(../../../assets/resultado-nao-encontrado.svg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 170px;
+    z-index: 2;
 }
 
 .search .containerExtra h1 {
@@ -34,10 +41,12 @@
     margin: 0 auto;
     margin-bottom: 30px;
     text-align: center;
+    z-index: 2;
 }
 
 .search .containerExtra h2 {
     font-size: 24px;
+    z-index: 2;
 }
 
 .search .containerExtra h4 {
@@ -46,6 +55,8 @@
     margin: 0 auto;
     margin-bottom: 150px;
     text-align: center;
+    z-index: 2;
+    line-height: 1.5em;
 }
 
 .search .containerExtra .leftWave {
@@ -54,13 +65,25 @@
     left: -484px;
     transition: 45g;
     transform: rotate(-15deg);
+    background-image: url(../../../assets/onda-esquerda-notFound.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 880px;
+    width: 1000px;
 }
 
 .search .containerExtra .rightWave {
     position: absolute;
-    top: 185px;
-    right: -492px;
+    top: 166px;
+    right: -554px;
     transform: rotate(32deg);
+    background-image: url(../../../assets/onda-direita-notFound.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 880px;
+    width: 1000px;
 }
 
 @media(max-width: 1024px) {
@@ -70,6 +93,19 @@
 
     .search .containerExtra h1 {
         margin-bottom: 0px;
+        font-size: 18px;
+    }
+
+    .search .containerExtra h2 {
+        font-size: 18px;
+    }
+
+    .search .containerExtra h4 {
+        font-size: 14px;
+    }
+
+    .search .containerExtra .notFoundImg {
+        width: calc(100% - 160px);
     }
 
     .search .containerExtra {
@@ -86,4 +122,5 @@
     .search .containerExtra .notFoundImg {
         margin-top: 50px;
     }
+
 }

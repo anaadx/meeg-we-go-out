@@ -1,0 +1,10 @@
+.artist .info {
+    width: 50%;
+}
+
+@media (max-width: 1024px) {
+    .artist .info {
+        width: 100%;
+        min-width: 300px
+    }
+}

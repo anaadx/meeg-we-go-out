@@ -1,0 +1,147 @@
+.events-map .searchEvents {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+body.searchOff .events-map form {
+    position: absolute;
+    top: -1000px;
+    transition: var(--transitionSlow);
+}
+
+.events-map .searchEvents .title {
+    margin-bottom: 30px;
+}
+
+.events-map .searchEvents .filter {
+    margin-top: 60px;
+    width: 100%;
+    position: relative;
+    height: 45px;
+}
+
+.events-map .searchEvents .filter h4 {
+    position: absolute;
+    left: 0px;
+    font-family: var(--font2);
+    font-size: 14px;
+    color: var(--neutral3);
+    margin-top: 13px;
+}
+
+.events-map .searchEvents .filter .viewMode {
+    position: absolute;
+    right: 0px;
+}
+
+.events-map .searchEvents .filter .viewMode div {
+    background-color: var(--neutral2);
+    padding: 5px;
+    border-radius: 20px;
+    float: left;
+    overflow: hidden;
+    width: 290px;
+}
+
+.events-map .searchEvents .filter .viewMode button {
+    width: 140px;
+    padding: 10px 0px;
+    border-radius: 20px;
+    border: none;
+}
+
+.events-map .searchEvents .filter .viewMode button:nth-child(1) {
+    float: left;
+    background-color: var(--neutral2);
+    opacity: 40%;
+}
+
+.events-map .searchEvents .filter .viewMode button:nth-child(2) {
+    background-color: var(--neutral1);
+    float: left;
+}
+
+.events-map .searchEvents .filter .viewMode h3 {
+    font-family: var(--font2);
+    font-size: 16px;
+    color: var(--neutral7);
+    display: inline;
+    margin-right: 10px;
+    float: left;
+    margin-top: 12px;
+}
+
+.events-map .searchEvents .filter .viewMode p {
+    font-family: var(--font2);
+    font-size: 12px;
+    color: var(--neutral7);
+    width: max-content;
+    margin: 0 auto;
+}
+
+.events-map .searchEvents .filter .viewMode p:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.events-map .searchEvents .filter .viewMode .list:before {
+    background-image: url(../../../assets/icone-lista-filtro.svg);
+}
+
+.events-map .searchEvents .filter .viewMode .map:before {
+    background-image: url(../../../assets/icone-mapa-filtro.svg);
+}
+
+.placeTipActive .searchTool form .placeTip .placeTipOpen {
+    padding-bottom: 20px;
+}
+
+.placeTipActive .searchEvents.searchTool form .placeTip .placeTipOpen {
+    top: 94px;
+    left: -71px;
+}
+
+.searchEvents.searchTool form .borderTip2 {
+    display: block;
+    background-color: var(--neutral3);
+    transform: rotate(-45deg);
+    padding: 10px 10px;
+    position: absolute;
+    top: -10px;
+    right: 134px;
+}
+
+@media(max-width: 1024px) {
+    .events-map .searchEvents {
+        border-radius: 5px;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: -10000px;
+        background-color: var(--neutral1);
+        z-index: 10;
+        box-shadow: 2px -70px 5px 0px var(--greyOpacity);
+        border-radius: 10px;
+        height: calc(100vh - 65px);
+        overflow-y: scroll;
+    }
+
+    .searchEventsModalActive .searchEvents {
+        top: 25px;
+        transition: all 1s;
+    }
+
+    .events-map .searchModalButton {
+        margin-bottom: 35px;
+        position: relative;
+    }
+
+}

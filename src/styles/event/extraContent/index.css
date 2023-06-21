@@ -1,0 +1,45 @@
+.event .extraContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.event .containerExtra {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+}
+
+@media(max-width: 1025px) {
+
+    .event .extraContent .indexButton {
+        width: 100%;
+        padding: 20px;
+        background-color: var(--neutral1);
+        color: var(--neutral7);
+        border-radius: 10px 10px 0px 0px;
+        font-family: "Fugaz One";
+        font-size: 12px;
+        background-image: url(../../../assets/seta-vertical-cima.svg);
+        background-position: calc(100% - 20px) calc(100% - 25px);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        position: fixed;
+        bottom: 0px;
+        z-index: 6;
+        border: none;
+        text-align: start;
+    }
+
+    .menuExtraActive .event .extraContent .indexButton {
+        z-index: 11;
+        bottom: 670px;
+        transition: all 1s;
+        background-color: var(--neutral2);
+        background-image: url(../../../assets/seta-vertical-baixo.svg);
+    }
+
+}

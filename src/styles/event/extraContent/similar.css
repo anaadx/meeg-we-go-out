@@ -1,0 +1,199 @@
+.event .similar {
+    width: 100%;
+    padding: 0px 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.event .similar .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: var(--font1);
+    color: var(--neutral1)
+}
+
+.event .similar .carouselEvents {
+    width: 100%;
+}
+
+.event .similar .carouselEvents .item {
+    padding: 20px;
+    position: relative;
+    background-color: var(--neutral2);
+    border-radius: 10px;
+    height: 420px;
+    width: calc(100% - 40px);
+}
+
+.event .similar .carouselEvents a {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.event .similar .carouselEvents figure {
+    position: relative;
+    width: 380px;
+}
+
+.event .similar .carouselEvents figure img {
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event .similar .owl-carousel .owl-item .littleIcon {
+    width: 16px;
+    height: 22px;
+}
+
+.event .similar .owl-carousel .owl-stage {
+    padding: 20px 0px;
+}
+
+.event .similar .carouselEvents .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc(60% - 15px);
+    line-height: 20px;
+}
+
+.event .similar .carouselEvents .text h2 {
+    margin-bottom: 10px;
+    line-height: 1.27em;
+}
+
+.event .similar .carouselEvents .text div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.event .similar .carouselEvents .text .iconWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: baseline;
+}
+
+.event .similar .iconWrapper .house {
+    align-self: baseline;
+}
+
+.event .similar .owl-carousel.owl-drag .owl-item {
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.event .similar .owl-carousel.owl-drag .owl-item.active {
+    opacity: 1;
+}
+
+.event .similar .carouselEvents .item {
+    background-color: var(--neutral5);
+    border-radius: 10px;
+    height: min-content;
+    width: 100%;
+}
+
+.event .similar .carouselEvents .item:hover {
+    margin-top: -3px;
+}
+
+.event .similar .carouselEvents .item:hover figure img {
+    margin-top: -5px;
+    margin-left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 5px);
+}
+
+.event .similar .carouselEvents .text h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.event .similar .title {
+    margin-bottom: 0px;
+}
+
+.event .similar .title h1 {
+    font-size: 18px;
+}
+
+.event .similar .carouselEvents .item a {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.event .similar .carouselEvents .item figure {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 260px
+}
+
+.event .similar .carouselEvents .item figure img {
+    max-height: 380px;
+}
+
+.event .similar .carouselEvents {
+    width: calc(100% - 50px)
+}
+
+.event .similar .carouselEvents .item .calendar {
+    border-radius: 3px;
+    background-color: var(--neutral4);
+    width: fit-content;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.event .similar .carouselEvents .text .iconWrapper {
+    flex-direction: row;
+}
+
+.event .similar .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+.event .similar .carouselEvents .text {
+    width: calc(100% - 10px);
+    gap: 10px;
+}
+
+.event .similar .owl-carousel .owl-nav {
+    top: -40px;
+    right: -50px
+}
+
+@media(max-width: 1024px) {
+
+    .event .similar .carouselEvents .text p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .event .similar .title {
+        font-size: 18px;
+    }
+
+    .event .similar {
+        padding: 0px 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .event .similar .carouselEvents .text h2 {
+        font-size: 16px;
+    }
+
+    .event .similar .carouselEvents .item .star,
+    .event .similar .carouselEvents .item .music {
+        display: none;
+    }
+
+}

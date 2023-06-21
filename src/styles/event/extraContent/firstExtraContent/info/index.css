@@ -1,0 +1,53 @@
+.event .info {
+    width: 50%;
+    position: relative;
+    background-color: var(--neutral7);
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 2px -19px 0px 3px var(--neutral2)
+}
+
+.event .info .moreInfo {
+    margin: 0 auto;
+    padding: 15px;
+    color: var(--neutral6);
+    background-color: var(--main1);
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    top: -47px;
+    border: none;
+    z-index: 2;
+    left: 0px;
+    right: 0px;
+    width: 130px;
+    background-image: url(../../../../../assets/seta-vertical-cima.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right 11% bottom 55%;
+    text-align: initial;
+}
+
+.event .info .moreInfo:hover {
+    background-color: var(--pinkHover);
+}
+
+@media (max-width: 1024px) {
+    .event .info {
+        width: 100%;
+        min-width: 300px
+    }
+
+    .event .info .moreInfo {
+        padding: 20px;
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        background-color: var(--neutral7);
+        color: black;
+        background-position: right 5% bottom 55%;
+        background-image: url(../../../../../assets/seta-vertical-cima-dark.svg);
+        top: 0px;
+    }
+
+    .event .info .moreInfo:hover {
+        background-color: var(--neutral7);
+    }
+}

@@ -1,6 +1,6 @@
 .search .community {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
 }
 
 .search .community .title {
@@ -16,7 +16,6 @@
 .search .community .title p {
     font-size: 14px;
 }
-
 
 .search .community .title h2 {
     margin-bottom: 10px;
@@ -34,49 +33,13 @@
     font-size: 16px;
 }
 
-.search .community .SumoSelect p {
-    border: none;
-}
-
-.search .community .SumoSelect>.CaptionCont>label>i {
-    background-image: url(../../../assets/seta-pink.svg);
-    margin-left: 30px;
-    cursor: pointer;
-}
-
-.search .community .SumoSelect>.optWrapper>.options {
-    background-color: var(--neutral6);
-    color: var(--neutral1);
-    padding: 0px 5px;
-}
-
-.search .community .SumoSelect>.optWrapper>.options li {
-    margin: 5px 0px;
-    border-radius: 5px;
-}
-
-.search .community .SumoSelect>.optWrapper {
-    margin-top: 0px;
-    width: 122px;
-    left: -65px;
-}
-
-.search .community .SumoSelect>.optWrapper>.options:hover {
-    color: var(--neutral7);
-}
-
-.search .community .text .filterAZ {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
 .search .community .item {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 160px;
-    margin-top: 10px;
+    width: 100%;
+    transition: var(--transitionFast);
+}
+
+.search .community .item:hover {
+    margin-top: -3px
 }
 
 .search .community .item div {
@@ -93,11 +56,11 @@
 
 .search .community .item a {
     width: 100%;
-    height: 160px;
     border-radius: 5px;
     text-decoration: none;
     position: relative;
     display: block;
+    text-decoration: none;
 }
 
 .search .community a img {
@@ -105,45 +68,21 @@
     width: 100%;
     height: 100%;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .search .community .carouselCommunity {
-    width: 100%;
+    width: calc(100% - 50px);
 }
 
 .search .community .owl-carousel .owl-stage-outer {
     overflow: visible;
 }
 
-.search .community .owl-carousel.owl-drag .owl-item {
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-
-.search .community .owl-carousel.owl-drag .owl-item.active {
-    opacity: 1;
-}
-
 @media (max-width: 1024px) {
 
     .search .community {
         margin-bottom: 70px;
-    }
-
-    .search .community .carouselCommunity {
-        gap: 15px
-    }
-
-    .search .community .item {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100px;
-        margin-top: 10px;
-    }
-
-    .search .community .item a {
-        height: 100px;
     }
 
     .search .community .item h2 {

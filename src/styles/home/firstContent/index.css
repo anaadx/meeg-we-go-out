@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.home .firstContent {
+    background-color: var(--neutral1);
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 0px 20px 20px;
+    position: relative;
+}
+
+.home .container {
+    width: calc(100% - 120px);
+    width: calc(100% - 120px);
+    gap: 50px;
+}
+
+.home .darkWave {
+    background-image: url(../../../assets/darkWave.svg);
+    position: absolute;
+    top: 87px;
+    right: -194px;
+    background-repeat: no-repeat;
+    background-size: 790px;
+    width: 790px;
+    height: 900px;
+}
+
+.home .seeAll:hover {
+    color: var(--pinkHover);
+}
+
+
+@media(max-width: 1024px) {
+    .home .container {
+        width: calc(100% - 40px);
+        gap: 50px;
+    }
+
+    .home .darkWave {
+        display: none;
+    }
+
+}

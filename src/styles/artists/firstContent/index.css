@@ -1,4 +1,8 @@
-.artists .events {
+* {
+    box-sizing: border-box;
+}
+
+.artists .firstContent {
     background-color: var(--neutral1);
     display: flex;
     justify-content: center;

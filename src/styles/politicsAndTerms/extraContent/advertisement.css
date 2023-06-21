@@ -1,0 +1,61 @@
+.terms .advertisement {
+    width: calc(100% - 80px);
+    height: 130px;
+    background-color: var(--neutral7);
+    justify-content: center;
+    display: flex;
+    padding: 0px 40px;
+    padding-bottom: 80px;
+}
+
+.terms .advertisement.disabled {
+    display: none;
+}
+
+.terms .advertisement a {
+    height: min-content;
+    margin: auto 0;
+}
+
+.terms .advertisement .container {
+    width: calc(100% - 80px);
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--neutral5);
+    border-radius: 10px;
+}
+
+.terms .advertisement .pictureMobile img {
+    height: 100%;
+    width: 265px;
+}
+
+.terms .advertisement .pictureDesk img {
+    width: 1000px;
+    height: 100%;
+    max-width: 100%;
+}
+
+
+@media(max-width: 1025px) {
+
+    .terms .advertisement {
+        position: relative;
+        width: calc(100% - 40px);
+        padding: 0px 20px;
+        padding-bottom: 35px;
+        height: 400px;
+    }
+
+    .terms .advertisement .container {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+    .terms .advertisement a {
+        height: 100%;
+    }
+
+}

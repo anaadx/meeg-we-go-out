@@ -1,4 +1,8 @@
-.search .events {
+* {
+    box-sizing: border-box;
+}
+
+.search .firstContent {
     background-color: var(--neutral1);
     display: flex;
     justify-content: center;
@@ -17,16 +21,8 @@
     max-width: calc(100% - 80px);
 }
 
-.search .darkWave {
-    position: absolute;
-    top: -66px;
-    right: -320px;
-    z-index: 3;
-}
-
-
 @media(max-width: 1024px) {
-    .search .events {
+    .search .firstContent {
         border-radius: 0px 0px 5px 5px;
         margin-bottom: 40px;
     }
@@ -39,10 +35,6 @@
     .filterSearchMode .search .container {
         width: calc(100% - 40px);
         max-width: calc(100% - 40px);
-    }
-
-    .search .darkWave {
-        display: none;
     }
 
 }

@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box
+}
+
 .news .guide .title {
     margin-bottom: 10px;
     font-size: 24px;
@@ -40,9 +44,10 @@
     border-radius: 5px;
 }
 
+
 .news .guide .SumoSelect>.optWrapper {
     margin-top: 0px;
-    width: 122px;
+    width: 180px;
     left: -65px;
 }
 
@@ -57,35 +62,30 @@
 }
 
 .news .guide .item {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 450px;
-    min-width: 150px;
-    width: calc(25% - 15px);
-    height: 305px;
+    width: 100%;
     margin-top: 10px;
 }
 
-.news .guide .item div {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-    gap: 5px;
+.news .guide .item:hover {
+    margin-top: -3px;
 }
 
 .news .guide .item h2 {
-    line-height: 25px;
+    margin-bottom: 10px;
+    line-height: 1.5em;
 }
 
 .news .guide .item a {
+    display: block;
+    text-decoration: none;
+}
+
+.news .guide .item figure {
     width: 100%;
-    height: 220px;
     border-radius: 5px;
     text-decoration: none;
     position: relative;
-    display: block;
+    margin-bottom: 10px;
 }
 
 .news .guide a img {
@@ -96,11 +96,11 @@
 }
 
 .news .guide .listGuide {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 40px;
 }
 
 .news .guide button.disabled {
@@ -117,6 +117,7 @@
     border: none;
     display: block;
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 .news .guide button:hover {
@@ -129,31 +130,36 @@
 }
 
 @media (max-width: 1024px) {
-    .news .guide .item {
-        width: 100%;
-        display: flex;
-        border-radius: 5px;
-        background-color: var(--neutral5);
-        flex-direction: row;
-        max-width: 100%;
-        height: 100px;
-        gap: 0px;
+
+    .news .guide .listGuide {
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        margin-bottom: 40px;
     }
 
-    .news .guide .item a {
+    .news .guide .item {
+        width: 100%;
+        border-radius: 5px;
+        background-color: var(--neutral5);
+        height: 100px;
+    }
+
+    .news .guide .item figure {
         width: 130px;
         border-radius: 5px 0px 0px 5px;
         height: 100%;
+        float: left;
+        margin-bottom: 0px;
     }
 
     .news .guide .item div {
-        display: block;
-
-        width: calc(55% - 10px);
-        padding: 10px;
+        padding: 15px 10px;
+        width: calc(100% - 150px);
+        float: left;
+        overflow: hidden;
     }
 
-    .news .guide .item div h3,
+    .news .guide .item div h2,
     .news .guide .item div span {
         font-size: 12px;
         line-height: 20px;

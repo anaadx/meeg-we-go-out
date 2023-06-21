@@ -1,29 +1,14 @@
 .news .advertisement {
     width: 100%;
-    height: 400px;
-    background-color: var(--neutral5);
-    justify-content: center;
-    display: flex;
-    border-radius: 10px;
+    margin-bottom: 80px;
+    margin-top: 80px;
 }
 
-.news .advertisement.disabled {
-    display: none;
-}
-
-.news .advertisement a {
-    height: 90%;
-    margin: auto 0;
-}
-
-@media(min-width: 1025px) {
+@media(max-width: 1025px) {
 
     .news .advertisement {
-        height: 130px;
-        position: relative;
+        position: absolute;
+        left: -10000px;
     }
 
-    .news .advertisement a {
-        height: min-content;
-    }
 }

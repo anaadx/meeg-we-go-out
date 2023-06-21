@@ -1,114 +1,29 @@
-.search .guide {
+.search .componentGuide {
     position: relative;
     margin-bottom: 50px;
 }
 
-.search .guide .title {
+.search .componentGuide .title {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.search .guide .title h3 {
+.search .componentGuide .title h3 {
     font-size: 18px;
 }
 
-.search .guide .title p {
+.search .componentGuide .title p {
     font-size: 14px;
 }
 
-.search .guide .title h2 {
+.search .componentGuide .title h2 {
     margin-bottom: 10px;
 }
 
-.search .guide .text {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.search .guide .text h3 {
-    font-size: 16px;
-}
-
-.search .guide .item {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 450px;
-    min-width: 150px;
-    height: 305px;
-    margin-top: 10px;
-}
-
-.search .guide .item div {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 100%;
-    gap: 5px;
-}
-
-.search .guide .item h2 {
-    line-height: 25px;
-}
-
-.search .guide .item a {
-    width: 100%;
-    height: 220px;
-    border-radius: 10px;
-    text-decoration: none;
-    position: relative;
-    display: block;
-}
-
-.search .guide a img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.search .guide .listGuide {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 40px;
-}
-
-.search .guide .owl-carousel .owl-stage-outer {
-    overflow: visible;
-}
-
-.search .guide .owl-carousel.owl-drag .owl-item {
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-
-.search .guide .owl-carousel.owl-drag .owl-item.active {
-    opacity: 1;
-}
-
-.search .guide .carouselGuide {
-    width: 100%
-}
-
 @media (max-width: 1024px) {
-    .search .guide .item {
-        width: 290px;
-        min-width: 290px;
-    }
 
-    .search .guide {
+    .search .componentGuide {
         margin-bottom: 20px;
     }
-}
-
-@media(max-width: 700px) {
-    .search .guide .carouselGuide {
-        width: 320px;
-    }
-
 }

@@ -1,15 +1,18 @@
-.communities .events {
+* {
+    box-sizing: border-box;
+}
+
+.communities .firstContent {
     background-color: var(--neutral1);
-    display: flex;
-    justify-content: center;
     border-radius: 0px 0px 20px 20px;
     position: relative;
 }
 
 .communities .container {
-    width: calc(100% - 120px);
+    margin: 0 auto;
+    width: calc(100% - 160px);
     gap: 50px;
-    margin-top: 100px;
+    margin-top: 120px
 }
 
 .filterSearchMode .communities .container {
@@ -19,21 +22,26 @@
 
 .communities .darkWave {
     position: absolute;
-    top: -66px;
-    right: -320px;
-    z-index: 3;
+    top: -192px;
+    right: -702px;
+    z-index: 1;
+    background-image: url(../../../assets/darkWave.svg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: center;
+    width: 1500px;
+    height: 1000px;
 }
 
 
 @media(max-width: 1024px) {
-    .communities .events {
+    .communities .firstContent {
         border-radius: 0px 0px 5px 5px;
-        margin-bottom: 40px;
     }
 
     .communities .container {
         width: calc(100% - 40px);
-        margin-top: 100px;
+        margin-top: 130px;
     }
 
     .filterSearchMode .communities .container {

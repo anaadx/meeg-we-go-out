@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
+
+a,
+img,
+button,
+.item,
+li {
+    transition: var(--transitionFast);
+}
+
+
 body {
     width: 100%;
     background-color: var(--neutral7);
@@ -29,7 +39,18 @@ main {
     --main6: #F04242;
     --pinkHover: #DB2065;
     --greyHover: rgb(255, 255, 255, 10%);
-    --greyOpacity: #373434
+    --greenHover: #2ea74c;
+    --greyOpacity: #373434;
+    --boxShadowOpacity: #969595;
+    --font1: "Fugaz One";
+    --font2: "Lato";
+    --borderRadius1: 3px;
+    --borderRadius2: 5px;
+    --borderRadius3: 10px;
+    --borderRadius4: 20px;
+    --transitionFast: all 0.5s;
+    --transitionMedium: all 1s;
+    --transitionSlow: all 2s;
 }
 
 .fontColor1 {
@@ -50,12 +71,11 @@ main {
 
 /* fonts */
 .font1 {
-    font-family: 'Fugaz One';
-    ;
+    font-family: var(--font1);
 }
 
 .font2 {
-    font-family: 'Lato';
+    font-family: var(--font2);
 }
 
 .fontSize1 {
@@ -98,18 +118,19 @@ main {
 .tag {
     position: absolute;
     left: 0px;
-    top: 20px;
-    padding: 3px;
+    top: 10px;
     border-radius: 0px 3px 3px 0px;
-    padding: 7px;
+    padding: 9.5px 14px;
     width: fit-content;
+    font-size: 10px;
+    font-family: "Lato";
 }
 
 .tagPromoDiv {
     position: absolute;
     z-index: 3;
     right: 20px;
-    top: -17px;
+    top: -10px;
 }
 
 .tagPromo {
@@ -266,38 +287,8 @@ button {
 
 
 @media(max-width: 1024px) {
-    .fontSize1 {
-        font-size: 10px;
-        font-weight: 400;
-    }
-
-    .fontSize2 {
-        font-size: 12px;
-        font-weight: 400;
-    }
-
-    .fontSize3 {
-        font-size: 12px;
-        font-weight: 400;
-    }
-
-    .fontSize4 {
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    .fontSize5 {
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-    .fontSize6 {
-        font-size: 18px;
-        font-weight: 400;
-    }
-
-    .fontSize7 {
-        font-size: 18px;
-        font-weight: 400;
+    .tag {
+        font-size: 8px;
+        padding: 8px 10px;
     }
 }

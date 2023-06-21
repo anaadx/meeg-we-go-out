@@ -1,0 +1,144 @@
+.send {
+    background-color: var(--neutral2);
+    width: 50%;
+    margin-top: 120px;
+    background-image: url(../../assets/onda-formulario-lancamento.svg);
+    background-size: 630px;
+    background-position: 142% 0%;
+    background-repeat: no-repeat;
+}
+
+.send .container {
+    width: calc(100% - 240px);
+    margin: 40px 120px;
+}
+
+.send h1 {
+    line-height: 1.20em;
+    font-family: var(--font1);
+    font-size: 56px;
+    color: var(--neutral7);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.send .containerItem {
+    width: 100%;
+    margin-bottom: 35px;
+    background-color: var(--neutral1);
+    height: 390px;
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+}
+
+.send .item {
+    width: 295px;
+    height: 390px;
+    background-color: var(--greyOpacity);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    align-self: center;
+}
+
+.send .item h3 {
+    font-family: var(--font1);
+    color: var(--neutral7);
+    font-size: 18px;
+}
+
+.send .item p:nth-child(1) {
+    margin-top: 15px;
+}
+
+.send .item p:nth-child(3) {
+    margin-top: 10px;
+}
+
+.send .item figure {
+    width: 100%;
+    position: relative;
+    height: 300px;
+    background-color: var(--neutral3);
+    border-radius: 10px;
+    background-image: url(../../assets/no-img.svg);
+    background-size: 65px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+}
+
+.send .text h2 {
+    font-family: var(--font1);
+    color: var(--neutral7);
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.send .text p {
+    font-family: var(--font2);
+    color: var(--neutral7);
+    font-size: 14px;
+    float: left;
+}
+
+.send .calendar {
+    background-color: var(--neutral3);
+    position: absolute;
+    bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.send .text img {
+    float: left;
+    margin-right: 5px;
+}
+
+.send .text div {
+    margin-top: 10px;
+    overflow: hidden;
+    color: var(--neutral7);
+}
+
+.send .instructions {
+    font-family: var(--font2);
+    font-size: 24px;
+    line-height: 1.5em;
+    margin-top: 35px;
+    text-align: center;
+    color: var(--neutral7);
+}
+
+@media(max-width: 1024px) {
+    .send {
+        width: 100%;
+        margin-top: 0px;
+        border-radius: 0px 0px 20px 20px;
+        background-position: calc(100% + 200px) 0%;
+    }
+
+    .send .container {
+        width: calc(100% - 40px);
+        margin: 40px 20px;
+        padding-top: 90px;
+    }
+
+    .send .containerItem {
+        display: none;
+    }
+
+    .send h1 {
+        font-size: 24px;
+        margin-bottom: 0px;
+    }
+
+    .send .instructions {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+}

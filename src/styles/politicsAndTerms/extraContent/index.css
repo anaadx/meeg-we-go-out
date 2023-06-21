@@ -1,0 +1,90 @@
+.terms .extraContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--neutral2);
+    overflow: hidden;
+}
+
+.terms .containerExtra {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-self: center;
+}
+
+.terms .beforeMobile {
+    background-color: var(--neutral2);
+    width: 100%;
+}
+
+.terms .beforeMobile h1 {
+    width: calc(100% - 120px);
+    margin: 120px 60px;
+    font-size: 56px;
+    margin-bottom: 60px;
+    font-family: var(--font1);
+    color: var(--neutral7);
+    line-height: 1.5em;
+}
+
+.terms .extraContent .indexButton {
+    position: absolute;
+    bottom: 100000px;
+}
+
+
+footer {
+    box-shadow: 20px 0px 0px 0px var(--neutral2);
+}
+
+@media(max-width: 1025px) {
+
+    .modalLupaActive .terms .extraContent .indexButton {
+        bottom: 100000px;
+    }
+
+    footer {
+        box-shadow: 20px 0px 0px 0px var(--neutral7);
+    }
+
+    .terms .beforeMobile h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .terms .containerExtra {
+        margin-top: 220px;
+    }
+
+    .terms .extraContent .indexButton {
+        width: 100%;
+        padding: 20px;
+        background-color: var(--neutral1);
+        color: var(--neutral7);
+        border-radius: 10px 10px 0px 0px;
+        font-family: "Fugaz One";
+        font-size: 12px;
+        background-image: url(../../../assets/seta-vertical-cima.svg);
+        background-position: calc(100% - 20px) calc(100% - 25px);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        position: fixed;
+        bottom: 0px;
+        z-index: 6;
+        border: none;
+        text-align: start;
+    }
+
+    .menuExtraActive .terms .extraContent .indexButton {
+        z-index: 11;
+        bottom: 540px;
+        transition: all 1s;
+        background-color: var(--neutral2);
+        background-image: url(../../../assets/seta-vertical-baixo.svg);
+    }
+
+}

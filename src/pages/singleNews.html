@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/components/header/index.css"> 
+    <link rel="stylesheet" href="../styles/components/header/menuButton.css">
+    <link rel="stylesheet" href="../styles/singleNews/firstContent/index.css"> 
+    <link rel="stylesheet" href="../styles/singleNews/firstContent/singleNews.css">  
+    <link rel="stylesheet" href="../styles/singleNews/extraContent/index.css"> 
+    <link rel="stylesheet" href="../styles/singleNews/extraContent/firstExtraContent/info/index.css"> 
+    <link rel="stylesheet" href="../styles/singleNews/extraContent/firstExtraContent/info/content.css"> 
+    <link rel="stylesheet" href="../styles/singleNews/extraContent/firstExtraContent/info/seeMore.css"> 
+    <link rel="stylesheet" href="../styles/singleNews/extraContent/firstExtraContent/info/share.css"> 
+    <link rel="stylesheet" href="../styles/singleNews/extraContent/firstExtraContent/menuExtra.css"> 
+    <link rel="stylesheet" href="../styles/singleNews/extraContent/firstExtraContent/index.css"> 
+    <link rel="stylesheet" href="../styles/singleNews/extraContent/advertisement.css"> 
+    <link rel="stylesheet" href="../styles/singleNews/extraContent/guide.css"> 
+    <link rel="stylesheet" href="../styles/components/advertisement.css"> 
+    <link rel="stylesheet" href="../styles/components/guide.css"> 
+    <link rel="stylesheet" href="../styles/components/footer2/rights.css">
+    <link rel="stylesheet" href="../styles/components/footer2/utils.css">
+    <link rel="stylesheet" href="../styles/components/footer2/index.css">
+    <link rel="stylesheet" href="../styles/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="../styles/libs/owl.theme.default.min.css">
+    <link rel="icon" href="../assets/icon-logo.png" type="image/x-icon">
+    <title>Notícia</title>
+    <script src="../scripts/jquery-3.7.0.min.js"></script>
+    <script src="../scripts/singleNews.js"></script>
+</head> 
+<body>
+    <div class="backgroundModal"></div>
+    <header class="menu static">
+        <nav>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <div class="links activeHighlight">
+                <a href="../pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
+                <a href="news.html" class="font1 fontColor3 fontSize4 highlightLink">NOTICIAS</a>
+                <a href="../pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
+                <a href="../pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
+                <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
+                <a href="../pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
+            </div>
+            <button class="lupa lupaStatic"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaStatic disabled">
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaStatic"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav> 
+    </header>   
+    <header class="menu floated">
+        <nav class="navStatic">
+            <div class="modal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <button class="lupa lupaFloated"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaFloated disabled">
+                <button class="closeButtonModal"></button>
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaFloated"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav>
+        <div class="modalMenu activeHighlight">
+            <ul>
+                <li><a href="../../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
+                <li><a href="../pages/events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
+                <li><a href="news.html" class="font1 fontSize4 fontColor3 highlightLink">NOTÍCIAS</a></li>
+                <li><a href="../pages/communities.html" class="font1 fontSize4 fontColor3">COMUNIDADES</a></li>
+                <li><a href="../pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
+                <li><a href="../releases.html" class="font1 fontSize4 fontColor3 highlightLink">LANÇAMENTOS</a></li>
+                <li><a href="../pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
+            </ul> 
+            <div class="buttons">
+                <button class="font1 fontSize3 fontColor3 buttonBlackLarge">ENVIE UM LANÇAMENTO</button>
+                <button class="font1 fontSize3 buttonPinkLarge">ENVIE UM EVENTO</button>
+            </div> 
+                <h2 class="font1 fontSize4 fontColor3">SIGA O WE GO OUT</h2>
+                <div class="icons">
+                <a class="littleIcon" href="https://www.instagram.com/wegoout/">
+                    <img class="littleIcon"  src="../assets/icone-instagram.svg">
+                </a>
+                <a class="littleIcon" href="https://www.facebook.com/wegoout.br/?locale=pt_BR" >
+                    <img class="littleIcon" src="../assets/icone-facebook.svg">
+                </a>
+                <a class="littleIcon" href="https://www.youtube.com/@WeGoOut">
+                    <img class="littleIcon" src="../assets/icone-youtube.svg">
+                </a>
+                <a class="littleIcon" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                    <img class="littleIcon" src="../assets/icone-spotify.svg">
+                </a>
+            </div>
+        </div>
+    </header> 
+    <main class="singleNews">
+        <section class="firstContent">
+            <div class="container">
+                <div class="newsMain">
+                    <div class="content">
+                        <div class="text">
+                            <span class="tag backgroundPurple">FESTIVAIS</span>
+                            <h1>TOMORROWLAND BÉLGICA 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER</h1>
+                            <div class="description">
+                                <div class="profile">
+                                    <img src="../assets/jode.svg">
+                                    <h3>Jode Seraphin</h3>
+                                </div>
+                                <div class="date">
+                                    <h3>01 de março de 2023</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <div class="photoArtist">
+                            <img src="../assets/foto-singleNews-principal.svg" href="artist.html">
+                                <span class="tag tag2 backgroundPurple">FESTIVAIS</span>
+                            </img>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <section class="extraContent">
+            <div class="containerExtra">
+                <div class="firstExtraContent">
+                    <div class="info">
+                        <div class="content">
+                            <p>O Tomorrowland Bélgica é um dos mais famosos festivais de música eletrônica do mundo e que recebeu em 2022 aproximadamente 600 mil pessoas no total dos três finais de semana. Para a edição de 2023 o festival vai acontecer em dois finais de semana de julho com grandes nomes da cena! Nós somos apaixonadas pelo festival e criamos esse Guia todas as informações e dicas que você precisa saber!
+                            </p>
+                            <p>Garanta já seu ingresso para Tomorrowland 2023! – <a href="https://www.tomorrowland.com/en/festival/tickets/tomorrowland-tickets">Acesse aqui!</a>
+                                <br/>
+                                A Inside Music Land, parceira oficial do festival, já está com as vendas abertas para quem quer garantir os ingressos para a edição de 2023! (sim, as agências oficiais podem garantir seu lugar no festival antes de todo mundo!) A melhor parte é que temos o cupom WEGOOUT que dá R$ 100 de desconto no valor! **Não esqueça de colocar o cupom WEGOOUT para ativar o desconto.
+                            </p>
+                            <p>Tem interesse em receber mais informações sobre pacotes do Tomorrowland? Preencha esse formulário aqui! Participe também do nosso grupo de Whatsapp Tomorrowland para conhecer outras pessoas que irão ao festival e trocar experiências e confira também todos os nossos grupos de WhatsApp <a>neste link!</a>
+                            </p>
+                            <h2>Tomorrowland Bélgica 2023</h2>
+                            <p>O Tomorrowland Bélgica volta com toda força para dois finais de semana de festival em julho de 2023. Confirmada para acontecer nos finais de semana de 21 à 23 e 28 à 30. deste ano, com o tema ‘Adscendo – A Digital Introduction’.</p>
+                            <h2>Line Up</h2>
+                            <p>A escalação completa do festival atende a todos os gêneros de dance music, e entre as centenas de artistas renomados que se apresentam na lendária edição de dois finais de semana deste ano estão: <b>Alex Stein, Alok, ANNA, Bhaskar, Carola, Cat Dealers, Chemical Surf, Dubdogz, Fancy Inc, Ownboss, Sevek, Vegas, Victor Ruiz, Vintage Culture, Afrojack, Alesso, Armin van Buuren, Claptone, Da Tweekaz, Dimitri Vegas & Like Mike, Dom Dolla, Don Diablo, Eric Prydz, Hardwell, &ME, Adam Beyer, Adriatique, Agents Of Time, Âme, Anyma, Bedouin, Boris Brejcha, Cellini, Dino Lenny, Dixon, DJ Tennis, Joris Voorn, Joseph Capriati, Amber Broos, Amelie Lens, Honey Dijon, MATTN, NERVO, Nora En Pure, The Chainsmokers e Black Coffee.</b></p>
+                            <p>Confira a programação completa no <a href="https://www.tomorrowland.com">site do Tomorrowland</a> e saiba mais na nossa matéria <a>Tomorrowland 2023 anuncia line-up completo com mais de 600 nomes!</a></p>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews1.svg">
+                                <span></span>
+                            </figure>
+                            <h2>Ingressos</h2>
+                            <p>Uma das partes mais difíceis de garantir a ida para o Tomorrowland Bélgica é a compra de ingressos. Na venda oficial os ingressos esgotam em poucos minutos (afinal, são mais de 1 milhão de pessoas tentando fazer a compra), e para conseguir você precisa estar no momento exato da abertura de vendas no site e contar com a sorte.
+                            </p>
+                            <p>As datas oficiais para a venda de ingressos pelo site da edição de 2023 foram:</p>
+                            <p><b>Pacotes de viagem Global Journey:</b> 21/01 – 17:00 CET<br/>
+                                <b>Pré-Venda geral de ingressos:</b> 28/01 – 17:00 CET<br/>
+                                <b>Venda geral Ingressos:</b> 04/02 – 17:00 CET<br/>
+                                *CET: fuso horário europeu
+                            </p>
+                            <p>A edição de 2023 já está esgotada, mas no site oficial tem a lista de espera e você pode acessar o site também para mais detalhes sobre os ingressos <a>neste link.</a></p>
+                            <h3>Tipo de ingresso</h3>
+                            <p>Confira todas as opções de ingressos e também o processo de compra abaixo:</p>
+                            <h3>Day Pass</h3>
+                            <p><b>Day Pass:</b> Acesso a um dia de festival (sexta-feira, sábado ou domingo)</p>
+                            <span>*DICA: na hora da compra, precisa especificar qual dia tem interesse em comprar e não pode ser trocado depois.</span>
+                            <p><b>Pleasure Day Pass:</b> Acesso a um dia de festival + acesso a 3 diferentes comfort zones (área VIP), com exceção do mainstage.
+                            </p>
+                            <p><b>Comfort Day Pass:</b> Acesso a um dia de festival + acesso a todas as comfort zones (áreas VIP).
+                            </p>
+                            <h3>Full Madness Pass</h3>
+                            <p><b>Full Madness Pass: </b> Acesso aos três dias do Tomorrowland (sexta-feira, sábado e domingo)
+                            </p>
+                            <p><b>Full Madness Confort Pass: </b> Acesso aos três dias de festival + acesso a todas as comfort zones (áreas VIP).
+                            </p>
+                            <h3>Ingressos + Camping</h3>
+                            <p>Todos os ingressos com camping dão acesso ao espaço principal do DreamVille, com direito a festa The Gathering (exclusiva na quinta-feira) aos espaços de descanso, banheiros com chuveiros, mercado e todas as facilidades como praça de alimentação exclusiva, lojas, padaria e muito mais.
+                            </p>
+                            <h3>Magnificent Greens</h3>
+                            <p>Este é o espaço geral para acampar dentro do Tomorrowland, você só precisa chegar no Dreamville, definir onde vai ficar e montar seus equipamentos. Todo o local tem segurança e funcionários 24 horas por dia. Na hora da compra é possível escolher entre a opção normal ou a opção comfort, que dá acesso as áreas VIP dentro do festival.</p>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews2.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h3>Camp2Camp</h3>
+                            <p>O Camp2Camp é um espaço separado dentro do DreamVille, onde não é necessário levar nenhum tipo de equipamento e as barracas já estarão prontas quando você chegar. Não é permitido levar suas próprias barracas ou gazebos. Também há banheiros e chuveiros exclusivos apenas para quem escolhe a opção Camp2Camp. Na hora da compra é possível escolher entre a opção normal ou a opção comfort, que dá acesso as áreas VIP dentro do festival.</p>
+                            <h3>Camp2Camp Pre Pitched 2P Packages</h3>
+                            <ul>
+                                <li>Ingresso válido para duas pessoas para todos os dias de festival + acesso ao DreamVille e a área Camp2Camp;</li>
+                                <li>Barraca montada para duas pessoas, colchão de ar de casal, dois sacos de dormir e duas cadeiras</li>
+                            </ul>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews3.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h3>Friendship Garden</h3>
+                            <p>Os ingressos do tipo Friendship Garden garantem um espaço reservado para 10 pessoas com um gazebo exclusivo. Também há banheiros e chuveiros exclusivos apenas para quem escolhe a opção Friendship Garden. Na hora da compra é possível escolher entre a opção normal ou a opção comfort, que dá acesso as áreas VIP dentro do festival.</p>
+                            <h3>Friendship Garden 10P Packages:</h3>
+                            <ul>
+                                <li>Ingresso válido para dez pessoas para todos os dias de festival + acesso ao DreamVille e a área Friendship Garden;</li>
+                                <li>Espaço privativo de 10x10m mais uma tenda exclusiva por grupo.</li>
+                            </ul>
+                            <h3>Spectacular Friendship Garden 10P Packages:</h3>
+                            <ul>
+                                <li>Ingresso válido para dez pessoas para todos os dias de festival + acesso ao DreamVille e a área Friendship Garden;</li>
+                                <li>Espaço privativo de 13x13m, uma tenda exclusiva por grupo, um locker (24x28x50cm) e 10 cadeiras.</li>
+                            </ul>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews4.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h3>Easy Tents</h3>
+                            <p>Para quem não quer se preocupar com equipamento de camping e quer um espaço mais exclusivo, as Easy Tents oferecem mais comodidades no DreamVille. Também há banheiros e chuveiros exclusivos apenas para quem escolhe essa opção. Na hora da compra é possível escolher entre a opção normal ou a opção comfort, que dá acesso as áreas VIP dentro do festival.
+                            </p>
+                            <h3>Easy Tent 2P Packages:</h3>
+                            <ul>
+                                <li>Ingresso válido para duas pessoas para todos os dias de festival + acesso ao DreamVille e a área Easy Tents;</li>
+                                <li>Edição limitada de uma barraca do Tomorrowland, um colchão de ar de casal, dois sacos de dormir, uma luz noturna, um espelho e um cadeado.</li>
+                            </ul>
+                            <h3>Supreme Easy Tent 2P Packages:</h3>
+                            <ul>
+                                <li>
+                                    Ingresso válido para duas pessoas para todos os dias de festival + acesso ao DreamVille e a área Easy Tents;
+                                </li>
+                                <li>
+                                    Edição limitada de uma barraca do Tomorrowland com chão de madeira, um colchão de ar de casal, dois sacos de dormir, uma luz noturna, um espelho, um cadeado, uma tomada, duas cadeiras e um locker (24x28x50cm).
+                                </li>
+                            </ul>
+                            <h3>Easy Tent 4P Packages:</h3>
+                            <ul>
+                                <li>
+                                    Ingresso válido para duas pessoas para todos os dias de festival + acesso ao DreamVille e a área Easy Tents;
+                                </li>
+                                <li>
+                                    Edição limitada de uma barraca do Tomorrowland com chão de madeira, um colchão de ar de casal, dois sacos de dormir, uma luz noturna, um espelho, um cadeado, uma tomada, duas cadeiras e um locker (24x28x50cm).
+                                </li>
+                            </ul>
+                            <h3>Easy Tent 4P Packages:</h3>
+                            <ul>
+                                <li>
+                                    Ingresso válido para duas pessoas para todos os dias de festival + acesso ao DreamVille e a área Easy Tents;
+                                </li>
+                                <li>
+                                    Edição limitada de uma barraca do Tomorrowland com chão de madeira, um colchão de ar de casal, dois sacos de dormir, uma luz noturna, um espelho, um cadeado, uma tomada, duas cadeiras e um locker (24x28x50cm).
+                                </li>
+                                <li>
+                                    Edição limitada de duas barracas do Tomorrowland (265 x 265 x 230cm), dois colchões de ar de casal, quatro sacos de dormir, duas luzes noturna, dois espelhos, um cadeado, duas tomadas, quatro cadeiras e dois lockers (24x28x50cm).
+                                </li>
+                            </ul>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews5.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h3>Montagoe Area</h3>
+                            <p>
+                                O Montagoe Area é um espaço luxuoso dentro do Dreamville, com restaurantes exclusivos, piscina, bares, jacuzzis e uma recepção 24h para te ajudar.
+                            </p>
+                            <h3>Relax Room 2P Packages:</h3>
+                            <ul>
+                                <li>
+                                    Ingresso válido para duas pessoas para todos os dias de festival + acesso ao DreamVille e a área Easy Tents;
+                                </li>
+                                <li>
+                                    Edição limitada de uma barraca do Tomorrowland com chão de madeira, um colchão de ar de casal, dois sacos de dormir, uma luz noturna, um espelho, um cadeado, uma tomada, duas cadeiras e um locker (24x28x50cm).
+                                </li>
+                            </ul>
+                            <h3>Spectacular Relax Room 2P Packages:</h3>
+                            <ul>
+                                <li>
+                                    Ingresso válido para duas pessoas para todos os dias de festival + acesso ao DreamVille e a área Easy Tents;
+                                </li>
+                                <li>
+                                    Edição limitada de uma barraca do Tomorrowland com chão de madeira, um colchão de ar de casal, dois sacos de dormir, uma luz noturna, um espelho, um cadeado, uma tomada, duas cadeiras e um locker (24x28x50cm).
+                                </li>
+                            </ul>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews6.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h3>DreamLodge 2P Packages:</h3>
+                            <ul>
+                                <li>
+                                    Ingresso válido para duas pessoas para todos os dias de festival + acesso ao DreamVille e a área Easy Tents;
+                                </li>
+                                <li>
+                                    Edição limitada de uma barraca do Tomorrowland com chão de madeira, um colchão de ar de casal, dois sacos de dormir, uma luz noturna, um espelho, um cadeado, uma tomada, duas cadeiras e um locker (24x28x50cm).
+                                </li>
+                            </ul>
+                            <h3>Spetacular DreamLodge 2P Packages:</h3>
+                            <ul>
+                                <li>
+                                    Ingresso válido para duas pessoas para todos os dias de festival + acesso ao DreamVille e a área Easy Tents;
+                                </li>
+                                <li>
+                                    Edição limitada de uma barraca do Tomorrowland com chão de madeira, um colchão de ar de casal, dois sacos de dormir, uma luz noturna, um espelho, um cadeado, uma tomada, duas cadeiras e um locker (24x28x50cm).
+                                </li>
+                            </ul>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews7.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h3>Kokono 2P Packages:</h3>
+                            <ul>
+                                <li>
+                                    Ingresso válido para duas pessoas para todos os dias de festival + acesso ao DreamVille e a área Easy Tents;
+                                </li>
+                                <li>
+                                    Edição limitada de uma barraca do Tomorrowland com chão de madeira, um colchão de ar de casal, dois sacos de dormir, uma luz noturna, um espelho, um cadeado, uma tomada, duas cadeiras e um locker (24x28x50cm).
+                                </li>
+                            </ul>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews8.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h3>Cabana 2P Packages:</h3>
+                            <ul>
+                                <li>
+                                    Ingresso válido para duas pessoas para todos os dias de festival + acesso ao DreamVille e a área Easy Tents;
+    
+                                </li>
+                                <li>
+                                    Edição limitada de uma barraca do Tomorrowland com chão de madeira, um colchão de ar de casal, dois sacos de dormir, uma luz noturna, um espelho, um cadeado, uma tomada, duas cadeiras e um locker (24x28x50cm).
+                                </li>
+                            </ul>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews9.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h3>Mansion Packages</h3>
+                            <p>Para quem quer uma experiência totalmente diferente e exclusiva, há uma opção de pacote para até 10 pessoas. O espaço funciona com todas as comodidades de um hotel e precisa ser reservado diretamente com o Tomorrowland, ele da acesso a quartos equipados, terraço, banheiro privado, acesso a Mousai Area, 24 horas de serviço de recepção, serviço de quarto, serviço de massagem, frigobar cheio, serviço de mordomo, entre outros benefícios, como itens exclusivos sob pedido e acesso ao The Gathering e Marketplace.</p>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews10.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h3>Treasure Case</h3>
+                            <p>A Treasure Case é a caixa personalizada com o tema do ano em que chega o bracelete, que é seu acesso à entrada (ingresso) e ao consumo no Tomorrowland. Ela é enviada para o endereço de compra, e como estamos no Brasil muitas vezes não chega a tempo da viagem para a Europa. Se isso acontecer não se preocupe, pois é possível retirar a pulseira no próprio evento na Bélgica.</p>
+                            <p>O dinheiro utilizado no festival é o Pearl, que em 2019 custava 1.60 Euros. Você pode carregar sua pulseira antecipadamente ou em vários caixas espalhados dentro do festival. Nós explicamos mais sobre isso no tópico Consumo no Tomorrowland.</p>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews11.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h2>Tomorrowland Bélgica: Onde se hospedar?</h2>
+                            <p>O festival fica na cidade de Boom, a 30km da capital Bruxelas e a 16km de Antuérpia. Você pode optar por acampar no DreamVille (o espaço oficial do festival) ou pode encontrar uma opção de hotel no Booking.com ou Airbnb nas cidades mais próximas. No tópico abaixo <a>chegar no Tomorrowland</a> nós comentamos sobre todas as cidades de onde saem os transportes oficiais.
+                            </p>
+                            <p>O espaço é tão grande que vira uma mini-cidade, com um centrinho que você tem acesso a um mercado, padaria, salão de beleza, área para pegar seu carregador portátil, loja oficial da TML, loja para arrumar seu celular, para comprar equipamentos de camping, a estação de rádio com DJs residentes e claro todas as várias opções de comidas e bebidas.</p>
+                            <p>Além disso, também rola uma área de Chill Out, com academia, aulas de dança, Ioga e alongamento. Ainda dá pra desfrutar de um super campo de futebol, quadras de tênis, vôlei de areia, tênis de mesa e redes para relaxar. E se quiser descontrair bebendo algum drink ao som eletrônico há ainda um barzinho com lounge super bacana.
+                            </p>
+                            <p>
+                                Uma das perguntas que mais recebemos é com relação ao banho no camping. A estrutura é muito bem organizada e existem tanto os chuveiros a céu aberto com água fria, que não são pagos, quanto chuveiros fechados com água quente, separados em masculinos e femininos que custam 3 pearls (~ R$30). Dentro dos banheiros tem espelho e tomadas e você não vai passar perrengue por lá! 
+                            </p>
+                            <p>Se você ficou curioso, nós fizemos um post com tudo sobre o DreamVille, explicando como fica organizado o espaço, dando mais detalhes com todas as informações que você precisa saber e também com depoimentos de quem já acampou contando se vale a pena!</p>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews12.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h2>Como chegar no festival?</h2>
+                            <p>Nós fizemos um post bem explicadinho com as principais formas (incluindo um vídeo) de como chegar no Tomorrowland. Aqui vai um resuminho:</p>
+                            <p>Os três principais transportes utilizados são:</p>
+                            <p>Shuttle: O próprio festival organiza ônibus que saem de diversos pontos do país e te deixam na entrada do festival. A opção que sai do centro de Bruxelas custou em 2019 EUR 25 (ida e volta por dia)</p>
+                            <p>Carro: Como falamos anteriormente, o Tomorrowland fica a aproximadamente 30km de Bruxelas. Saindo da capital você pode pegar a estrada E19 sentido Antwerp e sair na Exit 8 Rumst, ou pegar a A12 sentido Antuérpia e sair na exit 8 Rupel – Kanaalzone. Em 2019 o estacionamento custou EUR 20 para os 3 dias ou EUR10 para um único dia.</p>
+                            <p>Transporte Público: Você pode ir de trem até a estações de Boom pela companhia SNCB/NMBS, e de lá você caminha aproximadamente uns 30 minutos até chegar na entrada (junto com uma galera em um caminho bem sinalizado).</p>
+                            <h2>Estrutura do Tomorrowland</h2>
+                            <p>Quando a gente fala que o Tomorrowland é um mundo a parte, é porque de fato nós sentimos isso a partir do momento que passamos pela conferência da pulseira. Tudo é pensado de forma com que sua experiência seja a melhor possível!</p>
+                            <h2>Consumo no Tomorrowland</h2>
+                            <p>Seus custos irão variar de acordo com o tanto que você quer comer e beber dentro do festival, principalmente se você consome ou não bebida alcoólica.</p>
+                            <p>Os preços de 2019 foram: <br/>
+                            Água (garrafa de 500 ml), refrigerante, energético, cerveja (copo 300ml): 2 pearls<br/>
+                            Cerveja (copo 500ml): 3,75 pearls<br/>
+                            Vodca + energético: 6,75 pearls<br/>
+                            Alimentação: média de 7 pearls</p>
+                            <p>Considere que 1 pearl = ~1,6 euros</p>
+                            <p>Existem pontos de reabastecimento de água potável espalhados pelo festival, então vale a pena comprar a 1ª garrafinha do dia e depois ficar repondo nos bebedouros.</p>
+                            <p>Se você acampar no DreamVille, você pode levar comida e bebida – desde que não esteja em garrafa de vidro – e tem supermercado perto para você fazer compras mais baratas. Dentro do camping também tem um supermercado, o que também ajuda a economizar. Dá para pelo menos garantir um bom café da manhã na barraca antes de entrar no festival.</p>
+                            <p>Confira neste post todas as informações de valores para ir ao Tomorrowland Bélgica: <a>Quanto custa ir para o Tomorrowland Bélgica?</a></p>
+                            <h2>Perguntas Frequentes (FAQ) e Dicas</h2>
+                            <p>O que é o Golden Ticket? Qual é a idade mínima pra entrar no festival? É possível comprar Pearl com Real? Confira a resposta para as dúvidas mais frequentes clicando no post: FAQ – Tudo que você precisa saber sobre o Tomorrowland Bélgica.</p>
+                            <p>O Tomorrowland é um festival diurno, com início às 12h até às 01h (0h no domingo), e no verão europeu as temperaturas podem ser altas, com dias quentes e longos. Nesta época, o sol normalmente se põe após às 21:30h, por isso não esqueça de levar consigo o protetor solar e seus óculos de sol. Além disso, em lugares próximos às caixas de som o volume pode ser extremamente alto, portanto é aconselhável levar também protetores de ouvido, já que eles não prejudicam a qualidade do som recebido por você, apenas garantem a saúde da sua audição e são recomendados pela organização do festival. </p>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews13.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h2>Inspirações de Looks para o Tomorrowland</h2>
+                            <a>Confira dicas de looks para o festival</a>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews14.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <h2>Tomorrowland: Edições anteriores</h2>
+                            <a>Confira mais sobre nossa experiência nos posts e vídeos abaixo:</a>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fJQwdXnFISI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h2>Já pensou em emendar uma Eurotrip?</h2>
+                            <p>Como a viagem para o Tomorrowland é longa (e cara), muitos brasileiros aproveitam para conhecer alguns países e emendar uma eurotrip. Alguns lugares como Ibiza, Amsterdam e Berlin são destinos que oferecem várias opções de festas e pontos turísticos para curtir. Você pode escolher viajar por conta, e procurar as opções de hotel e transporte, ou pode escolher uma agência que organize a viagem para você. Em breve traremos mais opções por aqui!
+                            </p>
+                            <h2>Tomorrowland Winter</h2>
+                            <p>Imagina viver esse sonho de festival na neve? Nós fomos na primeira edição do <a>Tomorrowland Winter</a>, demos todas as dicas e contamos tudo que vivemos por lá <a>aqui!</a></p>
+                            <p>O festival de inverno acontece em Alpe D’Huez, que fica nos alpes franceses, com acesso pelas cidades Grenoble e Lyon. A próxima edição vai acontecer do dia 21/03 à 24/03 com mais de 100 atrações!</p>
+                            <h2>Tomorrowland Digital</h2>
+                            <p>O Tomorrowland realizou duas <a>edições online</a> no ano de 2022. A primeira, em julho, o Tomorrowland Around the World, teve mais de um milhão de expectadores, e a segunda, durante a virada do ano, foi a edição de Réveillon que aconteceu em diferentes fusos horários com pessoas de mais de 150 países!
+                            </p>
+                            <h2>Nos vemos lá!</h2>
+                            <p>Participe do nosso Grupo de <a>Whatsapp Tomorrowland</a>para conhecer outras pessoas que irão ao festival e trocar experiências.
+                            </p>
+                            <figure>
+                                <img src="../assets/foto-info-singleNews15.svg">
+                                <figcaption>Créditos: Divulgação Tomorrowland</figcaption>
+                                <span></span>
+                            </figure>
+                            <p><b>Leia também: </b><a>Quanto custa ir para o Tomorrowland Bélgica?</a></p>
+                            <p>Tags <a>Bélgica,<a> Tomorrowland,</a><a> Guia,</a><a>Festival,</a><a> Moda,</a><a> Looks,</a><a> Passagens</a></p>
+                            <h2></h2>
+                        </div>
+                        <div class="share">
+                            <div class="border"></div>
+                            <h3>Compartilhe este conteúdo</h3>
+                            <nav>
+                                <a class="link" href=""></a>
+                                <a class="facebook" href=""></a>
+                                <a class="whatsapp" href=""></a>
+                                <a class="message" href=""></a>
+                            </nav>
+                        </div>
+                        <div class="seeMore">
+                            <h2 class="font1 fontColor1">CONFIRA MAIS</h2>
+                            <div class="links">
+                                <h3>Para receber cupons de desconto e mais informações sobre festas</h3>
+                                <a>Saber mais</a>
+                            </div>
+                            <div class="links">
+                                <h3>Confira nossos grupos exclusivos de WhatsApp</h3>
+                                <a>Saber mais</a>
+                            </div>
+                            <div class="links">
+                                <h3>Siga também nossos perfis no Instagram</h3>
+                                <a class="follow" href="https://www.instagram.com/wegoout/">@wegoout</a>
+                            </div>
+                            <div class="profile">
+                                <img src="../assets/jode.svg">
+                                <div>
+                                    <h2>Jode Seraphim</h2>
+                                    <p>Tem duas paixões na vida: viagem e música. Com mais de 30 países na bagagem e muitas histórias em festivais, escolheu os cinco dias acampada na lama do Glastonbury e a mágica de trabalhar no Tomorrowland Bélgica como as experiências mais incríveis que já teve.</p>
+                                    <nav>
+                                        <a class="instagram" href=""></a>
+                                        <a class="facebook" href=""></a>
+                                        <a class="spotify" href=""></a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="moreInfo font1 fontSize2">SABER MAIS</button>
+                    </div>
+                    <div class="menuExtra">
+                        <h2>Tomorrowland Belgica 2023</h2>
+                        <nav>
+                            <a>Ingressos</a>
+                            <a>Planejando a viagem para o Tomorrowland</a>
+                            <a>Bélgica: Onde se hospedar?</a>
+                            <a>Dreamville: o camping oficial</a>
+                            <a>Como chegar no festival</a>
+                            <a>Estrutura do Tomorrowland</a>
+                            <a>Dicas e Perguntas Frequentes</a>
+                            <a>Inspirações de Looks</a>
+                            <a>Edições Anteriores</a>
+                            <a>Eurotrip</a>
+                            <a>Tomorrowland Winter</a>
+                            <a>Tomorrowland Digital</a>
+                            <a>Nos vemos lá!</a>
+                        </nav>
+                    </div>    
+                </div>
+                <div class="componentGuide">
+                    <h3 class="font1 fontColor1 title">NOTÍCIAS RELACIONADAS</h3> 
+                    <div class="owl-carousel owl-theme carouselGuide">
+                        <div class="item">
+                            <a href="../pages/singleNews.html">
+                                <figure>
+                                    <img src="../assets/guia1.svg" alt="XXXPERIENCE 2023">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                </figure>
+                                <h2>XXXPERIENCE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER</h2>
+                                <span class="font2 fontSize3 fontColor2">03 de março</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/singleNews.html">
+                                <figure>
+                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                </figure>
+                                <h2>LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                                <span class="font2 fontSize3 fontColor2">05 de março</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/singleNews.html">
+                                <figure>
+                                    <img src="../assets/guia3.svg" alt="COACHELLA 2023">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                </figure>
+                                <h2>COACHELLA 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                                <span class="font2 fontSize3 fontColor2">06 de março</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/singleNews.html">
+                                <figure>
+                                    <img src="../assets/guia4.svg" alt="PRIMAVERA SOUND PORTO 2023">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                </figure>
+                                <h2>PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                                <span class="font2 fontSize3 fontColor2">06 de março</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/singleNews.html">
+                                <figure>
+                                    <img src="../assets/guia4.svg" alt="PRIMAVERA SOUND PORTO 2023">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                </figure>
+                                <h2>PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                                <span class="font2 fontSize3 fontColor2">06 de março</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/singleNews.html">
+                                <figure>
+                                    <img src="../assets/guia4.svg" alt="">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                </figure>
+                                <h2>PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                                <span class="font2 fontSize3 fontColor2">06 de março</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/singleNews.html">
+                                <figure>
+                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                </figure>
+                                <h2>LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                                <span class="font2 fontSize3 fontColor2">05 de março</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/singleNews.html">
+                                <figure>
+                                    <img src="../assets/guia4.svg" alt="PRIMAVERA SOUND PORTO 2023">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                </figure>
+                                <h2>PRIMAVERA SOUND PORTO 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                                <span class="font2 fontSize3 fontColor2">06 de março</span>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="../pages/singleNews.html">
+                                <figure>
+                                    <img src="../assets/guia3.svg" alt="COACHELLA 2023">
+                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
+                                </figure>
+                                <h2>COACHELLA 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
+                                <span class="font2 fontSize3 fontColor2">06 de março</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+                <div class="advertisement"> 
+                    <a class="container" href="../pages/event.html">
+                        <figure class="pictureMobile">
+                            <img src="../assets/anuncio-mobile.svg">
+                        </figure>
+                        <figure class="pictureDesk">
+                            <img src="../assets/anuncio.svg">
+                        </figure> 
+                    </a>
+                </div> 
+            </div>
+            <button class="indexButton">ÍNDICE</button>
+        </section>
+    </main> 
+    <footer>
+        <div class="container">
+            <section class="utils">
+                <nav class="navigation">
+                    <a class="font1 fontSize4 fontColor2" href="../../index.html">INICIO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/events.html">EVENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/eventForm.html">ENVIE UM EVENTO</a>
+                    <a class="font1 fontSize4 fontColor2 highlightLink" href="../pages/news.html">NOTICIAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/communities.html">COMUNIDADES</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/artists.html">ARTISTAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../releases.html">LANÇAMENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/releaseForm.html">ENVIE UM LANÇAMENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/about.html">SOBRE</a>
+                </nav>
+                <div class="highlightEvents">
+                    <h2 class="font1 fontSize5 fontColor3">EVENTOS EM DESTAQUE</h2>
+                    <ul>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Goptun com Jamie xx</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">NAFF SP | Fisher & Chris Lake</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival São Paulo</a>
+                        </li>
+                    </ul>
+                    <a class="font1 fontSize3 fontColor4 seeAll" href="../pages/events.html">VER TUDO</a>
+                </div>
+                <div class="follow">
+                    <h2 class="font1 fontSize5 fontColor3">SIGA O WE GO OUT</h2>
+                    <ul>
+                        <li>
+                            <a class="icone insta" href="//www.instagram.com/wegoout/">
+                                <p class="font2 fontSize4 fontColor3">@wegoout</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone facebook" href="https://www.facebook.com/wegoout.br/?locale=pt_BR">
+                                <p class="font2 fontSize4 fontColor3">/wegoout.br</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone youtube" href="https://www.youtube.com/@WeGoOut">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone spotify" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="newsletter">
+                    <h2 class="font1 fontSize5 fontColor3">NEWSLETTER</h2>
+                    <p class="font2 fontSize3 fontColor2">Quer receber descontos e mais informações sobre festas e festivais?</p>                  
+                    <input class="font2 fontSize3 fontColor2" type="text" name="name" placeholder="Nome e sobrenome"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="email" placeholder="Email"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="whatsapp" placeholder="Whatsapp"/>
+                    <button class="font1 fontSize3 fontColor3" type="submit">CADASTRAR</button>
+                </form>
+            </section>
+            <section class="rights">  
+                <div class="logo">
+                    <img src="../assets/logo-dark.svg">
+                    <div class="text">
+                        <p class="font2 fontSize2 fontColor2">Todos os direitos reservados a We Go Out 2023®
+                            CNPJ: 12.345.678/0001-10</p>
+                        <p class="font2 fontSize2 fontColor2">A We Go Out Ltda, inscrita sob o CNPJ: 12.345.678/0001-10 é uma instituição devidamente habilitada e autorizada. Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo impedir ou prejudicar o envio ou a recepção de informações atualizadas.</p>
+                        <a class="font2 fontSize2" href="mailto:contato@wegoout.com">contato@wegoout.com</a>
+                    </div>
+                </div>
+                <div class="politics">
+                    <a class="font1 fontSize2 fontColor2" href="../pages/politicsAndTerms.html">POLÍTICA DE PRIVACIDADE</a>
+                    <a class="font1 fontSize2 fontColor2" href="../pages/cookiesPolitics.html">POLÍTICA DE COOKIES</a>
+                </div>
+                <div class="footerWave2"></div>
+                <div class="footerWave3"></div>
+            </section>
+        </div>
+    </footer> 
+    <script src="../scripts/owl.carousel.min.js"></script>
+</body>
+</html>

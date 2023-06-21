@@ -17,11 +17,6 @@
     margin-bottom: 20px;
 }
 
-.releases .highlightLaunch .content {
-    display: flex;
-    gap: 20px;
-}
-
 .releases .highlightLaunch .text {
     display: flex;
     gap: 10px;
@@ -41,29 +36,34 @@
 }
 
 .releases .highlightLaunch .carouselHighlightLaunch {
-    width: 100%
+    width: calc(100% - 50px)
 }
 
 .releases .highlightLaunch .carouselHighlightLaunch .item {
-    width: 290px;
     border-radius: 10px;
     height: min-content;
     position: relative;
-    display: flex;
-    flex-direction: column;
+    transition: var(--transitionFast);
+}
+
+.releases .highlightLaunch .carouselHighlightLaunch .item:hover {
+    margin-top: -3px;
 }
 
 .releases .highlightLaunch .carouselHighlightLaunch .item h3 {
     margin-top: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .releases .highlightLaunch .carouselHighlightLaunch .item a {
-    width: 290px;
-    height: 290px;
+    text-decoration: none;
+    display: block;
+}
+
+.releases .highlightLaunch .carouselHighlightLaunch .item figure {
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 5px;
-    display: block;
 }
 
 .releases .highlightLaunch .carouselHighlightLaunch .item a img {
@@ -71,12 +71,13 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .releases .highlightLaunch .owl-carousel .owl-nav {
     position: absolute;
     top: -63px;
-    right: 0px;
+    right: -50px;
     margin-top: 0px;
 }
 
@@ -95,36 +96,32 @@
 }
 
 .releases .highlightLaunch .owl-carousel .owl-stage-outer {
-    overflow: hidden;
+    overflow: visible;
 }
 
 @media(max-width: 1024px) {
-
-    .releases .highlightLaunch {
-        margin-top: 100px;
-    }
-
-    .releases .highlightLaunch .content {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .releases .highlightLaunch .carouselHighlightLaunch {
-        width: 310px;
-    }
-
-    .releases .highlightLaunch .owl-carousel .owl-stage-outer {
-        overflow: visible;
-    }
-}
-
-@media(max-width: 460px) {
     .releases .highlightLaunch .content iframe {
         width: 100%;
     }
 
+    .releases .highlightLaunch {
+        margin-top: 100px;
+        margin-bottom: 20px;
+        gap: 0px;
+    }
+
+    .releases .highlightLaunch .content .item span,
+    .releases .highlightLaunch .content .item h3,
+    .releases .highlightLaunch .content .item p {
+        font-size: 12px;
+    }
+
     .releases .highlightLaunch .carouselHighlightLaunch .item {
         width: 100%;
+    }
+
+    .releases .highlightLaunch .text h2 {
+        font-size: 18px;
     }
 
 }

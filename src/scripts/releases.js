@@ -12,6 +12,12 @@ $(document).ready(function () {
     } else {
       $("body").removeClass("menuActive");
     }
+
+    if ($(this).scrollTop() >= 5) {
+      $("body").addClass("backgroundMenu");
+    } else {
+      $("body").removeClass("backgroundMenu");
+    }
   });
 
   function disableFixedItems() {
@@ -96,10 +102,6 @@ $(document).ready(function () {
     $("body").toggleClass("menuDropLupa");
   });
 
-  $('input[name="daterange"]').daterangepicker({
-    autoApply: true,
-  });
-
   $(".carouselArtists").owlCarousel({
     navSpeed: 500,
     loop: false,
@@ -112,11 +114,6 @@ $(document).ready(function () {
     autoWidth: false,
     responsive: {
       0: {
-        items: 2,
-        nav: false,
-        margin: 0,
-      },
-      450: {
         items: 3,
         nav: false,
       },
@@ -146,11 +143,9 @@ $(document).ready(function () {
       0: {
         items: 1,
         nav: false,
-        margin: 0,
       },
       600: {
         items: 1,
-        margin: 0,
         nav: false,
       },
       1024: {

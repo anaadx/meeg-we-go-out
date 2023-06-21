@@ -4,12 +4,13 @@
     justify-content: center;
     overflow: hidden;
     flex-direction: column;
+    z-index: 1;
 }
 
 .communities .containerExtra {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 40px;
     width: calc(100% - 120px);
     flex-direction: column;
     gap: 100px;
@@ -27,7 +28,7 @@
 
     .communities .containerExtra {
         width: calc(100% - 40px);
-        margin-top: 0px;
+        margin-top: 10px;
         gap: 50px;
     }
 }

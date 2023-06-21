@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.about .firstContent {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-color: var(--neutral1);
+}
+
+.about .firstContent .waveFirst2 {
+    background-image: url(../../../assets/onda-about2.svg);
+    background-repeat: no-repeat;
+    background-size: 790px;
+    position: absolute;
+    bottom: 5px;
+    right: -193px;
+    width: 790px;
+    height: 488px;
+    z-index: 1;
+}
+
+.about .container {
+    width: 100%;
+    gap: 50px;
+    margin-top: 30px;
+    background-image: url(../../../assets/onda-about1.svg);
+    background-position: -408px 50px;
+    background-repeat: no-repeat;
+    background-size: 790px;
+    padding-bottom: 330px;
+}
+
+
+@media(max-width: 1024px) {
+    .about .container {
+        width: calc(100% - 40px);
+        background-image: none;
+    }
+
+    .about .firstContent {
+        background-image: none;
+        padding-bottom: 0px;
+    }
+
+    .about .container {
+        padding-bottom: 170px;
+    }
+
+    .about .firstContent .waveFirst2 {
+        background-image: none;
+    }
+}
