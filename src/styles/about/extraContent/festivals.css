@@ -1,0 +1,44 @@
+.about .festivals {
+    margin: 100px 0px;
+}
+
+.about .festivals span {
+    font-size: 14px;
+    font-family: "Lato";
+    color: var(--neutral3);
+}
+
+.about .festivals .carouselFestivals {
+    width: calc(100% - 50px);
+}
+
+.about .festivals .carouselFestivals .item img {
+    margin-bottom: 10px;
+}
+
+.about .festivals .carouselFestivals .item img {
+    width: 100%;
+}
+
+.about .festivals .owl-carousel.owl-drag .owl-item {
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.about .festivals .owl-carousel.owl-drag .owl-item.active {
+    opacity: 1;
+}
+
+.about .festivals .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+@media(max-width: 1024px) {
+    .about .festivals {
+        margin: 50px 0px;
+    }
+
+    .about .festivals span {
+        font-size: 12px;
+    }
+}

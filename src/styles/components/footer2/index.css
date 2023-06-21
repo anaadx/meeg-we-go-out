@@ -1,0 +1,83 @@
+footer {
+    background-color: var(--neutral1);
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+
+footer .container {
+    width: calc(100% - 120px);
+    max-width: calc(100% - 120px);
+    gap: 50px;
+}
+
+.biggerContainer .container {
+    width: calc(100% - 160px);
+    max-width: calc(100% - 160px);
+}
+
+.footerWave2 {
+    background-image: url(../../../assets/onda-footer-2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1500px;
+    background-size: 1500px;
+    height: 413px;
+    position: absolute;
+    bottom: -80px;
+    left: -230px;
+}
+
+.footerWave3 {
+    background-image: url(../../../assets/onda-footer-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1000px;
+    background-size: 683px;
+    height: 1000px;
+    position: absolute;
+    bottom: 100000px;
+    width: 723px
+}
+
+footer .rights .politics .highlightLink {
+    opacity: 100%;
+}
+
+@media(max-width: 1024px) {
+
+    .footerWave2 {
+        bottom: 10000px;
+    }
+
+    footer .container {
+        width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+        gap: 50px;
+    }
+
+    .filterSearchMode footer {
+        display: none;
+    }
+
+    footer .rights .politics {
+        width: 100%;
+        gap: 40px;
+    }
+
+    .footerWave3 {
+        position: absolute;
+        bottom: -530px;
+        left: 57px;
+        width: 723px;
+    }
+}
+
+@media(max-width: 600px) {
+    .footerWave3 {
+        bottom: -517px;
+        left: -174px;
+        width: 690px;
+    }
+}

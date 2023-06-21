@@ -1,0 +1,85 @@
+.singleNews .info .share {
+    width: 100%;
+    background-color: var(--neutral7);
+    overflow: hidden;
+    padding: 0px 40px;
+    padding-bottom: 60px;
+}
+
+.singleNews .info .share h3 {
+    font-family: "Lato";
+    font-weight: bold;
+    font-size: 16px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.singleNews .info .share nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 174px;
+    float: left;
+}
+
+.singleNews .info .share nav a {
+    padding: 20px;
+    display: block;
+    background-color: var(--main1);
+    border-radius: 5px;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.singleNews .info .share nav a:hover {
+    background-color: var(--pinkHover);
+    transition: var(--transitionFast);
+}
+
+.singleNews .info .share nav .link {
+    background-image: url(../../../../../assets/icone-link.svg);
+}
+
+.singleNews .info .share nav .facebook {
+    background-image: url(../../../../../assets/icone-facebook.svg);
+}
+
+.singleNews .info .share nav .whatsapp {
+    background-image: url(../../../../../assets/icone-whatsapp-pink.svg);
+}
+
+.singleNews .info .share nav .message {
+    background-image: url(../../../../../assets/icone-mensagem-pink.svg);
+}
+
+.singleNews .info .share .border {
+    width: 100%;
+    border-top: 3px solid var(--neutral5);
+    padding-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .singleNews .info .share {
+        padding: 0px 20px;
+        padding-bottom: 10px;
+    }
+
+    .singleNews .info .share h3 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .singleNews .info .share nav {
+        width: 150px;
+    }
+
+    .singleNews .info .share nav a {
+        padding: 8px;
+        background-size: 15px;
+        width: 15px;
+        height: 15px;
+    }
+}

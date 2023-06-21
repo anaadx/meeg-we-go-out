@@ -1,0 +1,157 @@
+.about .impact {
+    margin-bottom: 100px;
+}
+
+.about .impact h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+.about .impact .text p {
+    font-size: 16px;
+    width: 93%;
+    margin-bottom: 25px;
+    line-height: 1.56em;
+    font-family: "Lato";
+    color: var(--neutral3);
+}
+
+.about .impact .containerGrid {
+    display: grid;
+    grid-template-columns: 0.9fr 1fr 1fr;
+    grid-column-gap: 20px;
+    width: 100%;
+}
+
+.about .impact .containerGrid .numbers h3 {
+    float: left;
+    font-size: 56px;
+    font-family: 'Fugaz One';
+    color: var(--main1);
+}
+
+.about .impact .containerGrid .numbers h3:before {
+    font-size: 56px;
+    font-family: 'Lato';
+    content: "+";
+    float: left;
+    font-style: italic;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.about .impact .containerGrid .numbers.readingTime h3:before {
+    content: "";
+}
+
+.about .impact .containerGrid .numbers p {
+    margin-top: 30px;
+    margin-left: 15px;
+    float: left;
+    font-family: "Lato";
+    color: var(--neutral3);
+}
+
+.about .impact .containerGrid .numbers {
+    border-bottom: 3px solid var(--neutral4);
+    padding-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.about .impact button {
+    padding: 15px;
+    color: var(--neutral7);
+    background-color: var(--main1);
+    border-radius: 5px;
+    border: none;
+    width: 230px;
+    text-align: initial;
+    min-width: 200px;
+    font-family: 'Fugaz One';
+    font-size: 14px;
+    position: relative;
+    padding: 25px 0px;
+}
+
+.about .impact button::before {
+    background-image: url(../../../assets/icone-baixar.svg);
+    content: "BAIXE NOSSO MEDIA KIT";
+    background-size: 15px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 16px;
+    bottom: 0px;
+    width: 100%;
+    background-position: calc(100% - 40px) 0px;
+    margin: 0px 20px;
+}
+
+.about .impact button:hover {
+    background-color: var(--pinkHover);
+}
+
+@media(max-width: 1024px) {
+    .about .impact .containerGrid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 0px;
+    }
+
+    .about .impact h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .about .impact .containerGrid .numbers h3:before {
+        float: none;
+        font-size: 24px;
+        display: inline;
+        margin-right: 1px;
+    }
+
+    .about .impact {
+        margin-bottom: 60px;
+    }
+
+    .about .impact .text p {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .about .impact button {
+        width: 100%;
+        background-position: right 22% bottom 55%;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .about .impact button:before {
+        width: 180px;
+        background-position: 100% 0px;
+        margin: 0 auto;
+    }
+
+    .about .impact .containerGrid .numbers {
+        text-align: center;
+        padding: 20px 0px;
+        position: relative;
+        margin-bottom: 0px;
+    }
+
+    .about .impact .containerGrid .numbers h3 {
+        font-size: 24px;
+        display: inline;
+        float: none;
+    }
+
+    .about .impact .containerGrid .numbers p {
+        font-size: 14px;
+        margin-left: 10px;
+        display: inline;
+        float: none;
+    }
+}

@@ -114,7 +114,13 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none
+    user-select: none;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.owl-carousel.owl-drag .owl-item.active {
+    opacity: 1;
 }
 
 .owl-carousel.owl-grab {
@@ -210,7 +216,7 @@
 .owl-carousel .owl-video-tn {
     opacity: 0;
     height: 100%;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     transition: opacity .4s ease

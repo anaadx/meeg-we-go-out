@@ -1,8 +1,9 @@
 .artist .info .about {
-    width: calc(50% - 80px);
-    padding: 40px;
+    width: 100%;
+    padding: 40px 40px 10px 40px;
     background-color: var(--neutral7);
     border-radius: 20px 20px 0px 0px;
+    position: relative;
 }
 
 .artist .info .about h2 {
@@ -12,8 +13,59 @@
 }
 
 .artist .info .about p {
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 10px;
     width: 100%;
-    line-height: 20px;
+    line-height: 1.5em;
+    color: var(--neutral1);
+    font-family: var(--font2);
+}
+
+.artist .info .about .moreInfo {
+    margin: 0 auto;
+    padding: 15px;
+    color: var(--neutral6);
+    background-color: var(--main1);
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    top: -47px;
+    border: none;
+    z-index: 2;
+    left: 0px;
+    right: 0px;
+    width: 130px;
+    background-image: url(../../../../assets/seta-vertical-cima.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right 11% bottom 55%;
+    text-align: initial;
+}
+
+.artist .info .about .moreInfo:hover {
+    background-color: var(--pinkHover);
+}
+
+@media (max-width: 1024px) {
+    .artist .info .about {
+        border-radius: 0px;
+        padding: 40px 20px 10px 20px;
+    }
+
+    .artist .info .about .moreInfo {
+        padding: 20px;
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        background-color: var(--neutral7);
+        color: black;
+        background-position: right 5% bottom 55%;
+        background-image: url(../../../../assets/seta-vertical-cima-dark.svg);
+    }
+
+    .artist .info .about .moreInfo:hover {
+        background-color: var(--neutral7);
+    }
+
+    .artist .info .about h2 {
+        font-size: 18px;
+    }
 }

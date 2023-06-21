@@ -1,0 +1,96 @@
+.event .artists {
+    width: 100%;
+    padding: 0px 40px;
+    margin-top: 60px;
+}
+
+.event .artists .title {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.event .artists .title h2 {
+    font-size: 24px;
+    font-family: var(--font1);
+    color: var(--neutral1);
+    float: left;
+    margin-right: 10px;
+}
+
+.event .artists .title span {
+    font-size: 18px;
+    font-family: var(--font2);
+    color: var(--neutral3);
+    float: left;
+}
+
+.event .artists ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 100%;
+}
+
+.event .artists ul li {
+    border-radius: 5px;
+}
+
+.event .artists ul li:hover {
+    margin-top: -3px
+}
+
+.event .artists ul li a {
+    text-decoration: none;
+    display: block;
+    width: 100%
+}
+
+.event .artists ul li a img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.event .artists .seeAll {
+    margin-top: 30px;
+    color: var(--main1);
+    font-family: var(--font1);
+    font-size: 14px;
+    display: block;
+}
+
+.event .artists .seeAll:hover {
+    color: var(--pinkHover);
+}
+
+@media(max-width: 1024px) {
+
+    .event .artists {
+        padding: 0px 20px;
+        margin-top: 40px;
+    }
+
+    .event .artists ul li a img {
+        margin-bottom: 5px;
+    }
+
+    .event .artists ul li h3 {
+        font-size: 10px;
+    }
+
+    .event .artists .title h2 {
+        font-size: 18px;
+    }
+
+    .event .artists .title span {
+        font-size: 16px;
+    }
+
+    .event .artists ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+
+}

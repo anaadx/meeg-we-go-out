@@ -9,48 +9,33 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() >= 300) {
       $("body").addClass("menuActive");
-      if ($(window).width() > 1024) {
-        $(".containerLupaStatic").addClass("disabled");
-        $(".lupaStatic").removeClass("disabled");
-      }
     } else {
       $("body").removeClass("menuActive");
-      if ($(window).width() > 1024) {
-        $(".containerLupaFloated").addClass("disabled");
-        $(".lupaFloated").removeClass("disabled");
-      }
+    }
+
+    if ($(this).scrollTop() >= 5) {
+      $("body").addClass("backgroundMenu");
+    } else {
+      $("body").removeClass("backgroundMenu");
     }
   });
 
   function disableItems() {
     if ($(window).width() <= 1024) {
       $(".searchModalButton").removeClass("disabled");
-      $(".footerWave3").removeClass("disabled");
-      $(".footerWave2").addClass("disabled");
       $(".lastWave").addClass("disabled");
       $(".launchWave").addClass("disabled");
       $(".pictureDesk").addClass("disabled");
       $(".findEvent").addClass("disabled");
       $(".sendEventImg").addClass("disabled");
-      $(".highlightEvents").addClass("disabled");
-      $(".follow").addClass("disabled");
-      $(".navigation").addClass("disabled");
       $(".footerSearch").addClass("disabled");
-      $(".footerWave1").addClass("disabled");
-      $(".footerWave2").addClass("disabled");
     } else {
-      $(".footerWave2").removeClass("disabled");
-      $(".footerWave1").removeClass("disabled");
       $(".footerSearch").removeClass("disabled");
-      $(".highlightEvents").removeClass("disabled");
-      $(".follow").removeClass("disabled");
-      $(".navigation").removeClass("disabled");
       $(".sendEventImg").removeClass("disabled");
       $(".lastWave").removeClass("disabled");
       $(".pictureDesk").removeClass("disabled");
       $(".launchWave").removeClass("disabled");
       $(".findEvent").removeClass("disabled");
-      $(".footerWave3").addClass("disabled");
       $(".searchModalButton").addClass("disabled");
       $(".pictureMobile").addClass("disabled");
     }
@@ -122,7 +107,7 @@ $(document).ready(function () {
     loop: false,
     navSpeed: 500,
     center: false,
-    margin: 10,
+    margin: 20,
     responsiveClass: true,
     nav: false,
     navText: [prevBtn, nextBtn],
@@ -132,6 +117,7 @@ $(document).ready(function () {
       0: {
         items: 1,
         nav: false,
+        margin: 10,
       },
       1024: {
         items: 4,
@@ -150,7 +136,7 @@ $(document).ready(function () {
     navSpeed: 500,
     loop: false,
     center: false,
-    margin: 10,
+    margin: 20,
     responsiveClass: true,
     nav: false,
     dots: false,
@@ -158,12 +144,10 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        margin: 10,
       },
       1024: {
-        items: 2,
-      },
-      1300: {
-        items: 3,
+        items: 4,
       },
       1670: {
         items: 4,
@@ -175,7 +159,7 @@ $(document).ready(function () {
     navSpeed: 500,
     loop: false,
     center: false,
-    margin: 10,
+    margin: 20,
     responsiveClass: true,
     nav: false,
     dots: false,
@@ -184,12 +168,12 @@ $(document).ready(function () {
       0: {
         items: 1,
         nav: false,
-        margin: 0,
+        margin: 10,
       },
       700: {
         items: 2,
         nav: false,
-        margin: 0,
+        margin: 10,
       },
       950: {
         items: 3,
@@ -207,24 +191,22 @@ $(document).ready(function () {
     navSpeed: 500,
     loop: false,
     center: false,
-    margin: 10,
+    margin: 20,
     responsiveClass: true,
     nav: false,
     dots: false,
     autoWidth: false,
     responsive: {
       0: {
-        items: 2,
-        margin: 0,
-      },
-      350: {
         items: 3,
+        margin: 10,
       },
       940: {
-        items: 5,
+        items: 3,
+        margin: 10,
       },
-      1080: {
-        items: 6,
+      1024: {
+        items: 8,
       },
       1500: {
         items: 8,
@@ -236,24 +218,22 @@ $(document).ready(function () {
     navSpeed: 500,
     loop: false,
     center: false,
-    margin: 10,
+    margin: 20,
     responsiveClass: true,
     nav: false,
     dots: false,
     autoWidth: false,
     responsive: {
       0: {
-        items: 2,
-        margin: 0,
+        items: 3,
+        margin: 10,
       },
       350: {
         items: 3,
+        margin: 10,
       },
-      940: {
-        items: 3,
-      },
-      1080: {
-        items: 4,
+      1024: {
+        items: 6,
       },
       1500: {
         items: 6,

@@ -1,0 +1,66 @@
+.about .partners {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.about .partners h2 {
+    font-size: 36px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.about .partners a {
+    font-size: 36px;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+
+    border-radius: 10px;
+}
+
+.about .partners .carouselPartners {
+    width: calc(100% - 50px);
+}
+
+.about .partners .carouselPartners .item:hover {
+    margin-top: -3px;
+}
+
+.about .partners .carouselPartners .item {
+    transition: var(--transitionFast);
+}
+
+.about .partners .owl-carousel .owl-nav {
+    position: absolute;
+    top: -55px;
+    right: 0px;
+    margin-top: 0px;
+}
+
+.about .partners .owl-nav img {
+    width: 15px;
+    height: 16px;
+}
+
+.about .partners .owl-carousel.owl-drag .owl-item {
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.about .partners .owl-carousel.owl-drag .owl-item.active {
+    opacity: 1;
+}
+
+.about .partners .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+@media(max-width: 1024px) {
+    .about .partners h2 {
+        font-size: 18px;
+    }
+
+    .about .partners {
+        margin-bottom: 60px;
+    }
+}

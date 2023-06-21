@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+.singleNews .firstExtraContent {
+    width: 100%;
+    display: flex;
+}

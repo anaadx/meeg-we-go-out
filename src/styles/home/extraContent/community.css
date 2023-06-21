@@ -2,28 +2,36 @@
     background-color: var(--neutral5);
     border-radius: 10px;
     display: flex;
-    height: 423px;
     align-content: center;
-    gap: 130px;
+    justify-content: space-between;
     margin-top: 100px;
     position: relative;
-    justify-content: space-between;
     margin-left: 60px;
     margin-right: 60px;
+    overflow: hidden;
+    padding: 75px 0px 75px 80px;
 }
+
 
 .home .community .backgroundWave {
     position: absolute;
-    bottom: 0px;
+    bottom: -116px;
+    background-image: url(../../../assets/onda-community.svg);
+    background-repeat: no-repeat;
+    background-size: 790px;
+    width: 1312px;
+    height: 500px;
+    background-size: contain;
+    left: -52px;
 }
 
 .home .community .smokeEffect {
+    top: 0px;
     position: absolute;
     height: 100%;
     width: 60px;
     right: 0px;
     z-index: 2;
-
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ededed+0,ededed+56,ededed+56,f3f3f3+81,ffffff+96,ffffff+96,ffffff+96 */
     background: rgb(255, 255, 255);
     /* Old browsers */
@@ -37,29 +45,46 @@
     /* IE6-9 */
 }
 
-.home .community .carouselCommunity {
+.home .community .carouselContainer {
+    width: calc(50% - 20px);
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    width: calc(50% - 130px);
     align-self: center;
     z-index: 1;
 }
 
+.home .community .owl-carousel .owl-stage-outer {
+    padding-top: 10px;
+}
+
+.home .community .carouselCommunity {
+    width: 100%;
+}
+
 .home .community .carouselCommunity .item a {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     text-decoration: none;
     display: block;
+    width: 100%;
+}
+
+.home .community .carouselCommunity .item {
+    width: 100%;
+    transition: var(--transitionFast);
+}
+
+.home .community .carouselCommunity .item:hover {
+    margin-top: -3px;
+}
+
+.home .community .carouselCommunity .item a img {
+    margin-bottom: 20px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 .home .community .carouselCommunity .item a p {
-    line-height: 20px;
-}
-
-.home .community .carouselCommunity .item img {
-    width: 150px;
+    line-height: 1.5em;
+    max-width: 100%;
 }
 
 .home .community .text {
@@ -67,21 +92,28 @@
     display: flex;
     gap: 40px;
     flex-direction: column;
-    margin-left: 100px;
-    line-height: 40px;
     z-index: 1;
+    width: calc(50% - 80px);
 }
 
+.home .community .text h2 {
+    line-height: 1.33em;
+}
+
+.home .community .text h3 {
+    line-height: 1.5em;
+}
 
 .home .community .text a {
     width: max-content;
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin-bottom: 5px;
     color: var(--neutral6);
     background-color: var(--main1);
-    border-radius: 10px;
+    border-radius: 5px;
     text-decoration: none;
     align-self: flex-start;
+    margin-bottom: 40px;
 }
 
 .home .community .text a:hover {
@@ -89,72 +121,64 @@
     cursor: pointer;
 }
 
-.home .community .owl-carousel.owl-drag .owl-item {
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-
-.home .community .owl-carousel.owl-drag .owl-item.active {
-    opacity: 1;
-}
-
 
 @media(max-width: 1024px) {
     .home .community {
         flex-direction: column;
-        justify-content: space-between;
         height: min-content;
-        gap: 20px;
+        gap: 0px;
         margin: 0px;
         border-radius: 10px;
-        padding-bottom: 36px;
-        margin-bottom: 50px;
+        padding: 20px;
+        padding-bottom: 60px;
+        margin-bottom: 45px;
+    }
+
+    .home .community .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+
+    .home .community .smokeEffect {
+        display: none;
+    }
+
+    .home .community .carouselContainer {
+        width: 100%
+    }
+
+    .home .community .carouselCommunity .item a img {
+        margin-bottom: 5px;
     }
 
     .home .community .carouselCommunity {
-        align-self: flex-start;
-        margin-left: 40px;
-        width: calc(100% - 40px);
+        width: calc(100% - 50px)
     }
 
     .home .community .text {
-        margin: 40px 0px 40px 0px;
         width: calc(100% - 40px);
-        line-height: 25px;
+        gap: 20px;
     }
 
     .home .community .backgroundWave {
-        left: -350px;
-        bottom: -40px;
+        bottom: -201px;
+        width: 1126px;
+        left: -256px;
     }
 
-    .home .community .carouselCommunity .item a {
-        width: 150px;
+    .home .community .text a {
+        margin-bottom: 20px;
     }
 
-    .home .community .owl-carousel .owl-stage-outer {
-        overflow: visible;
+    .home .community .text h2 {
+        font-size: 18px;
     }
 
-}
-
-@media(max-width: 650px) {
-
-    .home .community .carouselCommunity {
-        width: 340px;
-        align-self: flex-start;
-        margin-left: 20px;
+    .home .community .text h3 {
+        font-size: 14px;
     }
 
-    .home .community .carouselCommunity .item img {
-        width: 100px;
-    }
-
-    .home .community .carouselCommunity .item a {
-        width: 100px;
-    }
-
-    .home .community .owl-carousel .owl-stage-outer {
-        overflow: visible;
+    .home .community .carouselCommunity .item a p {
+        font-size: 10px;
+        line-break: strict
     }
 }

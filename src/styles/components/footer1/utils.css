@@ -1,0 +1,181 @@
+footer .utils {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+footer .utils .navigation {
+    width: calc(25% - 30px);
+    z-index: 1;
+}
+
+
+footer .utils .navigation a {
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color: var(--neutral7);
+    opacity: 40%;
+}
+
+footer .utils .navigation .highlightLink {
+    opacity: 100%;
+}
+
+footer .utils .navigation a:hover {
+    opacity: 100%;
+}
+
+footer .utils .highlightEvents {
+    width: calc(25% - 30px);
+    z-index: 1;
+}
+
+footer .utils .highlightEvents h2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer .utils .highlightEvents li .event {
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--neutral2);
+    color: var(--neutral7);
+    opacity: 40%;
+}
+
+footer .utils .highlightEvents li .event:hover {
+    opacity: 100%;
+}
+
+footer .utils .seeAll {
+    margin-top: 20px;
+    text-decoration: underline;
+    display: block;
+}
+
+footer .utils .seeAll:hover {
+    color: var(--pinkHover);
+}
+
+footer .utils .follow {
+    width: calc(25% - 30px);
+    z-index: 1;
+}
+
+footer .utils .follow ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+footer .utils .follow li {
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: var(--neutral2);
+}
+
+footer .utils .follow li p {
+    margin-right: 10px;
+}
+
+footer .utils .follow li a {
+    flex-direction: row;
+    display: flex;
+    padding: 5px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--neutral7);
+    opacity: 40%;
+    background-size: 25px;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+}
+
+footer .utils .follow li .insta {
+    background-image: url(../../../assets/icone-instagram-branco.svg);
+}
+
+footer .utils .follow li .youtube {
+    background-image: url(../../../assets/icone-youtube.svg);
+    background-position: 0% calc(0% + 4px);
+}
+
+footer .utils .follow li .spotify {
+    background-image: url(../../../assets/icone-spotify.svg);
+}
+
+footer .utils .follow li .facebook {
+    background-image: url(../../../assets/icone-facebook.svg);
+}
+
+footer .utils .follow li a:hover {
+    opacity: 100%;
+}
+
+footer .utils .newsletter {
+    width: calc(25% - 30px);
+    z-index: 1;
+}
+
+footer .utils .newsletter p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+footer .utils .newsletter input {
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--neutral);
+    border: 1px solid var(--neutral2);
+}
+
+footer .utils .newsletter button {
+    margin-top: 40px;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: var(--main1);
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+footer .utils .newsletter button:hover {
+    background-color: var(--pinkHover);
+}
+
+@media(max-width: 1024px) {
+    footer .utils .newsletter {
+        width: 100%;
+    }
+
+    footer .utils .newsletter h2 {
+        margin-top: 60px;
+    }
+
+    footer .utils .navigation,
+    footer .utils .highlightEvents,
+    footer .utils .follow {
+        position: absolute;
+        left: -10000px;
+    }
+
+    footer .utils .newsletter button {
+        margin-bottom: 0px;
+    }
+}

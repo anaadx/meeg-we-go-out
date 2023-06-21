@@ -1,29 +1,10 @@
 .artists .advertisement {
-    width: 100%;
-    height: 400px;
-    background-color: var(--neutral5);
-    justify-content: center;
-    display: flex;
-    border-radius: 10px;
+    margin-bottom: 80px;
 }
 
-.artists .advertisement.disabled {
-    display: none;
-}
-
-.artists .advertisement a {
-    height: 90%;
-    margin: auto 0;
-}
-
-@media(min-width: 1025px) {
+@media(max-width: 1025px) {
 
     .artists .advertisement {
-        height: 130px;
-        position: relative;
-    }
-
-    .artists .advertisement a {
-        height: min-content;
+        margin-bottom: 40px;
     }
 }

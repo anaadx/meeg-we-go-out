@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/components/header/index.css"> 
+    <link rel="stylesheet" href="../styles/components/header/menuButton.css">
+    <link rel="stylesheet" href="../styles/about/firstContent/index.css"> 
+    <link rel="stylesheet" href="../styles/about/firstContent/about.css">  
+    <link rel="stylesheet" href="../styles/about/extraContent/partners.css"> 
+    <link rel="stylesheet" href="../styles/about/extraContent/index.css">   
+    <link rel="stylesheet" href="../styles/about/extraContent/about.css"> 
+    <link rel="stylesheet" href="../styles/about/extraContent/festivals.css"> 
+    <link rel="stylesheet" href="../styles/about/extraContent/impact.css">  
+    <link rel="stylesheet" href="../styles/about/extraContent/contact.css">  
+    <link rel="stylesheet" href="../styles/about/extraContent/socialMedia.css">
+    <link rel="stylesheet" href="../styles/about/extraContent/launchOnTheSite.css">
+    <link rel="stylesheet" href="../styles/components/footer1/rights.css">
+    <link rel="stylesheet" href="../styles/components/footer1/utils.css">
+    <link rel="stylesheet" href="../styles/components/footer1/index.css">
+    <link rel="stylesheet" href="../styles/components/footer1/sugestions.css">
+    <link rel="stylesheet" href="../styles/libs/sumoselect.min.css"> 
+    <link rel="stylesheet" href="../styles/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="../styles/libs/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../styles/libs/animate.css"/>
+    <link rel="stylesheet" href="../styles/libs/daterangepicker.css">
+    <link rel="icon" href="../assets/icon-logo.png" type="image/x-icon">
+    <title>Sobre Nós</title>
+    <script src="../scripts/jquery-3.7.0.min.js"></script>
+    <!-- <script src="../scripts/about.js"></script> -->
+    <script src="../scripts/header.js"></script>
+    <script type="text/javascript" src="https://www.juicer.io/embed/_anaadx/embed-code.js" async defer></script>
+</head> 
+<body> 
+    <div class="backgroundModal"></div>
+    <header class="menu static aboutMenu">
+        <nav>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <div class="links activeHighlight">
+                <a href="../pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
+                <a href="../pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
+                <a href="../pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
+                <a href="../pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
+                <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
+                <a href="about.html" class="font1 fontColor3 fontSize4 highlightLink">SOBRE</a>
+            </div>
+            <button class="lupa lupaStatic"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaStatic disabled">
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaStatic"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav> 
+    </header>   
+    <header class="menu floated">
+        <nav class="navStatic">
+            <div class="modal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <button class="lupa lupaFloated"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaFloated disabled">
+                <button class="closeButtonModal"></button>
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaFloated"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav>
+        <div class="modalMenu activeHighlight">
+            <ul>
+                <li><a href="../../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
+                <li><a href="../pages/events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
+                <li><a href="../pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
+                <li><a href="../pages/communities.html" class="font1 fontSize4 fontColor3">COMUNIDADES</a></li>
+                <li><a href="../pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
+                <li><a href="../pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
+                <li><a href="about.html" class="font1 fontSize4 fontColor3 highlightLink">SOBRE</a></li>
+            </ul> 
+            <div class="buttons">
+                <button class="font1 fontSize3 fontColor3 buttonBlackLarge">ENVIE UM LANÇAMENTO</button>
+                <button class="font1 fontSize3 buttonPinkLarge">ENVIE UM EVENTO</button>
+            </div> 
+                <h2 class="font1 fontSize4 fontColor3">SIGA O WE GO OUT</h2>
+                <div class="icons">
+                <a class="littleIcon" href="https://www.instagram.com/wegoout/">
+                    <img class="littleIcon"  src="../assets/icone-instagram.svg">
+                </a>
+                <a class="littleIcon" href="https://www.facebook.com/wegoout.br/?locale=pt_BR" >
+                    <img class="littleIcon" src="../assets/icone-facebook.svg">
+                </a>
+                <a class="littleIcon" href="https://www.youtube.com/@WeGoOut">
+                    <img class="littleIcon" src="../assets/icone-youtube.svg">
+                </a>
+                <a class="littleIcon" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                    <img class="littleIcon" src="../assets/icone-spotify.svg">
+                </a>
+            </div>
+        </div>
+    </header> 
+    <main class="about">
+        <section class="firstContent">
+            <div class="waveFirst2">
+            </div>
+            <div class="container">      
+                <div class="introduction">
+                    <h1>SOMOS O WE GO OUT</h1>
+                    <h2>O We Go Out surgiu como um projeto de duas amigas apaixonadas por festas, festivais de música e viagens. O amor foi tanto que que decidimos tornar nosso estilo de vida em uma empresa.</h2>
+                    <p>Nós acreditamos que, ao compartilhar nossas experiências, somos capazes de transmitir essa paixão e inspirar nossos seguidores a viverem realidades semelhantes.</p>
+                    <p>Nosso trabalho é traduzido através de guias, conteúdos e comunidades criados para que as pessoas possam ter acesso a direto as informações e aproveitar ao máximo, ter benefícios exclusivos e participar de grupos com a mesma energia.</p>
+                </div>
+            </div>  
+        </section>
+        <section class="extraContent">
+            <div class="wave1">
+            </div>
+            <div class="wave2">
+            </div>
+            <div class="containerExtra">
+                <div class="aboutTeam">         
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fJQwdXnFISI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h2 class="font1 fontColor1 title">CONHEÇA O NOSSO TIME</h2>
+                    <ul>
+                        <li>
+                            <div class="profile">
+                                <img src="../assets/bru.svg">
+                                <div class="text">
+                                    <h3>Bru</h3>
+                                    <p>Co-Fundadora</p>
+                                </div>
+                            </div>
+                            <p>
+                                Pós-Graduação em Engenharia de Marketing (USP);
+                                <br/>
+                                Graduação em Administração (UFPR PR);
+                                <br/>
+                                13 anos de experiência nas áreas de marketing, trade e vendas.
+                            </p>
+                            <div class="lastContent">
+                                <p>
+                                    Onde encontrar: em algum palco underground
+                                </p>
+                                <nav>
+                                    <a class="instagram" href=""></a>
+                                    <a class="facebook" href=""></a>
+                                    <a class="spotify" href=""></a>
+                                </nav>
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="profile">
+                                <img src="../assets/jode.svg">
+                                <div class="text">
+                                    <h3>Jode</h3>
+                                    <p>Co-Fundadora</p>
+                                </div>
+                            </div>
+                            <p>Graduação em Marketing (USP);
+                                <br/>
+                                1 ano de experiência em Marketing Digital na DHL (Alemanha);
+                                <br/>
+                                12 anos de experiência nas áreas de  marketing, mkt digital e trade.</p>
+                            <div class="lastContent">
+                                <p>
+                                    Onde encontrar: comemorando os fogos no mainstage
+                                </p>
+                                <nav>
+                                    <a class="instagram" href=""></a>
+                                    <a class="facebook" href=""></a>
+                                    <a class="spotify" href=""></a>
+                                </nav>
+                            </div>  
+                        </li> 
+                        <li>
+                            <div class="profile">
+                                <img src="../assets/bruno.svg">
+                                <div class="text">
+                                    <h3>Bruno Zuccari</h3>
+                                    <p>Editor-Chefe</p>
+                                </div>
+                            </div>                              
+                            <p>Graduação em Publicidade e Propaganda USC;
+                                <br/>
+                                5 anos de experiência em Marketing;
+                                <br/>
+                                DJ e Produtor Musical.</p>
+                            <div class="lastContent">
+                                <p>
+                                    Onde encontrar: no front do mainstage
+                                </p>
+                                <nav>
+                                    <a class="instagram" href=""></a>
+                                    <a class="facebook" href=""></a>
+                                    <a class="spotify" href=""></a>
+                                </nav>
+                            </div>  
+                        </li> 
+                        <li>   
+                            <div class="profile">
+                                <img src="../assets/otavio.svg">  
+                                <div class="text">
+                                    <h3>Otavio</h3>
+                                    <p>Marketing de Conteúdo & Música</p>
+                                </div>                                          
+                            </div>  
+                            <p>Graduado em Publicidade na ESPM-SP.DJ e produtor musical.
+                                <br/>
+                                DJ e produtor musical.
+                            </p>
+                            <div class="lastContent">
+                                <nav>
+                                    <a class="instagram" href=""></a>
+                                    <a class="facebook" href=""></a>
+                                    <a class="spotify" href=""></a>
+                                </nav>
+                            </div>                          
+                        </li> 
+                        <li>
+                            <div class="profile">
+                                <img src="../assets/bruna.svg">
+                                <div class="text">
+                                    <h3>Bruna Maccedo</h3>
+                                    <p>Social Media</p>
+                                </div>
+                            </div>
+                            <p>Pós-Graduação em Engenharia de Marketing (USP);
+                                <br/>
+                                Graduação em Administração (UFPR PR);
+                                <br/>
+                                13 anos de experiência nas áreas de marketing, trade e vendas.</p>
+                            <div class="lastContent">
+                                <nav>
+                                    <a class="instagram" href=""></a>
+                                    <a class="facebook" href=""></a>
+                                    <a class="spotify" href=""></a>
+                                </nav>
+                            </div>
+                        </li> 
+                        <li>
+                            <div class="profile">
+                                <img src="../assets/isabella.svg">
+                                <div class="text">
+                                    <h3>Isabella Oliveira</h3>
+                                    <p>Marketing de Conteúdo & Eventos</p>
+                                </div>
+                            </div>
+                            <p>Graduanda em Publicidade na ESPM-SP;
+                                <br/>
+                                Apaixonada por musica e arte.</p>
+                            <div class="lastContent">
+                                <p>
+                                    Onde encontrar: vagando pelo rolê
+                                </p>
+                                <nav>
+                                    <a class="instagram" href=""></a>
+                                    <a class="facebook" href=""></a>
+                                    <a class="spotify" href=""></a>
+                                </nav>
+                            </div>
+                        </li> 
+                    </ul>
+                </div>
+                <div class="festivals">
+                    <div class="owl-carousel carouselFestivals owl-theme">
+                        <div class="item">
+                            <img src="../assets/img-about-festival1.svg">
+                            <span>Participação na Tomorrowland Bélgica em 2021 através da agência XUZ.</span>
+                        </div>
+                        <div class="item">
+                            <img src="../assets/img-about-festival2.svg">
+                            <span>Cobertura do Glastonbury de 2018.</span>
+                        </div>
+                        <div class="item">
+                            <img src="../assets/img-about-festival3.svg">
+                            <span>Lollapalooza Chicago em 2019.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialMedia">
+                    <h2 class="font1 fontColor1 title">SIGA O WE GO OUT</h2>
+                    <ul class="juicer-feed" data-feed-id="_anaadx" data-gutter="20" data-per="6"></ul>
+                    <div class="socials">
+                        <h3 class="font1 fontColor1">NOSSAS REDES</h3>
+                        <nav>
+                            <a class="insta" href="https://www.instagram.com/wegoout/"></a>
+                            <a class="facebook" href="https://www.facebook.com/wegoout.br/?locale=pt_BR"></a>
+                            <a class="youtube" href="https://www.youtube.com/@WeGoOut"></a>
+                            <a class="spotify" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5"></a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="impact">
+                    <h2 class="font1 fontColor1 title">MILHARES DE PESSOAS ALCANÇADAS</h2>
+                    <div class="containerGrid">
+                        <div class="text">
+                            <p>O We Go Out soma milhares de visitantes mensais e possui um alcance grande entre o público que consome música no Brasil.</p>
+                            <button></button>
+                        </div>
+                        <div>
+                            <div class="numbers">
+                                <h3>50.000</h3>
+                                <p>Visitantes únicos</p>
+                            </div>
+                            <div class="numbers">
+                                <h3>80.000</h3>
+                                <p>Acessos mensais</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="numbers readingTime">
+                                <h3>1M53S</h3>
+                                <p>Tempo médio de leitura</p>
+                            </div>
+                            <div class="numbers">
+                                <h3>98.000</h3>
+                                <p>Seguidores nas redes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partners">
+                    <h2 class="font1 fontColor1 title">PARCEIROS</h2>
+                    <div class="carouselPartners owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="https://brasil.tomorrowland.com/en/festival/">
+                                <img src="../assets/partners-about1.svg">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.t4f.com.br/">
+                                <img src="../assets/partners-about2.svg">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://ultrabrasil.com/pt/">
+                                <img src="../assets/partners-about3.svg">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.booking.com">
+                                <img src="../assets/partners-about4.svg">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.airbnb.com.br/">
+                                <img src="../assets/partners-about5.svg">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.ambev.com.br/marcas/cervejas/becks">
+                                <img src="../assets/partners-about6.svg">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://brasil.tomorrowland.com/en/festival/">
+                                <img src="../assets/partners-about1.svg">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://www.t4f.com.br/">
+                                <img src="../assets/partners-about2.svg">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="https://ultrabrasil.com/pt/">
+                                <img src="../assets/partners-about3.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h2 class="font1 fontColor1 title">ENTRE EM CONTATO</h2>
+                    <p class="font2 fontColor2 title2">Preencha os dados ao lado e envie sua mensagem. Em breve, nossa equipe entrará em contato.</p>
+                    <form>
+                        <div class="containerForm">
+                            <div class="name">
+                                <label class="font2 fontColor1" for="name">Nome<span>*</span></label>
+                                <input type="text" name="name" class="font2 fontColor2" placeholder="Digite seu nome completo"> 
+                            </div>
+                            <div class="email">
+                                <label class="font2 fontColor1" for="email">E-mail<span>*</span></label>
+                                <input type="text" name="email" class="font2 fontColor2" placeholder="Digite o seu email">
+                            </div>
+                        </div>
+                        <label class="font2 fontColor1 subjectLabel" for="subject">Assunto da mensagem<span>*</span></label>
+                        <select class="font2 fontColor4 fontSize3 subject">
+                            <option value="dúvidas">Dúvidas ou sugestões</option>
+                            <option value="propostas">Proposta de parceria</option>
+                            <option value="informações">Mais informações</option>
+                        </select>
+                        <label class="font2 fontColor1" for="message">Mensagem<span>*</span></label>
+                        <textarea autocomplete="off" requiredrows="1" name="message" class="message font2 fontColor2" placeholder="Escreva aqui a sua mensagem"></textarea>
+                        <label class="font2 fontColor1 checkLabel" for="checkbox">
+                            Li e aceito os <a href="../pages/politicsAndTerms.html">Termos de uso</a> e as <a href="../pages/cookiesPolitics">Políticas de privacidade</a> para a submissão do meu lançamento na plataforma We Go Out.
+                            <input type="checkbox" id="checkTerms" name="checkbox" class="font2 fontColor2">
+                            <span class="check"></span>
+                        </label>
+                        <button class="font1 fontColor4">ENVIAR MENSAGEM</button>
+                    </form>
+                </div>
+                <div class="launchOnTheSite">
+                    <div>
+                        <h2 class="font1 fontSize6 fontColor1">ENVIE SEU LANÇAMENTO PARA O WE GO OUT</h2>
+                        <p class="font2 fontColor2 fontSize5">Preencha o formulário do envio do lançamento e mostre a sua música para milhares de pessoas</p>
+                    </div>
+                    <a class="font1 fontSize3 fontColor3" href="../pages/releaseForm.html">
+                        ENVIE SEU LANÇAMENTO
+                    </a>
+                    <div class="launchWave"></div>
+                    <div class="waveLaunch1">
+                    </div>
+                    <div class="waveLaunch2">
+                    </div>
+                </div>
+            </div> 
+        </section>
+    </main> 
+    <footer>
+        <div class="container">
+            <section class="sugestions">
+                <div class="card">
+                    <img class="sendEventImg" src="../assets/evento1.svg">
+                    <div class="content">
+                        <h2 class="font1 fontSize6 fontColor3">ENVIE SEU EVENTO</h2>
+                        <p class="font2 fontSize3 fontColor3">Mostre o seu evento para milhares de pessoas e faça parte da rede de eventos  do nosso site. 
+                            Preencha o  formulário e envie as informações do seu evento agora mesmo.</p>
+                        <a class="font1 fontSize3 fontColor3" href="../pages/eventForm.html">ENVIAR EVENTO</a>
+                    </div>
+                </div>
+                <div class="card footerSearch">
+                    <img src="../assets/evento2.svg">
+                    <div class="content">
+                        <h2 class="font1 fontSize6 fontColor3 findEvent">ENCONTRE SEU EVENTO FAVORITO</h2>
+                        <p class="font2 fontSize3 fontColor3">Utilize a nossa pesquisa avançada para encontrar o evento que mais combina com você, buscando por gênero, artista, localização ou aproveitando as nossas seleções especiais.</p>
+                        <a class="font1 fontSize3 fontColor3" href="../pages/search.html">BUSCAR EVENTO</a>
+                    </div>
+                </div>
+                <div class="footerWave1"></div>
+            </section>
+            <section class="utils">
+                <nav class="navigation">
+                    <a class="font1 fontSize4 fontColor2" href="../../index.html">INICIO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/events.html">EVENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/eventForm.html">ENVIE UM EVENTO</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/news.html">NOTICIAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/communities.html">COMUNIDADES</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/artists.html">ARTISTAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/releases.html">LANÇAMENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/releaseForm.html">ENVIE UM LANÇAMENTO</a>
+                    <a class="font1 fontSize4 fontColor2 highlightLink" href="../pages/about.html">SOBRE</a>
+                </nav>
+                <div class="highlightEvents">
+                    <h2 class="font1 fontSize5 fontColor3">EVENTOS EM DESTAQUE</h2>
+                    <ul>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Goptun com Jamie xx</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">NAFF SP | Fisher & Chris Lake</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
+                        </li>
+                        <li>
+                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival São Paulo</a>
+                        </li>
+                    </ul>
+                    <a class="font1 fontSize3 fontColor4 seeAll" href="../pages/events.html">VER TUDO</a>
+                </div>
+                <div class="follow">
+                    <h2 class="font1 fontSize5 fontColor3">SIGA O WE GO OUT</h2>
+                    <ul>
+                        <li>
+                            <a class="icone insta" href="//www.instagram.com/wegoout/">
+                                <p class="font2 fontSize4 fontColor3">@wegoout</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone facebook" href="https://www.facebook.com/wegoout.br/?locale=pt_BR">
+                                <p class="font2 fontSize4 fontColor3">/wegoout.br</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone youtube" href="https://www.youtube.com/@WeGoOut">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="icone spotify" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="newsletter">
+                    <h2 class="font1 fontSize5 fontColor3">NEWSLETTER</h2>
+                    <p class="font2 fontSize3 fontColor2">Quer receber descontos e mais informações sobre festas e festivais?</p>                  
+                    <input class="font2 fontSize3 fontColor2" type="text" name="name" placeholder="Nome e sobrenome"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="email" placeholder="Email"/>
+                    <input class="font2 fontSize3 fontColor2" type="text" name="whatsapp" placeholder="Whatsapp"/>
+                    <button class="font1 fontSize3 fontColor3" type="submit">CADASTRAR</button>
+                </form>
+            </section>
+            <section class="rights">  
+                <div class="logo">
+                    <img src="../assets/logo-dark.svg">
+                    <div class="text">
+                        <p class="font2 fontSize2 fontColor2">Todos os direitos reservados a We Go Out 2023®
+                            CNPJ: 12.345.678/0001-10</p>
+                        <p class="font2 fontSize2 fontColor2">A We Go Out Ltda, inscrita sob o CNPJ: 12.345.678/0001-10 é uma instituição devidamente habilitada e autorizada. Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo impedir ou prejudicar o envio ou a recepção de informações atualizadas.</p>
+                        <a class="font2 fontSize2" href="mailto:contato@wegoout.com">contato@wegoout.com</a>
+                    </div>
+                </div>
+                <div class="politics">
+                    <a class="font1 fontSize2 fontColor2" href="../pages/politicsAndTerms.html">POLÍTICA DE PRIVACIADE</a>
+                    <a class="font1 fontSize2 fontColor2" href="../pages/cookiesPolitics.html">POLÍTICA DE COOKIES</a>
+                </div>
+                <div class="footerWave2"></div>
+                <div class="footerWave3"></div>
+            </section>
+        </div>
+    </footer> 
+    <script src="../scripts/jquery.sumoselect.min.js"></script> 
+    <script src="../scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+         $(document).ready(function () {
+             $('.subject').SumoSelect({search: false, placeholder:"Selecione aqui", floatWidth: 0,});
+        });
+    </script>
+</body>
+</html>

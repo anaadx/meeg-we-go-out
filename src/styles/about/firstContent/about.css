@@ -1,0 +1,50 @@
+.about .introduction {
+    width: 720px;
+    margin: 0 auto;
+    margin-top: 150px;
+    position: relative;
+    color: var(--neutral7);
+    font-family: 'Lato';
+}
+
+.about .introduction h1 {
+    font-size: 56px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: 'Fugaz One';
+}
+
+.about .introduction h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    line-height: 1.458em;
+}
+
+.about .introduction p {
+    font-size: 16px;
+    line-height: 1.25em;
+    color: var(--neutral3);
+    margin-bottom: 20px;
+}
+
+@media(max-width: 1024px) {
+    .about .introduction {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .about .introduction h1 {
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+
+    .about .introduction h2 {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .about .introduction p {
+        font-size: 14px;
+    }
+
+}

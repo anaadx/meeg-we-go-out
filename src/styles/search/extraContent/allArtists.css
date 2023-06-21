@@ -1,103 +1,31 @@
-.search .allArtists {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.search .artistsHighlights {
     width: 100%;
     position: relative;
     margin-bottom: 20px;
 }
 
-.search .allArtists .title {
+.search .artistsHighlights .item {
+    transition: var(--transitionFast);
+}
+
+.search .artistsHighlights .title {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.search .allArtists .title h3 {
+.search .artistsHighlights .title h3 {
     font-size: 18px;
 }
 
-.search .allArtists .title p {
+.search .artistsHighlights .title p {
     font-size: 14px;
-}
-
-.search .allArtists .text {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: space-between;
-    width: calc(100% - 30px);
-}
-
-.search .allArtists .carouselArtists {
-    width: 100%;
-}
-
-.search .allArtists .carouselArtists .item {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    min-width: 100px;
-    border-radius: 5px;
-    gap: 5px;
-}
-
-.search .allArtists .carouselArtists .item h3 {
-    font-size: 12px;
-}
-
-.search .allArtists .carouselArtists .item a {
-    width: 100%;
-    height: 100px;
-    border-radius: 5px;
-    display: block;
-}
-
-.search .allArtists .carouselArtists .item a img {
-    width: 100%;
-    height: 100px;
-    border-radius: 5px;
-}
-
-.search .allArtists .owl-carousel .owl-stage-outer {
-    overflow: visible;
-}
-
-.search .allArtists .owl-carousel.owl-drag .owl-item {
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-
-.search .allArtists .owl-carousel.owl-drag .owl-item.active {
-    opacity: 1;
 }
 
 @media(min-width: 601px) {
 
-    .search .allArtists {
+    .search .artistsHighlights {
         margin-bottom: 50px;
-    }
-
-    .search .allArtists .carouselArtists .item h3 {
-        font-size: 16px;
-    }
-
-    .search .allArtists .carouselArtists .item {
-        width: 220px;
-        min-width: calc(16% - 10px);
-        border-radius: 5px;
-        gap: 10px;
-    }
-
-    .search .allArtists .carouselArtists .item a {
-        height: 220px;
-        display: block;
-    }
-
-    .search .allArtists .carouselArtists .item a img {
-        min-width: 100%;
-        min-height: 100%;
-        object-fit: cover;
     }
 
 }

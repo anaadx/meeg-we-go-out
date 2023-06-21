@@ -1,0 +1,225 @@
+.event .info .content {
+    width: 100%;
+    padding: 40px 40px 0px 40px;
+    background-color: var(--neutral7);
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+}
+
+.event .info .content .title {
+    width: 100%;
+    font-size: 24px;
+    font-family: var(--font1);
+    margin-top: 0px;
+    font-weight: 400;
+}
+
+.event .info .content h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    width: 100%;
+    font-family: "Lato";
+    color: var(--neutral1);
+    font-weight: bold;
+}
+
+.event .info .content h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: 100%;
+    font-family: "Lato";
+    color: var(--neutral1);
+    font-weight: bold;
+}
+
+.event .info .content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: "Lato";
+    color: var(--neutral1);
+    line-height: 1.5em;
+}
+
+.event .info .content a {
+    text-decoration: underline;
+    color: var(--main1);
+    font-family: "Lato";
+    line-height: 1.5em;
+    font-size: 16px;
+}
+
+.event .info .content b {
+    font-weight: bold;
+}
+
+.event .info .content iframe {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.event .info .content span {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--neutral3);
+    font-family: "Lato";
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.event .info .content ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.event .info .content li {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: "Lato";
+    color: var(--neutral1);
+    line-height: 1.5em;
+}
+
+.event .info .content div {
+    display: grid;
+    width: 100%;
+    overflow: visible;
+    grid-template-columns: 276px 276px 276px;
+    grid-column-gap: 10px;
+}
+
+.event .info .content div figure {
+    margin-top: 0px;
+}
+
+.event .info .content div img {
+    height: 173px;
+    min-height: 173px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.event .info .content figure {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+
+.event .info .content figure span {
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+    position: absolute;
+    background-image: url(../../../../../assets/icone-olho.svg);
+    background-position: center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    display: block;
+    background-color: var(--main1);
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+
+}
+
+.event .info .content figure span:hover {
+    background-color: var(--pinkHover);
+}
+
+.event .info .content button {
+    padding: 15px 10px;
+    border: 3px solid var(--neutral1);
+    color: var(--neutral1);
+    font-family: var(--font1);
+    background-color: var(--neutral7);
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.event .info .content button:hover {
+    background-color: var(--neutral4);
+}
+
+.event .info .content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.event .info .content figcaption {
+    font-size: 14px;
+    color: var(--neutral3);
+    font-family: "Lato";
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+    .event .info .content {
+        padding: 70px 20px 0px 20px;
+    }
+
+    .event .info .content iframe {
+        height: 200px;
+        margin-top: 15px
+    }
+
+    .event .info .content .title {
+        font-size: 18px;
+    }
+
+    .event .info .content h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .event .info .content h3 {
+        font-size: 16px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        width: 100%;
+        font-family: "Lato";
+        color: var(--neutral1);
+        font-weight: bold;
+    }
+
+    .event .info .content p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .event .info .content a {
+        font-size: 14px;
+    }
+
+    .event .info .content span {
+        font-size: 12px;
+    }
+
+    .event .info .content li {
+        font-size: 14px;
+    }
+
+    .event .info .content figure {
+        margin-top: 15px;
+    }
+
+    .event .info .content img {
+        margin-bottom: 5px;
+
+    }
+
+    .event .info .content button {
+        padding: 20px;
+        font-size: 12px;
+        width: 100%;
+    }
+}

@@ -1,157 +1,66 @@
 .communities .bestEvents {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
     margin-bottom: 40px;
+    z-index: 4;
+    position: relative;
+}
+
+.modalLupaActive .communities .bestEvents {
+    z-index: 1;
 }
 
 .communities .bestEvents .titleName {
     font-size: 56px;
+    margin-bottom: 30px;
 }
 
 .communities .bestEvents .titleDescription {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.5em;
     width: 75%;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 }
 
 .communities .bestEvents .title {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .communities .bestEvents .title div {
     display: flex;
 }
 
-
-.communities .bestEvents .title button {
-    width: 20px;
-    background-color: var(--neutral1);
-    border: none;
-}
-
-.communities .bestEvents .title .btn-next img {
-    width: 100%;
-}
-
-.communities .bestEvents .title .btn-prev img {
-    width: 100%;
-}
-
-.communities .bestEvents .carouselBestEvents {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    width: 100%;
-    z-index: 4;
-}
-
-.communities .bestEvents .carouselBestEvents a {
-    align-items: center;
-    width: 90%;
-    display: flex;
-    gap: 5px;
-    background-color: var(--neutral2);
-    padding: 30px 15px;
-    border-radius: 10px;
-    text-decoration: none;
-    gap: 20px;
-}
-
-.communities .bestEvents .carouselBestEvents a:hover {
-    background-color: var(--greyHover);
-}
-
-.communities .bestEvents .carouselBestEvents a:active {
-    background-color: var(--main1);
-}
-
-
-.communities .bestEvents .owl-carousel .owl-item img {
-    width: 29px;
+.communities .bestEvents .carouselBestEvents a .icon:before {
+    background-image: url(../../../assets/icone-chat.svg);
+    content: "";
+    display: block;
+    width: 30px;
     height: 40px;
+    float: left;
+    background-size: 30px;
+    background-repeat: no-repeat;
 }
-
-.communities .bestEvents .owl-nav img {
-    width: 8px;
-    height: 16px;
-}
-
-
-.communities .bestEvents .owl-carousel .owl-nav {
-    position: absolute;
-    top: -55px;
-    right: 0;
-    margin-top: 0px;
-}
-
-.communities .bestEvents .owl-nav img {
-    width: 8px;
-    height: 16px;
-}
-
-.communities .bestEvents .owl-carousel.owl-drag .owl-item {
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-
-.communities .bestEvents .owl-carousel.owl-drag .owl-item.active {
-    opacity: 1;
-}
-
 
 @media(max-width: 1024px) {
 
     .communities .bestEvents .titleDescription {
         font-size: 14px;
         width: 100%;
+        margin-bottom: 35px;
     }
 
     .communities .bestEvents .titleName {
         font-size: 24px;
+        margin-bottom: 15px;
     }
 
     .communities .bestEvents .title {
-        margin-bottom: 0px;
+        margin-bottom: 20px;
     }
 
     .communities .bestEvents {
         margin-bottom: 50px;
     }
-
-    .communities .bestEvents .carouselBestEvents {
-        flex-direction: column;
-        gap: 20px;
-        width: 270px;
-    }
-
-    .communities .bestEvents .carouselBestEvents .item {
-        width: 100%;
-    }
-
-    .communities .bestEvents .button {
-        width: 100%;
-    }
-
-    .communities .bestEvents .carouselBestEvents a {
-        align-items: center;
-        display: flex;
-        gap: 5px;
-        background-color: var(--neutral2);
-        padding: 30px 15px;
-        border-radius: 10px;
-        text-decoration: none;
-        gap: 20px;
-        width: 250px;
-    }
-
-    .communities .bestEvents .owl-carousel .owl-stage-outer {
-        overflow: visible;
-    }
-
 }

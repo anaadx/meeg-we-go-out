@@ -1,0 +1,32 @@
+.singleNews .componentGuide {
+    position: relative;
+    width: 100%;
+    background-color: var(--neutral7);
+    padding: 75px 40px;
+}
+
+.singleNews .componentGuide .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.singleNews .componentGuide .title p {
+    font-size: 14px;
+}
+
+.singleNews .componentGuide .title h2 {
+    margin-bottom: 10px;
+}
+
+@media(max-width: 1025px) {
+
+    .singleNews .componentGuide {
+        width: 100%;
+        padding: 35px 20px;
+    }
+
+    .singleNews .componentGuide .title {
+        font-size: 18px;
+    }
+
+}

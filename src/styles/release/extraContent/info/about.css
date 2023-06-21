@@ -1,0 +1,115 @@
+.release .info .about {
+    width: 100%;
+    padding: 40px 40px 10px 40px;
+    background-color: var(--neutral7);
+    position: relative;
+}
+
+.release .info .about h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.release .info .about p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    line-height: 30px;
+    font-family: var(--font2);
+    color: var(--neutral1);
+}
+
+.release .info .about .quote {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.release .info .about .quote:before {
+    background-image: url(../../../../assets/citacao-inicio.svg);
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -50px;
+}
+
+.release .info .about .quote:after {
+    background-image: url(../../../../assets/citacao-final.svg);
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    margin-right: -50px;
+    background-position: right;
+}
+
+.release .info .about img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.release .info .about span {
+    font-size: 14px;
+    line-height: 25px;
+    font-family: var(--font2);
+    color: var(--neutral1);
+}
+
+.release .info .about .moreInfo {
+    margin: 0 auto;
+    padding: 15px;
+    color: var(--neutral6);
+    background-color: var(--main1);
+    border-radius: 10px 10px 0px 0px;
+    position: absolute;
+    top: -47px;
+    border: none;
+    z-index: 2;
+    left: 0px;
+    right: 0px;
+    width: 130px;
+    background-image: url(../../../../assets/seta-vertical-cima.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right 11% bottom 55%;
+    text-align: initial;
+}
+
+.release .info .about .moreInfo:hover {
+    background-color: var(--pinkHover);
+}
+
+@media (max-width: 1024px) {
+    .release .info .about {
+        border-radius: 0px;
+        padding: 40px 20px 10px 20px;
+    }
+
+    .release .info .about .moreInfo {
+        padding: 20px;
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+        background-color: var(--neutral7);
+        color: black;
+        background-position: right 5% bottom 55%;
+        background-image: url(../../../../assets/seta-vertical-cima-dark.svg);
+    }
+
+    .release .info .about .moreInfo:hover {
+        background-color: var(--neutral7);
+    }
+}

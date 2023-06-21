@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/components/header/index.css"> 
+    <link rel="stylesheet" href="../styles/components/header/menuButton.css">
+    <link rel="stylesheet" href="../styles/eventForm/index.css"> 
+    <link rel="stylesheet" href="../styles/components/formEventAndRelease.css"> 
+    <link rel="stylesheet" href="../styles/eventForm/send.css"> 
+    <link rel="stylesheet" href="../styles/libs/sumoselect.min.css"> 
+    <link rel="stylesheet" href="../styles/libs/animate.css"/>
+    <link rel="stylesheet" href="../styles/libs/daterangepicker.css">
+    <link rel="icon" href="../assets/icon-logo.png" type="image/x-icon">
+    <title>Formulário de Evento</title>
+    <script src="../scripts/jquery-3.7.0.min.js"></script>
+    <!-- <script src="../scripts/form.js"></script> -->
+    <script src="../scripts/header.js"></script>
+</head> 
+<body>
+    <div class="backgroundModal"></div>
+    <header class="menu static">
+        <nav>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <div class="links activeHighlight">
+                <a href="events.html" class="font1 fontColor3 fontSize4 highlightLink">EVENTOS</a>
+                <a href="../pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
+                <a href="../pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
+                <a href="../pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
+                <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
+                <a href="../pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
+            </div>
+            <button class="lupa lupaStatic"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaStatic disabled">
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaStatic"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a href="../pages/search.html" class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav> 
+    </header>   
+    <header class="menu floated">
+        <nav class="navStatic">
+            <div class="modal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <button class="lupa lupaFloated"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa containerLupaFloated disabled">
+                <button class="closeButtonModal"></button>
+                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                <button class="closeLupa closeLupaFloated"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                <div class="modalLupa">
+                    <ul class="listItems">
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa1.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">EVENTOS</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa2.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa3.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                    <p class="font2 fontColor3">15 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa4.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                    <p class="font2 fontColor3">5 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="../pages/search.html">
+                                <figure>
+                                    <img src="../assets/modalLupa5.svg">
+                                </figure>
+                                <div>
+                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                    <p class="font2 fontColor3">40 resultados</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                    <a class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                    <a class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                    <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                </div>
+            </div>
+        </nav>
+        <div class="modalMenu activeHighlight">
+            <ul>
+                <li><a href="../../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
+                <li><a href="events.html" class="font1 fontSize4 fontColor3 highlightLink">EVENTOS</a></li>
+                <li><a href="../pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
+                <li><a href="../pages/communities.html" class="font1 fontSize4 fontColor3">COMUNIDADES</a></li>
+                <li><a href="../pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
+                <li><a href="../pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
+                <li><a href="../pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
+            </ul> 
+            <div class="buttons">
+                <button class="font1 fontSize3 fontColor3 buttonBlackLarge">ENVIE UM LANÇAMENTO</button>
+                <button class="font1 fontSize3 buttonPinkLarge">ENVIE UM EVENTO</button>
+            </div> 
+                <h2 class="font1 fontSize4 fontColor3">SIGA O WE GO OUT</h2>
+                <div class="icons">
+                <a class="littleIcon" href="https://www.instagram.com/wegoout/">
+                    <img class="littleIcon"  src="../assets/icone-instagram.svg">
+                </a>
+                <a class="littleIcon" href="https://www.facebook.com/wegoout.br/?locale=pt_BR" >
+                    <img class="littleIcon" src="../assets/icone-facebook.svg">
+                </a>
+                <a class="littleIcon" href="https://www.youtube.com/@WeGoOut">
+                    <img class="littleIcon" src="../assets/icone-youtube.svg">
+                </a>
+                <a class="littleIcon" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
+                    <img class="littleIcon" src="../assets/icone-spotify.svg">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="eventForm">
+        <form>
+            <div class="container">
+                <div class="eventData">
+                    <h2 class="title">DADOS DO EVENTO</h2>
+                    <div class="imgInput">
+                        <div class="picture"></div>
+                        <div class="text">
+                            <h3>Faça upload da imagem do evento</h3>
+                            <p>A imagem deve ter menos de 5MB.</p>
+                            <p>A resolução deve ser de no mínimo 750 x 750px.</p>
+                            <p>A imagem não precisa conter data, hora e line up.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="field">
+                            <label class="font2 fontColor1" for="name">Nome do evento<span>*</span></label>
+                            <input type="text" name="name" class="font2 fontColor2" placeholder="Escreva aqui"> 
+                        </div>
+                        <div class="field">    
+                            <label class="font2 fontSize4" for="date">Data e hora do evento<span>*</span></label>
+                            <input type="text" name="datetimes" class="font2 fontSize2 fontColor2">
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="field">
+                            <label class="font2 fontSize4" for="gender">Gêneros musicais<span>*</span></label>
+                            <select name="gender" class="selectGender fontColor2" multiple="multiple">
+                                <option value="Funk">Funk</option>
+                                <option value="Eletrônica">Eletrônica</option>
+                                <option value="MPB">MPB</option>
+                                <option value="Rap">Rap</option>
+                                <option value="Rock">Rock</option>
+                            </select>
+                        </div> 
+                        <div class="field">
+                            <label class="font2 fontSize4" for="eventLink">Link do ingresso<span>*</span></label>
+                            <input type="text" name="eventLink" class="font2 fontColor2" placeholder="Digite o link de compra do ingresso"> 
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="field">
+                            <label class="font2 fontSize4" for="type">Tipo de evento<span>*</span></label>
+                            <select name="type" class="selecType fontColor2">
+                                <option value="Festival">Festival</option>
+                                <option value="Festa">Festa</option>
+                                <option value="Show">Show</option>
+                                <option value="Música">Música</option>      
+                                <option value="Evento">Evento</option>
+                            </select>
+                        </div> 
+                        <div class="field coupon">
+                            <label class="font2 fontSize4" for="coupon">Cupom de desconto We Go Out</label>
+                            <div class="placeTip">
+                                <img class="placeTipImg" src="../assets/info.svg">
+                                <div class="placeTipOpen">
+                                    <div class="buttonXClose placeTipX">
+                                    </div>
+                                    <h4>Caso você ofereça algum cupom de desconto para os clientes do We Go Out, descreva aqui o código que será usado para aplicar o benefício.</h4>
+                                    <span class="borderTip"></span>
+                                </div>
+                            </div>
+                            <input type="text" name="coupon" class="font2 fontColor2" placeholder="Se houver, digite o código do cupom"> 
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="field">
+                            <label class="font2 fontSize4" for="eventArtists">Artistas<span>*</span></label>
+                            <input type="text" name="eventArtists" class="font2 fontColor2" placeholder="Digite o nome dos artistas separados por vírgulas"> 
+                        </div>
+                        <div class="field">
+                            <label class="font2 fontSize4" for="place">Local<span>*</span></label>
+                            <input type="text" name="place" class="font2 fontColor2" placeholder="Digite o nome do local"> 
+                        </div>
+                    </div>
+                    <div class="block">
+                        <label class="font2 fontColor1" for="description">Descrição do evento<span>*</span></label>
+                        <textarea autocomplete="off" requiredrows="1" name="description" class="message font2 fontColor2" placeholder="Escreva aqui a sua mensagem"></textarea>
+                    </div>
+                </div>
+                <div class="clientData">
+                    <h2 class="title">DADOS DO RESPONSÁVEL PELO ENVIO</h2>
+                    <div class="block">
+                        <div class="field">
+                            <label class="font2 fontColor1" for="name">Nome do responsável<span>*</span></label>
+                            <input type="text" name="name" class="font2 fontColor2" placeholder="Digite o nome completo"> 
+                        </div>
+                        <div class="field">    
+                            <label class="font2 fontSize4" for="date">Email para contato<span>*</span></label>
+                            <input type="text" name="name" class="font2 fontColor2" placeholder="Digite  e-mail válido mais utilizado"> 
+                        </div>
+                    </div>
+                    <div class="block">
+                        <label class="font2 fontSize4" for="area">Whatsapp<span>*</span></label>
+                        <div class="fieldWrapper">
+                            <div class="fieldWrapper2">
+                                <select name="area" class="selectAreaCode fontColor2 whatsapp">
+                                    <option value="+1">+1</option>
+                                    <option value="+2">+2</option>
+                                    <option value="+3">+3</option>
+                                    <option value="+4">+4</option>
+                                    <option value="+5">+5</option>
+                                    <option selected="selected" value="+55">+55</option>
+                                </select>
+                                <input type="text" name="número" class="font2 fontColor2" placeholder="DDD + Número"> 
+                            </div>
+                            <p class="explanation">Não se preocupe, entraremos em contato apenas para informar sobre o andamento da submissão.</p>
+                        </div>
+                        <label class="font2 fontColor1 checkLabel" for="checkbox">
+                            Li e aceito os <a href="../pages/terms">Termos de uso</a> e as <a href="../pages/politics">Políticas de privacidade</a> para a submissão do meu lançamento na plataforma We Go Out.
+                            <input type="checkbox" id="checkTerms" name="checkbox" class="font2 fontColor2">
+                        <span class="check"></span>
+                        </label>
+                    </div>
+                </div>
+                <button>ENVIAR LANÇAMENTO</button>
+            </div>  
+        </form>
+        <section class="send">
+            <div class="container">
+                <h1>ENVIE SEU EVENTO</h1>
+                <div class="containerItem">
+                    <div class="item">
+                        <figure href="../pages/events.html">
+                            <span class="font2 fontSize2 fontColor3 tag backgroundWhite">TIPO DE EVENTO</span>
+                        </figure>
+                        <div class="text">
+                            <h2>NOME DO EVENTO</h2>
+                            <div class="music wrapper">
+                                <img class="littleIcon" src="../assets/icone-musica.svg" alt="icone música">
+                                <p>Gênero</p>
+                            </div>
+                            <div class="star">
+                                <img class="littleIcon" src="../assets/icone-estrela.svg" alt="icone estrela">
+                                <p>Artista</p>
+                            </div>
+                            <div class="house">
+                                <img class="littleIcon" src="../assets/icone-casa.svg" alt="icone casa">
+                                <p>Local</p>
+                            </div>
+                            <div class="calendar">
+                                <img class="littleIcon date" src="../assets/icone-calendario.svg" alt="icone calendário">
+                                <p>03 e 04 de junho</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="instructions">Mostre o seu evento para milhares de pessoas e faça parte da rede de eventos do nosso site.</h2>
+            </div>
+        </section>
+    </main> 
+    <script src="../scripts/jquery.sumoselect.min.js"></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+         $(document).ready(function () {
+             $('.selectGender').SumoSelect({search: false, placeholder:"Selecione os gêneros musicais", floatWidth: 0,});
+             $('.selecType').SumoSelect({search: false, placeholder:"Selecione o tipo", floatWidth: 0,});
+             $('.selectAreaCode').SumoSelect();
+        });
+    </script>
+</body>
+</html>

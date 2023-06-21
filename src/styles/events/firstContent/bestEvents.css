@@ -1,0 +1,134 @@
+.events .bestEvents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.events .bestEvents .title {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.events .bestEvents .title div {
+    display: flex;
+}
+
+.events .bestEvents .title button {
+    width: 20px;
+    background-color: var(--neutral1);
+    border: none;
+}
+
+.events .bestEvents .title .btn-next img {
+    width: 100%;
+}
+
+.events .bestEvents .title .btn-prev img {
+    width: 100%;
+}
+
+.events .bestEvents .carouselBestEvents {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: calc(100% - 50px)
+}
+
+.events .bestEvents .carouselBestEvents a {
+    width: 100%;
+    background-color: var(--neutral2);
+    padding: 0px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.events .bestEvents .carouselBestEvents a p {
+    display: flex;
+    align-items: center;
+    line-height: 1.27em;
+}
+
+.events .bestEvents .carouselBestEvents a p.fireIcon:before {
+    background-image: url(../../../assets/icone-fogo-grey.svg);
+    content: "";
+    display: block;
+    width: 40px;
+    height: 45px;
+    float: left;
+    margin-right: 10px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+
+.events .bestEvents .carouselBestEvents a p.placeIcon:before {
+    background-image: url(../../../assets/icone-localizacao-grey.svg);
+    content: "";
+    display: block;
+    width: 40px;
+    height: 45px;
+    float: left;
+    margin-right: 10px;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+
+.events .bestEvents .carouselBestEvents a:hover {
+    background-color: var(--greyHover);
+}
+
+.events .bestEvents .carouselBestEvents a:active {
+    background-color: var(--main1);
+}
+
+.events .bestEvents .owl-carousel .owl-nav {
+    top: -55px;
+    right: -50px
+}
+
+.events .bestEvents .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+@media(max-width: 1024px) {
+
+    .events .bestEvents {
+        margin-bottom: 30px;
+    }
+
+    .events .bestEvents .title {
+        margin-bottom: 15px;
+    }
+
+    .events .bestEvents .title h2 {
+        font-size: 18px;
+    }
+
+    .events .bestEvents .carouselBestEvents .item {
+        width: 100%;
+    }
+
+    .events .bestEvents .button {
+        width: 100%;
+    }
+
+    .events .bestEvents .carouselBestEvents a {
+        padding: 35px 20px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    .events .bestEvents .carouselBestEvents a p {
+        font-size: 14px;
+    }
+
+    .events .bestEvents .owl-carousel .owl-stage-outer {
+        overflow: visible;
+    }
+
+}

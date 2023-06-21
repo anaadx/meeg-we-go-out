@@ -1,0 +1,105 @@
+.componentGuide {
+    position: relative;
+    width: 100%;
+    background-color: var(--neutral7);
+}
+
+.componentGuide .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.componentGuide .title p {
+    font-size: 14px;
+}
+
+.componentGuide .title h2 {
+    margin-bottom: 10px;
+}
+
+.componentGuide .text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.componentGuide .text h3 {
+    font-size: 16px;
+}
+
+.componentGuide .item {
+    width: 100%;
+    transition: var(--transitionFast);
+}
+
+.componentGuide .item:hover {
+    margin-top: -3px;
+}
+
+.componentGuide .item div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    gap: 5px;
+}
+
+.componentGuide .item h2 {
+    line-height: 25px;
+    margin: 15px 0px;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: "Fugaz One";
+    color: var(--neutral1);
+}
+
+.componentGuide .item figure {
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+}
+
+.componentGuide .item a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+.componentGuide figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.componentGuide .owl-carousel .owl-nav {
+    top: -55px;
+    right: -50px;
+}
+
+.componentGuide .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+.componentGuide .carouselGuide {
+    width: calc(100% - 50px)
+}
+
+@media(max-width: 1025px) {
+
+    .componentGuide {
+        width: 100%;
+    }
+
+    .componentGuide .title {
+        font-size: 18px;
+    }
+
+    .componentGuide .item h2 {
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+}

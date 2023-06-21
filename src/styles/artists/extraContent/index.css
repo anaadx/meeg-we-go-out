@@ -9,10 +9,10 @@
 .artists .containerExtra {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 45px;
     width: calc(100% - 120px);
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
     align-self: center;
 }
 
@@ -27,7 +27,7 @@
 
     .artists .containerExtra {
         width: calc(100% - 40px);
-        margin-top: 0px;
-        gap: 50px;
+        margin-top: 30px;
+        gap: 20px;
     }
 }

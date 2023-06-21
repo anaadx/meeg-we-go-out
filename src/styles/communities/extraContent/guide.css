@@ -4,7 +4,7 @@
 }
 
 .communities .guide .title h2 {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .communities .guide .text {
@@ -57,11 +57,11 @@
 }
 
 .communities .guide .item {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 160px;
-    margin-top: 10px;
+    width: 100%;
+}
+
+.communities .guide .item:hover {
+    margin-top: -3px
 }
 
 .communities .guide .item div {
@@ -73,12 +73,11 @@
 }
 
 .communities .guide .item h2 {
-    line-height: 20px;
+    line-height: 1.5em
 }
 
 .communities .guide .item a {
     width: 100%;
-    height: 160px;
     border-radius: 10px;
     text-decoration: none;
     position: relative;
@@ -90,14 +89,15 @@
     width: 100%;
     height: 100%;
     border-radius: 5px;
+    margin-bottom: 3px;
 }
 
 .communities .guide .listGuide {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 15px
 }
 
 .communities .guide button.disabled {
@@ -128,19 +128,14 @@
 @media (max-width: 1024px) {
 
     .communities .guide .listGuide {
-        gap: 15px
+        margin-bottom: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
     }
 
-    .communities .guide .item {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100px;
-        margin-top: 10px;
-    }
-
-    .communities .guide .item a {
-        height: 100px;
+    .communities .guide .title h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
     }
 
     .communities .guide .item h2 {

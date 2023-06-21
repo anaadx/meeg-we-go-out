@@ -266,11 +266,35 @@
 .daterangepicker select.ampmselect {
     width: 50px;
     margin: 0 auto;
-    background: #eee;
-    border: 1px solid #eee;
+    background: var(--main1);
+    border: none;
     padding: 2px;
     outline: 0;
     font-size: 12px;
+    color: var(--neutral7);
+    font-family: var(--font2);
+}
+
+.daterangepicker select.hourselect option,
+.daterangepicker select.minuteselect option,
+.daterangepicker select.secondselect option,
+.daterangepicker select.ampmselect option {
+    background-color: var(--neutral5);
+    color: var(--neutral1);
+    font-size: 14px;
+}
+
+.daterangepicker select::-webkit-scrollbar {
+    width: 2px;
+}
+
+.daterangepicker select::-webkit-scrollbar-track {
+    background: var(--neutral5);
+}
+
+.daterangepicker select::-webkit-scrollbar-thumb {
+    background-color: var(--main1);
+    border-radius: 20px;
 }
 
 .daterangepicker .calendar-time {
@@ -296,11 +320,10 @@
 
 .daterangepicker .drp-selected {
     display: inline-block;
-    font-size: 12px;
     padding-right: 8px;
     color: var(--neutral7);
     font-family: "lato";
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .daterangepicker .drp-buttons .btn {

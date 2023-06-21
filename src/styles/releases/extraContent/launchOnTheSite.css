@@ -8,6 +8,13 @@
     display: none;
 }
 
+.releases .launchOnTheSite .content h2 {
+    line-height: 1.5em;
+}
+
+.releases .launchOnTheSite .content p {
+    line-height: 1.5em;
+}
 
 .releases .launchOnTheSite .launchWave1 {
     position: absolute;
@@ -69,9 +76,22 @@
         justify-content: center;
     }
 
+    .releases .launchOnTheSite .content h2 {
+        font-size: 18px;
+    }
+
+    .releases .launchOnTheSite .content p {
+        font-size: 16px;
+    }
+
+    .releases .launchOnTheSite button {
+        font-size: 12px;
+    }
+
     .releases .launchOnTheSite .content div {
         margin-top: 30px;
         margin-bottom: 30px;
+        gap: 20px;
     }
 
     .releases .launchOnTheSite iframe {

@@ -9,10 +9,10 @@
 .releases .containerExtra {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 45px;
     width: calc(100% - 120px);
     flex-direction: column;
-    gap: 100px;
+    gap: 80px;
     align-self: center;
 }
 
@@ -24,7 +24,7 @@
 @media(max-width: 1024px) {
     .releases .containerExtra {
         margin-top: 0px;
-        gap: 50px;
+        gap: 40px;
         width: calc(100% - 40px);
     }
 

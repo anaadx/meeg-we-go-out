@@ -10,9 +10,11 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    width: calc(100% - 120px);
+    width: calc(100% - 160px);
     flex-direction: column;
     align-self: center;
+    gap: 70px;
+    margin-bottom: 70px;
 }
 
 .search .containerExtra .searchResultText {
@@ -26,11 +28,38 @@
 .search .seeAll {
     position: absolute;
     right: 5px;
-    bottom: -35px;
+    bottom: -40px;
 }
 
-.search .owl-carousel .owl-stage {
+.search .seeAll:hover {
+    color: var(--pinkHover);
+}
+
+.search .title {
+    margin-bottom: 20px;
+}
+
+.search .emphasis .title {
+    margin-bottom: 0px;
+}
+
+.search .emphasis .seeAll {
+    position: absolute;
+    right: 5px;
+    bottom: -20px;
+}
+
+.search .emphasis .seeAll:hover {
+    color: var(--pinkHover);
+}
+
+.search .carouselEvents .owl-carousel .owl-stage {
     padding: 20px 0px;
+}
+
+footer .container {
+    width: calc(100% - 160px);
+    max-width: calc(100% - 160px);
 }
 
 @media(max-width: 1024px) {
@@ -41,9 +70,10 @@
     .search .containerExtra {
         width: calc(100% - 40px);
         margin-top: 0px;
+        margin-bottom: 35px;
     }
 
     .search .containerExtra {
-        gap: 20px;
+        gap: 35px;
     }
 }

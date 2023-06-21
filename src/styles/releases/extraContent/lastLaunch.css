@@ -17,11 +17,11 @@
 }
 
 .releases .lastLaunch .content {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     width: 100%;
-    flex-wrap: wrap;
-    row-gap: 50px;
 }
 
 .releases .lastLaunch .text {
@@ -50,12 +50,18 @@
     padding: 20px;
     background-color: var(--neutral5);
     border-radius: 10px;
-    height: min-content;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: calc(25% - 60px);
-    max-width: 350px;
+    transition: var(--transitionFast);
+}
+
+.releases .lastLaunch .item:hover {
+    margin-top: -3px;
+}
+
+.releases .lastLaunch .item:hover figure img {
+    margin-top: -5px;
+    margin-left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 5px);
 }
 
 .releases .lastLaunch .item div {
@@ -65,20 +71,24 @@
 }
 
 .releases .lastLaunch .item a {
-    height: calc(100% - 40px);
-    width: 100%;
-    /* height: 290px; */
-    border-radius: 10px;
-    position: relative;
+    text-decoration: none;
     display: block;
+    height: 100%;
 }
 
+.releases .lastLaunch .item figure {
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    height: 260px;
+}
 
 .releases .lastLaunch .item a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .releases .lastLaunch button {
@@ -102,23 +112,52 @@
 @media(max-width: 1024px) {
 
     .releases .lastLaunch {
-        margin-top: 50px;
+        margin-top: 20px;
+        gap: 0px;
+    }
+
+    .releases .lastLaunch .text h2 {
+        font-size: 18px;
     }
 
     .releases .lastLaunch .item {
-        flex-direction: row;
+        overflow: hidden;
         width: calc(100% - 40px);
         max-width: calc(100% - 40px);
     }
 
-    .releases .lastLaunch .item a {
+    .releases .lastLaunch .item div span {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    .releases .lastLaunch .item div h3 {
+        font-size: 10px;
+    }
+
+    .releases .lastLaunch .item div p {
+        font-size: 14px;
+    }
+
+    .releases .lastLaunch .item figure {
         width: calc(40% - 20px);
         max-width: 170px;
         min-width: 130px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 0px;
+        height: 100%;
+    }
+
+    .releases .lastLaunch button {
+        font-size: 12px;
+    }
+
+    .releases .lastLaunch .item a img {
+        margin-bottom: 0px;
     }
 
     .releases .lastLaunch .content {
-        flex-direction: column;
-        gap: 30px;
+        grid-template-columns: 1fr;
     }
 }

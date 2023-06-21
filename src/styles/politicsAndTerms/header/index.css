@@ -1,0 +1,370 @@
+.menu {
+    background-color: var(--neutral1);
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all 500ms;
+}
+
+.menu.floated {
+    z-index: 5;
+    position: fixed;
+    top: -100px;
+    left: 0px;
+    right: 0px;
+}
+
+.menu .containerLupa .lupaContainerItem {
+    width: 30px;
+    left: 5px;
+    bottom: 10px;
+    border: solid var(--neutral2);
+    position: absolute;
+    background-color: var(--neutral1);
+    border: none;
+}
+
+.menu .containerLupa .lupaContainerItem img {
+    width: 100%;
+}
+
+.menu .containerLupa .closeLupa {
+    width: 30px;
+    right: 5px;
+    bottom: 10px;
+    position: absolute;
+    background-color: var(--neutral1);
+    border: none;
+}
+
+.menu .containerLupa {
+    position: relative;
+    align-self: flex-end;
+    background-color: var(--enutral1);
+    border: 3px solid var(--neutral2);
+    border-radius: 3px;
+    width: 35%;
+    right: -1000px;
+}
+
+.modalLupaActive .menu .containerLupa {
+    transition: all 5s;
+    right: 0px;
+}
+
+
+.menu .containerLupa input {
+    padding: 14.5px 0px;
+    background-color: var(--neutral1);
+    border: none;
+    margin-left: 35px;
+    margin-right: 35px;
+    width: calc(100% - 100px);
+    transition: 1s all;
+}
+
+.menu .containerLupa input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.menu .containerLupa:hover,
+.menu .containerLupa:focus {
+    box-shadow: 0 0 2px var(--neutral7);
+    border-color: var(--neutral7)
+}
+
+.menu .lupa {
+    border: solid var(--neutral2);
+    background-color: var(--neutral1);
+    border: none;
+    width: 40px;
+}
+
+.menu .containerLupa .modalLupa {
+    width: calc(100% - 40px);
+    background-color: var(--neutral2);
+    position: absolute;
+    top: -10000px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.inputLupaActive .menu .modalLupa {
+    transition: 1s all;
+    top: 55px;
+}
+
+.menu .containerLupa .modalLupa ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.menu .containerLupa .modalLupa ul li {
+    width: calc(50% - 5px);
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    height: 70px;
+    align-items: center;
+    background-color: var(--greyHover);
+}
+
+.menu .containerLupa .modalLupa ul li a {
+    width: calc(35% - 10px);
+    min-width: 50px;
+    border-radius: 5px 0px 0px 5px;
+    height: 100%;
+}
+
+.menu .containerLupa .seeAll {
+    margin-top: 40px;
+    display: block;
+}
+
+.menu .containerLupa .modalLupa ul li h3 {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.menu .containerLupa .modalLupa ul li p {
+    font-size: 12px;
+}
+
+.menu .containerLupa .modalLupa ul li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.menu .containerLupa .modalLupa .sugestions {
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+.menu .containerLupa .modalLupa .textModal {
+    font-size: 14px;
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--greyHover);
+}
+
+body.menuActive .menu.floated {
+    top: 0px;
+    width: 100%;
+}
+
+body.menuDrop .menu.floated {
+    top: 0px;
+}
+
+.menu .logo {
+    width: 45px;
+}
+
+.menu nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu .links {
+    display: flex;
+    align-self: center;
+    gap: 20px;
+}
+
+.menu .links a {
+    text-decoration: none;
+    filter: brightness(0.9);
+}
+
+.menu .links a:hover {
+    filter: brightness(3);
+}
+
+.menu .lupa img {
+    width: 100%;
+}
+
+.modalMenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: var(--neutral1);
+    left: 0px;
+    top: -10000px;
+    z-index: 10;
+    margin-bottom: 0px;
+    transition: all 1s;
+    gap: 20px;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    width: 90%;
+    box-shadow: 38px 47px 0px 200px rgba(33, 30, 30, 0.8);
+}
+
+.modalMenu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modalMenu::-webkit-scrollbar-track {
+    background: var(--neutral1);
+}
+
+.modalMenu::-webkit-scrollbar-thumb {
+    background-color: var(--main1);
+    border-radius: 20px;
+}
+
+.modalMenu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.modalMenu ul li {
+    padding: 20px;
+    display: flex;
+    border-bottom: 1px solid var(--neutral3);
+    text-decoration: none;
+}
+
+.modalMenu ul li a {
+    text-decoration: none;
+}
+
+.modalMenu .buttons {
+    padding: 80px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modalMenu .icons a {
+    display: block;
+    display: flex;
+    background-color: var(--neutral2);
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+.modalMenu .icons a img {
+    width: 60%;
+}
+
+.modalMenu .icons {
+    display: flex;
+    gap: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.modalMenu h2 {
+    padding: 20px;
+}
+
+.menuDrop .modalMenu {
+    top: 60px;
+}
+
+.menuDrop .menu.floated nav {
+    justify-content: flex-end;
+    padding: 20px;
+    z-index: 3;
+}
+
+.menuDrop .menu.floated nav .modal {
+    margin-right: 5%;
+}
+
+.menuDrop .menu.floated nav img {
+    display: none;
+}
+
+.menuDrop .menu.floated nav button {
+    display: none;
+}
+
+.menuDrop .home .emphasis {
+    z-index: 0;
+}
+
+.menuDrop .home .countdown {
+    z-index: 0;
+}
+
+@media(max-width: 1024px) {
+
+    .menu,
+    .menu .lupa {
+        background-color: transparent
+    }
+
+    .menuDrop .menu,
+    .menuDrop .menu .lupa {
+        background-color: var(--neutral1)
+    }
+
+    .menu nav {
+        padding: 20px;
+    }
+
+    .backgroundMenu .menu .logo {
+        width: 44px;
+        top: 10px;
+    }
+
+    .backgroundMenu .menu .lupa,
+    .backgroundMenu .menu {
+        background-color: var(--neutral1)
+    }
+
+    .menu .logo {
+        width: 52px;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 20px;
+        bottom: 0px;
+        margin: 0 auto;
+    }
+
+    .menu.floated {
+        top: 0px;
+        position: fixed;
+        z-index: 10;
+    }
+
+    .menu.static {
+        display: none;
+    }
+
+    .menu .containerLupa {
+        position: relative;
+        align-self: flex-end;
+        background-color: var(--neutral1);
+        border: 3px solid var(--neutral2);
+        border-radius: 3px;
+        width: 100%;
+        top: -1000px;
+        position: fixed;
+        z-index: 12px;
+    }
+
+    .modalLupaActive .menu .containerLupa {
+        top: 60px;
+        transition: all 2s;
+    }
+
+}

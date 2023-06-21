@@ -1,0 +1,58 @@
+.events .extraContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.events .extraContent .title {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.events .extraContent .title .seeAll {
+    font-size: 14px;
+    font-family: "Fugaz One";
+    color: var(--main1);
+}
+
+.events .extraContent .title .seeAll:hover {
+    color: var(--pinkHover);
+}
+
+.events .extraContent .title h2 {
+    font-size: 24px;
+}
+
+.events .containerExtra {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 120px);
+    flex-direction: column;
+    gap: 40px;
+    align-self: center;
+}
+
+@media(max-width: 1024px) {
+
+    footer.no-margin {
+        margin-top: 0px;
+    }
+
+    .events .containerExtra {
+        margin-top: 0px;
+        gap: 45px;
+        width: calc(100% - 40px);
+    }
+
+    .events .extraContent .title {
+        margin-bottom: 15px;
+    }
+
+    .events .extraContent .title h2 {
+        font-size: 18px;
+    }
+}

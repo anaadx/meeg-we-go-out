@@ -1,0 +1,134 @@
+.about .socialMedia {
+    margin-bottom: 100px;
+}
+
+.about .socialMedia h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.about .socialMedia h3 {
+    font-size: 18px;
+    float: left;
+    margin-top: 15px;
+}
+
+.about .socialMedia .socials {
+    overflow: hidden;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.about .socialMedia .socials nav {
+    font-size: 18px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 260px;
+    float: left;
+}
+
+.about .socialMedia .socials nav a {
+    padding: 25px;
+    display: block;
+    background-color: var(--main1);
+    border-radius: 5px;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about .socialMedia .socials nav a:hover {
+    background-color: var(--pinkHover);
+}
+
+.about .socialMedia .socials nav .insta {
+    background-image: url(../../../assets/icone-instagram-branco.svg);
+}
+
+.about .socialMedia .socials nav .facebook {
+    background-image: url(../../../assets/icone-facebook.svg);
+}
+
+.about .socialMedia .socials nav .youtube {
+    background-image: url(../../../assets/icone-youtube.svg);
+}
+
+.about .socialMedia .socials nav .spotify {
+    background-image: url(../../../assets/icone-spotify.svg);
+}
+
+.about .socialMedia .juicer-feed h1.referral {
+    display: none;
+}
+
+.about .socialMedia .juicer-feed .j-paginate {
+    display: none;
+}
+
+.about .socialMedia .juicer-feed * {
+    border-radius: 10px;
+}
+
+.about .socialMedia .juicer-feed.image-grid .j-text,
+.about .socialMedia .juicer-feed.slider .j-text,
+.about .socialMedia .juicer-feed.hip .j-text {
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    color: var(--neutral7);
+    background: var(--neutral1);
+    text-align: left;
+    position: absolute;
+    padding: 10%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.about .socialMedia .juicer-feed.image-grid .j-meta,
+.about .socialMedia .juicer-feed.slider .j-meta,
+.about .socialMedia .juicer-feed.hip .j-meta {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 15px;
+    margin: 21px -15% 0;
+    text-align: left;
+}
+
+@media(max-width: 1024px) {
+    .about .socialMedia h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .about .socialMedia {
+        margin-bottom: 50px;
+    }
+
+    .about .socialMedia .socials nav a {
+        padding: 15px;
+        background-size: 15px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .about .socialMedia .socials nav {
+        width: 150px;
+        margin-left: 15px;
+    }
+
+    .about .socialMedia h3 {
+        margin-top: 7.5px;
+    }
+
+    .about .socialMedia {
+        margin-bottom: 55px;
+    }
+}

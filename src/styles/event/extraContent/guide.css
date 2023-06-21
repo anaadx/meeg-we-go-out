@@ -1,0 +1,112 @@
+.event .guide {
+    position: relative;
+    width: 100%;
+    background-color: var(--neutral7);
+    padding: 75px 40px;
+}
+
+.event .guide .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.event .guide .title p {
+    font-size: 14px;
+}
+
+.event .guide .title h2 {
+    margin-bottom: 10px;
+}
+
+.event .guide .text {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event .guide .text h3 {
+    font-size: 16px;
+}
+
+.event .guide .item {
+    width: 100%
+}
+
+.event .guide .item:hover {
+    margin-top: -3px;
+}
+
+.event .guide .item:hover img {
+    margin-top: -5px;
+    margin-left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 5px);
+}
+
+.event .guide .item div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    gap: 5px;
+}
+
+.event .guide .item h2 {
+    line-height: 25px;
+    margin: 15px 0px;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: "Fugaz One";
+    color: var(--neutral1);
+}
+
+.event .guide .item figure {
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden
+}
+
+.event .guide .item a {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+.event .guide figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.event .guide .owl-carousel .owl-nav {
+    top: -55px;
+}
+
+.event .guide .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+
+.event .guide .carouselGuide {
+    width: calc(100% - 50px)
+}
+
+@media(max-width: 1025px) {
+
+    .event .guide {
+        padding: 35px 20px;
+    }
+
+    .event .guide .title {
+        font-size: 18px;
+    }
+
+    .event .guide .item h2 {
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+}

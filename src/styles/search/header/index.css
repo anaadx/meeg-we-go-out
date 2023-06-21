@@ -46,8 +46,12 @@ body.menuDrop .menu.floated {
 
 .menu .links a {
     text-decoration: none;
+    filter: brightness(0.9);
 }
 
+.menu .links a:hover {
+    filter: brightness(3);
+}
 
 .menu .lupa {
     background-color: var(--neutral1);
@@ -175,6 +179,7 @@ body.menuDrop .menu.floated {
         position: fixed;
         z-index: 10;
     }
+
 
     .menu.static {
         display: none;

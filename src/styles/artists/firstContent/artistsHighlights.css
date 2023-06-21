@@ -11,48 +11,44 @@
     display: none;
 }
 
+.artists .artistHighlights .carouselArtists {
+    width: calc(100% - 50px)
+}
+
 .artists .artistHighlights .title {
     margin-bottom: 10px;
     position: relative;
 }
 
 .artists .artistHighlights .text {
-    s display: flex;
+    display: flex;
     gap: 10px;
     align-items: center;
 }
 
-
-.artists .artistHighlights .carouselArtists {
-    display: flex;
-    gap: 5px;
-    width: 270px;
+.artists .artistHighlights .carouselArtists .item {
+    border-radius: 5px;
 }
 
-.artists .artistHighlights .carouselArtists .item {
-    width: 270px;
-    min-width: 270px;
-    border-radius: 5px;
-    gap: 10px;
+.artists .artistHighlights .carouselArtists .item:hover {
+    margin-top: -3px;
 }
 
 .artists .artistHighlights .carouselArtists .item a {
-    height: 270px;
-    margin-bottom: 10px;
     display: block;
+    text-decoration: none;
 }
 
 .artists .artistHighlights .carouselArtists .item a img {
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .artists .artistHighlights .owl-carousel .owl-nav {
-    position: absolute;
-    top: -60px;
-    right: 3px;
+    top: -40px;
+    right: -50px;
     margin-top: 0px;
 }
 
@@ -70,22 +66,21 @@
     opacity: 1;
 }
 
-.artists .artistHighlights .carouselArtists {
-    width: 300px;
-}
 
 .artists .artistHighlights .owl-carousel .owl-stage-outer {
     overflow: visible;
 }
 
-
-@media(min-width: 750px) {
-    .artists .artistHighlights .carouselArtists {
-        width: 100%;
+@media(max-width: 1024px) {
+    .artists .artistHighlights .title h2 {
+        font-size: 18px;
     }
 
-    .artists .artistHighlights .owl-carousel .owl-stage-outer {
-        overflow: hidden;
+    .artists .artistHighlights .carouselArtists .item h3 {
+        font-size: 13px;
     }
 
+    .artists .artistHighlights {
+        margin-top: 80px;
+    }
 }

@@ -7,13 +7,9 @@
 }
 
 .news .containerExtra {
-    display: flex;
-    justify-content: center;
     margin-top: 30px;
     width: calc(100% - 120px);
-    flex-direction: column;
-    gap: 100px;
-    align-self: center;
+    align-self: center
 }
 
 .filterSearchMode .news .containerExtra {

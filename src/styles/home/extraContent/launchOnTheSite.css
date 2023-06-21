@@ -1,28 +1,39 @@
 .home .launchOnTheSite {
-    height: 90px;
     background-color: var(--neutral5);
     justify-content: space-between;
     display: flex;
     border-radius: 10px;
     position: relative;
     align-items: center;
-    padding: 40px;
+    padding: 35px 40px;
+    overflow: hidden
 }
 
 .home .launchOnTheSite .launchWave {
     position: absolute;
-    top: 10px;
+    bottom: -54px;
+    background-image: url(../../../assets/onda-lancamento.svg);
+    background-repeat: no-repeat;
+    background-size: 790px;
+    width: 1312px;
+    height: 200px;
+    background-size: contain;
+    right: 16px;
+    z-index: 0;
 }
 
-.home .launchOnTheSite button {
-    padding: 20px;
+.home .launchOnTheSite a {
+    padding: 15px 20px;
     background-color: var(--main1);
     border-radius: 5px;
     border: none;
     z-index: 1;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
 }
 
-.home .launchOnTheSite button:hover {
+.home .launchOnTheSite a:hover {
     background-color: var(--pinkHover);
 }
 
@@ -32,27 +43,38 @@
 }
 
 .home .launchOnTheSite h2 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    line-height: 1.30em;
+    font-size: 24px;
 }
 
 .home .launchOnTheSite p {
-    line-height: 30px;
+    line-height: 1.5em;
+    font-size: 16px;
 }
 
 @media(max-width: 1024px) {
+
+    .home .launchOnTheSite .launchWave {
+        display: none;
+    }
+
     .home .launchOnTheSite {
         flex-direction: column;
         padding: 30px;
-        height: 170px;
     }
 
     .home .launchOnTheSite div {
         width: 100%;
     }
 
+    .home .launchOnTheSite h2 {
+        font-size: 18px;
+    }
+
     .home .launchOnTheSite p {
-        line-height: 20px;
         margin-bottom: 20px;
+        font-size: 14px;
     }
 
     .home .launchOnTheSite button {

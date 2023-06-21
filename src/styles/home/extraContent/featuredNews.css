@@ -1,7 +1,7 @@
 .home .featuredNews {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     overflow: hidden;
 }
 
@@ -11,21 +11,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 10px;
-    margin-bottom: 50px;
-}
-
-.home .highlightNews .title {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
 .home .highlightNews ul {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     max-height: 1500px;
 }
 
@@ -34,6 +25,16 @@
     position: relative;
     border-radius: 10px;
     height: 280px;
+}
+
+.home .highlightNews ul li:hover {
+    margin-top: -3px;
+}
+
+.home .highlightNews ul li:hover img {
+    margin-top: -5px;
+    margin-left: -5px;
+    width: calc(100% + 10px);
 }
 
 .home .highlightNews ul li div {
@@ -51,13 +52,17 @@
 }
 
 .home .highlightNews ul li div span {
-    margin-left: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+    line-height: 1.71em;
 }
 
 .home .highlightNews ul li div h3 {
-    margin-left: 20px;
-    margin-right: 20px;
-    line-height: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 1.5em;
+    font-size: 14px;
 }
 
 .home .highlightNews ul li a {
@@ -65,6 +70,7 @@
     width: 100%;
     border-radius: 10px;
     height: 100%;
+    overflow: hidden;
 }
 
 .home .highlightNews ul li a img {
@@ -79,15 +85,7 @@
 .home .launch {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     width: 100%;
-}
-
-.home .launch .title {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
 .home .launch ul {
@@ -100,24 +98,44 @@
 
 .home .launch li {
     width: 100%;
-    display: flex;
     border-radius: 5px;
     background-color: var(--neutral5);
     height: 100px;
+    transition: var(--transitionFast);
 }
 
 .home .launch li a {
+    height: 100%;
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.home .launch li:hover {
+    margin-top: -3px
+}
+
+.home .launch li:hover img {
+    margin-top: -5px;
+    margin-left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 5px);
+}
+
+.home .launch li figure {
+    display: flex;
     gap: 5px;
     position: relative;
     width: 130px;
-    border-radius: 5px 0px 0px 5px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .home .launch li div {
     display: flex;
     flex-direction: column;
-    width: calc(55% - 10px);
-    padding: 10px 20px;
+    width: calc(100% - 130px);
+    padding: 10px;
 }
 
 .home .launch li div h3,
@@ -142,16 +160,21 @@
     }
 
     .home .highlightNews {
-        width: calc(60% - 10px);
-        gap: 20px;
+        width: calc(60% - 20px);
         margin-bottom: 0px;
     }
 
     .home .highlightNews ul li {
-        width: calc(50% - 10px);
+        width: calc(50% - 20px);
         height: 320px;
     }
 
+    .home .highlightNews ul li div h3 {
+        margin-left: 20px;
+        margin-right: 20px;
+        line-height: 1.5em;
+        font-size: 18px;
+    }
 
     .home .highlightNews ul {
         flex-wrap: wrap;
@@ -161,6 +184,12 @@
         max-height: 100%;
     }
 
+    .home .highlightNews ul li div span {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 14px;
+    }
+
     .home .launch li div h3,
     .home .launch li div span {
         font-size: 14px;
@@ -168,7 +197,6 @@
     }
 
     .home .launch {
-        gap: 20px;
         width: 40%;
     }
 
@@ -183,18 +211,23 @@
         height: 150px;
     }
 
-    .home .launch li a {
-        height: 150px;
+    .home .launch li div {
+        gap: 10px;
+        padding: 15px;
+        width: calc(100% - 200px);
+    }
+
+    .home .launch li a figure {
         width: 200px;
+        height: 100%;
+        width: 200px;
+        overflow: hidden;
         border-radius: 10px 0px 0px 10px;
     }
 
-    .home .launch li div {
-        gap: 10px;
-        padding-top: 20px;
-    }
-
     .home .launch li a img {
+        height: 100%;
+        width: 100%;
         border-radius: 10px 0px 0px 10px;
     }
 }

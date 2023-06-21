@@ -1,0 +1,8 @@
+<svg id="Componente_8_1" data-name="Componente 8 – 1" xmlns="http://www.w3.org/2000/svg" width="230" height="230" viewBox="0 0 230 230">
+  <g id="Retângulo_1927" data-name="Retângulo 1927" fill="none" stroke="#e3e3e3" stroke-width="2" stroke-dasharray="5">
+    <rect width="230" height="230" rx="5" stroke="none"/>
+    <rect x="1" y="1" width="228" height="228" rx="4" fill="none"/>
+  </g>
+  <path id="cd9618d4b480e702a4bf72e47f04402c" d="M48.75,24c-.131,0-.255.03-.382.033a14.929,14.929,0,0,0,.382-3.367C48.75,11.463,40.354,4,30,4S11.25,11.463,11.25,20.667c0,.057.019.11.019.167C4.909,21.64,0,26.457,0,32.333,0,38.777,5.876,44,13.125,44H22.53a3.532,3.532,0,0,0,3.72-3.307V30.667H18.292L30,17.333,41.708,30.667H33.75V40.693A3.531,3.531,0,0,0,37.47,44H48.75C54.963,44,60,39.523,60,34S54.963,24,48.75,24Z" transform="translate(85 64)" fill="#e3e3e3" opacity="0.7"/>
+  <text id="Clique_aqui_para_adicionar_uma_imagem." data-name="Clique aqui para adicionar uma imagem." transform="translate(34 125)" fill="#707070" font-size="12" font-family="Lato-Regular, Lato" letter-spacing="0.02em"><tspan x="10.182" y="12">Clique aqui para adicionar </tspan><tspan x="45.054" y="30">uma imagem.</tspan></text>
+</svg>

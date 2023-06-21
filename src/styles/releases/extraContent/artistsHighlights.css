@@ -1,8 +1,8 @@
 .releases .artistHighlights {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     width: 100%;
+    transition: var(--transitionFast);
 }
 
 .filterSearchMode .releases .artistHighlights {
@@ -20,39 +20,40 @@
     align-items: center;
 }
 
+.releases .artistHighlights .text a:hover {
+    color: var(--pinkHover);
+}
 
 .releases .artistHighlights .carouselArtists {
-    display: flex;
-    gap: 5px;
-    width: 486px;
+    width: calc(100% - 50px);
 }
 
 .releases .artistHighlights .carouselArtists .item {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    min-width: 100px;
     border-radius: 5px;
-    gap: 5px;
+    transition: var(--transitionFast)
+}
+
+.releases .artistHighlights .carouselArtists .item:hover {
+    margin-top: -3px;
 }
 
 .releases .artistHighlights .carouselArtists .item a {
     width: 100%;
-    height: 100px;
     border-radius: 5px;
+    text-decoration: none;
     display: block;
 }
 
 .releases .artistHighlights .carouselArtists .item a img {
     width: 100%;
-    height: 100px;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .releases .artistHighlights .owl-carousel .owl-nav {
     position: absolute;
-    top: -60px;
-    right: 3px;
+    top: -50px;
+    right: -50px;
     margin-top: 0px;
 }
 
@@ -70,38 +71,19 @@
     opacity: 1;
 }
 
-.releases .artistHighlights .carouselArtists {
-    width: 300px;
-}
-
 .releases .artistHighlights .owl-carousel .owl-stage-outer {
     overflow: visible;
 }
 
+.releases .artistHighlights .text h2 {
+    font-size: 18px;
+}
 
-@media(min-width: 601px) {
+.releases .artistHighlights .item h3 {
+    font-size: 10px;
+}
 
-    .releases .artistHighlights .carouselArtists .item {
-        width: 162px;
-        min-width: 162px;
-        border-radius: 5px;
-        gap: 10px;
-    }
-
-    .releases .artistHighlights .carouselArtists {
-        width: 100%;
-    }
-
-    .releases .artistHighlights .carouselArtists .item {
-        width: 162px;
-        min-width: 162px;
-        border-radius: 5px;
-        gap: 10px;
-    }
-
-    .releases .artistHighlights .carouselArtists .item a {
-        height: 162px;
-    }
+@media(min-width: 1024px) {
 
     .releases .artistHighlights .carouselArtists .item a img {
         min-width: 100%;
@@ -109,8 +91,12 @@
         object-fit: cover;
     }
 
-    .releases .artistHighlights .owl-carousel .owl-stage-outer {
-        overflow: hidden;
+    .releases .artistHighlights .text h2 {
+        font-size: 24px;
+    }
+
+    .releases .artistHighlights .item h3 {
+        font-size: 14px;
     }
 
 }

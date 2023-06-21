@@ -1,4 +1,8 @@
-.news .events {
+* {
+    box-sizing: border-box;
+}
+
+.news .firstContent {
     background-color: var(--neutral1);
     display: flex;
     justify-content: center;
@@ -19,14 +23,19 @@
 
 .news .darkWave {
     position: absolute;
-    top: -66px;
-    right: -320px;
-    z-index: 3;
+    top: -198px;
+    right: -702px;
+    background-image: url(../../../assets/darkWave.svg);
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: center;
+    width: 1500px;
+    height: 1000px;
 }
 
 
 @media(max-width: 1024px) {
-    .news .events {
+    .news .firstContent {
         border-radius: 0px 0px 5px 5px;
         margin-bottom: 40px;
     }

@@ -6,6 +6,27 @@
     flex-direction: column;
 }
 
+.home .extraContent .title {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.home .extraContent .title .seeAll {
+    font-size: 14px;
+    font-family: "Fugaz One";
+    color: var(--main1);
+}
+
+.home .extraContent .title .seeAll:hover {
+    color: var(--pinkHover);
+}
+
+.home .extraContent .title h2 {
+    font-size: 24px;
+}
+
 .home .containerExtra {
     display: flex;
     justify-content: center;
@@ -19,7 +40,15 @@
 @media(max-width: 1024px) {
     .home .containerExtra {
         margin-top: 0px;
-        gap: 50px;
+        gap: 45px;
         width: calc(100% - 40px);
+    }
+
+    .home .extraContent .title {
+        margin-bottom: 15px;
+    }
+
+    .home .extraContent .title h2 {
+        font-size: 18px;
     }
 }

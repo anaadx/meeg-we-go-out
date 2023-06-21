@@ -1,0 +1,287 @@
+.searchTool .title {
+    margin-bottom: 30px;
+}
+
+.searchTool form {
+    width: 100%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-column-gap: 10px;
+    transition: var(--transitionSlow);
+}
+
+.searchTool form div {
+    width: 100%;
+}
+
+.searchTool form button {
+    width: 95px;
+    padding: 18px 20px;
+    align-self: flex-end;
+    color: var(--neutral5);
+    background-color: var(--main1);
+    border-radius: 5px;
+    border: none;
+}
+
+.searchTool form button:hover {
+    background-color: var(--pinkHover);
+}
+
+.searchTool form input {
+    background-color: var(--enutral1);
+    border: 3px solid var(--neutral2);
+    padding: 14.5px 8px;
+    border-radius: 3px;
+}
+
+.searchTool form input:hover,
+.searchTool form input:focus {
+    box-shadow: 0 0 2px var(--neutral7);
+    border-color: var(--neutral7)
+}
+
+.searchTool form .field {
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-content: center;
+}
+
+.searchTool form .name {
+    width: 20%;
+}
+
+.searchTool form .placeTip {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: relative;
+}
+
+.searchTool form .placeTip img {
+    width: 15px;
+}
+
+.searchTool form .placeTip .placeTipOpen {
+    width: 290px;
+    padding: 10px 20px;
+    background-color: var(--neutral3);
+    position: absolute;
+    top: -20000px;
+    z-index: 3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.placeTipActive .searchTool form .placeTip .placeTipOpen {
+    top: -269px;
+    left: -71px;
+    transition: all 1s;
+}
+
+.searchTool form .placeTip .placeTipOpen .description:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.searchTool form .placeTip .placeTipOpen .place:before {
+    background-image: url(../../assets/mini-icone-casa.svg);
+}
+
+.searchTool form .placeTip .placeTipOpen .city:before {
+    background-image: url(../../assets/mini-icone-local.svg)
+}
+
+.searchTool form .placeTip .placeTipOpen .state:before {
+    background-image: url(../../assets/mini-icone-estado.svg);
+}
+
+.searchTool form .placeTip .placeTipOpen .country:before {
+    background-image: url(../../assets/mini-icone-pais.svg);
+}
+
+.searchTool form .placeTip .placeTipOpen p,
+.searchTool form .placeTip .placeTipOpen h4 {
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.searchTool form .placeTip .placeTipOpen h4 {
+    margin-top: 30px;
+}
+
+.searchEvents form .placeTip .placeTipOpen .buttonXClose {
+    background-color: var(--neutral3);
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    width: 20px;
+    height: 30px;
+    background-image: url(../../assets/botao-lupa-X.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    opacity: 40%;
+    transition: var(--transitionFast);
+}
+
+.searchEvents form .placeTip .placeTipOpen .buttonXClose {
+    opacity: 100%;
+}
+
+.searchTool form .placeTip .placeTipOpen .buttonXClose span {
+    background-color: var(--greyOpacity);
+    max-height: min-content;
+}
+
+.searchTool form .borderTip {
+    display: block;
+    background-color: var(--neutral3);
+    transform: rotate(-45deg);
+    padding: 10px 10px;
+    position: absolute;
+    bottom: -10px;
+    right: 160px;
+}
+
+.searchTool form .arrowOff label {
+    display: none;
+}
+
+.searchTool .searchModalClose {
+    background-color: var(--neutral1);
+    position: absolute;
+    top: -10000px;
+    transition: all 1s;
+    margin-top: 10px;
+}
+
+.searchTool .searchModalClose span {
+    background-color: var(--greyOpacity);
+}
+
+.searchModalButton:hover {
+    background-color: var(--pinkHover);
+}
+
+.searchModalButton img {
+    position: absolute;
+    right: 30px;
+}
+
+.searchModalButton {
+    position: absolute;
+    bottom: 100000px;
+}
+
+.searchTool form .field {
+    width: 100%;
+}
+
+.searchTool::-webkit-scrollbar {
+    width: 8px;
+}
+
+.searchTool::-webkit-scrollbar-track {
+    background: var(--neutral1);
+}
+
+.searchTool::-webkit-scrollbar-thumb {
+    background-color: var(--main1);
+    border-radius: 20px;
+}
+
+.sumo_place>.optWrapper>.options li.opt label {
+    overflow: hidden;
+}
+
+.sumo_place>.optWrapper>.options li.opt label:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
+.sumo_place>.optWrapper>.options li.opt.lugar label:before {
+    background-image: url(../../assets/mini-icone-casa.svg);
+}
+
+.sumo_place>.optWrapper>.options li.opt.pais label:before {
+    background-image: url(../../assets/mini-icone-pais.svg);
+}
+
+.sumo_place>.optWrapper>.options li.opt.estado label:before {
+    background-image: url(../../assets/mini-icone-estado.svg);
+}
+
+.sumo_place>.optWrapper>.options li.opt.cidade label:before {
+    background-image: url(../../assets/mini-icone-local.svg);
+}
+
+
+@media(max-width: 1024px) {
+
+    .searchModalButton {
+        bottom: 0px;
+    }
+
+    .searchToolModalActive .searchTool {
+        top: 25px;
+        transition: all 1s;
+    }
+
+    .searchTool h2 {
+        font-size: 18px;
+        margin: 50px 0px 20px 20px;
+    }
+
+    .searchTool form {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        transition: var(--transitionSlow);
+    }
+
+    .searchTool form .field {
+        width: 100%;
+    }
+
+    .searchTool form label {
+        font-size: 14px;
+    }
+
+    .searchTool form button {
+        margin-top: 100px;
+        margin-bottom: 30px;
+        width: 100%;
+        border: none;
+    }
+
+    .searchTool .searchModalClose {
+        right: 20px;
+        top: 18px;
+    }
+
+    .placeTipActive .searchTool form .placeTip .placeTipOpen {
+        top: -210px;
+        left: 0px;
+    }
+
+}
