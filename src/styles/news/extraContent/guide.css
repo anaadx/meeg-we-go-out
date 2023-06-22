@@ -158,6 +158,11 @@
         overflow: hidden;
     }
 
+    .news .guide button {
+        position: absolute;
+        left: -10000px;
+    }
+
     .news .guide .item div h2,
     .news .guide .item div span {
         font-size: 12px;
