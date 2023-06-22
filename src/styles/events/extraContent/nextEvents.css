@@ -207,6 +207,10 @@
 
 @media (max-width: 1024px) {
 
+    .events.filter .nextEvents {
+        margin-top: 165px;
+    }
+
     .events .nextEvents .listItems .ads {
         display: none;
     }
