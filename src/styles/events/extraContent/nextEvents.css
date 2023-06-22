@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.events.filter .nextEvents {
+.events.filter .fixed .nextEvents {
     margin-top: 290px;
 }
 
@@ -208,7 +208,7 @@
 @media (max-width: 1024px) {
 
     .events.filter .nextEvents {
-        margin-top: 165px;
+        margin-top: 120px;
     }
 
     .events .nextEvents .listItems .ads {
