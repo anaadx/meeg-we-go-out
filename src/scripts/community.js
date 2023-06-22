@@ -1,5 +1,5 @@
-const nextBtn = '<img src="../assets/seta-pink-dir.svg" alt:"seta direita">';
-const prevBtn = '<img src="../assets/seta-pink-esq.svg" alt:"seta esquerda">';
+const nextBtn = '<img src="../assets/seta-dir.svg" alt:"seta direita">';
+const prevBtn = '<img src="../assets/seta-esq.svg" alt:"seta esquerda">';
 const nextBtnDark =
   '<img src="../assets/seta-dir-dark.svg" alt:"seta direita">';
 const prevBtnDark =
