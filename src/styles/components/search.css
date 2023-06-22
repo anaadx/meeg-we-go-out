@@ -136,7 +136,7 @@
     transition: var(--transitionFast);
 }
 
-.searchEvents form .placeTip .placeTipOpen .buttonXClose {
+.searchEvents form .placeTip .placeTipOpen .buttonXClose:hover {
     opacity: 100%;
 }
 
