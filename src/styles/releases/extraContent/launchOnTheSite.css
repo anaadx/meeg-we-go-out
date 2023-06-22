@@ -19,6 +19,12 @@
 .releases .launchOnTheSite .launchWave1 {
     position: absolute;
     top: -1px;
+    background-image: url(../../../assets/onda-releases-esquerda.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1000px;
+    height: 500px;
 }
 
 /* .releases .launchOnTheSite .launchWave2 {
