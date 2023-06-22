@@ -97,7 +97,7 @@
 .placeTipActive .searchEvents form .placeTip .placeTipOpen {
     top: -263px;
     left: -111px;
-    transition: all 1s;
+    transition: var(--transitionMedium);
 }
 
 .searchEvents form .placeTip .placeTipOpen .description {
@@ -150,7 +150,7 @@
     background-color: var(--neutral1);
     position: absolute;
     top: -10000px;
-    transition: all 1s;
+    transition: var(--transitionMedium);
     margin-top: 10px;
 }
 
@@ -256,7 +256,7 @@
 
     .searchEventsModalActive .searchEvents {
         bottom: 0px;
-        transition: all 1s;
+        transition: var(--transitionMedium);
     }
 
     .search .searchEvents h2 {

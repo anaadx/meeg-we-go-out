@@ -65,6 +65,6 @@
 
     .menuExtraActive .terms .menuExtra {
         bottom: -50px;
-        transition: all 1s;
+        transition: var(--transitionMedium);
     }
 }

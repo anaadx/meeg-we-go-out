@@ -136,7 +136,7 @@ body.searchOff .events-map form {
 
     .searchEventsModalActive .searchEvents {
         top: 25px;
-        transition: all 1s;
+        transition: var(--transitionMedium)
     }
 
     .events-map .searchModalButton {

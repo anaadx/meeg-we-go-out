@@ -14,7 +14,6 @@
     width: 100%;
     overflow: hidden;
     display: block;
-
     border-radius: 10px;
 }
 
@@ -44,7 +43,7 @@
 
 .about .partners .owl-carousel.owl-drag .owl-item {
     opacity: 0.3;
-    transition: all 0.3s;
+    transition: var(--transitionFast)
 }
 
 .about .partners .owl-carousel.owl-drag .owl-item.active {

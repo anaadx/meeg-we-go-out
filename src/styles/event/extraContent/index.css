@@ -37,7 +37,7 @@
     .menuExtraActive .event .extraContent .indexButton {
         z-index: 11;
         bottom: 670px;
-        transition: all 1s;
+        transition: var(--transitionMeidum);
         background-color: var(--neutral2);
         background-image: url(../../../assets/seta-vertical-baixo.svg);
     }

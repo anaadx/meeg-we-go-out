@@ -74,7 +74,7 @@ form .placeTip .placeTipOpen {
 .placeTipActive form .placeTip .placeTipOpen {
     top: -161px;
     left: -264px;
-    transition: all 1s;
+    transition: var(--transitionMedium)
 }
 
 form .placeTip .placeTipOpen .description {

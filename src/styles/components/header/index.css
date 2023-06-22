@@ -1,11 +1,11 @@
 .menu {
     background-color: var(--neutral1);
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     width: 100%;
     display: flex;
     justify-content: center;
-    transition: all 1s;
+    transition: var(--transitionMedium)
 }
 
 .menu.floated {
@@ -41,21 +41,58 @@
     position: absolute;
     background-color: var(--neutral1);
     border: none;
+    opacity: 60%;
 }
 
-.menu .containerLupa {
-    position: relative;
-    align-self: flex-end;
-    background-color: var(--enutral1);
-    border: 3px solid var(--neutral2);
-    border-radius: 5px;
+.menu .containerLupa .closeLupa:hover {
+    opacity: 100%;
+}
+
+/* desativado */
+
+.menu.floated .containerLupa,
+.menu.static .containerLupa {
+    position: absolute;
     width: 35%;
-    right: -1000px;
+    right: 0px;
+    margin-right: 20px;
+    opacity: 0%;
+    z-index: -1;
+    height: 50px;
 }
 
-.modalLupaActive .menu .containerLupa {
+.menu.floated .containerHide,
+.menu.static .containerHide {
     transition: var(--transitionFast);
+    background-color: var(--neutral1);
+    border: 3px solid var(--neutral3);
+    border-radius: 5px;
+    right: -10000px;
+    width: 100%;
+}
+
+/* ativado */
+
+.modalLupaActive .menu.static .lupa,
+.modalLupaActive .menu.floated .lupa {
+    display: block;
+    opacity: 0%;
+    z-index: -1;
+}
+
+.modalLupaActive .menu.static .containerHide,
+.modalLupaActive .menu.floated .containerHide {
+    transition: var(--transitionSlow);
+    background-color: var(--neutral1);
+    border-radius: 5px;
     right: 0px;
+}
+
+.modalLupaActive .menu.static .containerLupa,
+.modalLupaActive .menu.floated .containerLupa {
+    transition: var(--transitionFast);
+    opacity: 100%;
+    z-index: 1;
 }
 
 .menu .containerLupa input {
@@ -73,10 +110,10 @@
     outline: 0;
 }
 
-.menu .containerLupa:hover,
-.menu .containerLupa:focus {
+.menu .containerHide:hover,
+.menu .containerHide:focus {
     box-shadow: 0 0 2px var(--neutral7);
-    border-color: var(--neutral7)
+    border: 3px solid var(--neutral7)
 }
 
 .menu .lupa {
@@ -84,13 +121,20 @@
     background-color: var(--neutral1);
     border: none;
     width: 40px;
+    opacity: 60%;
+    transition: var(--transitionFast);
+}
+
+.menu .lupa:hover {
+    opacity: 100%;
 }
 
 .bigLogo.menu .lupa {
     background-color: var(--neutral1);
 }
 
-.menu .containerLupa .modalLupa {
+.menu .containerLupa .modalLupa,
+.menu .containerLupa .modalLupa.mobile {
     background-color: var(--neutral2);
     position: absolute;
     top: -10000px;
@@ -99,9 +143,9 @@
     width: 100%;
 }
 
-.inputLupaActive .menu .modalLupa {
-    transition: 1s all;
-    top: 55px;
+.inputLupaActive .menu .modalLupa.desk {
+    transition: var(--transitionMedium);
+    top: 67px;
     z-index: 3;
 }
 
@@ -176,7 +220,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 5px 0px 0px 5px;
 }
 
 .menu .containerLupa .modalLupa .sugestions {
@@ -225,6 +268,10 @@ body.menuDrop .menu.floated {
     gap: 20px;
 }
 
+.modalLupaActive .menu .links {
+    margin-right: 350px
+}
+
 .menu .links a {
     text-decoration: none;
     filter: brightness(0.9);
@@ -259,7 +306,7 @@ body.menuDrop .menu.floated {
     top: -10000px;
     z-index: 10;
     margin-bottom: 0px;
-    transition: all 1s;
+    transition: var(--transitionMedium);
     gap: 20px;
     height: calc(100vh - 40px);
     overflow-y: scroll;
@@ -393,6 +440,10 @@ body.menuDrop .menu.floated {
     height: 100vh;
 }
 
+.modalLupaActive .containerHide {
+    position: relative
+}
+
 @media(max-width: 1024px) {
 
     .modalLupaActive .backgroundModal {
@@ -401,6 +452,12 @@ body.menuDrop .menu.floated {
         transition: var(--transitionFast);
         z-index: 3;
         height: 100vh;
+    }
+
+    .inputLupaActive .menu .containerLupa .modalLupa.mobile {
+        transition: 1s all;
+        top: 55px;
+        z-index: 3;
     }
 
     .menu.floated {
@@ -427,6 +484,10 @@ body.menuDrop .menu.floated {
     }
 
     .menu .containerLupa .modalLupa {
+        width: 100%;
+    }
+
+    .menu .containerLupa .modalLupa .mobile {
         width: 100%;
     }
 
@@ -478,32 +539,19 @@ body.menuDrop .menu.floated {
         opacity: 40%;
     }
 
-
     .menu .containerLupa .closeButtonModal:hover {
         opacity: 100%;
     }
 
-    .menu .containerLupa {
-        position: relative;
-        align-self: flex-end;
-        background-color: var(--neutral1);
-        border: 3px solid var(--neutral2);
-        border-radius: 3px;
-        width: 100%;
-        top: -1000px;
-        position: fixed;
-        z-index: 12px;
-    }
 
     .modalLupaActive .menu .containerLupa {
-        top: 90px;
-        transition: all 2s;
+        transition: var(--transitionSlow);
         box-shadow: 93px 0 0px 241px var(--neutral2);
-        border: 3px solid var(--neutral7);
         border-radius: 5px;
         width: calc(100% - 40px);
         margin-right: 20px;
         margin-left: 20px;
+        top: 100px;
     }
 
     .bigLogo.menu .logo {

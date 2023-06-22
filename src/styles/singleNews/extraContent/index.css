@@ -42,7 +42,7 @@
     .menuExtraActive .singleNews .extraContent .indexButton {
         z-index: 11;
         bottom: 670px;
-        transition: all 1s;
+        transition: var(--transitionMedium);
         background-color: var(--neutral2);
         background-image: url(../../../assets/seta-vertical-baixo.svg);
     }

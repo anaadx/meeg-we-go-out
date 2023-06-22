@@ -78,7 +78,7 @@
     background-color: var(--neutral1);
     position: absolute;
     top: -10000px;
-    transition: all 1s;
+    transition: var(--transitionMedium);
     margin-top: 10px;
 }
 
@@ -167,7 +167,7 @@
 
     .searchEventsModalActive .searchEvents {
         bottom: 0px;
-        transition: all 1s;
+        transition: var(--transitionMedium);
     }
 
     .news .searchEvents h2 {

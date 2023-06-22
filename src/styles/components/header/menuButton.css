@@ -5,6 +5,12 @@
   height: 22px;
   width: 30px;
   right: 5px;
+  opacity: 60%;
+  transition: var(--transitionFast)
+}
+
+.menu.floated .modal:hover {
+  opacity: 100%;
 }
 
 .menu.floated span {

@@ -64,7 +64,7 @@
 
 .releases .artistHighlights .owl-carousel.owl-drag .owl-item {
     opacity: 0.3;
-    transition: all 0.3s;
+    transition: var(--transitionFast);
 }
 
 .releases .artistHighlights .owl-carousel.owl-drag .owl-item.active {
