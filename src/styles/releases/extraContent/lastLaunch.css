@@ -122,8 +122,7 @@
 
     .releases .lastLaunch .item {
         overflow: hidden;
-        width: calc(100% - 40px);
-        max-width: calc(100% - 40px);
+        width: 100%;
     }
 
     .releases .lastLaunch .item div span {

@@ -53,8 +53,12 @@
     background-color: var(--main1);
 }
 
+.bestEvents .carouselBestEvents a:active .icon:before {
+    opacity: 100%;
+}
+
 .bestEvents .owl-carousel .owl-nav {
-    top: -55px;
+    top: -45px;
     right: -50px
 }
 

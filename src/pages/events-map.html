@@ -7,19 +7,17 @@
     <link rel="stylesheet" href="../styles/libs/sumoselect.min.css"> 
     <link rel="stylesheet" href="../styles/libs/owl.carousel.min.css">
     <link rel="stylesheet" href="../styles/libs/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../styles/libs/animate.css"/>
     <link rel="stylesheet" href="../styles/libs/daterangepicker.css">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/globalStyles.css">
-    <link rel="stylesheet" href="../styles/components/header-floatedOnly/index.css"> 
-    <link rel="stylesheet" href="../styles/components/header-floatedOnly/menuButton.css">
+    <link rel="stylesheet" href="../styles/components/header/index.css"> 
+    <link rel="stylesheet" href="../styles/components/header/menuButton.css">
     <link rel="stylesheet" href="../styles/events-map/firstContent/index.css"> 
     <link rel="stylesheet" href="../styles/events-map/firstContent/search.css"> 
     <link rel="stylesheet" href="../styles/components/search.css"> 
     <link rel="stylesheet" href="../styles/events-map/extraContent/index.css"> 
     <link rel="stylesheet" href="../styles/events-map/extraContent/nextEvents.css">
     <link rel="stylesheet" href="../styles/events-map/extraContent/maps.css">
-    <link rel="stylesheet" href="../styles/components/guide.css"> 
     <link rel="stylesheet" href="../styles/components/artistsHighlights.css"> 
     <link rel="stylesheet" href="../styles/events-map/extraContent/guide.css"> 
     <link rel="stylesheet" href="../styles/components/footer2/rights.css">
@@ -33,7 +31,91 @@
 </head> 
 <body>
     <div class="backgroundModal"></div>  
-    <header class="menu floated">
+    <header class="menu scroll static">
+        <nav>
+            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <div class="links activeHighlight">
+                <a href="../pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
+                <a href="../pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
+                <a href="../pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
+                <a href="artists.html" class="font1 fontColor3 fontSize4 highlightLink">ARTISTAS</a>
+                <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
+                <a href="../pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
+            </div>
+            <button class="lupa lupaStatic"><img src="../assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa">
+                <div class="containerHide">
+                    <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                    <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                    <button class="closeLupa"><img src="../assets/closeLupa.svg" alt="lupa"></button>
+                    <div class="modalLupa desk">
+                        <ul class="listItems">
+                            <li class="item">
+                                <a href="../pages/search.html">
+                                    <figure>
+                                        <img src="../assets/modalLupa1.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">EVENTOS</h3>
+                                        <p class="font2 fontColor3">15 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="../pages/search.html">
+                                    <figure>
+                                        <img src="../assets/modalLupa2.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                        <p class="font2 fontColor3">5 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="../pages/search.html">
+                                    <figure>
+                                        <img src="../assets/modalLupa3.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                        <p class="font2 fontColor3">15 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="../pages/search.html">
+                                    <figure>
+                                        <img src="../assets/modalLupa4.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                        <p class="font2 fontColor3">5 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="../pages/search.html">
+                                    <figure>
+                                        <img src="../assets/modalLupa5.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                        <p class="font2 fontColor3">40 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                        <a href="../pages/search.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                        <a href="../pages/search.html" class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                        <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+    </header>  
+    <header class="menu scroll on floated">
         <nav class="navStatic">
             <div class="modal">
                 <span></span>
@@ -149,91 +231,6 @@
         <section class="firstContent">
             <div class="container">
                 <div class="searchEvents searchTool">
-                    <div class="searchModalClose buttonXClose">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <form>
-                        <div class="name field">
-                            <label class="font2 fontSize4 fontColor3" for="name">Nome</label>
-                            <select id="name" name="name" class="selectName fontColor2 arrowOff">
-                                <option value="Lollapalooza">
-                                    Lollapalooza
-                                </option>
-                                <option value="Tomorrowland">Tomorrowland</option>
-                                <option value="XXXPerience">XXXPerience</option>
-                                <option value="festa Mol">festa Mol</option>
-                                <option value="Coachella">Coachella</option>
-                                <option value="Mita Festival">Mita Festival</option>
-                                <option value="Goptun">Goptun</option>
-                            </select>
-                        </div>
-                        <div class="field">    
-                            <label class="font2 fontSize4 fontColor3" for="date">Data</label>
-                            <input type="text" name="daterange" class="font2 fontSize2 fontColor2">
-                        </div>
-                        <div class="field">
-                            <div class="placeTip">
-                                <label class="font2 fontSize4 fontColor3" for="place">Local</label>
-                                <img class="placeTipImg" src="../assets/info.svg">
-                                <div class="placeTipOpen">
-                                    <div class="buttonXClose placeTipX">
-                                    </div>
-                                    <h4 class="font2 fontSize2 fontColor3">
-                                        No campo de "Local" você encontrará resultados de espaços físicos, países, estados e cidades. Cada resultado é mostrado com os seguintes ícones:
-                                    </h4>
-                                    <p class="font2 fontSize2 fontColor3 description place">Local, por exemplo: Arena de São Paulo</p>
-                                    <p class="font2 fontSize2 fontColor3 description city">Cidade, por exemplo São Paulo/SP</p>
-                                    <p class="font2 fontSize2 fontColor3 description state">Estado, por exemplo São Paulo</p>
-                                    <p class="font2 fontSize2 fontColor3 description country">País, por exemplo Brasil</p>
-                                    <span class="borderTip2"></span>
-                                </div>
-                            </div>
-                            <select id="place" name="place" class="selectPlace arrowOff fontColor2" multiple="multiple">
-                                <option class="estado" value="São Paulo">São Paulo</option>
-                                <option class="estado" value="Paraná">Paraná</option>
-                                <option class="estado" value="Rio Grande do Sul">Rio Grande do Sul</option>
-                                <option class="cidade" value="São Paulo">São Paulo</option>
-                                <option class="cidade" value="Curitiba">Curitiba</option>
-                                <option class="cidade" value="Porto Alegre">Porto Alegre</option>
-                                <option class="pais" value="Brasil">Brasil</option>
-                                <option class="pais" value="Argentina">Argentina</option>
-                                <option class="lugar" value="Pepsi On Stage">Pepsi On Stage</option>
-                                <option class="lugar" value="Beira Rio">Beira Rio</option>
-                            </select>
-                        </div> 
-                        <div class="field">
-                            <label class="font2 fontSize4 fontColor3" for="eventType">Tipo de Evento</label>
-                            <select id="eventType" name="eventType" class="selectType fontColor2" multiple="multiple">
-                                <option value="Festival">Festival</option>
-                                <option value="Festa">Festa</option>
-                                <option value="Show">Show</option>
-                                <option value="Música">Música</option>      
-                                <option value="Evento">Evento</option>
-                            </select>
-                        </div>
-                        <div class="field">
-                            <label class="font2 fontSize4 fontColor3" for="gender">Genero</label>
-                            <select id="gender" name="gender" class="selectGender arrowOff fontColor2" multiple="multiple">
-                                <option value="Funk">Funk</option>
-                                <option value="Eletrônica">Eletrônica</option>
-                                <option value="MPB">MPB</option>
-                                <option value="Rap">Rap</option>
-                                <option value="Rock">Rock</option>
-                            </select>
-                        </div>
-                        <div class="field">
-                            <label class="font2 fontSize4 fontColor3" for="show">Atração</label>
-                            <select id="show" name="show" class="selectShow arrowOff fontColor2" multiple="multiple">
-                                <option value="Beatles">Beatles</option>
-                                <option value="Ed Sheeran">Ed Sheeran</option>
-                                <option value="Mc Tha">Mc Tha</option>
-                                <option value="Rihanna">Rihanna</option>
-                                <option value="Beyonce">Beyonce</option>
-                            </select>
-                        </div>
-                        <button>Go</button>
-                    </form>
                     <div class="filter">
                         <h4>Nenhum filtro aplicado</h4>
                         <div class="viewMode">
@@ -253,7 +250,7 @@
                         <div class="title">
                             <h2 class="font1 fontColor1">7 eventos encontrados</h2>
                         </div>
-                        <div class="listItems">
+                        <div class="listItemsCarousel listItems">
                             <div class="item">  
                                 <a href="../pages/event.html">
                                     <figure>
@@ -433,12 +430,12 @@
             <section class="utils">
                 <nav class="navigation">
                     <a class="font1 fontSize4 fontColor2" href="../../index.html">INICIO</a>
-                    <a class="font1 fontSize4 fontColor2 highlightLink" href="../pages/events.html">EVENTOS</a>
+                    <a class="font1 fontSize4 fontColor2 highlightLink" href="events.html">EVENTOS</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/eventForm.html">ENVIE UM EVENTO</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/news.html">NOTICIAS</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/communities.html">COMUNIDADES</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/artists.html">ARTISTAS</a>
-                    <a class="font1 fontSize4 fontColor2" href="../releases.html">LANÇAMENTOS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/releases.html">LANÇAMENTOS</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/releaseForm.html">ENVIE UM LANÇAMENTO</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/about.html">SOBRE</a>
                 </nav>
@@ -467,7 +464,7 @@
                     <h2 class="font1 fontSize5 fontColor3">SIGA O WE GO OUT</h2>
                     <ul>
                         <li>
-                            <a class="icone insta" href="//www.instagram.com/wegoout/">
+                            <a class="icone insta" href="https://www.instagram.com/wegoout/">
                                 <p class="font2 fontSize4 fontColor3">@wegoout</p>
                             </a>
                         </li>

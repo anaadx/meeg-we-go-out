@@ -76,7 +76,7 @@
 .search .containerExtra .rightWave {
     position: absolute;
     top: 166px;
-    right: -554px;
+    right: -45px;
     transform: rotate(32deg);
     background-image: url(../../../assets/onda-direita-notFound.svg);
     background-size: 100%;

@@ -6,6 +6,10 @@
     position: relative;
 }
 
+.events.filter .nextEvents {
+    margin-top: 290px;
+}
+
 .events .nextEvents .listItems {
     width: 100%;
     display: grid;

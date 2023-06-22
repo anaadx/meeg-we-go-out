@@ -14,6 +14,12 @@ $(document).ready(function () {
     $("body").removeClass("placeTipActive");
   });
 
+  if ($(window).width() <= 1024) {
+    $(".listItemsCarousel").addClass("owl-carousel");
+    $(".listItemsCarousel").addClass("owl-theme");
+    $(".listItemsCarousel").addClass("carouselEvents");
+  }
+
   $(".carouselEvents").owlCarousel({
     loop: false,
     navSpeed: 500,

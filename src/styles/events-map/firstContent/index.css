@@ -16,7 +16,7 @@
 .events-map .container {
     width: calc(100% - 120px);
     gap: 50px;
-    margin-top: 105px;
+    margin-top: 42px;
 }
 
 body.searchOff .events-map .container {

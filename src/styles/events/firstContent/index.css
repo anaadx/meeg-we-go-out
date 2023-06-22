@@ -10,6 +10,13 @@
     position: relative;
 }
 
+.events .firstContent.fixed {
+    position: fixed;
+    top: 0px;
+    z-index: 4;
+    width: 100%;
+}
+
 .events .container {
     width: calc(100% - 120px);
     width: calc(100% - 120px);
@@ -49,6 +56,10 @@
     .events .container {
         width: calc(100% - 40px);
         gap: 50px;
+    }
+
+    .events .wave1 {
+        display: none;
     }
 
     .events .darkWave {

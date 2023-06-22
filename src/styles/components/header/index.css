@@ -1,3 +1,10 @@
+/* options (where to put the class and type of header)
+
+modalMenu > activeHighlight (active on nav)
+links > highlightLink (active on link)
+menu > bigLogo (bigger mobile logo)
+menu > scroll (header scroll) */
+
 .menu {
     background-color: var(--neutral1);
     position: fixed;
@@ -14,6 +21,14 @@
     top: -100px;
     left: 0px;
     right: 0px;
+}
+
+.menu.floated.on {
+    z-index: 5;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    box-shadow: 80px 0px 0px 0px var(--greyOpacity);
 }
 
 .menu .containerLupa .lupaContainerItem {
@@ -502,7 +517,7 @@ body.menuDrop .menu.floated {
 
     .menu .containerLupa .modalLupa {
         padding: 20px 0px 50px 0px;
-        height: calc(100vh - 150px);
+        height: calc(100vh - 200px);
     }
 
     .menu .containerLupa .modalLupa::-webkit-scrollbar {
@@ -577,6 +592,11 @@ body.menuDrop .menu.floated {
     .bigLogo.menu .lupa,
     .bigLogo.menu {
         background-color: transparent
+    }
+
+    .menuDrop .bigLogo .lupa,
+    .menuDrop .bigLogo {
+        background-color: var(--neutral1)
     }
 
     .backgroundMenu .bigLogo.menu .lupa,

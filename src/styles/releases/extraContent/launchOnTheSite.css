@@ -18,8 +18,9 @@
 
 .releases .launchOnTheSite .launchWave1 {
     position: absolute;
-    top: -1px;
-    background-image: url(../../../assets/onda-releases-esquerda.svg);
+    top: -346px;
+    left: -730px;
+    background-image: url(../../../assets/top-wave-releases.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -27,10 +28,20 @@
     height: 500px;
 }
 
-/* .releases .launchOnTheSite .launchWave2 {
+.releases .launchOnTheSite .launchWave2 {
+    right: -453px;
     position: absolute;
-    top: 10px;
-} */
+    bottom: -314px;
+    background-image: url(../../../assets/bottom-wave-releases.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 1000px;
+    height: 621px;
+    z-index: 0;
+}
+
+
 
 .releases .launchOnTheSite button {
     padding: 15px 20px;
@@ -63,7 +74,7 @@
     z-index: 1;
 }
 
-.releases .launchOnTheSite .content div {
+.releases .launchOnTheSite .content .text {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -94,7 +105,7 @@
         font-size: 12px;
     }
 
-    .releases .launchOnTheSite .content div {
+    .releases .launchOnTheSite .content .text {
         margin-top: 30px;
         margin-bottom: 30px;
         gap: 20px;
@@ -108,5 +119,25 @@
     .releases .launchOnTheSite p {
         line-height: 20px;
         margin-bottom: 20px;
+    }
+
+    .releases .launchOnTheSite .launchWave1 {
+        position: absolute;
+        top: -346px;
+        left: -730px;
+        background-image: url(../../../assets/top-wave-releases.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        width: 1000px;
+        height: 500px;
+    }
+
+    .releases .launchOnTheSite .launchWave2 {
+        bottom: -360px;
+    }
+
+    .releases .launchOnTheSite .launchWave1 {
+        top: -360px;
     }
 }
