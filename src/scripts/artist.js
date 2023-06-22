@@ -6,6 +6,12 @@ const prevBtnDark =
   '<img src="../assets/seta-esq-dark.svg" alt:"seta esquerda">';
 
 $(document).ready(function () {
+  if ($(window).width() <= 1024) {
+    $(".listLaunchItems").addClass("owl-carousel");
+    $(".listLaunchItems").addClass("owl-theme");
+    $(".listLaunchItems").addClass("carouselLastLaunch");
+  }
+
   $(".carouselArtists").owlCarousel({
     navSpeed: 500,
     loop: false,
