@@ -14,6 +14,11 @@ $(document).ready(function () {
     $("body").removeClass("placeTipActive");
   });
 
+  $(".searchModalButton").click(function () {
+    $("body").addClass("searchEventsModalActive");
+    $("body").removeClass("placeTipActive");
+  });
+
   $(".carouselEvents").owlCarousel({
     loop: false,
     navSpeed: 500,

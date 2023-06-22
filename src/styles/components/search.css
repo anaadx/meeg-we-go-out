@@ -277,7 +277,13 @@
     .searchTool .searchModalClose {
         right: 20px;
         top: 18px;
+        opacity: 60%;
     }
+
+    .searchTool .searchModalClose:hover {
+        opacity: 100%;
+    }
+
 
     .placeTipActive .searchTool form .placeTip .placeTipOpen {
         top: -210px;

@@ -111,7 +111,10 @@
         box-shadow: 2px -70px 5px 0px var(--greyOpacity);
         border-radius: 10px;
         height: calc(100vh - 65px);
-        overflow-y: scroll;
+    }
+
+    .searchEventsModalActive .events .searchEvents .filter {
+        display: none;
     }
 
     .searchEventsModalActive .searchEvents {
