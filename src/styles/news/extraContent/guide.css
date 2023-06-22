@@ -152,10 +152,15 @@
     }
 
     .news .guide .item div {
-        padding: 15px 10px;
+        padding: 5px 10px;
         width: calc(100% - 150px);
         float: left;
         overflow: hidden;
+    }
+
+    .news .guide button {
+        position: absolute;
+        left: -10000px;
     }
 
     .news .guide .item div h2,
