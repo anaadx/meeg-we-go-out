@@ -4,12 +4,12 @@
     margin-top: 40px;
     margin-bottom: 40px;
     float: left;
-    margin-top: 270px;
+    margin-top: 155px;
 }
 
 .events-map .nextEvents .containerExtra {
     position: relative;
-    margin: 40px 40px 0px 40px
+    margin: 70px 40px 0px 40px
 }
 
 .events-map .nextEvents .title h2 {
@@ -244,6 +244,10 @@
     background-color: var(--main1);
     margin-top: 0px;
     padding: 15px 0px;
+}
+
+.events-map .nextEvents .filter .filterButton:hover {
+    background-color: var(--pinkHover);
 }
 
 .events-map .nextEvents .filter .viewMode {

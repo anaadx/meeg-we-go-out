@@ -4,6 +4,20 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    ;
+}
+
+.menuActive .events .searchEvents form {
+    position: absolute;
+    top: -2000px;
+}
+
+.menuActive .events .fixed .searchEvents .filter {
+    margin-top: 0px;
+}
+
+.events .fixed .searchEvents {
+    margin-bottom: 15px;
 }
 
 .events .searchEvents .title {
@@ -38,6 +52,10 @@
     float: left;
     overflow: hidden;
     width: 290px;
+}
+
+.events .fixed .searchEvents .filter {
+    margin-top: 35px;
 }
 
 .events .searchEvents .filter .viewMode button {
