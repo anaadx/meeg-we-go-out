@@ -64,7 +64,7 @@
     margin-left: 35px;
     margin-right: 35px;
     width: calc(100% - 100px);
-    transition: 1s all;
+    transition: var(--transitionMedium)
 }
 
 .menu .containerLupa input:focus {
