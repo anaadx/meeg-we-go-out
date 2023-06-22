@@ -99,7 +99,7 @@
 }
 
 .inputLupaActive .menu .modalLupa {
-    transition: 1s all;
+    transition: var(--transitionMedium);
     top: 55px;
     z-index: 3;
 }

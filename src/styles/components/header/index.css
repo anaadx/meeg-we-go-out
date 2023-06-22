@@ -242,6 +242,12 @@
 body.menuActive .menu.floated {
     top: 0px;
     width: 100%;
+    background-color: var(--neutral1);
+}
+
+body.menuActive .bigLogo.menu .logo {
+    width: 45px;
+    top: 10px;
 }
 
 body.menuDrop .menu.floated {
@@ -449,13 +455,12 @@ body.menuDrop .menu.floated {
     .modalLupaActive .backgroundModal {
         opacity: 100%;
         background-color: var(--neutral2);
-        transition: var(--transitionFast);
-        z-index: 3;
+        z-index: 4;
         height: 100vh;
     }
 
     .inputLupaActive .menu .containerLupa .modalLupa.mobile {
-        transition: 1s all;
+        transition: var(--transitionMedium);
         top: 55px;
         z-index: 3;
     }
