@@ -47,6 +47,10 @@ footer .rights .politics .highlightLink {
 
 @media(max-width: 1024px) {
 
+    .noMobile {
+        display: none;
+    }
+
     .footerWave2 {
         bottom: 10000px;
     }
