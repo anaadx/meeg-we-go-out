@@ -55,7 +55,7 @@
 }
 
 .home .bestEvents .carouselBestEvents a p.fireIcon:before {
-    background-image: url(../../../assets/icone-fogo-grey.svg);
+    background-image: url(../../../assets/icone-fogo-branco.svg);
     content: "";
     display: block;
     width: 40px;
@@ -64,10 +64,12 @@
     margin-right: 10px;
     background-size: 30px;
     background-repeat: no-repeat;
+    opacity: 40%;
 }
 
+
 .home .bestEvents .carouselBestEvents a p.placeIcon:before {
-    background-image: url(../../../assets/icone-localizacao-grey.svg);
+    background-image: url(../../../assets/icone-localizacao-branco.svg);
     content: "";
     display: block;
     width: 40px;
@@ -76,6 +78,7 @@
     margin-right: 10px;
     background-size: 30px;
     background-repeat: no-repeat;
+    opacity: 40%;
 }
 
 .home .bestEvents .carouselBestEvents a:hover {
@@ -84,6 +87,11 @@
 
 .home .bestEvents .carouselBestEvents a:active {
     background-color: var(--main1);
+}
+
+.home .bestEvents .carouselBestEvents a:active p.fireIcon:before,
+.home .bestEvents .carouselBestEvents a:active p.placeIcon:before {
+    opacity: 100%;
 }
 
 .home .bestEvents .owl-carousel .owl-nav {
