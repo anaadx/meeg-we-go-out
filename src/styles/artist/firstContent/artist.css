@@ -12,7 +12,7 @@
 }
 
 .artist .artitstMain .photo {
-    width: calc(50% - 20px);
+    width: calc(50% - 40px);
     padding-right: 20px;
     position: relative;
     height: 720px;
@@ -30,10 +30,10 @@
 .artist .artitstMain figure {
     position: relative;
     height: 100%;
-    border-radius: 20px;
 }
 
 .artist .artitstMain .photo img {
+    border-radius: 20px;
     width: 100%;
     height: 100%;
     object-fit: cover;

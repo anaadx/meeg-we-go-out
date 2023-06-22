@@ -19,7 +19,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    width: calc(100% - 20px);
+    width: calc(100% - 40px);
 }
 
 .event .eventMain .photo img {
@@ -140,7 +140,7 @@
     background-size: 16px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: 2px;
+    margin-top: 1px;
 }
 
 .event .content .calendar:before {
@@ -157,6 +157,7 @@
 
 .event .content .house:before {
     background-image: url(../../../assets/icone-casa.svg);
+    margin-top: -1px;
 }
 
 .event .content .place:before {

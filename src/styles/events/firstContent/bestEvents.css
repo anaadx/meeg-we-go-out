@@ -54,8 +54,7 @@
     line-height: 1.27em;
 }
 
-.events .bestEvents .carouselBestEvents a p.fireIcon:before {
-    background-image: url(../../../assets/icone-fogo-grey.svg);
+.events .bestEvents .carouselBestEvents a p:before {
     content: "";
     display: block;
     width: 40px;
@@ -64,18 +63,19 @@
     margin-right: 10px;
     background-size: 30px;
     background-repeat: no-repeat;
+    opacity: 40%;
+}
+
+.events .bestEvents .carouselBestEvents a p.fireIcon:before {
+    background-image: url(../../../assets/icone-fogo-branco.svg);
 }
 
 .events .bestEvents .carouselBestEvents a p.placeIcon:before {
-    background-image: url(../../../assets/icone-localizacao-grey.svg);
-    content: "";
-    display: block;
-    width: 40px;
-    height: 45px;
-    float: left;
-    margin-right: 10px;
-    background-size: 30px;
-    background-repeat: no-repeat;
+    background-image: url(../../../assets/icone-localizacao-branco.svg);
+}
+
+.events .bestEvents .carouselBestEvents a:active p:before {
+    opacity: 100%;
 }
 
 .events .bestEvents .carouselBestEvents a:hover {
