@@ -152,7 +152,7 @@
     }
 
     .news .guide .item div {
-        padding: 15px 10px;
+        padding: 5px 10px;
         width: calc(100% - 150px);
         float: left;
         overflow: hidden;
