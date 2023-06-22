@@ -81,7 +81,7 @@
 .placeTipActive .searchTool form .placeTip .placeTipOpen {
     top: -269px;
     left: -71px;
-    transition: all 1s;
+    transition: var(--transitionMedium)
 }
 
 .searchTool form .placeTip .placeTipOpen .description:before {
@@ -163,7 +163,7 @@
     background-color: var(--neutral1);
     position: absolute;
     top: -10000px;
-    transition: all 1s;
+    transition: var(--transitionMedium);
     margin-top: 10px;
 }
 
@@ -242,7 +242,7 @@
 
     .searchToolModalActive .searchTool {
         top: 25px;
-        transition: all 1s;
+        transition: var(--transitionMedium)
     }
 
     .searchTool h2 {

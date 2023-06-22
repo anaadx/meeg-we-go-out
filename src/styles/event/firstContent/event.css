@@ -24,7 +24,6 @@
 
 .event .eventMain .photo img {
     width: 100%;
-    border-radius: 20px;
     height: 100%;
     object-fit: cover;
 }
@@ -80,6 +79,7 @@
 .event .eventMain figure {
     position: relative;
     height: 100%;
+    border-radius: 20px;
 }
 
 .event .content p {

@@ -36,11 +36,11 @@
 .event .similar .carouselEvents figure {
     position: relative;
     width: 380px;
+    border-radius: 10px;
 }
 
 .event .similar .carouselEvents figure img {
     width: 100%;
-    border-radius: 10px;
     height: 100%;
     object-fit: cover;
 }
@@ -86,7 +86,7 @@
 
 .event .similar .owl-carousel.owl-drag .owl-item {
     opacity: 0.3;
-    transition: all 0.3s;
+    transition: var(--transitionFast)
 }
 
 .event .similar .owl-carousel.owl-drag .owl-item.active {

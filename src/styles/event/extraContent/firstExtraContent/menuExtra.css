@@ -46,5 +46,5 @@
 
 .menuExtraActive .event .menuExtra {
     bottom: 0px;
-    transition: all 1s;
+    transition: var(--transitionMedium)
 }

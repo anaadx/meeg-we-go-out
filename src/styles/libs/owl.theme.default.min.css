@@ -28,11 +28,6 @@
     border-radius: 3px;
 }
 
-
-/* .owl-theme .owl-nav [class*=owl-]:hover {
-    filter: brightness(50%);
-} */
-
 .owl-theme .owl-nav .disabled {
     opacity: .5;
     cursor: default

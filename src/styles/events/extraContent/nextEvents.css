@@ -56,6 +56,22 @@
     text-decoration: none;
 }
 
+.events .nextEvents .listItems .ads {
+    height: 560px;
+}
+
+.events .nextEvents .listItems .ads a {
+    border-radius: 10px;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--neutral5);
+}
+
+.events .nextEvents .listItems .ads a img {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .events .nextEvents .listItems .item .calendar {
     background-color: var(--neutral4);
 }
@@ -129,7 +145,6 @@
 
 .events .nextEvents .listItems figure img {
     width: 100%;
-    border-radius: 10px;
     height: 260px;
     object-fit: cover;
     transition: var(--transitionFast);
@@ -187,6 +202,10 @@
 }
 
 @media (max-width: 1024px) {
+
+    .events .nextEvents .listItems .ads {
+        display: none;
+    }
 
     .events .nextEvents button {
         width: 100%;

@@ -82,7 +82,7 @@ footer {
     .menuExtraActive .terms .extraContent .indexButton {
         z-index: 11;
         bottom: 540px;
-        transition: all 1s;
+        transition: var(--transitionMedium);
         background-color: var(--neutral2);
         background-image: url(../../../assets/seta-vertical-baixo.svg);
     }

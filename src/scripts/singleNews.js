@@ -6,33 +6,6 @@ const prevBtnDark =
   '<img src="../assets/seta-esq-dark.svg" alt:"seta esquerda">';
 
 $(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() >= 300) {
-      $("body").addClass("menuActive");
-    } else {
-      $("body").removeClass("menuActive");
-    }
-
-    if ($(this).scrollTop() >= 5) {
-      $("body").addClass("backgroundMenu");
-    } else {
-      $("body").removeClass("backgroundMenu");
-    }
-  });
-
-  $(".modal").click(function () {
-    $("body").toggleClass("menuDrop");
-    if ($(window).width() <= 1024) {
-      if ($("body").hasClass("menuDrop")) {
-        $(".indexButton").addClass("disabled");
-        $(".searchModalButton").addClass("disabled");
-      } else {
-        $(".searchModalButton").removeClass("disabled");
-        $(".indexButton").removeClass("disabled");
-      }
-    }
-  });
-
   $(".indexButton").click(function () {
     $("body").toggleClass("menuExtraActive");
   });

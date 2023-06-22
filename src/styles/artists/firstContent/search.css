@@ -7,6 +7,10 @@
     margin-bottom: 40px;
 }
 
+.modalLupaActive .artists .searchModalButton {
+    bottom: 100000px;
+}
+
 .artists .searchModalButton {
     width: 100%;
     position: absolute;
@@ -56,6 +60,6 @@
 
     .searchEventsModalActive .searchTool {
         bottom: 0px;
-        transition: all 1s;
+        transition: var(--transitionMedium);
     }
 }

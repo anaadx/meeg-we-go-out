@@ -116,7 +116,7 @@
     -ms-user-select: none;
     user-select: none;
     opacity: 0.3;
-    transition: all 0.3s;
+    transition: var(--transitionFast);
 }
 
 .owl-carousel.owl-drag .owl-item.active {

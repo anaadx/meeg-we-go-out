@@ -167,7 +167,6 @@
 
 .events-map .nextEvents .listItems figure img {
     width: 100%;
-    border-radius: 10px;
     height: 260px;
     object-fit: cover;
     transition: var(--transitionFast);
