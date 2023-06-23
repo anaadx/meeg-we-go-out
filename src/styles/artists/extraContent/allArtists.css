@@ -109,6 +109,11 @@
 }
 
 @media(max-width: 601px) {
+
+    .artists .allArtists .text .filterAZ .orderby {
+        display: none;
+    }
+
     .artists .allArtists .listArtists .item h3 {
         font-size: 12px;
     }
