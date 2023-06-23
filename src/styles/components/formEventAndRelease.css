@@ -133,6 +133,7 @@ form .title {
     color: var(--neutral1);
     font-size: 24px;
     margin-bottom: 30px;
+    padding-top: 5px;
 }
 
 form .imgInput {
