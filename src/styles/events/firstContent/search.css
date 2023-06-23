@@ -7,6 +7,10 @@
     ;
 }
 
+.events.filter .searchEvents {
+    margin-top: 60px;
+}
+
 .menuActive .events .searchEvents form {
     position: absolute;
     top: -2000px;

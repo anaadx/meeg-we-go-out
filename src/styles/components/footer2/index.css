@@ -1,3 +1,6 @@
+/* class biggerContainer (tag footer) > footer 80px margin side
+class hide (tag footer) > disable mobile footer */
+
 footer {
     background-color: var(--neutral1);
     display: flex;
@@ -46,6 +49,10 @@ footer .rights .politics .highlightLink {
 }
 
 @media(max-width: 1024px) {
+
+    footer.hide {
+        display: none;
+    }
 
     .noMobile {
         display: none;
