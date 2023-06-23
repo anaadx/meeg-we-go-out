@@ -11,7 +11,7 @@
 }
 
 .news .container {
-    width: calc(100% - 120px);
+    width: calc(100% - 180px);
     gap: 50px;
     margin-top: 50px;
 }
