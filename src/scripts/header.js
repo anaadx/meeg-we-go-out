@@ -36,6 +36,8 @@ $(document).ready(function () {
     $("body").toggleClass("menuDrop");
     if ($("body").hasClass("menuDrop")) {
       $(".searchModalButton").addClass("disabled");
+      $("body").removeClass("modalLupaActive");
+      $("body").removeClass("inputLupaActive");
     } else {
       $(".searchModalButton").removeClass("disabled");
     }

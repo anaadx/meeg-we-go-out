@@ -14,6 +14,10 @@ $(document).ready(function () {
     }
   });
 
+  $('input[name="daterange"]').daterangepicker({
+    autoApply: true,
+  });
+
   $(".searchModalButton").click(function () {
     $("body").addClass("searchEventsModalActive");
     $(".searchModalButton").addClass("disabled");
