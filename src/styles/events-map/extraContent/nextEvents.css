@@ -328,10 +328,6 @@
 
 @media (max-width: 1024px) {
 
-    footer.hide {
-        display: none;
-    }
-
     .events-map .nextEvents .filter .viewMode div {
         width: 213px;
     }
@@ -346,9 +342,8 @@
     }
 
     .events-map .nextEvents .filter {
-        bottom: 0px;
         width: 100%;
-        bottom: 90px;
+        bottom: 40px;
     }
 
     .events-map .nextEvents .containerExtra {
@@ -389,7 +384,7 @@
         width: calc(100% - 50px);
         display: block;
         position: absolute;
-        bottom: 155px;
+        bottom: 110px;
     }
 
     .events-map .nextEvents .listItems .text .star,

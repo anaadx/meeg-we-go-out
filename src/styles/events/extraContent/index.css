@@ -34,9 +34,137 @@
     flex-direction: column;
     gap: 40px;
     align-self: center;
+    position: relative;
+}
+
+/* filtro */
+
+.events.filter .title .mobile {
+    position: absolute;
+    top: -1000px;
+    font-size: 14px;
+    font-family: var(--font2);
+}
+
+.events.filter .filterList {
+    width: calc(100% - 40px);
+    bottom: 100000px;
+    position: fixed;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.events.filter .filterList h4 {
+    position: absolute;
+    left: 0px;
+    font-family: var(--font2);
+    font-size: 14px;
+    color: var(--neutral3);
+    margin-top: 13px;
+}
+
+.events.filter .filterList .viewMode {
+    float: right;
+}
+
+.events.filter .filterList .viewMode div {
+    background-color: var(--neutral2);
+    padding: 5px;
+    border-radius: 20px;
+    float: left;
+    overflow: hidden;
+    width: 213px;
+}
+
+.events.filter .filterList .viewMode button {
+    width: 50%;
+    padding: 10px 0px;
+    border-radius: 20px;
+    border: none;
+}
+
+.events.filter .filterList .viewMode button:nth-child(1) {
+    float: left;
+    background-color: var(--neutral1);
+}
+
+.events.filter .filterList .viewMode button:nth-child(2) {
+    float: left;
+    background-color: var(--neutral2);
+    opacity: 40%;
+}
+
+.events.filter .filterList .viewMode h3 {
+    font-family: var(--font2);
+    font-size: 16px;
+    color: var(--neutral7);
+    display: inline;
+    margin-right: 10px;
+    float: left;
+    margin-top: 12px;
+}
+
+.events.filter .filterList p {
+    font-family: var(--font2);
+    font-size: 12px;
+    color: var(--neutral7);
+    width: max-content;
+    margin: 0 auto;
+}
+
+.events.filter .filterList p:before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.events.filter .filterList .filterIcon:before {
+    background-image: url(../../../assets/icone-filtro.svg);
+}
+
+.events.filter .filterList .viewMode .list:before {
+    background-image: url(../../../assets/icone-lista-filtro.svg);
+}
+
+.events.filter .filterList .viewMode .map:before {
+    background-image: url(../../../assets/icone-mapa-filtro.svg);
+}
+
+.events.filter .filterList .filterButton {
+    float: left;
+    width: 90px;
+    background-color: var(--main1);
+    margin-top: 0px;
+    padding: 15px 0px;
+    color: var(--neutral7);
+    border: none;
 }
 
 @media(max-width: 1024px) {
+
+    .events.filter .title .mobile {
+        top: 0px;
+    }
+
+    .events.filter .title .desk {
+        display: none;
+    }
+
+    .events.filter .filterList .filterButton {
+        display: block;
+        font-size: 12px;
+        border-radius: 50px;
+    }
+
+    .events.filter .filterList {
+        bottom: 40px;
+    }
 
     footer.no-margin {
         margin-top: 0px;
