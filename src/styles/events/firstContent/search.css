@@ -11,7 +11,7 @@
     margin-top: 60px;
 }
 
-.menuActive .events .searchEvents form {
+.menuActive .events.filter .searchEvents form {
     position: absolute;
     top: -2000px;
 }
