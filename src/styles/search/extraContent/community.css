@@ -1,27 +1,27 @@
-.search .community {
+.search .together {
     position: relative;
     margin-bottom: 65px;
 }
 
-.search .community .title {
+.search .together .title {
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
-.search .community .title h3 {
+.search .together .title h3 {
     font-size: 18px;
 }
 
-.search .community .title p {
+.search .together .title p {
     font-size: 14px;
 }
 
-.search .community .title h2 {
+.search .together .title h2 {
     margin-bottom: 10px;
 }
 
-.search .community .text {
+.search .together .text {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -29,20 +29,20 @@
     width: calc(100% - 30px);
 }
 
-.search .community .text h3 {
+.search .together .text h3 {
     font-size: 16px;
 }
 
-.search .community .item {
+.search .together .item {
     width: 100%;
     transition: var(--transitionFast);
 }
 
-.search .community .item:hover {
+.search .together .item:hover {
     margin-top: -3px
 }
 
-.search .community .item div {
+.search .together .item div {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -50,11 +50,11 @@
     gap: 5px;
 }
 
-.search .community .item h2 {
+.search .together .item h2 {
     line-height: 20px;
 }
 
-.search .community .item a {
+.search .together .item a {
     width: 100%;
     border-radius: 5px;
     text-decoration: none;
@@ -63,7 +63,7 @@
     text-decoration: none;
 }
 
-.search .community a img {
+.search .together a img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -71,21 +71,21 @@
     margin-bottom: 10px;
 }
 
-.search .community .carouselCommunity {
+.search .together .carouseltogether {
     width: calc(100% - 50px);
 }
 
-.search .community .owl-carousel .owl-stage-outer {
+.search .together .owl-carousel .owl-stage-outer {
     overflow: visible;
 }
 
 @media (max-width: 1024px) {
 
-    .search .community {
+    .search .together {
         margin-bottom: 70px;
     }
 
-    .search .community .item h2 {
+    .search .together .item h2 {
         font-size: 9px;
     }
 }

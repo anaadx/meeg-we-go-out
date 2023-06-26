@@ -2,25 +2,25 @@
     box-sizing: border-box;
 }
 
-.communities .firstContent {
+.together .firstContent {
     background-color: var(--neutral1);
     border-radius: 0px 0px 20px 20px;
     position: relative;
 }
 
-.communities .container {
+.together .container {
     margin: 0 auto;
     width: calc(100% - 160px);
     gap: 50px;
     margin-top: 120px
 }
 
-.filterSearchMode .communities .container {
+.filterSearchMode .together .container {
     width: calc(100% - 80px);
     max-width: calc(100% - 80px);
 }
 
-.communities .darkWave {
+.together .darkWave {
     position: absolute;
     top: -192px;
     right: -702px;
@@ -35,21 +35,21 @@
 
 
 @media(max-width: 1024px) {
-    .communities .firstContent {
+    .together .firstContent {
         border-radius: 0px 0px 5px 5px;
     }
 
-    .communities .container {
+    .together .container {
         width: calc(100% - 40px);
         margin-top: 130px;
     }
 
-    .filterSearchMode .communities .container {
+    .filterSearchMode .together .container {
         width: calc(100% - 40px);
         max-width: calc(100% - 40px);
     }
 
-    .communities .darkWave {
+    .together .darkWave {
         display: none;
     }
 

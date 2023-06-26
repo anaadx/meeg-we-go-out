@@ -59,7 +59,7 @@ form .placeTip img {
 
 form .placeTip .placeTipOpen {
     width: 290px;
-    height: 115px;
+    height: 140px;
     padding: 10px 20px;
     background-color: var(--neutral3);
     position: absolute;
@@ -116,6 +116,11 @@ form .placeTip .placeTipOpen .buttonXClose {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 25px;
+    opacity: 40%;
+}
+
+form .placeTip .placeTipOpen .buttonXClose:hover {
+    opacity: 100%;
 }
 
 form .borderTip {
@@ -226,6 +231,10 @@ form .block .field {
     float: left;
 }
 
+form .block .address {
+    width: 100%
+}
+
 form .block .field:nth-child(1) {
     margin-right: 20px;
 }
@@ -288,8 +297,8 @@ form .checkLabel input:checked~.check {
 }
 
 form .checkLabel .check:after {
-    top: 1px;
-    left: 6px;
+    top: 4px;
+    left: 9px;
     width: 5px;
     height: 10px;
     background-color: var(--main1);

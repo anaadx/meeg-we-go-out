@@ -1,4 +1,4 @@
-.communities .extraContent {
+.together .extraContent {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
     z-index: 1;
 }
 
-.communities .containerExtra {
+.together .containerExtra {
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -17,16 +17,16 @@
     align-self: center;
 }
 
-.filterSearchMode .communities .containerExtra {
+.filterSearchMode .together .containerExtra {
     width: calc(100% - 80px);
 }
 
 @media(max-width: 1024px) {
-    .filterSearchMode .communities .containerExtra {
+    .filterSearchMode .together .containerExtra {
         width: calc(100% - 40px);
     }
 
-    .communities .containerExtra {
+    .together .containerExtra {
         width: calc(100% - 40px);
         margin-top: 10px;
         gap: 50px;

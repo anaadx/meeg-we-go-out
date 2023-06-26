@@ -37,175 +37,178 @@
     <script src="./src/scripts/header.js"></script>
 </head> 
 <body>
-    <div class="backgroundModal1"></div>
-    <div class="backgroundModal2"></div>
-    <header class="menu static">
+    <div class="backgroundModal"></div>
+    <header class="menu scroll static">
         <nav>
-            <img class="logo" src="./src/assets/logo.svg" alt="logo We Go Out">
+            <img class="logo" src="src/assets/logo.svg" alt="logo We Go Out">
             <div class="links">
                 <a href="src/pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
-                <a href="src/pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
-                <a href="src/pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
+                <a href="src/pages/news.html" class="font1 fontColor3 fontSize4">NOTÍCIAS</a>
+                <a href="src/pages/together.html" class="font1 fontColor3 fontSize4">TOGETHER</a>
                 <a href="src/pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
                 <a href="src/pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
                 <a href="src/pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
             </div>
-            <button class="lupa lupaStatic"><img src="./src/assets/lupa.svg" alt="lupa"></button>
-            <div class="containerLupa containerLupaStatic disabled">
-                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
-                <button class="lupaContainerItem"><img src="./src/assets/lupa.svg" alt="lupa"></button>
-                <button class="closeLupa closeLupaStatic"><img src="./src/assets/closeLupa.svg" alt="lupa"></button>
-                <div class="modalLupa">
-                    <ul class="listItems">
-                        <li class="item">
-                            <a href="src/pages/search.html">
-                                <figure>
-                                    <img src="./src/assets/modalLupa1.svg">
-                                </figure>
-                                <div>
-                                    <h3 class="font1 fontColor3">EVENTOS</h3>
-                                    <p class="font2 fontColor3">15 resultados</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="src/pages/search.html">
-                                <figure>
-                                    <img src="./src/assets/modalLupa2.svg">
-                                </figure>
-                                <div>
-                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
-                                    <p class="font2 fontColor3">5 resultados</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="src/pages/search.html">
-                                <figure>
-                                    <img src="./src/assets/modalLupa3.svg">
-                                </figure>
-                                <div>
-                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
-                                    <p class="font2 fontColor3">15 resultados</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="src/pages/search.html">
-                                <figure>
-                                    <img src="./src/assets/modalLupa4.svg">
-                                </figure>
-                                <div>
-                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
-                                    <p class="font2 fontColor3">5 resultados</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="src/pages/search.html">
-                                <figure>
-                                    <img src="./src/assets/modalLupa5.svg">
-                                </figure>
-                                <div>
-                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
-                                    <p class="font2 fontColor3">40 resultados</p>
-                                </div>
-                            </a href="src/pages/search.html">
-                        </li>
-                    </ul>
-                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
-                    <a href="src/pages/event.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
-                    <a href="src/pages/event.html" class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
-                    <a href="src/pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+            <button class="lupa lupaStatic"><img src="src/assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa">
+                <div class="containerHide">
+                    <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                    <button class="lupaContainerItem"><img src="src/assets/lupa.svg" alt="lupa"></button>
+                    <button class="closeLupa"><img src="src/assets/closeLupa.svg" alt="lupa"></button>
+                    <div class="modalLupa desk">
+                        <ul class="listItems">
+                            <li class="item">
+                                <a href="src/pages/search.html">
+                                    <figure>
+                                        <img src="src/assets/modalLupa1.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">EVENTOS</h3>
+                                        <p class="font2 fontColor3">15 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="src/pages/search.html">
+                                    <figure>
+                                        <img src="src/assets/modalLupa2.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                        <p class="font2 fontColor3">5 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="src/pages/search.html">
+                                    <figure>
+                                        <img src="src/assets/modalLupa3.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">TOGETHER</h3>
+                                        <p class="font2 fontColor3">15 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="src/pages/search.html">
+                                    <figure>
+                                        <img src="src/assets/modalLupa4.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                        <p class="font2 fontColor3">5 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="src/pages/search.html">
+                                    <figure>
+                                        <img src="src/assets/modalLupa5.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                        <p class="font2 fontColor3">40 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                        <a href="src/pages/search.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                        <a href="src/pages/search.html" class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                        <a href="src/pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                    </div>
                 </div>
             </div>
         </nav> 
     </header>   
-    <header class="menu floated">
+    <header class="menu scroll floated">
         <nav class="navStatic">
             <div class="modal">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <img class="logo" src="./src/assets/logo.svg" alt="logo We Go Out">
-            <button class="lupa lupaFloated"><img src="./src/assets/lupa.svg" alt="lupa"></button>
-            <div class="containerLupa containerLupaFloated disabled">
-                <button class="closeButtonModal"></button>
-                <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
-                <button class="lupaContainerItem"><img src="./src/assets/lupa.svg" alt="lupa"></button>
-                <button class="closeLupa closeLupaFloated"><img src="./src/assets/closeLupa.svg" alt="lupa"></button>
-                <div class="modalLupa">
-                    <ul class="listItems">
-                        <li class="item">
-                            <a href="src/pages/search.html">
-                                <figure>
-                                    <img src="./src/assets/modalLupa1.svg">
-                                </figure>
-                                <div>
-                                    <h3 class="font1 fontColor3">EVENTOS</h3>
-                                    <p class="font2 fontColor3">15 resultados</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="src/pages/search.html">
-                                <figure>
-                                    <img src="./src/assets/modalLupa2.svg">
-                                </figure>
-                                <div>
-                                    <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
-                                    <p class="font2 fontColor3">5 resultados</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="src/pages/search.html"> 
-                                <figure>
-                                    <img src="./src/assets/modalLupa3.svg">
-                                </figure>
-                                <div>
-                                    <h3 class="font1 fontColor3">COMUNIDADES</h3>
-                                    <p class="font2 fontColor3">15 resultados</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="src/pages/search.html">
-                                <figure>
-                                    <img src="./src/assets/modalLupa4.svg">
-                                </figure>
-                                <div>
-                                    <h3 class="font1 fontColor3">NOTÍCIAS</h3>
-                                    <p class="font2 fontColor3">5 resultados</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a href="src/pages/search.html">
-                                <figure>
-                                    <img src="./src/assets/modalLupa5.svg">
-                                </figure>
-                                <div>
-                                    <h3 class="font1 fontColor3">ARTISTAS</h3>
-                                    <p class="font2 fontColor3">40 resultados</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
-                    <a href="src/pages/search.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
-                    <a href="src/pages/search.html"class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
-                    <a href="src/pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+            <img class="logo" src="src/assets/logo.svg" alt="logo We Go Out">
+            <button class="lupa lupaFloated"><img src="src/assets/lupa.svg" alt="lupa"></button>
+            <div class="containerLupa">
+                <div class="containerHide">
+                    <button class="closeButtonModal"></button>
+                    <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
+                    <button class="lupaContainerItem"><img src="src/assets/lupa.svg" alt="lupa"></button>
+                    <button class="closeLupa"><img src="src/assets/closeLupa.svg" alt="lupa"></button>
+                    <div class="modalLupa mobile">
+                        <ul class="listItems">
+                            <li class="item">
+                                <a href="src/pages/search.html">
+                                    <figure>
+                                        <img src="src/assets/modalLupa1.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">EVENTOS</h3>
+                                        <p class="font2 fontColor3">15 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="src/pages/search.html">
+                                    <figure>
+                                        <img src="src/assets/modalLupa2.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
+                                        <p class="font2 fontColor3">5 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="src/pages/search.html">
+                                    <figure>
+                                        <img src="src/assets/modalLupa3.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">TOGETHER</h3>
+                                        <p class="font2 fontColor3">15 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="src/pages/search.html">
+                                    <figure>
+                                        <img src="src/assets/modalLupa4.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">NOTÍCIAS</h3>
+                                        <p class="font2 fontColor3">5 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="src/pages/search.html">
+                                    <figure>
+                                        <img src="src/assets/modalLupa5.svg">
+                                    </figure>
+                                    <div>
+                                        <h3 class="font1 fontColor3">ARTISTAS</h3>
+                                        <p class="font2 fontColor3">40 resultados</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
+                        <a class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
+                        <a class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
+                        <a href="src/pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
+                    </div>
                 </div>
             </div>
         </nav>
         <div class="modalMenu">
             <ul>
                 <li><a href="index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
-                <li><a href="src/pages/events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
+                <li><a href="src/events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
                 <li><a href="src/pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
-                <li><a href="src/pages/communities.html" class="font1 fontSize4 fontColor3">COMUNIDADES</a></li>
+                <li><a href="src/pages/together.html" class="font1 fontSize4 fontColor3">TOGETHER</a></li>
                 <li><a href="src/pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
                 <li><a href="src/pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
                 <li><a href="src/pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
@@ -321,38 +324,42 @@
                         </div>
                         <div class="carouselCountdown owl-carousel owl-theme">
                             <div class="item">
-                                <a href="src/pages/event.html" class="card">
-                                    <figure>
-                                        <img src="./src/assets/cont.regressiva1.svg" alt="Goptun com Jamie xx">
-                                        <span class="font2 fontSize2 fontColor3 tag backgroundYellow">SHOWS</span>
-                                    </figure>
-                                    <div class="text">
-                                        <h2 class="font1 fontColor3 fontSize5">GOPTUN COM JAMIE XX</h2>
-                                        <div class="iconWrapper">
-                                            <p class="house icon">Cine Joia</p>
-                                            <p class="location icon">Sao Paulo - SP</p>
+                                <div class="containerItem">
+                                    <a href="src/pages/event.html" class="card">
+                                        <figure>
+                                            <img src="./src/assets/cont.regressiva1.svg" alt="Goptun com Jamie xx">
+                                            <span class="font2 fontSize2 fontColor3 tag backgroundYellow">SHOWS</span>
+                                        </figure>
+                                        <div class="text">
+                                            <h2 class="font1 fontColor3 fontSize5">GOPTUN COM JAMIE XX</h2>
+                                            <div class="iconWrapper">
+                                                <p class="house icon">Cine Joia</p>
+                                                <p class="location icon">Sao Paulo - SP</p>
+                                            </div>
+                                            <p class="calendar icon">24 de março</p> 
                                         </div>
-                                        <p class="calendar icon">24 de março</p> 
-                                    </div>
-                                </a>
-                                <a href="src/pages/event.html" class="card">
-                                    <figure>
-                                        <img src="./src/assets/cont.regressiva2.svg" alt="">
-                                        <span class="font2 fontSize2 fontColor3 tag backgroundGreen">FESTAS</span>
-                                    </figure>
-                                    <div class="text">
-                                        <h2 class="font1 fontColor3 fontSize5">GOPTUN COM JAMIE XX</h2>
-                                        <div class="iconWrapper">
-                                            <p class="house icon">Cine Joia</p>
-                                            <p class="location icon">Sao Paulo - SP</p>
+                                    </a>
+                                </div>
+                                <div class="containerItem">
+                                    <a href="src/pages/event.html" class="card">
+                                        <figure>
+                                            <img src="./src/assets/cont.regressiva2.svg" alt="">
+                                            <span class="font2 fontSize2 fontColor3 tag backgroundGreen">FESTAS</span>
+                                        </figure>
+                                        <div class="text">
+                                            <h2 class="font1 fontColor3 fontSize5">GOPTUN COM JAMIE XX</h2>
+                                            <div class="iconWrapper">
+                                                <p class="house icon">Cine Joia</p>
+                                                <p class="location icon">Sao Paulo - SP</p>
+                                            </div>
+                                            <p class="calendar icon">24 de março</p> 
                                         </div>
-                                        <p class="calendar icon">24 de março</p> 
-                                    </div>
-                                    <div class="tagPromoDiv">
-                                        <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
-                                        <span class="fontColor3 tagPromoTip"></span>
-                                    </div>
-                                </a>
+                                        <div class="tagPromoDiv">
+                                            <span class="font1 fontSize2 fontColor3 tagPromo">DESCONTO WE GO OUT</span>
+                                            <span class="fontColor3 tagPromoTip"></span>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
                                 <a href="src/pages/event.html" class="card">
@@ -563,53 +570,53 @@
             </div>
         </section>
         <section class="extraContent">
-            <div class="community">
+            <div class="together">
                 <div class="text">
-                    <h2 class="font1 fontSize7 fontColor1">FAÇA PARTE DAS COMUNIDADES DO WE GO OUT</h2>
-                    <h3 class="font2 fontSize6 fontColor2">Acesse os nosso grupos de Whatsapp e encontre mais pessoas que querem ir no mesmo evento que você.</h3>
-                    <a href="src/pages/communities.html" class="font1 fontSize3">VER TODAS</a>
+                    <h2 class="font1 fontSize7 fontColor1">FAÇA PARTE DA COMUNIDADE WE GO OUT TOGETHER</h2>
+                    <h3 class="font2 fontSize6 fontColor2">Acesse os nossos grupos de Whatsapp e encontre mais pessoas que querem ir no mesmo evento que você.</h3>
+                    <a href="src/pages/together.html" class="font1 fontSize3">VER TODOS</a>
                 </div>
                 <div class="smokeEffect"></div>
                 <div class="carouselContainer">
-                    <div class="owl-carousel owl-theme carouselCommunity">
+                    <div class="owl-carousel owl-theme carouseltogether">
                         <div class="item">
-                            <a href="src/pages/communities.html">
+                            <a href="src/pages/together.html">
                                 <img src="./src/assets/comun1.svg" alt="Lollapalooza Brasil">
                                 <p class="font1 fontSize3 fontColor1">LOLLAPALOOZA BRASIL 2023</p>
                             </a>
                         </div>
                         <div class="item">
-                            <a href="src/pages/communities.html">
+                            <a href="src/pages/together.html">
                                 <img src="./src/assets/comun2.svg" alt="Lollapalooza Argentina">
                                 <p class="font1 fontSize3 fontColor1">LOLLAPALOOZA ARGENTINA 2023</p>
                             </a>
                         </div>
                         <div class="item">
-                            <a href="src/pages/communities.html">
+                            <a href="src/pages/together.html">
                                 <img src="./src/assets/comun3.svg" alt="Tomorrowland Brasil">
                                 <p class="font1 fontSize3 fontColor1">TOMORROWLAND BRASIL 2023</p>
                             </a>
                         </div>
                         <div class="item">
-                            <a href="src/pages/communities.html">
+                            <a href="src/pages/together.html">
                                 <img src="./src/assets/comun4.svg" alt="Festas no Rio de Janeiro">
                                 <p class="font1 fontSize3 fontColor1">FESTAS NO RIO DE JANEIRO 2023</p>
                             </a>
                         </div>
                         <div class="item">
-                            <a href="src/pages/communities.html">
+                            <a href="src/pages/together.html">
                                 <img src="./src/assets/comun4.svg" alt="Festas no Rio de Janeiro">
                                 <p class="font1 fontSize3 fontColor1">FESTAS NO RIO DE JANEIRO 2023</p>
                             </a>
                         </div>
                         <div class="item">
-                            <a href="src/pages/communities.html">
+                            <a href="src/pages/together.html">
                                 <img src="./src/assets/comun4.svg">
                                 <p class="font1 fontSize3 fontColor1">FESTAS NO RIO DE JANEIRO 2023</p>
                             </a>
                         </div>
                         <div class="item">
-                            <a href="src/pages/communities.html">
+                            <a href="src/pages/together.html">
                                 <img src="./src/assets/comun4.svg">
                                 <p class="font1 fontSize3 fontColor1">FESTAS NO RIO DE JANEIRO 2023</p>
                             </a>
@@ -621,7 +628,7 @@
             <div class="containerExtra">
                 <div class="componentGuide">
                     <div class="title">
-                        <h3 class="font1 fontColor1">NOTÍCIAS RELACIONADAS</h3> 
+                        <h3 class="font1 fontColor1">NOSSOS GUIAS</h3> 
                         <a class="seeAll" href="./src/pages/news.html">VER TUDO</a>
                     </div>
                     <div class="owl-carousel owl-theme carouselGuide">
@@ -983,8 +990,7 @@
                     <img class="sendEventImg" src="src/assets/evento1.svg">
                     <div class="content">
                         <h2 class="font1 fontSize6 fontColor3">ENVIE SEU EVENTO</h2>
-                        <p class="font2 fontSize3 fontColor3">Mostre o seu evento para milhares de pessoas e faça parte da rede de eventos  do nosso site. 
-                            Preencha o  formulário e envie as informações do seu evento agora mesmo.</p>
+                        <p class="font2 fontSize3 fontColor3"> Preencha o formulário e mostre seu evento para milhares de pessoas</p>
                         <a class="font1 fontSize3 fontColor3" href="src/pages/eventForm.html">ENVIAR EVENTO</a>
                     </div>
                 </div>
@@ -992,7 +998,7 @@
                     <img src="src/assets/evento2.svg">
                     <div class="content">
                         <h2 class="font1 fontSize6 fontColor3 findEvent">ENCONTRE SEU EVENTO FAVORITO</h2>
-                        <p class="font2 fontSize3 fontColor3">Utilize a nossa pesquisa avançada para encontrar o evento que mais combina com você, buscando por gênero, artista, localização ou aproveitando as nossas seleções especiais.</p>
+                        <p class="font2 fontSize3 fontColor3">Encontre seu evento favorito: utilize a nossa pesquisa avançada para encontrar o evento que mais combina com você, buscando por data, localização, gênero, artista, ou aproveitando as nossas seleções especiais.</p>
                         <a class="font1 fontSize3 fontColor3" href="src/pages/search.html">BUSCAR EVENTO</a>
                     </div>
                 </div>
@@ -1003,8 +1009,8 @@
                     <a class="font1 fontSize4 fontColor2 highlightLink" href="index.html">INICIO</a>
                     <a class="font1 fontSize4 fontColor2" href="src/pages/events.html">EVENTOS</a>
                     <a class="font1 fontSize4 fontColor2" href="src/pages/eventForm.html">ENVIE UM EVENTO</a>
-                    <a class="font1 fontSize4 fontColor2" href="src/pages/news.html">NOTICIAS</a>
-                    <a class="font1 fontSize4 fontColor2" href="src/pages/communities.html">COMUNIDADES</a>
+                    <a class="font1 fontSize4 fontColor2" href="src/pages/news.html">NOTÍCIAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="src/pages/together.html">TOGETHER</a>
                     <a class="font1 fontSize4 fontColor2" href="src/pages/artists.html">ARTISTAS</a>
                     <a class="font1 fontSize4 fontColor2" href="src/pages/releases.html">LANÇAMENTOS</a>
                     <a class="font1 fontSize4 fontColor2" href="src/pages/releaseForm.html">ENVIE UM LANÇAMENTO</a>
@@ -1071,7 +1077,7 @@
                     <div class="text">
                         <p class="font2 fontSize2 fontColor2">Todos os direitos reservados a We Go Out 2023®
                             CNPJ: 12.345.678/0001-10</p>
-                        <p class="font2 fontSize2 fontColor2">A We Go Out Ltda, inscrita sob o CNPJ: 12.345.678/0001-10 é uma instituição devidamente habilitada e autorizada. Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo impedir ou prejudicar o envio ou a recepção de informações atualizadas.</p>
+                        <p class="font2 fontSize2 fontColor2">CNPJ: 45.221.697/0001-69 A WE GO OUT PROMOCAO DE EVENTOS E MUSICA LTDA, inscrita sob o CNPJ: 45.221.697/0001-69 é uma instituição devidamente habilitada e autorizada. Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo impedir ou prejudicar o envio ou a recepção de informações atualizadas.</p>
                         <a class="font2 fontSize2" href="mailto:contato@wegoout.com">contato@wegoout.com</a>
                     </div>
                 </div>

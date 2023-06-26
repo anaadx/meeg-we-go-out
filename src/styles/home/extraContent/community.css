@@ -1,4 +1,4 @@
-.home .community {
+.home .together {
     background-color: var(--neutral5);
     border-radius: 10px;
     display: flex;
@@ -13,10 +13,10 @@
 }
 
 
-.home .community .backgroundWave {
+.home .together .backgroundWave {
     position: absolute;
     bottom: -116px;
-    background-image: url(../../../assets/onda-community.svg);
+    background-image: url(../../../assets/onda-together.svg);
     background-repeat: no-repeat;
     background-size: 790px;
     width: 1312px;
@@ -25,7 +25,7 @@
     left: -52px;
 }
 
-.home .community .smokeEffect {
+.home .together .smokeEffect {
     top: 0px;
     position: absolute;
     height: 100%;
@@ -45,49 +45,49 @@
     /* IE6-9 */
 }
 
-.home .community .carouselContainer {
+.home .together .carouselContainer {
     width: calc(50% - 20px);
     display: flex;
     align-self: center;
     z-index: 1;
 }
 
-.home .community .owl-carousel .owl-stage-outer {
+.home .together .owl-carousel .owl-stage-outer {
     padding-top: 10px;
 }
 
-.home .community .carouselCommunity {
+.home .together .carouseltogether {
     width: 100%;
 }
 
-.home .community .carouselCommunity .item a {
+.home .together .carouseltogether .item a {
     text-decoration: none;
     display: block;
     width: 100%;
 }
 
-.home .community .carouselCommunity .item {
+.home .together .carouseltogether .item {
     width: 100%;
     transition: var(--transitionFast);
 }
 
-.home .community .carouselCommunity .item:hover {
+.home .together .carouseltogether .item:hover {
     margin-top: -3px;
 }
 
-.home .community .carouselCommunity .item a img {
+.home .together .carouseltogether .item a img {
     margin-bottom: 20px;
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
 
-.home .community .carouselCommunity .item a p {
+.home .together .carouseltogether .item a p {
     line-height: 1.5em;
     max-width: 100%;
 }
 
-.home .community .text {
+.home .together .text {
     align-self: center;
     display: flex;
     gap: 40px;
@@ -96,15 +96,15 @@
     width: calc(50% - 80px);
 }
 
-.home .community .text h2 {
+.home .together .text h2 {
     line-height: 1.33em;
 }
 
-.home .community .text h3 {
+.home .together .text h3 {
     line-height: 1.5em;
 }
 
-.home .community .text a {
+.home .together .text a {
     width: max-content;
     padding: 15px 20px;
     margin-bottom: 5px;
@@ -116,14 +116,14 @@
     margin-bottom: 40px;
 }
 
-.home .community .text a:hover {
+.home .together .text a:hover {
     background-color: var(--pinkHover);
     cursor: pointer;
 }
 
 
 @media(max-width: 1024px) {
-    .home .community {
+    .home .together {
         flex-direction: column;
         height: min-content;
         gap: 0px;
@@ -134,50 +134,50 @@
         margin-bottom: 45px;
     }
 
-    .home .community .owl-carousel .owl-stage-outer {
+    .home .together .owl-carousel .owl-stage-outer {
         overflow: visible;
     }
 
-    .home .community .smokeEffect {
+    .home .together .smokeEffect {
         display: none;
     }
 
-    .home .community .carouselContainer {
+    .home .together .carouselContainer {
         width: 100%
     }
 
-    .home .community .carouselCommunity .item a img {
+    .home .together .carouseltogether .item a img {
         margin-bottom: 5px;
     }
 
-    .home .community .carouselCommunity {
+    .home .together .carouseltogether {
         width: calc(100% - 50px)
     }
 
-    .home .community .text {
+    .home .together .text {
         width: calc(100% - 40px);
         gap: 20px;
     }
 
-    .home .community .backgroundWave {
+    .home .together .backgroundWave {
         bottom: -201px;
         width: 1126px;
         left: -256px;
     }
 
-    .home .community .text a {
+    .home .together .text a {
         margin-bottom: 20px;
     }
 
-    .home .community .text h2 {
+    .home .together .text h2 {
         font-size: 18px;
     }
 
-    .home .community .text h3 {
+    .home .together .text h3 {
         font-size: 14px;
     }
 
-    .home .community .carouselCommunity .item a p {
+    .home .together .carouseltogether .item a p {
         font-size: 10px;
         line-break: strict
     }

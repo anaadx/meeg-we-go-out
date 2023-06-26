@@ -27,8 +27,8 @@
             <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
             <div class="links activeHighlight">
                 <a href="events.html" class="font1 fontColor3 fontSize4 highlightLink">EVENTOS</a>
-                <a href="../pages/news.html" class="font1 fontColor3 fontSize4">NOTICIAS</a>
-                <a href="../pages/communities.html" class="font1 fontColor3 fontSize4">COMUNIDADES</a>
+                <a href="../pages/news.html" class="font1 fontColor3 fontSize4">NOTÍCIAS</a>
+                <a href="../pages/together.html" class="font1 fontColor3 fontSize4">TOGETHER</a>
                 <a href="../pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
                 <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
                 <a href="../pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
@@ -69,7 +69,7 @@
                                         <img src="../assets/modalLupa3.svg">
                                     </figure>
                                     <div>
-                                        <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                        <h3 class="font1 fontColor3">TOGETHER</h3>
                                         <p class="font2 fontColor3">15 resultados</p>
                                     </div>
                                 </a>
@@ -151,7 +151,7 @@
                                         <img src="../assets/modalLupa3.svg">
                                     </figure>
                                     <div>
-                                        <h3 class="font1 fontColor3">COMUNIDADES</h3>
+                                        <h3 class="font1 fontColor3">TOGETHER</h3>
                                         <p class="font2 fontColor3">15 resultados</p>
                                     </div>
                                 </a>
@@ -192,7 +192,7 @@
                 <li><a href="../../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
                 <li><a href="events.html" class="font1 fontSize4 fontColor3 highlightLink">EVENTOS</a></li>
                 <li><a href="../pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
-                <li><a href="../pages/communities.html" class="font1 fontSize4 fontColor3">COMUNIDADES</a></li>
+                <li><a href="../pages/together.html" class="font1 fontSize4 fontColor3">TOGETHER</a></li>
                 <li><a href="../pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
                 <li><a href="../pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
                 <li><a href="../pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
@@ -230,6 +230,7 @@
                             <p>A imagem deve ter menos de 5MB.</p>
                             <p>A resolução deve ser de no mínimo 750 x 750px.</p>
                             <p>A imagem não precisa conter data, hora e line up.</p>
+                            <p>Escolha uma imagem que melhor ilustre seu evento (ex: flyer)</p>
                         </div>
                     </div>
                     <div class="block">
@@ -238,9 +239,31 @@
                             <input type="text" name="name" class="font2 fontColor2" placeholder="Escreva aqui"> 
                         </div>
                         <div class="field">    
-                            <label class="font2 fontSize4" for="date">Data e hora do evento<span>*</span></label>
-                            <input type="text" name="datetimes" class="font2 fontSize2 fontColor2">
+                            <label class="font2 fontSize4" for="date">Data do evento<span>*</span></label>
+                            <input type="text" name="daterange" class="font2 fontSize2 fontColor2">
                         </div>
+                    </div>
+                    <div class="block">
+                        <div class="field">
+                            <label class="font2 fontSize4" for="beginHour">Horário de início (campo não obrigatório)<span>*</span></label>
+                            <select name="beginHour" class="selectBeginHour fontColor2">
+                                <option value="08:00">08:00</option>
+                                <option value="08:30">08:30</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:30">09:30</option>
+                                <option value="10:00">10:00</option>
+                            </select>
+                        </div> 
+                        <div class="field">
+                            <label class="font2 fontSize4" for="gender">Horário de término (campo não obrigatório)<span>*</span></label>
+                            <select name="gender" class="selectEndHour fontColor2">
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                                <option value="23:00">23:00</option>
+                                <option value="23:30">23:30</option>
+                                <option value="00:00">00:00</option>
+                            </select>
+                        </div> 
                     </div>
                     <div class="block">
                         <div class="field">
@@ -294,8 +317,14 @@
                         </div>
                     </div>
                     <div class="block">
+                        <div class="field address">
+                            <label class="font2 fontSize4" for="eventAddress">Endereço (campo não obrigatório)<span>*</span></label>
+                            <input type="text" name="eventAddress" class="font2 fontColor2" placeholder="Digite o endereço completo do evento"> 
+                        </div>
+                    </div>
+                    <div class="block">
                         <label class="font2 fontColor1" for="description">Descrição do evento<span>*</span></label>
-                        <textarea autocomplete="off" requiredrows="1" name="description" class="message font2 fontColor2" placeholder="Escreva aqui a sua mensagem"></textarea>
+                        <textarea autocomplete="off" requiredrows="1" name="description" class="message font2 fontColor2" placeholder="Digite uma breve descrição sobre seu evento e explique mais sobre a utilização do cupom de desconto, caso houver."></textarea>
                     </div>
                 </div>
                 <div class="clientData">
@@ -376,6 +405,8 @@
          $(document).ready(function () {
              $('.selectGender').SumoSelect({search: false, placeholder:"Selecione os gêneros musicais", floatWidth: 0,});
              $('.selecType').SumoSelect({search: false, placeholder:"Selecione o tipo", floatWidth: 0,});
+             $('.selectBeginHour').SumoSelect({search: false, placeholder:"Selecione o horário", floatWidth: 0,});
+             $('.selectEndHour').SumoSelect({search: false, placeholder:"Selecione o horário", floatWidth: 0,});
              $('.selectAreaCode').SumoSelect();
         });
     </script>
