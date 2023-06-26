@@ -20,15 +20,20 @@
     color: var(--neutral1);
 }
 
-.release .info .about .quote {
+.release .info .about q {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: var(--font2);
+    color: var(--neutral1);
     width: calc(100% - 100px);
     margin: 0 auto;
     position: relative;
     margin-top: 30px;
     margin-bottom: 20px;
+    display: block;
 }
 
-.release .info .about .quote:before {
+.release .info .about q:before {
     background-image: url(../../../../assets/citacao-inicio.svg);
     content: "";
     display: block;
@@ -42,7 +47,7 @@
     left: -50px;
 }
 
-.release .info .about .quote:after {
+.release .info .about q:after {
     background-image: url(../../../../assets/citacao-final.svg);
     content: "";
     display: block;

@@ -1,0 +1,125 @@
+.artist .artitstMain {
+    display: flex;
+    height: calc(100vh - 160px);
+    width: calc(100% - 80px);
+    margin: 40px;
+    margin-top: 120px;
+}
+
+.artist .artitstMain .photo {
+    position: relative;
+    width: 100%;
+}
+
+.artist .artitstMain .photo .photoArtist {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%
+}
+
+.artist .artitstMain figure {
+    position: relative;
+    height: 100%;
+}
+
+.artist .artitstMain .photo img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.artist .artitstMain .photo .icons {
+    display: none;
+}
+
+
+
+@media(max-width: 1025px) {
+
+    .artist .artitstMain {
+        display: flex;
+        flex-direction: column;
+        margin-top: -10px;
+        align-items: center;
+    }
+
+    .artist .artitstMain .photo {
+        width: 100%;
+        height: 433px;
+        padding-right: 0px;
+    }
+
+    .artist .artitstMain figure {
+        height: 57%;
+    }
+
+    .artist .artitstMain .photo .photoArtist {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .artist .artitstMain .tag1 {
+        display: none;
+    }
+
+    .artist .artitstMain .photo img {
+        width: 270px;
+        height: 270px
+    }
+
+    .artist .artitstMain .photoBackground {
+        width: 100%;
+        background-image: url(../../../assets/foto-artista.svg);
+        background-size: 140%;
+        filter: blur(25px);
+        height: 140%;
+        margin-top: -110px;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 45%;
+    }
+
+    .artist .artitstMain .content {
+        width: 100%;
+        z-index: 1;
+        background-color: var(--neutral2);
+        position: relative;
+        padding: 0px 20px;
+    }
+
+    .artist .artitstMain .content .icons {
+        position: absolute;
+        top: -54px;
+        width: calc(100% - 40px);
+        justify-content: center;
+    }
+
+    .artist .artitstMain .content .icons a {
+        background-color: transparent;
+        width: 25px;
+        height: 25px;
+    }
+
+    .artist .artitstMain .content h1 {
+        font-size: 24px;
+        margin: 20px auto;
+    }
+
+    .artist .artitstMain .content .iconWrapper {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0px;
+        margin-bottom: 30px;
+    }
+
+    .artist .artitstMain .content .country {
+        padding: 10px 0px;
+    }
+}

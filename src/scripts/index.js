@@ -108,7 +108,7 @@ $(document).ready(function () {
     autoApply: true,
   });
 
-  $(".carouselCommunity").owlCarousel({
+  $(".carouseltogether").owlCarousel({
     navSpeed: 500,
     loop: false,
     center: false,

@@ -1,39 +1,39 @@
-.communities .bestEvents {
+.together .bestEvents {
     width: 100%;
     margin-bottom: 40px;
     z-index: 4;
     position: relative;
 }
 
-.modalLupaActive .communities .bestEvents {
+.modalLupaActive .together .bestEvents {
     z-index: 1;
 }
 
-.communities .bestEvents .titleName {
+.together .bestEvents .titleName {
     font-size: 56px;
     margin-bottom: 30px;
 }
 
 
-.communities .bestEvents .titleDescription {
+.together .bestEvents .titleDescription {
     font-size: 16px;
     line-height: 1.5em;
     width: 75%;
     margin-bottom: 45px;
 }
 
-.communities .bestEvents .title {
+.together .bestEvents .title {
     display: flex;
     justify-content: space-between;
     position: relative;
     margin-bottom: 30px;
 }
 
-.communities .bestEvents .title div {
+.together .bestEvents .title div {
     display: flex;
 }
 
-.communities .bestEvents .carouselBestEvents a .icon:before {
+.together .bestEvents .carouselBestEvents a .icon:before {
     background-image: url(../../../assets/icone-chat-branco.svg);
     content: "";
     display: block;
@@ -47,26 +47,26 @@
 
 @media(max-width: 1024px) {
 
-    .communities .bestEvents .titleDescription {
+    .together .bestEvents .titleDescription {
         font-size: 14px;
         width: 100%;
         margin-bottom: 35px;
     }
 
-    .communities .bestEvents .titleName {
+    .together .bestEvents .titleName {
         font-size: 24px;
         margin-bottom: 15px;
     }
 
-    .communities .bestEvents .title {
+    .together .bestEvents .title {
         margin-bottom: 20px;
     }
 
-    .communities .bestEvents {
+    .together .bestEvents {
         margin-bottom: 50px;
     }
 
-    .communities .bestEvents .carouselBestEvents {
+    .together .bestEvents .carouselBestEvents {
         width: calc(100% - 150px);
     }
 

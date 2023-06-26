@@ -9,6 +9,11 @@
     flex-direction: column;
 }
 
+.artist .firstExtraContent {
+    display: flex;
+    flex-direction: row;
+}
+
 .artist .containerExtra {
     display: flex;
     justify-content: center;

@@ -10,16 +10,12 @@ $(document).ready(function () {
     disableItems();
   });
 
-  $(function () {
-    $('input[name="datetimes"]').daterangepicker({
-      timePicker: true,
-      startDate: moment().startOf("hour"),
-      endDate: moment().startOf("hour").add(32, "hour"),
-      locale: {
-        format: "M/DD hh:mm A",
-      },
-    });
+  $('input[name="daterange"]').daterangepicker({
+    autoApply: true,
   });
+
+  $('input[name="daterange"]').val("");
+  $('input[name="daterange"]').attr("placeholder", "Selecione a data");
 
   $(".placeTipImg").mouseover(function () {
     $("body").addClass("placeTipActive");

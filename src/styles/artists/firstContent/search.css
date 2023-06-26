@@ -44,6 +44,15 @@
         bottom: 0px;
     }
 
+    .artists .searchTool form {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        transition: var(--transitionSlow);
+    }
+
     .artists .searchTool {
         border-radius: 5px;
         position: fixed;

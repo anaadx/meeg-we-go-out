@@ -163,7 +163,7 @@
     height: 100%;
 }
 
-.home .countdown .item .card:nth-child(1) {
+.home .countdown .item .containerItem:nth-child(1) {
     margin-bottom: 20px;
 }
 
@@ -178,18 +178,16 @@
     gap: 20px;
     background-color: var(--neutral2);
     position: relative;
-    height: 200px;
     text-decoration: none;
     transition: var(--transitionFast);
 }
 
+.home .countdown .containerItem {
+    height: 200px;
+}
 
 .home .countdown .card img {
     transition: var(--transitionFast);
-}
-
-.home .countdown .card:hover {
-    margin-top: -3px;
 }
 
 .home .countdown .card:hover img {
