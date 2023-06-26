@@ -91,10 +91,9 @@
 
 .home .launch ul {
     display: grid;
-    flex-direction: column;
-    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
     max-height: 700px;
-    width: 100%;
 }
 
 .home .launch li {
@@ -112,9 +111,6 @@
     text-decoration: none;
 }
 
-.home .launch li:hover {
-    margin-top: -3px
-}
 
 .home .launch li:hover img {
     margin-top: -5px;
@@ -204,7 +200,8 @@
     .home .launch ul {
         gap: 20px;
         max-height: 100%;
-        width: calc(100% - 10px);
+        width: 100%;
+        grid-row-gap: 20px
     }
 
     .home .launch li {

@@ -3,6 +3,7 @@
 modalMenu > activeHighlight (active on nav)
 links > highlightLink (active on link)
 menu > bigLogo (bigger mobile logo)
+menu > noBackgroundColor (transparent background)
 menu > scroll (header scroll) */
 
 .menu {
@@ -465,6 +466,10 @@ body.menuDrop .menu.floated {
     position: relative
 }
 
+.menu.noBackgroundColor {
+    background-color: transparent
+}
+
 @media(max-width: 1024px) {
 
     .modalLupaActive .backgroundModal {
@@ -603,5 +608,6 @@ body.menuDrop .menu.floated {
     .backgroundMenu .bigLogo.menu {
         background-color: var(--neutral1)
     }
+
 
 }

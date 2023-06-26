@@ -11,6 +11,7 @@
     width: calc(50% - 40px);
     padding-left: 40px;
     height: calc(100% - 80px);
+    margin-top: 180px;
 }
 
 .artist .fixedContent .icons {
@@ -34,19 +35,19 @@
 }
 
 .artist .fixedContent .icons a.insta {
-    background-image: url(../../../assets/icone-instagram-branco.svg);
+    background-image: url(../../../../assets/icone-instagram-branco.svg);
 }
 
 .artist .fixedContent .icons a.facebook {
-    background-image: url(../../../assets/icone-facebook.svg);
+    background-image: url(../../../../assets/icone-facebook.svg);
 }
 
 .artist .fixedContent .icons a.spotify {
-    background-image: url(../../../assets/icone-spotify.svg);
+    background-image: url(../../../../assets/icone-spotify.svg);
 }
 
 .artist .fixedContent .icons a.tiktok {
-    background-image: url(../../../assets/icone-tiktok.svg);
+    background-image: url(../../../../assets/icone-tiktok.svg);
 }
 
 .artist .fixedContent .icons a:hover {
@@ -78,7 +79,7 @@
 }
 
 .artist .fixedContent .music:before {
-    background-image: url(../../../assets/icone-musica.svg);
+    background-image: url(../../../../assets/icone-musica.svg);
     content: "";
     display: block;
     width: 15px;
@@ -90,7 +91,7 @@
 }
 
 .artist .fixedContent .record:before {
-    background-image: url(../../../assets/icone-gravadora.svg);
+    background-image: url(../../../../assets/icone-gravadora.svg);
     content: "";
     display: block;
     width: 15px;
@@ -102,7 +103,7 @@
 }
 
 .artist .fixedContent .country:before {
-    background-image: url(../../../assets/icone-localizacao.svg);
+    background-image: url(../../../../assets/icone-localizacao.svg);
     content: "";
     display: block;
     width: 15px;

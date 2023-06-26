@@ -35,8 +35,8 @@
 
 @media(max-width: 1024px) {
     .about .container {
-        width: calc(100% - 40px);
-        background-image: none;
+        background-position: -410px -35px;
+        background-size: 698px;
     }
 
     .about .firstContent {
@@ -49,6 +49,10 @@
     }
 
     .about .firstContent .waveFirst2 {
-        background-image: none;
+        bottom: 300px;
+        right: -193px;
+        width: 400px;
+        height: 488px;
+        z-index: 1;
     }
 }

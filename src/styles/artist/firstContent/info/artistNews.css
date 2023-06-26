@@ -29,17 +29,14 @@
 
 .artist .info .artistNews .listItems .item {
     width: 100%;
-    border-radius: 10px;
     height: 130px;
-    position: relative;
-    background-color: var(--neutral5);
 }
 
-.artist .info .artistNews .listItems .item:hover {
+.artist .info .artistNews .listItems .item a:hover {
     margin-top: -3px;
 }
 
-.artist .info .artistNews .listItems .item:hover img {
+.artist .info .artistNews .listItems .item a:hover img {
     margin-top: -5px;
     margin-left: -5px;
     width: calc(100% + 10px);
@@ -51,6 +48,9 @@
     display: flex;
     text-decoration: none;
     height: 100%;
+    border-radius: 10px;
+    position: relative;
+    background-color: var(--neutral5);
 }
 
 .artist .info .artistNews .listItems .item h2 {
