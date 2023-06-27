@@ -1,0 +1,33 @@
+.event .info .getInTheMood {
+    width: 100%;
+    padding: 0px 40px;
+    padding-top: 60px;
+    background-color: var(--neutral7);
+}
+
+.event .info .getInTheMood .title {
+    margin-bottom: 20px;
+}
+
+.event .info .getInTheMood .title h2 {
+    font-size: 24px;
+    font-family: var(--font1);
+    color: var(--neutral1)
+}
+
+.event .info .getInTheMood iframe {
+    width: 100%;
+    height: 440px;
+}
+
+@media(max-width: 1024px) {
+    .event .info .getInTheMood {
+        padding: 0px 20px;
+        padding-top: 40px;
+    }
+
+    .event .info .getInTheMood .title h2 {
+        font-size: 18px;
+    }
+
+}

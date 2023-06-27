@@ -1,0 +1,301 @@
+.event .eventMain {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 180px);
+    margin-bottom: 40px;
+}
+
+.event .eventMain .photo {
+    width: 100%;
+    padding-right: 20px;
+    position: relative;
+    margin-left: 40px;
+}
+
+.event .eventMain .photo .photoArtist {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: calc(100% - 40px);
+}
+
+.event .eventMain .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.event .eventMain .photo .icons {
+    display: none;
+}
+
+/* CONTENT */
+
+.event .eventMain .complementContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    position: absolute;
+    top: -10000px
+}
+
+.event .eventMain .complementContent h1 {
+    font-size: 56px;
+    font-family: "Fugaz One";
+    line-height: 1.24em;
+    color: var(--neutral7);
+    margin-bottom: 50px;
+}
+
+.event .eventMain span {
+    border-radius: 3px;
+    padding: 9.5px 14px;
+    width: fit-content;
+    font-size: 10px;
+    font-family: "Lato";
+    background-color: var(--main2);
+    vertical-align: middle;
+}
+
+.event .eventMain .tag2 {
+    position: absolute;
+    top: 15px;
+}
+
+.event .eventMain figure {
+    position: relative;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.event .complementContent p {
+    font-family: "Lato";
+    font-size: 14px;
+    line-height: 1.70em;
+    color: var(--neutral7);
+}
+
+.event .complementContent .music,
+.event .complementContent .calendarWrapper,
+.event .complementContent .houseWrapper {
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--greyOpacity);
+    overflow: hidden;
+}
+
+.event .complementContent .calendarWrapper p:nth-child(1),
+.event .complementContent .houseWrapper p:nth-child(1) {
+    margin-right: 30px;
+}
+
+.event .complementContent .calendarWrapper p,
+.event .complementContent .houseWrapper p,
+.event .complementContent .houseWrapper a,
+.event .complementContent .linkWrapper {
+    float: left;
+}
+
+.event .complementContent .houseWrapper a {
+    color: var(--main1);
+    font-family: var(--font2);
+    display: block;
+    align-self: center;
+    justify-self: end;
+}
+
+.event .complementContent .houseWrapper {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+}
+
+.event .complementContent .description {
+    width: 100%;
+    overflow: hidden;
+}
+
+.event .complementContent .icon:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 1px;
+}
+
+.event .complementContent .calendar:before {
+    background-image: url(../../../../assets/icone-calendario.svg);
+}
+
+.event .complementContent .clock:before {
+    background-image: url(../../../../assets/icone-relogio.svg);
+}
+
+.event .complementContent .music:before {
+    background-image: url(../../../../assets/icone-musica.svg);
+}
+
+.event .complementContent .house:before {
+    background-image: url(../../../../assets/icone-casa.svg);
+    margin-top: -1px;
+}
+
+.event .complementContent .place:before {
+    background-image: url(../../../../assets/icone-localizacao.svg);
+}
+
+.event .eventMain .complementContent button {
+    padding: 20px 0px;
+    width: 350px;
+    background-color: var(--main1);
+    color: var(--neutral7);
+    font-size: 12px;
+    font-family: var(--font1);
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.event .eventMain .complementContent button:hover {
+    background-color: var(--pinkHover);
+}
+
+.event .eventMain .timeCounter {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 16px
+}
+
+.event .eventMain .timeCounter strong {
+    font-weight: bold;
+}
+
+@media(max-width: 1025px) {
+
+    .event .eventMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 400px;
+        height: 100%;
+    }
+
+    .event .eventMain .photo {
+        width: 100%;
+        height: 370px;
+        padding-right: 0px;
+        height: 290px;
+        margin-top: 100px;
+        margin-left: 0px;
+    }
+
+    .event .eventMain .photo .photoArtist {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .event .eventMain .tag1 {
+        display: none;
+    }
+
+    .event .eventMain .photo img {
+        width: 270px;
+        height: 270px
+    }
+
+    .event .eventMain .photoBackground {
+        width: 100%;
+        background-image: url(../../../../assets/destaque.svg);
+        background-size: 120%;
+        filter: blur(25px);
+        height: 140%;
+        margin-top: -110px;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 45%;
+    }
+
+    .event .eventMain .complementContent {
+        text-align: center;
+        width: 100%;
+        padding-left: 0px;
+        z-index: 2;
+        background-color: var(--neutral2);
+        padding: 0px 20px;
+        top: 390px;
+    }
+
+    .event .complementContent .text .description {
+        margin: 0 auto;
+        width: max-content;
+    }
+
+    .event .complementContent .text {
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+
+    .event .complementContent .text span {
+        display: none;
+    }
+
+    .event .complementContent .icon:before {
+        margin-top: 0px;
+    }
+
+    .event .eventMain .complementContent h1 {
+        font-size: 24px;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    .event .eventMain .complementContent p {
+        font-size: 12px;
+        text-align: start;
+    }
+
+    .event .eventMain .complementContent .house {
+        margin-bottom: 15px;
+    }
+
+    .event .complementContent .houseWrapper a {
+        align-self: end;
+        font-size: 14px;
+    }
+
+    .event .complementContent .music,
+    .event .complementContent .calendarWrapper,
+    .event .complementContent .houseWrapper {
+        padding: 15px 0px;
+    }
+
+    .event .eventMain .complementContent button {
+        width: 100%;
+    }
+}
+
+.event .complementContent .houseWrapper a:hover {
+    color: var(--pinkHover);
+}
+
+@media(max-width: 650px) {
+    .event .complementContent .houseWrapper p:nth-child(1) {
+        margin-right: 0px;
+    }
+
+}

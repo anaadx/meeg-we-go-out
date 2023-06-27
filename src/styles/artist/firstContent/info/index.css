@@ -6,6 +6,14 @@
 @media (max-width: 1024px) {
     .artist .info {
         width: 100%;
-        min-width: 300px
+        min-width: 300px;
+        margin-top: 20px;
+    }
+
+    .artist .artitstMain {
+        display: flex;
+        height: 100%;
+        margin: 0px;
+        margin: 0px
     }
 }

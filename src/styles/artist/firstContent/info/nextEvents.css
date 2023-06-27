@@ -35,9 +35,6 @@
     background-color: var(--neutral5);
 }
 
-.artist .info .cardEvent2 .card:hover {
-    margin-top: -3px;
-}
 
 .artist .info .cardEvent2 .card:hover img {
     margin-top: -5px;
@@ -76,6 +73,7 @@
 
 
 @media(max-width: 1024px) {
+
     .artist .info .nextEvents {
         padding: 25px 20px 10px 20px;
     }

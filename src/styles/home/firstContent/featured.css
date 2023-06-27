@@ -36,8 +36,9 @@
     position: relative;
     background-color: var(--neutral2);
     border-radius: 10px;
-    height: 420px;
+    height: 414px;
     width: 100%;
+    margin-top: 3px;
     transition: var(--transitionFast);
 }
 
@@ -180,14 +181,20 @@
     position: relative;
     text-decoration: none;
     transition: var(--transitionFast);
+    height: 197px;
 }
 
 .home .countdown .containerItem {
-    height: 200px;
+    height: 197px;
+    padding-top: 3px;
 }
 
 .home .countdown .card img {
     transition: var(--transitionFast);
+}
+
+.home .countdown .card:hover {
+    margin-top: -3px;
 }
 
 .home .countdown .card:hover img {

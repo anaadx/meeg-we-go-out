@@ -3,12 +3,9 @@
 }
 
 .artist .firstContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 0px 0px 20px 20px;
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .artist .container {

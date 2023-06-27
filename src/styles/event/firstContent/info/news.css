@@ -1,0 +1,134 @@
+.event .info .news {
+    width: 100%;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    background-color: var(--neutral7);
+}
+
+.event .info .news .title {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.event .info .news .title h2 {
+    font-size: 18px;
+    font-family: var(--font1);
+    color: var(--neutral1);
+    float: left;
+}
+
+.event .info .news .title .seeAll {
+    font-size: 14px;
+    font-family: var(--font1);
+    color: var(--main1);
+    float: left;
+    margin-left: 10px;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+.event .info .news .title .seeAll:hover {
+    color: var(--pinkHover);
+}
+
+.event .info .news ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 700px;
+    width: 100%;
+}
+
+.event .info .news li {
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--neutral5);
+    height: 100px;
+}
+
+.event .info .news li:hover {
+    margin-top: -3px;
+}
+
+.event .info .news li:hover img {
+    margin-top: -5px;
+    margin-left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 5px);
+}
+
+.event .info .news li a {
+    display: flex;
+    text-decoration: none;
+    gap: 5px;
+}
+
+.event .info .news li figure {
+    position: relative;
+    width: 130px;
+    height: 100px;
+    border-radius: 5px 0px 0px 5px;
+    overflow: hidden;
+}
+
+.event .info .news li div {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 130px);
+    padding: 10px;
+}
+
+.event .info .news li div h3,
+.event .info .news li div span {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.event .info .news li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(min-width: 1024px) {
+
+    .event .info .news .title h2 {
+        font-size: 24px;
+    }
+
+    .event .info .news li div h3,
+    .event .info .news li div span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .event .info .news {
+        padding: 0px 40px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .event .info .news ul {
+        gap: 20px;
+        max-height: 100%;
+        width: calc(100% - 10px);
+    }
+
+    .event .info .news li {
+        border-radius: 10px;
+        height: 150px;
+    }
+
+    .event .info .news li figure {
+        height: 150px;
+        width: 200px;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .event .info .news li div {
+        gap: 10px;
+        padding: 15px;
+        width: calc(100% - 200px);
+    }
+}

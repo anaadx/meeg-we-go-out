@@ -1,0 +1,11 @@
+.release .info {
+    width: 50%;
+    float: left;
+}
+
+@media (max-width: 1024px) {
+    .release .info {
+        width: 100%;
+        min-width: 300px
+    }
+}
