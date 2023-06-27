@@ -34,6 +34,7 @@ header .go {
     background-image: url(../../assets/linktree/arrow-right.svg);
     background-repeat: no-repeat;
     text-align: initial;
+    text-decoration: none;
 }
 
 header .go:hover {
@@ -120,6 +121,7 @@ header .go:hover {
     background-color: var(--neutral5);
     height: 100px;
     overflow: hidden;
+    transition: var(--transitionFast);
 }
 
 .linktree .cards a div:hover {
@@ -139,6 +141,7 @@ header .go:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: var(--transitionFast);
 }
 
 .linktree .cards a div:hover img {
@@ -219,6 +222,12 @@ header .go:hover {
     .linktree .cards {
         grid-template-columns: 1fr;
         gap: 10px;
+        margin: 0;
+    }
+
+    .linktree .cards a {
+        width: calc(100% - 60px);
+        margin: 0px 30px;
     }
 
     header img {

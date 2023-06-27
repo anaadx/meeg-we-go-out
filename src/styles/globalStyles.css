@@ -53,6 +53,23 @@ main {
     --transitionSlow: all 2s;
 }
 
+body::-webkit-scrollbar-track {
+    background: var(--neutral1);
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--neutral1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main1);
+    border-radius: 20px;
+}
+
 .fontColor1 {
     color: var(--neutral1)
 }
