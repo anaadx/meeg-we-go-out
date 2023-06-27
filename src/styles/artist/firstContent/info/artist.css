@@ -45,6 +45,7 @@
         flex-direction: column;
         margin-top: -10px;
         align-items: center;
+        width: 100%;
     }
 
     .artist .artitstMain .photo {
@@ -76,7 +77,7 @@
 
     .artist .artitstMain .photoBackground {
         width: 100%;
-        background-image: url(../../../assets/foto-artista.svg);
+        background-image: url(../../../../assets/foto-artista.svg);
         background-size: 140%;
         filter: blur(25px);
         height: 140%;
@@ -92,6 +93,7 @@
         background-color: var(--neutral2);
         position: relative;
         padding: 0px 20px;
+        margin-bottom: 70px
     }
 
     .artist .artitstMain .content .icons {

@@ -2,7 +2,8 @@
     display: flex;
     width: 100%;
     margin-top: 80px;
-    height: 100%;
+    height: calc(100vh - 140px);
+    margin-left: 40px;
 }
 
 .release .releasetMain .photo {
@@ -12,10 +13,10 @@
 }
 
 .release .releasetMain .photo {
-    width: 50%;
+    width: 100%;
     padding-right: 20px;
     position: relative;
-    height: calc(100% - 80px);
+    height: 100%
 }
 
 .release .releasetMain .photo .photoArtist {
@@ -30,6 +31,7 @@
 .release .releasetMain figure {
     position: relative;
     height: 100%;
+    margin-right: 40px;
 }
 
 .release .releasetMain .photo img {
@@ -50,6 +52,8 @@
     justify-content: center;
     width: calc(50% - 40px);
     padding-left: 40px;
+    position: absolute;
+    top: -10000px;
 }
 
 .release .releasetMain .content .icons {
@@ -92,7 +96,7 @@
 }
 
 .release .releasetMain .content .music:before {
-    background-image: url(../../../assets/icone-musica.svg);
+    background-image: url(../../../../assets/icone-musica.svg);
     content: "";
     display: block;
     width: 15px;
@@ -104,7 +108,7 @@
 }
 
 .release .releasetMain .content .record:before {
-    background-image: url(../../../assets/icone-gravadora.svg);
+    background-image: url(../../../../assets/icone-gravadora.svg);
     content: "";
     display: block;
     width: 15px;
@@ -116,7 +120,7 @@
 }
 
 .release .releasetMain .content .calendar:before {
-    background-image: url(../../../assets/icone-calendario.svg);
+    background-image: url(../../../../assets/icone-calendario.svg);
     content: "";
     display: block;
     width: 15px;
@@ -128,7 +132,7 @@
 }
 
 .release .releasetMain .content .star:before {
-    background-image: url(../../../assets/icone-estrela.svg);
+    background-image: url(../../../../assets/icone-estrela.svg);
     content: "";
     display: block;
     width: 15px;
@@ -144,23 +148,27 @@
     .release .releasetMain {
         display: flex;
         flex-direction: column;
-        margin-top: -10px;
+        margin-top: 50px;
         align-items: center;
+        margin-left: 0px;
+        height: min-content;
     }
 
     .release .releasetMain .photo {
         width: 100%;
-        height: 380px;
         padding-right: 0px;
     }
 
     .release .releasetMain figure {
-        height: 57%;
+        margin-right: 0px;
+        width: 270px;
+        height: 100%
     }
 
     .release .releasetMain .photo .photoArtist {
         width: 100%;
-        height: 100%;
+        height: 270px;
+        margin-top: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -171,16 +179,16 @@
     }
 
     .release .releasetMain .photo img {
-        width: 270px;
-        height: 270px
+        height: 100%;
+        width: 100%;
     }
 
     .release .releasetMain .photoBackground {
         width: 100%;
-        background-image: url(../../../assets/lançamento1.svg);
+        background-image: url(../../../../assets/lançamento1.svg);
         background-size: 120%;
         filter: blur(25px);
-        height: 140%;
+        height: 450px;
         margin-top: -110px;
         background-position: center;
         background-repeat: no-repeat;
@@ -193,6 +201,7 @@
         background-color: var(--neutral2);
         position: relative;
         padding: 0px 20px;
+        top: -25px;
     }
 
     .release .releasetMain .content h1 {

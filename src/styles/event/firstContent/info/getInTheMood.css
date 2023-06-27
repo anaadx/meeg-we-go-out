@@ -1,7 +1,8 @@
 .event .info .getInTheMood {
     width: 100%;
     padding: 0px 40px;
-    margin-top: 60px;
+    padding-top: 60px;
+    background-color: var(--neutral7);
 }
 
 .event .info .getInTheMood .title {
@@ -22,7 +23,7 @@
 @media(max-width: 1024px) {
     .event .info .getInTheMood {
         padding: 0px 20px;
-        margin-top: 40px;
+        padding-top: 40px;
     }
 
     .event .info .getInTheMood .title h2 {

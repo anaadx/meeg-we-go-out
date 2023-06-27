@@ -84,7 +84,124 @@
     object-fit: cover;
 }
 
-.artist .info .artistNews .blankPart {
+.artist .content {
+    width: 50%;
+    float: right;
+    position: absolute;
+    top: -10000px;
+}
+
+.artist .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(50% - 40px);
+    padding-left: 40px;
+    height: calc(100% - 80px);
+}
+
+.artist .content .icons {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 35px;
+}
+
+.artist .content .icons a {
+    padding: 20px;
+    display: block;
+    display: flex;
+    background-color: var(--neutral1);
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.artist .content .icons a.insta {
+    background-image: url(../../../../assets/icone-instagram-branco.svg);
+}
+
+.artist .content .icons a.facebook {
+    background-image: url(../../../../assets/icone-facebook.svg);
+}
+
+.artist .content .icons a.spotify {
+    background-image: url(../../../../assets/icone-spotify.svg);
+}
+
+.artist .content .icons a.tiktok {
+    background-image: url(../../../../assets/icone-tiktok.svg);
+}
+
+.artist .content .icons a:hover {
+    background-color: var(--greyHover);
+}
+
+.artist .content h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+.artist .content p {
+    font-size: 14px;
+}
+
+.artist .content .country {
+    border-bottom: 1px solid var(--greyHover);
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.artist .content .iconWrapper {
+    display: flex;
+    border-bottom: 1px solid var(--greyHover);
+    padding: 20px 0px;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+
+.artist .content .music:before {
+    background-image: url(../../../../assets/icone-musica.svg);
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.artist .content .record:before {
+    background-image: url(../../../../assets/icone-gravadora.svg);
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.artist .content .country:before {
+    background-image: url(../../../../assets/icone-localizacao.svg);
+    content: "";
+    display: block;
+    width: 15px;
+    height: 20px;
+    float: left;
+    margin-right: 10px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.artist .blankPart {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -99,6 +216,13 @@
 @media(max-width: 1024px) {
     .artist .info .artistNews {
         padding: 35px 20px 10px 20px;
+    }
+
+    .artist .content {
+        width: 50%;
+        float: right;
+        position: absolute;
+        top: 0px;
     }
 
     .artist .info .artistNews .listItems .item {

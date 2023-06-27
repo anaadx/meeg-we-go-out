@@ -1,7 +1,8 @@
 .event .artists {
     width: 100%;
     padding: 0px 40px;
-    margin-top: 60px;
+    padding-top: 60px;
+    background-color: var(--neutral7);
 }
 
 .event .artists .title {
@@ -69,7 +70,7 @@
 
     .event .artists {
         padding: 0px 20px;
-        margin-top: 40px;
+        padding-top: 40px;
     }
 
     .event .artists ul li a img {

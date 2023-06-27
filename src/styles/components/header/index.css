@@ -1,7 +1,7 @@
 /* options (where to put the class and type of header)
-
-modalMenu > activeHighlight (active on nav)
-links > highlightLink (active on link)
+menu > noBackground (background transparent)
+modalMenu > activeHighlight (active-on nav)
+links > highlightLink (active-on link)
 menu > bigLogo (bigger mobile logo)
 menu > scroll (header scroll) */
 
@@ -21,6 +21,10 @@ menu > scroll (header scroll) */
     top: -100px;
     left: 0px;
     right: 0px;
+}
+
+.menu.noBackground {
+    background-color: transparent;
 }
 
 .menu.floated.on {

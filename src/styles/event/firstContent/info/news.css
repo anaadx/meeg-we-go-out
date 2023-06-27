@@ -1,8 +1,9 @@
 .event .info .news {
     width: 100%;
     padding: 0px 20px;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    background-color: var(--neutral7);
 }
 
 .event .info .news .title {
@@ -104,8 +105,8 @@
 
     .event .info .news {
         padding: 0px 40px;
-        margin-top: 60px;
-        margin-bottom: 40px;
+        padding-top: 60px;
+        padding-bottom: 40px;
     }
 
     .event .info .news ul {

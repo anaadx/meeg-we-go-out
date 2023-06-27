@@ -1,9 +1,11 @@
 .event .info {
     width: 50%;
     position: relative;
-    background-color: var(--neutral7);
     border-radius: 20px 20px 0px 0px;
-    box-shadow: 2px -19px 0px 3px var(--neutral2)
+    box-shadow: 2px -19px 0px 3px var(--neutral2);
+    margin-top: 140px;
+    overflow: hidden;
+    float: left;
 }
 
 .event .info .moreInfo {
@@ -19,7 +21,7 @@
     left: 0px;
     right: 0px;
     width: 130px;
-    background-image: url(../../../../../assets/seta-vertical-cima.svg);
+    background-image: url(../../../../assets/seta-vertical-cima.svg);
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: right 11% bottom 55%;
@@ -33,7 +35,8 @@
 @media (max-width: 1024px) {
     .event .info {
         width: 100%;
-        min-width: 300px
+        min-width: 300px;
+        margin-top: 0px;
     }
 
     .event .info .moreInfo {

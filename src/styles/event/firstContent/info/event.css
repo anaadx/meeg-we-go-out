@@ -1,15 +1,15 @@
 .event .eventMain {
     display: flex;
     width: 100%;
-    margin-top: 80px;
-    height: 100%;
-    height: calc(100% - 80px);
+    height: calc(100vh - 180px);
+    margin-bottom: 40px;
 }
 
 .event .eventMain .photo {
-    width: 50%;
+    width: 100%;
     padding-right: 20px;
     position: relative;
+    margin-left: 40px;
 }
 
 .event .eventMain .photo .photoArtist {
@@ -34,26 +34,17 @@
 
 /* CONTENT */
 
-.event .eventMain .content {
-    width: 50%;
+.event .eventMain .complementContent {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
     padding-left: 40px;
+    position: absolute;
+    top: -10000px
 }
 
-.event .eventMain .content {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    padding-left: 40px;
-    ;
-}
-
-.event .eventMain .content h1 {
+.event .eventMain .complementContent h1 {
     font-size: 56px;
     font-family: "Fugaz One";
     line-height: 1.24em;
@@ -82,34 +73,34 @@
     border-radius: 20px;
 }
 
-.event .content p {
+.event .complementContent p {
     font-family: "Lato";
     font-size: 14px;
     line-height: 1.70em;
     color: var(--neutral7);
 }
 
-.event .content .music,
-.event .content .calendarWrapper,
-.event .content .houseWrapper {
+.event .complementContent .music,
+.event .complementContent .calendarWrapper,
+.event .complementContent .houseWrapper {
     padding: 20px 0px;
     border-bottom: 1px solid var(--greyOpacity);
     overflow: hidden;
 }
 
-.event .content .calendarWrapper p:nth-child(1),
-.event .content .houseWrapper p:nth-child(1) {
+.event .complementContent .calendarWrapper p:nth-child(1),
+.event .complementContent .houseWrapper p:nth-child(1) {
     margin-right: 30px;
 }
 
-.event .content .calendarWrapper p,
-.event .content .houseWrapper p,
-.event .content .houseWrapper a,
-.event .content .linkWrapper {
+.event .complementContent .calendarWrapper p,
+.event .complementContent .houseWrapper p,
+.event .complementContent .houseWrapper a,
+.event .complementContent .linkWrapper {
     float: left;
 }
 
-.event .content .houseWrapper a {
+.event .complementContent .houseWrapper a {
     color: var(--main1);
     font-family: var(--font2);
     display: block;
@@ -117,19 +108,19 @@
     justify-self: end;
 }
 
-.event .content .houseWrapper {
+.event .complementContent .houseWrapper {
     display: grid;
     align-items: start;
     grid-template-columns: 2fr 1fr;
     justify-content: space-between;
 }
 
-.event .content .description {
+.event .complementContent .description {
     width: 100%;
     overflow: hidden;
 }
 
-.event .content .icon:before {
+.event .complementContent .icon:before {
     content: "";
     display: block;
     width: 16px;
@@ -142,28 +133,28 @@
     margin-top: 1px;
 }
 
-.event .content .calendar:before {
-    background-image: url(../../../assets/icone-calendario.svg);
+.event .complementContent .calendar:before {
+    background-image: url(../../../../assets/icone-calendario.svg);
 }
 
-.event .content .clock:before {
-    background-image: url(../../../assets/icone-relogio.svg);
+.event .complementContent .clock:before {
+    background-image: url(../../../../assets/icone-relogio.svg);
 }
 
-.event .content .music:before {
-    background-image: url(../../../assets/icone-musica.svg);
+.event .complementContent .music:before {
+    background-image: url(../../../../assets/icone-musica.svg);
 }
 
-.event .content .house:before {
-    background-image: url(../../../assets/icone-casa.svg);
+.event .complementContent .house:before {
+    background-image: url(../../../../assets/icone-casa.svg);
     margin-top: -1px;
 }
 
-.event .content .place:before {
-    background-image: url(../../../assets/icone-localizacao.svg);
+.event .complementContent .place:before {
+    background-image: url(../../../../assets/icone-localizacao.svg);
 }
 
-.event .eventMain .content button {
+.event .eventMain .complementContent button {
     padding: 20px 0px;
     width: 350px;
     background-color: var(--main1);
@@ -175,7 +166,7 @@
     margin-top: 20px;
 }
 
-.event .eventMain .content button:hover {
+.event .eventMain .complementContent button:hover {
     background-color: var(--pinkHover);
 }
 
@@ -195,6 +186,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 400px;
+        height: 100%;
     }
 
     .event .eventMain .photo {
@@ -202,6 +195,8 @@
         height: 370px;
         padding-right: 0px;
         height: 290px;
+        margin-top: 100px;
+        margin-left: 0px;
     }
 
     .event .eventMain .photo .photoArtist {
@@ -223,7 +218,7 @@
 
     .event .eventMain .photoBackground {
         width: 100%;
-        background-image: url(../../../assets/destaque.svg);
+        background-image: url(../../../../assets/destaque.svg);
         background-size: 120%;
         filter: blur(25px);
         height: 140%;
@@ -233,34 +228,35 @@
         opacity: 45%;
     }
 
-    .event .eventMain .content {
+    .event .eventMain .complementContent {
         text-align: center;
         width: 100%;
         padding-left: 0px;
         z-index: 2;
         background-color: var(--neutral2);
         padding: 0px 20px;
+        top: 390px;
     }
 
-    .event .content .text .description {
+    .event .complementContent .text .description {
         margin: 0 auto;
         width: max-content;
     }
 
-    .event .content .text {
+    .event .complementContent .text {
         margin-top: 25px;
         margin-bottom: 40px;
     }
 
-    .event .content .text span {
+    .event .complementContent .text span {
         display: none;
     }
 
-    .event .content .icon:before {
+    .event .complementContent .icon:before {
         margin-top: 0px;
     }
 
-    .event .eventMain .content h1 {
+    .event .eventMain .complementContent h1 {
         font-size: 24px;
         text-align: center;
         margin: 0;
@@ -268,37 +264,37 @@
         margin-top: 15px;
     }
 
-    .event .eventMain .content p {
+    .event .eventMain .complementContent p {
         font-size: 12px;
         text-align: start;
     }
 
-    .event .eventMain .content .house {
+    .event .eventMain .complementContent .house {
         margin-bottom: 15px;
     }
 
-    .event .content .houseWrapper a {
+    .event .complementContent .houseWrapper a {
         align-self: end;
         font-size: 14px;
     }
 
-    .event .content .music,
-    .event .content .calendarWrapper,
-    .event .content .houseWrapper {
+    .event .complementContent .music,
+    .event .complementContent .calendarWrapper,
+    .event .complementContent .houseWrapper {
         padding: 15px 0px;
     }
 
-    .event .eventMain .content button {
+    .event .eventMain .complementContent button {
         width: 100%;
     }
 }
 
-.event .content .houseWrapper a:hover {
+.event .complementContent .houseWrapper a:hover {
     color: var(--pinkHover);
 }
 
 @media(max-width: 650px) {
-    .event .content .houseWrapper p:nth-child(1) {
+    .event .complementContent .houseWrapper p:nth-child(1) {
         margin-right: 0px;
     }
 

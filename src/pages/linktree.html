@@ -4,40 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/libs/sumoselect.min.css"> 
-    <link rel="stylesheet" href="../styles/libs/owl.carousel.min.css">
-    <link rel="stylesheet" href="../styles/libs/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../styles/libs/animate.css"/>
-    <link rel="stylesheet" href="../styles/libs/daterangepicker.css">
-    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/reset.css">  
     <link rel="stylesheet" href="../styles/globalStyles.css">
     <link rel="stylesheet" href="../styles/components/header/index.css"> 
     <link rel="stylesheet" href="../styles/components/header/menuButton.css">
-    <link rel="stylesheet" href="../styles/news/firstContent/index.css"> 
-    <link rel="stylesheet" href="../styles/news/firstContent/search.css">  
-    <link rel="stylesheet" href="../styles/news/extraContent/index.css"> 
-    <link rel="stylesheet" href="../styles/components/advertisement.css">
-    <link rel="stylesheet" href="../styles/news/extraContent/advertisement.css">
-    <link rel="stylesheet" href="../styles/news/extraContent/guide.css"> 
+    <link rel="stylesheet" href="../styles/404/index.css"> 
+    <link rel="stylesheet" href="../styles/components/footer2/index.css">
     <link rel="stylesheet" href="../styles/components/footer2/rights.css">
     <link rel="stylesheet" href="../styles/components/footer2/utils.css">
-    <link rel="stylesheet" href="../styles/components/footer2/index.css">
     <link rel="icon" href="../assets/icon-logo.png" type="image/x-icon">
-    <title>Notícias</title>
+    <title>Não Encontrado</title>
     <script src="../scripts/jquery-3.7.0.min.js"></script>
-    <script src="../scripts/news.js"></script>
     <script src="../scripts/header.js"></script>
 </head> 
 <body>
     <div class="backgroundModal"></div>
-    <header class="menu noBackground static">
+    <header class="menu scroll static">
         <nav>
             <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
             <div class="links activeHighlight">
                 <a href="../pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
-                <a href="news.html" class="font1 fontColor3 fontSize4 highlightLink">NOTÍCIAS</a>
+                <a href="../pages/news.html" class="font1 fontColor3 fontSize4">NOTÍCIAS</a>
                 <a href="../pages/together.html" class="font1 fontColor3 fontSize4">TOGETHER</a>
-                <a href="../pages/artists.html" class="font1 fontColor3 fontSize4">ARTISTAS</a>
+                <a href="artists.html" class="font1 fontColor3 fontSize4 highlightLink">ARTISTAS</a>
                 <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
                 <a href="../pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
             </div>
@@ -114,7 +103,7 @@
             </div>
         </nav> 
     </header>   
-    <header class="menu floated">
+    <header class="menu scroll floated">
         <nav class="navStatic">
             <div class="modal">
                 <span></span>
@@ -198,10 +187,10 @@
         <div class="modalMenu activeHighlight">
             <ul>
                 <li><a href="../../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
-                <li><a href="../pages/events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
-                <li><a href="news.html" class="font1 fontSize4 fontColor3 highlightLink">NOTÍCIAS</a></li>
+                <li><a href="events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
+                <li><a href="../pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
                 <li><a href="../pages/together.html" class="font1 fontSize4 fontColor3">TOGETHER</a></li>
-                <li><a href="../pages/artists.html" class="font1 fontSize4 fontColor3">ARTISTAS</a></li>
+                <li><a href="artists.html" class="font1 fontSize4 fontColor3 highlightLink">ARTISTAS</a></li>
                 <li><a href="../pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
                 <li><a href="../pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
             </ul> 
@@ -226,212 +215,21 @@
             </div>
         </div>
     </header> 
-    <main class="news">
-        <section class="firstContent">
-            <div class="container">
-                <div class="searchEvents"> 
-                    <h2 class="font1 fontColor3">NOTÍCIAS</h2>
-                    <p class="font2 fontSize4 titleDescription fontColor2">
-                        Aqui você encontra as últimas novidades do mundo do entretenimento. Fique por dentro dos melhores festivais, festas imperdíveis, lançamentos mais esperados e muito mais. 
-                    </p>
-                    <form> 
-                        <div class="field">
-                            <label class="font2 fontSize4 fontColor3" for="key-word">Palavra-chave</label>
-                            <input type="text" name="key-word" class="font2 fontSize2 fontColor2" placeholder="Digite a palavra-chave">
-                        </div>
-                        <div class="field">
-                            <label class="font2 fontSize4 fontColor3" for="category">Categoria de Conteúdo</label>
-                            <select name="category" class="selectCategory fontColor2" multiple="multiple">
-                                <option value="Eventos">Eventos</option>
-                                <option value="Festivais">Festivais</option>
-                                <option value="Festas">Festas</option>
-                                <option value="Música">Música</option>      
-                            </select>
-                        </div>
-                        <button type="button" class="goSearch">Go</button>
-                    </form>
-                    <div class="darkWave"></div>
-                </div>
-            </div>
-        </section>
-        <section class="extraContent">
-            <div class="containerExtra">
-                <div class="guide">
-                    <div class="title">
-                        <h2 class="font1 fontColor1">RESULTADOS DA BUSCA</h2>
-                        <div class="text"> 
-                            <h3 class="font2 fontColor1">12 resultados</h3>
-                            <div class="filterAZ">
-                                <p class="font2 fontColor1 fontSize3 orderby">Ordenado por</p>
-                                <div class="field">
-                                    <select class="font2 fontColor4 fontSize3 selectAZ">
-                                        <option value="Mais recentes">Mais recentes</option>
-                                        <option value="Mais antigos">Mais antigos</option>
-                                        <option value="Mais populares">Mais populares</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="listGuide">
-                        <div class="item">
-                            <a href="singleNews.html">
-                                <figure>
-                                    <img src="../assets/guia1.svg" alt="XXXPERIENCE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </figure>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">XXXPERIENCE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER</h2>
-                                    <span class="font2 fontSize3 fontColor2">03 de março</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="singleNews.html">
-                                <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </figure>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">05 de março</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="singleNews.html">
-                                <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </figure>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">05 de março</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="singleNews.html">
-                                <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </figure>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">05 de março</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="singleNews.html">
-                                <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </figure>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">05 de março</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="singleNews.html">
-                                <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </figure>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">05 de março</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="singleNews.html">
-                                <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </figure>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">05 de março</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="singleNews.html">
-                                <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </figure>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">05 de março</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="singleNews.html">
-                                <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </figure>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">05 de março</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="singleNews.html">
-                                <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </figure>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">05 de março</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="singleNews.html">
-                                <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
-                                    <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
-                                </figure>
-                                <div>
-                                    <h2 class="font1 fontSize5 fontColor1">LOLLAPALOOZA CHILE 2023 | GUIA: TUDO QUE VOCÊ PRECISA SABER!</h2>
-                                    <span class="font2 fontSize3 fontColor2">05 de março</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <button class="font1 fontSize3 moreItems">CARREGAR MAIS</button>
-                </div>
-                <div class="advertisement"> 
-                    <a class="container" href="../pages/event.html">
-                        <figure class="pictureMobile">
-                            <img src="../assets/anuncio-mobile.svg">
-                        </figure>
-                        <figure class="pictureDesk">
-                            <img src="../assets/anuncio.svg">
-                        </figure> 
-                    </a>
-                </div> 
-            </div> 
-        </section>
+    <main class="page404">
+        <div class="picture"></div>
+        <h1>Parece que a batida dessa página está fora do ritmo, mas não se preocupe, estamos trabalhando duro nos bastidores para criar uma experiência épica para você. </h1>
+        <a href="../../index.html">VOLTAR À PAGINA INICIAL</a>
     </main> 
-    <footer class="biggerContainer">
+    <footer>
         <div class="container">
             <section class="utils">
                 <nav class="navigation">
                     <a class="font1 fontSize4 fontColor2" href="../../index.html">INICIO</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/events.html">EVENTOS</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/eventForm.html">ENVIE UM EVENTO</a>
-                    <a class="font1 fontSize4 fontColor2 highlightLink" href="news.html">NOTÍCIAS</a>
+                    <a class="font1 fontSize4 fontColor2" href="../pages/news.html">NOTÍCIAS</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/together.html">TOGETHER</a>
-                    <a class="font1 fontSize4 fontColor2" href="../pages/artists.html">ARTISTAS</a>
+                    <a class="font1 fontSize4 fontColor2 highlightLink" href="artists.html">ARTISTAS</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/releases.html">LANÇAMENTOS</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/releaseForm.html">ENVIE UM LANÇAMENTO</a>
                     <a class="font1 fontSize4 fontColor2" href="../pages/about.html">SOBRE</a>
@@ -510,15 +308,5 @@
             </section>
         </div>
     </footer> 
-    <script src="../scripts/jquery.sumoselect.min.js"></script> 
-    <script src="../scripts/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <script>
-         $(document).ready(function () {
-             $('.selectCategory').SumoSelect({search: false, placeholder:"Selecione a categoria", floatWidth: 0,});
-             $('.selectAZ').SumoSelect({search: false, placeholder:"Mais recentes", floatWidth: 0,});
-        });
-    </script>
 </body>
 </html>
