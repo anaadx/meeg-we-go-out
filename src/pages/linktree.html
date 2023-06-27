@@ -2,311 +2,181 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">  
     <link rel="stylesheet" href="../styles/globalStyles.css">
-    <link rel="stylesheet" href="../styles/components/header/index.css"> 
-    <link rel="stylesheet" href="../styles/components/header/menuButton.css">
-    <link rel="stylesheet" href="../styles/404/index.css"> 
-    <link rel="stylesheet" href="../styles/components/footer2/index.css">
-    <link rel="stylesheet" href="../styles/components/footer2/rights.css">
-    <link rel="stylesheet" href="../styles/components/footer2/utils.css">
+    <link rel="stylesheet" href="../styles/linktree/index.css">
     <link rel="icon" href="../assets/icon-logo.png" type="image/x-icon">
-    <title>Não Encontrado</title>
-    <script src="../scripts/jquery-3.7.0.min.js"></script>
-    <script src="../scripts/header.js"></script>
-</head> 
+    <title>Linktree</title>
+</head>
 <body>
-    <div class="backgroundModal"></div>
-    <header class="menu scroll static">
-        <nav>
-            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
-            <div class="links activeHighlight">
-                <a href="../pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
-                <a href="../pages/news.html" class="font1 fontColor3 fontSize4">NOTÍCIAS</a>
-                <a href="../pages/together.html" class="font1 fontColor3 fontSize4">TOGETHER</a>
-                <a href="artists.html" class="font1 fontColor3 fontSize4 highlightLink">ARTISTAS</a>
-                <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
-                <a href="../pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
-            </div>
-            <button class="lupa lupaStatic"><img src="../assets/lupa.svg" alt="lupa"></button>
-            <div class="containerLupa">
-                <div class="containerHide">
-                    <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
-                    <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
-                    <button class="closeLupa"><img src="../assets/closeLupa.svg" alt="lupa"></button>
-                    <div class="modalLupa desk">
-                        <ul class="listItems">
-                            <li class="item">
-                                <a href="../pages/search.html">
-                                    <figure>
-                                        <img src="../assets/modalLupa1.svg">
-                                    </figure>
-                                    <div>
-                                        <h3 class="font1 fontColor3">EVENTOS</h3>
-                                        <p class="font2 fontColor3">15 resultados</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="../pages/search.html">
-                                    <figure>
-                                        <img src="../assets/modalLupa2.svg">
-                                    </figure>
-                                    <div>
-                                        <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
-                                        <p class="font2 fontColor3">5 resultados</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="../pages/search.html">
-                                    <figure>
-                                        <img src="../assets/modalLupa3.svg">
-                                    </figure>
-                                    <div>
-                                        <h3 class="font1 fontColor3">TOGETHER</h3>
-                                        <p class="font2 fontColor3">15 resultados</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="../pages/search.html">
-                                    <figure>
-                                        <img src="../assets/modalLupa4.svg">
-                                    </figure>
-                                    <div>
-                                        <h3 class="font1 fontColor3">NOTÍCIAS</h3>
-                                        <p class="font2 fontColor3">5 resultados</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="../pages/search.html">
-                                    <figure>
-                                        <img src="../assets/modalLupa5.svg">
-                                    </figure>
-                                    <div>
-                                        <h3 class="font1 fontColor3">ARTISTAS</h3>
-                                        <p class="font2 fontColor3">40 resultados</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
-                        <a href="../pages/search.html" class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
-                        <a href="../pages/search.html" class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
-                        <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
-                    </div>
-                </div>
-            </div>
-        </nav> 
-    </header>   
-    <header class="menu scroll floated">
-        <nav class="navStatic">
-            <div class="modal">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
-            <button class="lupa lupaFloated"><img src="../assets/lupa.svg" alt="lupa"></button>
-            <div class="containerLupa">
-                <div class="containerHide">
-                    <button class="closeButtonModal"></button>
-                    <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
-                    <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
-                    <button class="closeLupa"><img src="../assets/closeLupa.svg" alt="lupa"></button>
-                    <div class="modalLupa mobile">
-                        <ul class="listItems">
-                            <li class="item">
-                                <a href="../pages/search.html">
-                                    <figure>
-                                        <img src="../assets/modalLupa1.svg">
-                                    </figure>
-                                    <div>
-                                        <h3 class="font1 fontColor3">EVENTOS</h3>
-                                        <p class="font2 fontColor3">15 resultados</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="../pages/search.html">
-                                    <figure>
-                                        <img src="../assets/modalLupa2.svg">
-                                    </figure>
-                                    <div>
-                                        <h3 class="font1 fontColor3">LANÇAMENTOS</h3>
-                                        <p class="font2 fontColor3">5 resultados</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="../pages/search.html">
-                                    <figure>
-                                        <img src="../assets/modalLupa3.svg">
-                                    </figure>
-                                    <div>
-                                        <h3 class="font1 fontColor3">TOGETHER</h3>
-                                        <p class="font2 fontColor3">15 resultados</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="../pages/search.html">
-                                    <figure>
-                                        <img src="../assets/modalLupa4.svg">
-                                    </figure>
-                                    <div>
-                                        <h3 class="font1 fontColor3">NOTÍCIAS</h3>
-                                        <p class="font2 fontColor3">5 resultados</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="item">
-                                <a href="../pages/search.html">
-                                    <figure>
-                                        <img src="../assets/modalLupa5.svg">
-                                    </figure>
-                                    <div>
-                                        <h3 class="font1 fontColor3">ARTISTAS</h3>
-                                        <p class="font2 fontColor3">40 resultados</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <h2 class="font1 sugestions fontColor3">SUGESTÕES</h2>
-                        <a class="font2 textModal fontColor3">Festas Sunset São Paulo</a>
-                        <a class="font2 textModal fontColor3">Prepare-se para os festivais Sunset</a>
-                        <a href="../pages/search.html" class="font1 fontSize3 fontColor4 seeAll">VER TODOS OS RESULTADOS</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="modalMenu activeHighlight">
-            <ul>
-                <li><a href="../../index.html" class="font1 fontSize4 fontColor3">INÍCIO</a></li>
-                <li><a href="events.html" class="font1 fontSize4 fontColor3">EVENTOS</a></li>
-                <li><a href="../pages/news.html" class="font1 fontSize4 fontColor3">NOTÍCIAS</a></li>
-                <li><a href="../pages/together.html" class="font1 fontSize4 fontColor3">TOGETHER</a></li>
-                <li><a href="artists.html" class="font1 fontSize4 fontColor3 highlightLink">ARTISTAS</a></li>
-                <li><a href="../pages/releases.html" class="font1 fontSize4 fontColor3">LANÇAMENTOS</a></li>
-                <li><a href="../pages/about.html" class="font1 fontSize4 fontColor3">SOBRE</a></li>
-            </ul> 
-            <div class="buttons">
-                <button class="font1 fontSize3 fontColor3 buttonBlackLarge">ENVIE UM LANÇAMENTO</button>
-                <button class="font1 fontSize3 buttonPinkLarge">ENVIE UM EVENTO</button>
-            </div> 
-                <h2 class="font1 fontSize4 fontColor3">SIGA O WE GO OUT</h2>
-                <div class="icons">
-                <a class="littleIcon" href="https://www.instagram.com/wegoout/">
-                    <img class="littleIcon"  src="../assets/icone-instagram.svg">
-                </a>
-                <a class="littleIcon" href="https://www.facebook.com/wegoout.br/?locale=pt_BR" >
-                    <img class="littleIcon" src="../assets/icone-facebook.svg">
-                </a>
-                <a class="littleIcon" href="https://www.youtube.com/@WeGoOut">
-                    <img class="littleIcon" src="../assets/icone-youtube.svg">
-                </a>
-                <a class="littleIcon" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
-                    <img class="littleIcon" src="../assets/icone-spotify.svg">
-                </a>
-            </div>
-        </div>
+    <header>
+        <img src="../assets/linktree/logo.svg" alt="logo We Go Out">
+        <a class="go">IR PARA O SITE</a>
     </header> 
-    <main class="page404">
-        <div class="picture"></div>
-        <h1>Parece que a batida dessa página está fora do ritmo, mas não se preocupe, estamos trabalhando duro nos bastidores para criar uma experiência épica para você. </h1>
-        <a href="../../index.html">VOLTAR À PAGINA INICIAL</a>
-    </main> 
-    <footer>
-        <div class="container">
-            <section class="utils">
-                <nav class="navigation">
-                    <a class="font1 fontSize4 fontColor2" href="../../index.html">INICIO</a>
-                    <a class="font1 fontSize4 fontColor2" href="../pages/events.html">EVENTOS</a>
-                    <a class="font1 fontSize4 fontColor2" href="../pages/eventForm.html">ENVIE UM EVENTO</a>
-                    <a class="font1 fontSize4 fontColor2" href="../pages/news.html">NOTÍCIAS</a>
-                    <a class="font1 fontSize4 fontColor2" href="../pages/together.html">TOGETHER</a>
-                    <a class="font1 fontSize4 fontColor2 highlightLink" href="artists.html">ARTISTAS</a>
-                    <a class="font1 fontSize4 fontColor2" href="../pages/releases.html">LANÇAMENTOS</a>
-                    <a class="font1 fontSize4 fontColor2" href="../pages/releaseForm.html">ENVIE UM LANÇAMENTO</a>
-                    <a class="font1 fontSize4 fontColor2" href="../pages/about.html">SOBRE</a>
-                </nav>
-                <div class="highlightEvents">
-                    <h2 class="font1 fontSize5 fontColor3">EVENTOS EM DESTAQUE</h2>
-                    <ul>
-                        <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
-                        </li>
-                        <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Goptun com Jamie xx</a>
-                        </li>
-                        <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">NAFF SP | Fisher & Chris Lake</a>
-                        </li>
-                        <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival Rio de Janeiro</a>
-                        </li>
-                        <li>
-                            <a class="font2 fontSize3 fontColor3 event" href="../pages/event.html">Mita festival São Paulo</a>
-                        </li>
-                    </ul>
-                    <a class="font1 fontSize3 fontColor4 seeAll" href="../pages/events.html">VER TUDO</a>
-                </div>
-                <div class="follow">
-                    <h2 class="font1 fontSize5 fontColor3">SIGA O WE GO OUT</h2>
-                    <ul>
-                        <li>
-                            <a class="icone insta" href="https://www.instagram.com/wegoout/">
-                                <p class="font2 fontSize4 fontColor3">@wegoout</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="icone facebook" href="https://www.facebook.com/wegoout.br/?locale=pt_BR">
-                                <p class="font2 fontSize4 fontColor3">/wegoout.br</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="icone youtube" href="https://www.youtube.com/@WeGoOut">
-                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="icone spotify" href="https://open.spotify.com/user/12149669374?si=1ec736824a7749b5">
-                                <p class="font2 fontSize4 fontColor3">/wegoout</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <form class="newsletter">
-                    <h2 class="font1 fontSize5 fontColor3">NEWSLETTER</h2>
-                    <p class="font2 fontSize3 fontColor2">Quer receber descontos e mais informações sobre festas e festivais?</p>                  
-                    <input class="font2 fontSize3 fontColor2" type="text" name="name" placeholder="Nome e sobrenome"/>
-                    <input class="font2 fontSize3 fontColor2" type="text" name="email" placeholder="Email"/>
-                    <input class="font2 fontSize3 fontColor2" type="text" name="whatsapp" placeholder="Whatsapp"/>
-                    <button class="font1 fontSize3 fontColor3" type="submit">CADASTRAR</button>
-                </form>
-            </section>
-            <section class="rights">  
-                <div class="logo">
-                    <img src="../assets/logo-dark.svg">
-                    <div class="text">
-                        <p class="font2 fontSize2 fontColor2">Todos os direitos reservados a We Go Out 2023®
-                            CNPJ: 12.345.678/0001-10</p>
-                        <p class="font2 fontSize2 fontColor2">A We Go Out Ltda, inscrita sob o CNPJ: 12.345.678/0001-10 é uma instituição devidamente habilitada e autorizada. Toda comunicação através da rede mundial de computadores está sujeita a interrupções ou atrasos, podendo impedir ou prejudicar o envio ou a recepção de informações atualizadas.</p>
-                        <a class="font2 fontSize2" href="mailto:contato@wegoout.com">contato@wegoout.com</a>
-                    </div>
-                </div>
-                <div class="politics">
-                    <a class="font1 fontSize2 fontColor2" href="../pages/politicsAndTerms.html">POLÍTICA DE PRIVACIDADE</a>
-                    <a class="font1 fontSize2 fontColor2" href="../pages/cookiesPolitics.html">POLÍTICA DE COOKIES</a>
-                </div>
-                <div class="footerWave2"></div>
-                <div class="footerWave3"></div>
-            </section>
-        </div>
-    </footer> 
+    <main class="linktree">
+        <h2>CLIQUE E ENCONTRE O QUE VOCÊ PRECISA!</h2>
+        <nav class="cards">
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img1.svg">
+                    </figure>
+                    <h3>LET'S PIPA PACOTES - CUPOM LETSWEGOOUT</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img2.svg">
+                    </figure>
+                    <h3>LET'S PIPA PIX - SEM TAXA</h3>
+                </div>    
+            </a>   
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img3.svg">
+                    </figure>
+                    <h3>SORTEIO XXXPERIENCE -
+                        PREENCHA O FORMULÁRIO</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img4.svg">
+                    </figure>
+                    <h3>SÓ TRACK BOA SÃO PAULO 26 E 27/05</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img5.svg">
+                    </figure>
+                    <h3>GLITTERBOX na Arca 07/08</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img6.svg">
+                    </figure>
+                    <h3>XXXPERIENCE FESTIVAL
+                        24/08</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img7.svg">
+                    </figure>
+                    <h3>ISSO NÃO É UMA FESTA RJ
+                        (08/07)</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <h3>INSTAGRAM WEGOOUT @WEGOOUT</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img8.svg">
+                    </figure>
+                    <h3>UNDER WAVES STORE - USE O CUPOM WEGOOUT15</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img9.svg">
+                    </figure>
+                    <h3>TOMORROWLAND BÉLGICA 2023 - GARANTA SEU PACOTE COM A INSIDE</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img10.svg">
+                    </figure>
+                    <h3>LET'S PIPA AVULSOS - CUPOM LETSWEGOOUT</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img11.svg">
+                    </figure>
+                    <h3>LET'S PIPA AVULSOS PIX - SEM TAXA</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img12.svg">
+                    </figure>
+                    <h3>SAARA SHOWCASE 20/05 - CREMA CLUB</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img13.svg">
+                    </figure>
+                    <h3>LAROC | GORDON CITY + MOCHAKK 03/06</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img14.svg">
+                    </figure>
+                    <h3>AME CLUB ÂME MELODIQUE 10/06</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img15.svg">
+                    </figure>
+                    <h3>FESTA HELVETIA 24/06 - INGRESSOS SEM TAXA</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img16.svg">
+                    </figure>
+                    <h3>BORIS BREJCHA IN CONCERT - 15/12</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <h3>GRUPOS DE WHATSAPP - WE GO OUT TOGETHER</h3>
+                </div>    
+            </a>
+            <a>
+                <div>
+                    <figure>
+                        <img src="../assets/linktree/img17.svg">
+                    </figure>
+                    <h3>TOMORROWLAND BÉLGICA 2023 - GARANTA SEU PACOTE COM A INSIDE</h3>
+                </div>    
+            </a>
+        </nav>
+        <p>contato@wegoout.com.br</p>
+        <nav class="socials">
+            <a class="facebook"></a>
+            <a class="instagram"></a>
+            <a class="youtube"></a>
+            <a class="spotify"></a>
+        </nav>
+        <span>Todos os direitos reservados a We Go Out 2023® CNPJ: 12.345.678/0001-10</span>
+        <div class="wave1"></div>
+        <div class="wave2"></div>
+    </main>
 </body>
 </html>
