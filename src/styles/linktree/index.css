@@ -41,33 +41,21 @@ header .go:hover {
     background-color: var(--neutral4);
 }
 
+body {
+    background-image: url(../../assets/linktree/wave1.svg);
+    background-position: calc(0% + -262px) calc(0% + -507px);
+    background-repeat: no-repeat;
+    background-size: 790px;
+    padding-bottom: 330px;
+}
+
 .linktree {
     position: relative;
     margin-top: -65px;
-}
-
-.linktree .wave1 {
-    background-image: url(../../assets/linktree/wave1.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 1000px;
-    height: 1150px;
-    position: absolute;
-    top: -723px;
-    left: -281px;
-    z-index: -1;
-}
-
-.linktree .wave2 {
     background-image: url(../../assets/linktree/wave2.svg);
-    background-size: 100%;
+    background-position: calc(100% + 265px) calc(100% + 119px);
     background-repeat: no-repeat;
-    width: 1000px;
-    height: 1000px;
-    position: absolute;
-    bottom: -44px;
-    right: -405px;
-    z-index: -1;
+    background-size: 790px;
 }
 
 .linktree p {
@@ -212,12 +200,8 @@ header .go:hover {
     line-height: 1.3em;
 }
 
-@media (max-width: 1024px) {
 
-    .linktree .wave1,
-    .linktree .wave2 {
-        display: none;
-    }
+@media (max-width: 1024px) {
 
     .linktree .cards {
         grid-template-columns: 1fr;
