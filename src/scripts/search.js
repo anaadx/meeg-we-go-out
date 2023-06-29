@@ -86,7 +86,7 @@ $(document).ready(function () {
     },
   });
 
-  $(".carouseltogether").owlCarousel({
+  $(".carouselCommunity").owlCarousel({
     navSpeed: 500,
     loop: false,
     center: false,
