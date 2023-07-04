@@ -23,12 +23,12 @@
 
 .artist .info .about .moreInfo {
     margin: 0 auto;
-    padding: 15px;
+    padding: 20px;
     color: var(--neutral6);
     background-color: var(--main1);
     border-radius: 10px 10px 0px 0px;
     position: absolute;
-    top: -47px;
+    top: -57px;
     border: none;
     z-index: 2;
     left: 0px;

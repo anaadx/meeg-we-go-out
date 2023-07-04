@@ -41,7 +41,7 @@
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../../../../../assets/icone-hotel.svg);
+    background-image: url(../../../../../src/assets/icone-hotel.svg);
     float: left;
 }
 
