@@ -6,6 +6,10 @@ footer .utils {
     margin-top: 50px;
 }
 
+footer.sugestions .utils {
+    margin-top: 270px;
+}
+
 footer .utils .navigation {
     width: calc(25% - 30px);
     z-index: 1;

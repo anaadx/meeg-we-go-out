@@ -133,15 +133,17 @@
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
-    height: 260px
+    height: 0px;
+    padding-top: 100%;
 }
 
 .event .similar .carouselEvents .item figure img {
-    max-height: 380px;
+    position: absolute;
+    top: 0px;
 }
 
 .event .similar .carouselEvents {
-    width: calc(100% - 50px)
+    width: 100%
 }
 
 .event .similar .carouselEvents .item .calendar {
@@ -167,7 +169,6 @@
 
 .event .similar .owl-carousel .owl-nav {
     top: -25px;
-    right: -50px
 }
 
 @media(max-width: 1024px) {
@@ -175,6 +176,14 @@
     .event .similar .carouselEvents .text p {
         font-size: 12px;
         line-height: 15px;
+    }
+
+    .event .similar .carouselEvents {
+        width: calc(100% - 50px)
+    }
+
+    .event .similar .carouselEvents .item figure {
+        height: auto;
     }
 
     .event .similar .title {

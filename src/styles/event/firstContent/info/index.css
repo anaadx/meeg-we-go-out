@@ -37,6 +37,7 @@
         width: 100%;
         min-width: 300px;
         margin-top: 0px;
+        border-radius: 0px;
     }
 
     .event .info .moreInfo {
@@ -46,8 +47,9 @@
         background-color: var(--neutral7);
         color: black;
         background-position: right 5% bottom 55%;
-        background-image: url(../../../../../assets/seta-vertical-cima-dark.svg);
-        top: 0px;
+        background-image: url(../../../../assets/seta-vertical-cima-dark.svg);
+        position: fixed;
+        top: calc(100% - 57px);
     }
 
     .event .info .moreInfo:hover {

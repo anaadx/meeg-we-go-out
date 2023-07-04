@@ -25,7 +25,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .event .eventMain .photo .icons {
@@ -60,6 +60,7 @@
     font-family: "Lato";
     background-color: var(--main2);
     vertical-align: middle;
+    color: var(--neutral7)
 }
 
 .event .eventMain .tag2 {
@@ -151,7 +152,7 @@
 }
 
 .event .complementContent .place:before {
-    background-image: url(../../../../assets/icone-localizacao.svg);
+    background-image: url(../../../../assets/icone-localizacao-branco.svg);
 }
 
 .event .eventMain .complementContent button {
@@ -164,6 +165,7 @@
     border: none;
     border-radius: 5px;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .event .eventMain .complementContent button:hover {
@@ -186,15 +188,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 400px;
+        margin-bottom: 410px;
         height: 100%;
+        border-radius: 0px 0px 10px 10px;
+        background-color: var(--neutral1);
+        overflow: hidden;
     }
 
     .event .eventMain .photo {
         width: 100%;
-        height: 370px;
         padding-right: 0px;
-        height: 290px;
+        height: 300px;
         margin-top: 100px;
         margin-left: 0px;
     }
@@ -205,6 +209,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        top: 5px;
     }
 
     .event .eventMain .tag1 {
@@ -235,7 +240,7 @@
         z-index: 2;
         background-color: var(--neutral2);
         padding: 0px 20px;
-        top: 390px;
+        top: 405px;
     }
 
     .event .complementContent .text .description {

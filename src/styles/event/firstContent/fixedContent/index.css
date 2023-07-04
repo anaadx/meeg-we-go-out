@@ -59,9 +59,13 @@
 
 .event .fixedContent .calendarWrapper p,
 .event .fixedContent .houseWrapper p,
-.event .fixedContent .houseWrapper a,
 .event .fixedContent .linkWrapper {
     float: left;
+}
+
+.event .fixedContent .houseWrapper a {
+    float: right;
+    line-height: 24px;
 }
 
 .event .houseWrapper a {
@@ -70,13 +74,6 @@
     display: block;
     align-self: center;
     justify-self: end;
-}
-
-.event .fixedContent .houseWrapper {
-    display: grid;
-    align-items: start;
-    grid-template-columns: 2fr 1fr;
-    justify-content: space-between;
 }
 
 .event .fixedContent .description {
@@ -115,7 +112,8 @@
 }
 
 .event .fixedContent .place:before {
-    background-image: url(../../../assets/icone-localizacao.svg);
+    background-image: url(../../../../assets/icone-localizacao-branco.svg);
+    height: 21px;
 }
 
 .event .fixedContent button {
