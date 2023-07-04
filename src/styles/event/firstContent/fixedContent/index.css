@@ -76,12 +76,6 @@
     justify-self: end;
 }
 
-/* .event .fixedContent .houseWrapper {
-    display: 
-    align-items: start;
-    justify-content: space-between;
-} */
-
 .event .fixedContent .description {
     width: 100%;
     overflow: hidden;
@@ -118,7 +112,8 @@
 }
 
 .event .fixedContent .place:before {
-    background-image: url(../../../assets/icone-localizacao.svg);
+    background-image: url(../../../../assets/icone-localizacao-branco.svg);
+    height: 21px;
 }
 
 .event .fixedContent button {

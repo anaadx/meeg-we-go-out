@@ -7,6 +7,7 @@ footer {
     justify-content: center;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden;
+    position: relative;
 }
 
 footer .container {
@@ -42,6 +43,11 @@ footer .container {
     position: absolute;
     bottom: 100000px;
     width: 723px
+}
+
+.footer .sugestions {
+    position: absolute;
+    left: -10000px;
 }
 
 footer .rights .politics .highlightLink {
