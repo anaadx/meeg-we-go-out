@@ -44,7 +44,7 @@ footer .sugestions .card .content p {
 
 footer .sugestions .card .content a {
     width: 185px;
-    padding: 15px 0px;
+    padding: 20px;
     background-color: var(--main1);
     border: none;
     margin-top: 10px;
