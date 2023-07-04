@@ -1,14 +1,13 @@
 .singleNews .newsMain {
     display: flex;
     width: 100%;
-    margin-top: 80px;
-    height: 100%;
-    height: calc(100vh - 110px);
+    margin-top: 140px;
+    height: calc(100% - 140px);
 }
 
 .singleNews .newsMain .photo {
     width: 50%;
-    padding-left: 20px;
+    padding-left: 40px;
     position: relative;
     height: 100%;
 }
@@ -20,7 +19,7 @@
 
 .singleNews .newsMain .photo img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
     height: 100%;
     object-fit: cover;
 }
@@ -36,7 +35,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 40px;
+    padding-right: 40px;
     ;
 }
 
@@ -51,8 +50,7 @@
 
 .singleNews .content .text {
     position: relative;
-    margin-top: 262px;
-    margin-bottom: 205px;
+    align-self: center;
 }
 
 .singleNews .content .text span {
@@ -119,12 +117,12 @@
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 80px;
+        margin-top: 20px;
     }
 
     .singleNews .newsMain .photo {
         padding: 0px 40px;
-        width: calc(100% - 40px);
+        width: 100%;
         height: 270px;
     }
 
@@ -136,7 +134,7 @@
         font-size: 24px;
         text-align: center;
         width: 100%;
-        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .singleNews .content .text .description {
@@ -162,6 +160,8 @@
 
     .singleNews .content .text h3 {
         font-size: 12px;
+        line-height: 15px;
+        float: right;
     }
 
     .singleNews .content .text .profile .description {
@@ -174,6 +174,6 @@
 
     .singleNews .content .text .date h3:before,
     .singleNews .content .text .profile img {
-        margin-right: 5px;
+        margin-right: 10px;
     }
 }

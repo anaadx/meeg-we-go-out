@@ -59,9 +59,13 @@
 
 .event .fixedContent .calendarWrapper p,
 .event .fixedContent .houseWrapper p,
-.event .fixedContent .houseWrapper a,
 .event .fixedContent .linkWrapper {
     float: left;
+}
+
+.event .fixedContent .houseWrapper a {
+    float: right;
+    line-height: 24px;
 }
 
 .event .houseWrapper a {
@@ -72,12 +76,11 @@
     justify-self: end;
 }
 
-.event .fixedContent .houseWrapper {
-    display: grid;
+/* .event .fixedContent .houseWrapper {
+    display: 
     align-items: start;
-    grid-template-columns: 2fr 1fr;
     justify-content: space-between;
-}
+} */
 
 .event .fixedContent .description {
     width: 100%;

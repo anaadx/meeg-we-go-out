@@ -7,13 +7,13 @@
     justify-content: center;
     border-radius: 0px 0px 20px 20px;
     position: relative;
+    height: calc(100vh - 40px);
 }
 
 .singleNews .container {
     width: 100%;
     margin: 0px 40px;
     gap: 50px;
-    margin-top: 30px;
 }
 
 .singleNews .darkWave {
@@ -28,10 +28,22 @@
 }
 
 @media(max-width: 1024px) {
+
+    .tag2 {
+        position: absolute;
+        left: 0px;
+    }
+
     .singleNews .container {
         width: 100%;
         gap: 50px;
         margin-bottom: 0px;
         width: calc(100% - 40px);
+        height: min-content;
+        margin-top: 90px;
+    }
+
+    .singleNews .firstContent {
+        height: min-content
     }
 }
