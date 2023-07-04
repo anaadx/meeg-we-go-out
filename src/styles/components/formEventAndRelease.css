@@ -29,7 +29,7 @@ form .container::-webkit-scrollbar-thumb {
 }
 
 form .container {
-    height: calc(100vh - 188px);
+    height: calc(100vh - 20px);
     overflow-y: scroll;
     margin: 40px 40px;
     margin-bottom: 80px;
@@ -426,7 +426,7 @@ form .fieldWrapper p {
 
 form button {
     margin-top: 20px;
-    padding: 15px 20px;
+    padding: 20px;
     color: var(--neutral6);
     background-color: var(--main1);
     border-radius: 5px;

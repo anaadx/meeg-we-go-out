@@ -63,6 +63,11 @@
         font-size: 18px;
     }
 
+    .about .partners a {
+        padding: 20px;
+        height: 65px;
+    }
+
     .about .partners {
         margin-bottom: 60px;
     }

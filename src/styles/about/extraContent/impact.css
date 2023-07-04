@@ -61,7 +61,7 @@
 }
 
 .about .impact button {
-    padding: 15px;
+    padding: 25px 0px;
     color: var(--neutral7);
     background-color: var(--main1);
     border-radius: 5px;
@@ -72,7 +72,6 @@
     font-family: 'Fugaz One';
     font-size: 14px;
     position: relative;
-    padding: 25px 0px;
 }
 
 .about .impact button::before {
