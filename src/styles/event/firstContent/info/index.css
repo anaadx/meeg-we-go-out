@@ -15,13 +15,13 @@
     background-color: var(--main1);
     border-radius: 10px 10px 0px 0px;
     position: absolute;
-    bottom: 57px;
+    top: -57px;
     border: none;
     z-index: 2;
     left: 0px;
     right: 0px;
     width: 130px;
-    background-image: url(../../../../assets/seta-vertical-cima-dark.svg);
+    background-image: url(../../../../assets/seta-vertical-cima.svg);
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: right 11% bottom 55%;
@@ -49,7 +49,7 @@
         background-position: right 5% bottom 55%;
         background-image: url(../../../../assets/seta-vertical-cima-dark.svg);
         position: fixed;
-        bottom: 0px;
+        top: calc(100% - 57px);
     }
 
     .event .info .moreInfo:hover {
