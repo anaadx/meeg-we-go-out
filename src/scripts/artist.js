@@ -37,10 +37,10 @@ $(document).ready(function () {
         items: 5,
       },
       1080: {
-        items: 6,
+        items: 7,
       },
       1500: {
-        items: 8,
+        items: 7,
       },
     },
   });
