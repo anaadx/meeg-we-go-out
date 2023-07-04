@@ -31,7 +31,7 @@
     width: 100%;
 }
 
-.news .searchEvents form button {
+.news .searchEvents form .go {
     width: 140px;
     padding: 18px 20px;
     align-self: flex-end;
@@ -41,7 +41,7 @@
     border: none;
 }
 
-.news .searchEvents form button:hover {
+.news .searchEvents form .go:hover {
     background-color: var(--pinkHover);
 }
 
@@ -188,6 +188,7 @@
         gap: 10px;
         width: 100%;
         z-index: 4;
+        margin: 0 auto;
         margin-bottom: 50px;
     }
 

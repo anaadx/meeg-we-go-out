@@ -30,12 +30,14 @@
 .terms .advertisement .pictureMobile img {
     height: 100%;
     width: 265px;
+    border-radius: 10px;
 }
 
 .terms .advertisement .pictureDesk img {
     width: 1000px;
     height: 100%;
     max-width: 100%;
+    border-radius: 10px;
 }
 
 

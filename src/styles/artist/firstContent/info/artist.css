@@ -1,9 +1,9 @@
 .artist .artitstMain {
     display: flex;
-    height: calc(100vh - 160px);
+    height: calc(100vh - 180px);
     width: calc(100% - 80px);
     margin: 40px;
-    margin-top: 120px;
+    margin-top: 140px;
 }
 
 .artist .artitstMain .photo {

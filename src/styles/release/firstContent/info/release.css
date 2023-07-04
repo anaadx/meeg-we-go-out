@@ -1,8 +1,8 @@
 .release .releasetMain {
     display: flex;
     width: 100%;
-    margin-top: 80px;
-    height: calc(100vh - 140px);
+    margin-top: 100px;
+    height: calc(100vh - 160px);
     margin-left: 40px;
 }
 

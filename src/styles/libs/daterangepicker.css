@@ -208,7 +208,6 @@
 .daterangepicker td.in-range {
     background-color: var(--neutral2);
     border-color: transparent;
-    color: #000;
     border-radius: 0;
 }
 

@@ -68,6 +68,11 @@ footer .rights .politics .highlightLink {
         gap: 50px;
     }
 
+    .biggerContainer .container {
+        width: calc(100% - 40px);
+        max-width: calc(100% - 40px);
+    }
+
     .filterSearchMode footer {
         display: none;
     }

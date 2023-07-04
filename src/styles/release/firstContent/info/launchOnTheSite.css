@@ -21,16 +21,19 @@
     background-size: 800px;
 }
 
-.release .launchOnTheSite button {
+.release .launchOnTheSite a {
     padding: 15px 20px;
     background-color: var(--main1);
     border-radius: 5px;
     border: none;
     z-index: 1;
     width: max-content;
+    text-decoration: none;
+    margin-top: 20px;
+    display: block;
 }
 
-.release .launchOnTheSite button:hover {
+.release .launchOnTheSite a:hover {
     background-color: var(--pinkHover);
 }
 
@@ -85,5 +88,14 @@
 
     .release .launchOnTheSite .blankPart {
         display: none;
+    }
+
+    .release .launchOnTheSite .content h2 {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .release .launchOnTheSite p {
+        font-size: 14px;
     }
 }

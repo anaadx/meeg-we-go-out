@@ -92,7 +92,7 @@
 
 .events .featured .location:before {
     background-image: url("../../../assets/icone-localizacao.svg");
-    margin-top: -5px;
+    margin-top: -3px;
 }
 
 .events .featured .calendar:before {

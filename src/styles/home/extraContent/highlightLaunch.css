@@ -115,6 +115,8 @@
 
     .home .highlightLaunch .content iframe {
         width: 100%;
+        position: relative;
+        height: 440px;
     }
 
     .home .highlightLaunch .carouselHighlightLaunch .item h3 {

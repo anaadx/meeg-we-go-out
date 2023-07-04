@@ -36,7 +36,7 @@
 }
 
 .releases .highlightLaunch .carouselHighlightLaunch {
-    width: calc(100% - 50px)
+    width: 100%
 }
 
 .releases .highlightLaunch .carouselHighlightLaunch .item {
@@ -70,13 +70,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
     margin-bottom: 15px;
 }
 
 .releases .highlightLaunch .owl-carousel .owl-nav {
     position: absolute;
     top: -63px;
-    right: -50px;
     margin-top: 0px;
 }
 
@@ -101,6 +101,10 @@
 @media(max-width: 1024px) {
     .releases .highlightLaunch .content iframe {
         width: 100%;
+    }
+
+    .releases .highlightLaunch .carouselHighlightLaunch {
+        width: calc(100% - 50px)
     }
 
     .releases .highlightLaunch {

@@ -71,11 +71,11 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 
 .componentGuide .owl-carousel .owl-nav {
     top: -45px;
-    right: -50px;
 }
 
 .componentGuide .owl-carousel .owl-stage-outer {
@@ -83,13 +83,13 @@
 }
 
 .componentGuide .carouselGuide {
-    width: calc(100% - 50px)
+    width: 100%
 }
 
 @media(max-width: 1025px) {
 
     .componentGuide {
-        width: 100%;
+        width: calc(100% - 50px);
     }
 
     .componentGuide .title {
