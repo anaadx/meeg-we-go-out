@@ -71,8 +71,8 @@
     margin-bottom: 10px;
 }
 
-.search .together .carouseltogether {
-    width: calc(100% - 50px);
+.search .together .carouselCommnunity {
+    width: 100%
 }
 
 .search .together .owl-carousel .owl-stage-outer {
@@ -80,6 +80,10 @@
 }
 
 @media (max-width: 1024px) {
+
+    .search .together .carouselCommnunity {
+        width: calc(100% - 50px);
+    }
 
     .search .together {
         margin-bottom: 70px;
