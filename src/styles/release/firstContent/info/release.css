@@ -185,7 +185,7 @@
 
     .release .releasetMain .photoBackground {
         width: 100%;
-        background-image: url(../../../../assets/lançamento1.svg);
+        background-image: url(../../../../assets/release/release.jpg);
         background-size: 120%;
         filter: blur(25px);
         height: 450px;
