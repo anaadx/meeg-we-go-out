@@ -133,11 +133,13 @@
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
-    height: 324px
+    height: 0px;
+    padding-top: 100%;
 }
 
 .event .similar .carouselEvents .item figure img {
-    max-height: 380px;
+    position: absolute;
+    top: 0px;
 }
 
 .event .similar .carouselEvents {

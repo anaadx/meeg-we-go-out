@@ -63,11 +63,27 @@
     }
 
     .together .bestEvents {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     .together .bestEvents .carouselBestEvents {
         width: calc(100% - 150px);
+    }
+
+    .together .bestEvents .carouselBestEvents a {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .together .bestEvents .carouselBestEvents a p {
+        grid-template-columns: 15px 1fr;
+        font-size: 12px;
+    }
+
+    .together .bestEvents .carouselBestEvents a .icon:before {
+        width: 15px;
+        height: 20px;
+        background-size: 15px;
     }
 
 }
