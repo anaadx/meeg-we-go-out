@@ -6,7 +6,7 @@
     width: 100%;
     display: grid;
     width: 100%;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 95px;
     grid-column-gap: 10px;
     transition: var(--transitionSlow);
 }
@@ -15,7 +15,7 @@
     width: 100%;
 }
 
-.searchTool form button {
+.searchTool form .go {
     width: 95px;
     padding: 18px 20px;
     align-self: flex-end;
@@ -25,21 +25,32 @@
     border: none;
 }
 
-.searchTool form button:hover {
+.searchTool form .go:hover {
     background-color: var(--pinkHover);
 }
 
 .searchTool form input {
-    background-color: var(--enutral1);
+    background-color: var(--neutral1);
     border: 3px solid var(--neutral2);
     padding: 14.5px 8px;
     border-radius: 3px;
+    font-size: 14px;
+    color: var(--neutral7);
+}
+
+.searchTool form input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.searchTool form input::placeholder {
+    color: var(--neutral3);
 }
 
 .searchTool form input:hover,
 .searchTool form input:focus {
     box-shadow: 0 0 2px var(--neutral7);
-    border-color: var(--neutral7)
+    border-color: 5px var(--neutral7)
 }
 
 .searchTool form .field {
@@ -48,6 +59,7 @@
     flex-direction: column;
     gap: 10px;
     align-content: center;
+    position: relative;
 }
 
 .searchTool form .name {
@@ -66,7 +78,7 @@
 }
 
 .searchTool form .placeTip .placeTipOpen {
-    width: 290px;
+    width: 279px;
     padding: 10px 20px;
     background-color: var(--neutral3);
     position: absolute;
@@ -79,8 +91,8 @@
 }
 
 .placeTipActive .searchTool form .placeTip .placeTipOpen {
-    top: -269px;
-    left: -71px;
+    top: -283px;
+    left: -60px;
     transition: var(--transitionMedium)
 }
 
@@ -248,6 +260,34 @@
     background-image: url(../../assets/mini-icone-local.svg);
 }
 
+.searchTool form .clearButton {
+    background-color: var(--neutral1);
+    position: absolute;
+    right: 8px;
+    top: 33px;
+    width: 25px;
+    height: 35px;
+    background-image: url(../../assets/botao-lupa-X.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    z-index: -3;
+    opacity: 0%;
+    padding: 0px;
+    border: none;
+}
+
+.searchTool .SumoSelect[is-selected="true"]+.clearButton,
+.searchTool .SumoSelect.open+.clearButton {
+    opacity: 100%;
+    z-index: 10;
+}
+
+.searchTool .SumoSelect[is-selected="true"]+.clearButton:hover,
+.searchTool .SumoSelect.open+.clearButton:hover {
+    opacity: 100%;
+    background-color: var(--neutral1);
+}
 
 @media(max-width: 1024px) {
 
@@ -282,7 +322,7 @@
         font-size: 14px;
     }
 
-    .searchTool form button {
+    .searchTool form .go {
         margin-top: 100px;
         margin-bottom: 30px;
         width: 100%;

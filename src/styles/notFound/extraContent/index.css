@@ -61,8 +61,8 @@
 
 .search .containerExtra .leftWave {
     position: absolute;
-    top: 324px;
-    left: -484px;
+    top: 190px;
+    left: -637px;
     transition: 45g;
     transform: rotate(-15deg);
     background-image: url(../../../assets/onda-esquerda-notFound.svg);
@@ -75,8 +75,8 @@
 
 .search .containerExtra .rightWave {
     position: absolute;
-    top: 166px;
-    right: -45px;
+    top: 12px;
+    right: -549px;
     transform: rotate(32deg);
     background-image: url(../../../assets/onda-direita-notFound.svg);
     background-size: 100%;

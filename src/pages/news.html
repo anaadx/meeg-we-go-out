@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../styles/components/header/menuButton.css">
     <link rel="stylesheet" href="../styles/news/firstContent/index.css"> 
     <link rel="stylesheet" href="../styles/news/firstContent/search.css">  
+    <link rel="stylesheet" href="../styles/components/search.css"> 
     <link rel="stylesheet" href="../styles/news/extraContent/index.css"> 
     <link rel="stylesheet" href="../styles/components/advertisement.css">
     <link rel="stylesheet" href="../styles/news/extraContent/advertisement.css">
@@ -32,7 +33,9 @@
     <div class="backgroundModal"></div>
     <header class="menu noBackground static">
         <nav>
-            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            <a href="../../index.html">   
+                <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            </a>
             <div class="links activeHighlight">
                 <a href="../pages/events.html" class="font1 fontColor3 fontSize4">EVENTOS</a>
                 <a href="news.html" class="font1 fontColor3 fontSize4 highlightLink">NOTÍCIAS</a>
@@ -41,11 +44,10 @@
                 <a href="../pages/releases.html" class="font1 fontColor3 fontSize4">LANÇAMENTOS</a>
                 <a href="../pages/about.html" class="font1 fontColor3 fontSize4">SOBRE</a>
             </div>
-            <button class="lupa lupaStatic"><img src="../assets/lupa.svg" alt="lupa"></button>
             <div class="containerLupa">
                 <div class="containerHide">
                     <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
-                    <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                    <button class="lupaContainerItem lupa lupaStatic"><img src="../assets/lupa.svg" alt="lupa"></button>
                     <button class="closeLupa"><img src="../assets/closeLupa.svg" alt="lupa"></button>
                     <div class="modalLupa desk">
                         <ul class="listItems">
@@ -121,13 +123,14 @@
                 <span></span>
                 <span></span>
             </div>
-            <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
-            <button class="lupa lupaFloated"><img src="../assets/lupa.svg" alt="lupa"></button>
-            <div class="containerLupa">
+            <a href="../../index.html">   
+                <img class="logo" src="../assets/logo.svg" alt="logo We Go Out">
+            </a>
+              <div class="containerLupa">
                 <div class="containerHide">
                     <button class="closeButtonModal"></button>
                     <input type="text" placeholder="Digite sua pesquisa" class="font2 fontSize2 fontColor2 inputLupa">
-                    <button class="lupaContainerItem"><img src="../assets/lupa.svg" alt="lupa"></button>
+                    <button class="lupaContainerItem lupa lupaFloated"><img src="../assets/lupa.svg" alt="lupa"></button>
                     <button class="closeLupa"><img src="../assets/closeLupa.svg" alt="lupa"></button>
                     <div class="modalLupa mobile">
                         <ul class="listItems">
@@ -229,7 +232,7 @@
     <main class="news">
         <section class="firstContent">
             <div class="container">
-                <div class="searchEvents"> 
+                <div class="searchEvents searchTool"> 
                     <h2 class="font1 fontColor3">NOTÍCIAS</h2>
                     <p class="font2 fontSize4 titleDescription fontColor2">
                         Aqui você encontra as últimas novidades do mundo do entretenimento. Fique por dentro dos melhores festivais, festas imperdíveis, lançamentos mais esperados e muito mais. 
@@ -247,8 +250,9 @@
                                 <option value="Festas">Festas</option>
                                 <option value="Música">Música</option>      
                             </select>
+                            <button class="clearButton categoryButton"></button>
                         </div>
-                        <button type="button" class="goSearch">Go</button>
+                        <button type="button" class="goSearch go">Go</button>
                     </form>
                     <div class="darkWave"></div>
                 </div>
@@ -277,7 +281,7 @@
                         <div class="item">
                             <a href="singleNews.html">
                                 <figure>
-                                    <img src="../assets/guia1.svg" alt="XXXPERIENCE 2023">
+                                    <img src="../assets/news/img1.jpg" alt="XXXPERIENCE 2023">
                                     <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
                                 </figure>
                                 <div>
@@ -289,7 +293,7 @@
                         <div class="item">
                             <a href="singleNews.html">
                                 <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                    <img src="../assets/news/img2.jpg" alt="LOLLAPALOOZA CHILE 2023">
                                     <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
                                 </figure>
                                 <div>
@@ -301,7 +305,7 @@
                         <div class="item">
                             <a href="singleNews.html">
                                 <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                    <img src="../assets/news/img3.jpg" alt="LOLLAPALOOZA CHILE 2023">
                                     <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
                                 </figure>
                                 <div>
@@ -313,7 +317,7 @@
                         <div class="item">
                             <a href="singleNews.html">
                                 <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                    <img src="../assets/news/img4.jpg" alt="LOLLAPALOOZA CHILE 2023">
                                     <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
                                 </figure>
                                 <div>
@@ -325,7 +329,7 @@
                         <div class="item">
                             <a href="singleNews.html">
                                 <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                    <img src="../assets/news/img5.jpg" alt="LOLLAPALOOZA CHILE 2023">
                                     <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
                                 </figure>
                                 <div>
@@ -337,7 +341,7 @@
                         <div class="item">
                             <a href="singleNews.html">
                                 <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                    <img src="../assets/news/img6.jpg" alt="LOLLAPALOOZA CHILE 2023">
                                     <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
                                 </figure>
                                 <div>
@@ -349,7 +353,7 @@
                         <div class="item">
                             <a href="singleNews.html">
                                 <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                    <img src="../assets/news/img7.jpg" alt="LOLLAPALOOZA CHILE 2023">
                                     <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
                                 </figure>
                                 <div>
@@ -361,7 +365,7 @@
                         <div class="item">
                             <a href="singleNews.html">
                                 <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                    <img src="../assets/news/img8.jpg" alt="LOLLAPALOOZA CHILE 2023">
                                     <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
                                 </figure>
                                 <div>
@@ -373,7 +377,7 @@
                         <div class="item">
                             <a href="singleNews.html">
                                 <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                    <img src="../assets/news/img9.jpg" alt="LOLLAPALOOZA CHILE 2023">
                                     <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
                                 </figure>
                                 <div>
@@ -385,7 +389,7 @@
                         <div class="item">
                             <a href="singleNews.html">
                                 <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                    <img src="../assets/news/img10.jpg" alt="LOLLAPALOOZA CHILE 2023">
                                     <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
                                 </figure>
                                 <div>
@@ -397,7 +401,7 @@
                         <div class="item">
                             <a href="singleNews.html">
                                 <figure>
-                                    <img src="../assets/guia2.svg" alt="LOLLAPALOOZA CHILE 2023">
+                                    <img src="../assets/news/img11.jpg" alt="LOLLAPALOOZA CHILE 2023">
                                     <span class="font2 fontSize2 fontColor3 tag backgroundPurple">FESTIVAIS</span>
                                 </figure>
                                 <div>
@@ -412,10 +416,10 @@
                 <div class="advertisement"> 
                     <a class="container" href="../pages/event.html">
                         <figure class="pictureMobile">
-                            <img src="../assets/anuncio-mobile.svg">
+                            <img src="../assets/home/ads-mobile.jpg">
                         </figure>
                         <figure class="pictureDesk">
-                            <img src="../assets/anuncio.svg">
+                            <img src="../assets/home/ads.jpg">
                         </figure> 
                     </a>
                 </div> 
@@ -493,7 +497,9 @@
             </section>
             <section class="rights">  
                 <div class="logo">
-                    <img src="../assets/logo-dark.svg">
+                    <a href="../../index.html">   
+                        <img src="../assets/logo-dark.svg" alt="logo We Go Out">
+                    </a>
                     <div class="text">
                         <p class="font2 fontSize2 fontColor2">Todos os direitos reservados a We Go Out 2023®
                             CNPJ: 12.345.678/0001-10</p>

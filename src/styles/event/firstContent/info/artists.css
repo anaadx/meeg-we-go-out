@@ -49,9 +49,10 @@
 
 .event .artists ul li a img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 20px;
     object-fit: cover;
+    height: 130px;
 }
 
 .event .artists .seeAll {

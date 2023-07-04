@@ -1,7 +1,7 @@
 .artistsHighlights .carouselArtists {
     display: flex;
     gap: 5px;
-    width: calc(100% - 50px)
+    width: 100%
 }
 
 .artistsHighlights .carouselArtists .item {
@@ -21,13 +21,12 @@
 
 .artistsHighlights .carouselArtists .item a img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
 .artistsHighlights .owl-carousel .owl-nav {
     top: -45px;
-    right: -50px;
 }
 
 .artistsHighlights .owl-nav img {
@@ -40,6 +39,11 @@
 }
 
 @media(max-width: 1024px) {
+
+    .artistsHighlights .carouselArtists {
+        width: calc(100% - 50px)
+    }
+
     .artistsHighlights .carouselArtists .item a img {
         margin-bottom: 5px;
     }

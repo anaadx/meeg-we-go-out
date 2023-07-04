@@ -20,7 +20,7 @@
         position: fixed;
         left: 0px;
         right: 0px;
-        top: -10000px;
+        bottom: -10000px;
         background-color: var(--neutral1);
         z-index: 10;
         box-shadow: 2px -70px 5px 0px var(--greyOpacity);
@@ -30,7 +30,7 @@
     }
 
     .searchEventsModalActive .searchEvents {
-        top: 25px;
+        bottom: -90px;
         transition: var(--transitionMedium)
     }
 

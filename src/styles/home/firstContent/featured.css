@@ -95,6 +95,12 @@
     margin-top: -5px;
 }
 
+.home .featured .emphasis .location:before {
+    background-image: url("../../../assets/icone-localizacao.svg");
+    margin-top: -1px;
+}
+
+
 .home .featured .calendar:before {
     background-image: url("../../../assets/icone-calendario.svg");
 }
@@ -164,6 +170,7 @@
     height: 100%;
 }
 
+
 .home .countdown .item .containerItem:nth-child(1) {
     margin-bottom: 20px;
 }
@@ -173,7 +180,7 @@
 }
 
 .home .countdown .card {
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     display: flex;
     gap: 20px;
@@ -191,6 +198,7 @@
 
 .home .countdown .card img {
     transition: var(--transitionFast);
+    height: 100%;
 }
 
 .home .countdown .card:hover {
@@ -201,15 +209,16 @@
     width: calc(100% + 10px);
     margin-left: -5px;
     margin-top: -5px;
+    height: calc(100% + 5px);
 }
 
 .home .countdown .card figure {
     position: relative;
     width: 160px;
-    height: 160px;
     display: block;
     overflow: hidden;
     border-radius: 10px;
+    height: 100%;
 }
 
 .home .countdown .carouselCountdown .text h2 {
@@ -254,6 +263,10 @@
     .home .featured {
         flex-direction: column;
         margin-top: 20px;
+    }
+
+    .home .countdown .iconWrapper {
+        flex-direction: column;
     }
 
     .home .emphasis {
@@ -349,6 +362,7 @@
 
     .home .countdown .text {
         gap: 10px;
+        width: calc(100% - 155px);
     }
 
     .home .countdown .carouselCountdown .text p {
@@ -366,15 +380,20 @@
 
     .home .countdown .card figure {
         width: 130px;
-        height: 130px;
+        height: 100%;
     }
 
     .home .countdown .card img {
         width: 130px;
+        height: 100%;
     }
 
     .home .countdown .card {
         height: 170px;
         gap: 15px;
+    }
+
+    .home .countdown .item .containerItem:nth-child(1) {
+        margin-bottom: 0px;
     }
 }

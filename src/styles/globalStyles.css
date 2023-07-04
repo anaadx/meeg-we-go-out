@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-
 a,
 img,
 button,
@@ -8,7 +7,6 @@ button,
 li {
     transition: var(--transitionFast);
 }
-
 
 body {
     width: 100%;
@@ -42,6 +40,7 @@ main {
     --greenHover: #2ea74c;
     --greyOpacity: #373434;
     --boxShadowOpacity: #969595;
+    --hoverSelect: #4E4C4C;
     --font1: "Fugaz One";
     --font2: "Lato";
     --borderRadius1: 3px;
@@ -251,7 +250,6 @@ button {
     background-color: var(--pinkHover);
 }
 
-
 .buttonPinkSmall {
     width: fit-content;
     align-self: center;
@@ -301,7 +299,6 @@ button {
 .buttonXClose span:nth-child(2) {
     transform: rotate(45deg);
 }
-
 
 @media(max-width: 1024px) {
     .tag {

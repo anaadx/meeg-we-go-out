@@ -32,6 +32,7 @@
     margin-top: 30px;
     margin-bottom: 20px;
     display: block;
+    font-style: italic;
 }
 
 .release .info .about q:before {
@@ -104,6 +105,14 @@
         padding: 40px 20px 10px 20px;
     }
 
+    .release .info .about h2 {
+        font-size: 18px;
+    }
+
+    .release .info .about p {
+        font-size: 14px
+    }
+
     .release .info .about .moreInfo {
         padding: 20px;
         border-radius: 20px 20px 0px 0px;
@@ -116,5 +125,9 @@
 
     .release .info .about .moreInfo:hover {
         background-color: var(--neutral7);
+    }
+
+    .release .info .about q {
+        font-size: 14px;
     }
 }

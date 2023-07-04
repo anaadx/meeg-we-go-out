@@ -116,6 +116,7 @@
     height: 100%;
     object-fit: cover;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .singleNews .info .content figcaption {
