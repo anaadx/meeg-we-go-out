@@ -169,7 +169,7 @@
 
 .events .nextEvents button {
     width: max-content;
-    padding: 10px 20px;
+    padding: 20px;
     color: var(--neutral6);
     background-color: var(--main1);
     border-radius: 5px;
