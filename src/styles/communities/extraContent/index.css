@@ -28,7 +28,7 @@
 
     .together .containerExtra {
         width: calc(100% - 40px);
-        margin-top: 10px;
+        margin-top: 20px;
         gap: 50px;
     }
 }

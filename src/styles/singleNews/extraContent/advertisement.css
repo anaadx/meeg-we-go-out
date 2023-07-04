@@ -17,4 +17,8 @@
         padding-bottom: 35px;
     }
 
+    .singleNews .advertisement .container {
+        height: min-content;
+    }
+
 }

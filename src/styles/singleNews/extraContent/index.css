@@ -13,7 +13,8 @@
     align-self: center;
 }
 
-.singleNews .extraContent .indexButton {
+.singleNews .extraContent .indexButton,
+.modalLupaActive .singleNews .extraContent .indexButton {
     position: absolute;
     bottom: 100000px;
 }
