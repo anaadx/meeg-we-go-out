@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    width: calc(100% - 50px)
+    width: 100%
 }
 
 .events .bestEvents .carouselBestEvents a {
@@ -88,7 +88,6 @@
 
 .events .bestEvents .owl-carousel .owl-nav {
     top: -45px;
-    right: -50px
 }
 
 .events .bestEvents .owl-carousel .owl-stage-outer {
@@ -99,6 +98,7 @@
 
     .events .bestEvents {
         margin-bottom: 30px;
+        width: calc(100% - 50px)
     }
 
     .events .bestEvents .title {
