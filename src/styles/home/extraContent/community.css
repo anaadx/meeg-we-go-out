@@ -155,7 +155,7 @@
     }
 
     .home .together .text {
-        width: calc(100% - 40px);
+        width: 100%;
         gap: 20px;
     }
 
