@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo Daterangepicker</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+<body>
+  <input type="text" name="daterange" />
+  <script src="https://momentjs.com/downloads/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      moment.locale('pt');
+
+      $('input[name="daterange"]').daterangepicker();
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
