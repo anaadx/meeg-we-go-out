@@ -17,12 +17,13 @@
 
 .searchTool form .go {
     width: 95px;
-    padding: 18px 20px;
+    padding: 15px 20px;
     align-self: flex-end;
     color: var(--neutral5);
     background-color: var(--main1);
     border-radius: 5px;
     border: none;
+    font-family: var(--font1);
 }
 
 .searchTool form .go:hover {
