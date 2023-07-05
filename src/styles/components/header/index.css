@@ -454,7 +454,7 @@ body.menuDrop .menu.floated {
     display: flex;
     gap: 5px;
     padding: 0px 20px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 .modalMenu .icons a:hover {
@@ -472,7 +472,7 @@ body.modalLupaActive {
 }
 
 .menuDrop .modalMenu {
-    top: 80px;
+    top: 100px;
 }
 
 .menuDrop .menu.floated nav {

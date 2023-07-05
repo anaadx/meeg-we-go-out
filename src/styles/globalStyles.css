@@ -135,8 +135,8 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     left: 0px;
     top: 10px;
-    border-radius: 0px 3px 3px 0px;
-    padding: 9.5px 14px;
+    border-radius: 0px 5px 5px 0px;
+    padding: 9px 10px;
     width: fit-content;
     font-size: 10px;
     font-family: "Lato";

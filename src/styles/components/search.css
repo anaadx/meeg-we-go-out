@@ -37,21 +37,21 @@
     border-radius: 3px;
     font-size: 14px;
     color: var(--neutral7);
+    transition: var(--transitionFast);
+}
+
+.searchTool form input:hover {
+    border-color: var(--neutral3);
 }
 
 .searchTool form input:focus {
-    box-shadow: 0 0 0 0;
     outline: 0;
+    box-shadow: 0 0 2px var(--neutral7);
+    border-color: var(--neutral7)
 }
 
 .searchTool form input::placeholder {
     color: var(--neutral3);
-}
-
-.searchTool form input:hover,
-.searchTool form input:focus {
-    box-shadow: 0 0 2px var(--neutral7);
-    border-color: 5px var(--neutral7)
 }
 
 .searchTool form .field {

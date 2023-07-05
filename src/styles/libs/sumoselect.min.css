@@ -116,12 +116,16 @@
     outline: 0
 }
 
-.SumoSelect.open>.CaptionCont,
-.SumoSelect:focus>.CaptionCont,
 .SumoSelect:hover>.CaptionCont {
+    border-color: var(--neutral3)
+}
+
+.SumoSelect.open>.CaptionCont,
+.SumoSelect:focus>.CaptionCont {
     box-shadow: 0 0 2px var(--neutral7);
     border-color: var(--neutral7)
 }
+
 
 .SumoSelect>.CaptionCont {
     position: relative;
