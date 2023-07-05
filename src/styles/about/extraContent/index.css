@@ -41,6 +41,11 @@
 }
 
 @media(max-width: 1024px) {
+
+    .about .extraContent {
+        border-radius: 10px 10px 0px 0px;
+    }
+
     .about .containerExtra {
         width: calc(100% - 40px);
     }

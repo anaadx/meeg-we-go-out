@@ -35,6 +35,9 @@
     <script src="./src/scripts/jquery-3.7.0.min.js"></script>
     <script src="./src/scripts/index.js"></script>
     <script src="./src/scripts/header.js"></script>
+    <script src="./src/scripts/daterange-port.js"></script>
+    <script type="text/javascript" src="src/scripts/moment.min.js"></script>
+    <script type="text/javascript" src="src/scripts/daterangepicker.min.js"></script>
 </head> 
 <body>
     <div class="backgroundModal"></div>
@@ -1109,8 +1112,11 @@
     </footer> 
     <script src="./src/scripts/jquery.sumoselect.min.js"></script> 
     <script src="src/scripts/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+        $(document).ready(function() {
+          moment.locale('pt');
+        });
+      </script>
     <script>
          $(document).ready(function () {
              $('.selectName').SumoSelect({search: true, searchText:"Pesquise o nome", placeholder:"Pesquise o nome", noMatch:"Não encontrado",  floatWidth: 0,});

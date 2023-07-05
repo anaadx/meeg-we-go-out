@@ -9,8 +9,8 @@
 }
 
 .send .container {
-    width: calc(100% - 240px);
     margin: 40px 120px;
+    position: fixed;
 }
 
 .send h1 {

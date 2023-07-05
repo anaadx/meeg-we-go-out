@@ -60,12 +60,15 @@
         margin-bottom: 20px;
     }
 
+    .search .emphasis .carouselEvents .text h2 {
+        margin-left: 5px;
+    }
+
     .search .emphasis .carouselEvents .item {
         flex-direction: row;
-        width: calc(100% - 30px);
-        height: min-content;
-        min-height: min-content;
-        padding: 15px
+        height: 160px;
+        padding: 15px;
+        min-height: 160px;
     }
 
     .search .emphasis .carouselEvents {
@@ -84,17 +87,18 @@
     .search .emphasis .carouselEvents .text .iconWrapper {
         flex-direction: column;
         align-self: baseline;
+        margin-left: 5px;
     }
 
     .search .emphasis .carouselEvents .text {
         gap: 0px;
+        width: calc(100% - 140px);
     }
 
     .search .emphasis .carouselEvents .item figure {
-        width: calc(40% - 20px);
-        max-width: 170px;
-        min-width: 130px;
-        height: calc(100% - 40px);
+        width: 130px;
+        padding: 0px;
+        height: 100%;
     }
 
     .search .emphasis .carouselEvents a img {

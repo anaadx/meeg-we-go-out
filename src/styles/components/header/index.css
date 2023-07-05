@@ -46,7 +46,7 @@ header a {
 .menu .containerLupa .lupaContainerItem {
     width: 40px;
     left: 5px;
-    bottom: 10px;
+    bottom: 0px;
     border: solid var(--neutral2);
     position: absolute;
     background-color: transparent;
@@ -54,7 +54,9 @@ header a {
 }
 
 .modalLupaActive .menu .containerLupa .lupaContainerItem {
+    margin-bottom: 0px;
     width: 30px;
+    bottom: 8px;
 }
 
 .aboutMenu.menu.static {
@@ -116,7 +118,6 @@ header a {
     display: block;
     margin-bottom: 2px;
 }
-
 
 .modalLupaActive .menu.static .containerHide,
 .modalLupaActive .menu.floated .containerHide {

@@ -104,10 +104,6 @@ $(document).ready(function () {
     },
   });
 
-  $('input[name="daterange"]').daterangepicker({
-    autoApply: true,
-  });
-
   $(".carouseltogether").owlCarousel({
     navSpeed: 500,
     loop: false,

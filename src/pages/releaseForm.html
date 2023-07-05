@@ -19,6 +19,9 @@
     <script src="../scripts/jquery-3.7.0.min.js"></script>
     <script src="../scripts/form.js"></script>
     <script src="../scripts/header.js"></script>
+    <script src="src/scripts/daterange-port.js"></script>
+    <script type="text/javascript" src="src/scripts/moment.min.js"></script>
+    <script type="text/javascript" src="src/scripts/daterangepicker.min.js"></script>
 </head> 
 <body>
     <div class="backgroundModal"></div>
@@ -108,7 +111,7 @@
             </div>
         </nav> 
     </header>   
-    <header class="menu floated">
+    <header class="menu floated scroll">
         <nav class="navStatic">
             <div class="modal">
                 <span></span>
@@ -227,7 +230,11 @@
                 <div class="eventData">
                     <h2 class="title">DADOS DO LANÇAMENTO</h2>
                     <div class="imgInput">
-                        <div class="picture"></div>
+                        <div class="picture">
+                            <p>Clique aqui para adicionar uma imagem.</p>
+                            <input type="file" id="inputImg" accept="image/*">
+                            <div id="imgPrev"></div>
+                        </div>
                         <div class="text">
                             <h3>Faça upload da imagem do evento</h3>
                             <p>A imagem deve ter menos de 5MB.</p>
@@ -340,8 +347,6 @@
         </section>
     </main> 
     <script src="../scripts/jquery.sumoselect.min.js"></script> 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script>
          $(document).ready(function () {
              $('.selectGender').SumoSelect({search: false, placeholder:"Selecione os gêneros musicais", floatWidth: 0,});

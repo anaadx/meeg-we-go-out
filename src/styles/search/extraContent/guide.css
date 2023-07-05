@@ -21,6 +21,10 @@
     margin-bottom: 10px;
 }
 
+.search .componentGuide .seeAll {
+    right: -40px
+}
+
 @media (max-width: 1024px) {
 
     .search .componentGuide {
