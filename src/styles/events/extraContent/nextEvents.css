@@ -234,9 +234,9 @@
 
     .events .nextEvents .listItems .item {
         flex-direction: row;
-        height: min-content;
-        min-height: min-content;
+        min-height: 160px;
         padding: 15px;
+        height: 160px;
     }
 
     .events .nextEvents .listItems {
@@ -275,7 +275,7 @@
 
     .events .nextEvents .listItems a img {
         width: 100%;
-        height: 100%;
+        height: calc(100% - 20px)
     }
 
     .events .nextEvents .listItems a {
