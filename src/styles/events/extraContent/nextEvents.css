@@ -67,15 +67,20 @@
 .events .nextEvents .listItems .ads a {
     border-radius: 10px;
     height: 100%;
-    padding: 20px;
+    display: block;
+    cursor: pointer;
+    padding-top: 100%;
     background-color: var(--neutral5);
+    position: relative;
 }
 
 .events .nextEvents .listItems .ads a img {
-    object-fit: cover;
     border-radius: 10px;
-    position: relative;
-    height: 100%
+    top: 0px;
+    position: absolute;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    margin: 20px;
 }
 
 .events .nextEvents .listItems .item .calendar {

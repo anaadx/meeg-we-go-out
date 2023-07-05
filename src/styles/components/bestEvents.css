@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    width: calc(100% - 50px)
+    width: 100%
 }
 
 .bestEvents .carouselBestEvents a {
@@ -69,5 +69,9 @@
 @media(max-width: 1024px) {
     .bestEvents .carouselBestEvents a p {
         font-size: 14px;
+    }
+
+    .bestEvents .carouselBestEvents {
+        width: calc(100% - 50px)
     }
 }
