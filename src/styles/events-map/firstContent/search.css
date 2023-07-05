@@ -45,20 +45,21 @@ body.searchOff .events-map form {
     width: 290px;
 }
 
-.events-map .searchEvents .filter .viewMode button {
+.events-map .searchEvents .filter .viewMode a {
     width: 140px;
     padding: 10px 0px;
     border-radius: 20px;
     border: none;
+    text-decoration: none;
 }
 
-.events-map .searchEvents .filter .viewMode button:nth-child(1) {
+.events-map .searchEvents .filter .viewMode a:nth-child(1) {
     float: left;
     background-color: var(--neutral2);
     opacity: 40%;
 }
 
-.events-map .searchEvents .filter .viewMode button:nth-child(2) {
+.events-map .searchEvents .filter .viewMode a:nth-child(2) {
     background-color: var(--neutral1);
     float: left;
 }

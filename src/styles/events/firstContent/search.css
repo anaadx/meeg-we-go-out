@@ -62,19 +62,20 @@
     margin-top: 35px;
 }
 
-.events .searchEvents .filter .viewMode button {
+.events .searchEvents .filter .viewMode a {
     width: 140px;
     padding: 10px 0px;
     border-radius: 20px;
     border: none;
+    text-decoration: none;
 }
 
-.events .searchEvents .filter .viewMode button:nth-child(1) {
+.events .searchEvents .filter .viewMode a:nth-child(1) {
     float: left;
     background-color: var(--neutral1);
 }
 
-.events .searchEvents .filter .viewMode button:nth-child(2) {
+.events .searchEvents .filter .viewMode a:nth-child(2) {
     float: left;
     background-color: var(--neutral2);
     opacity: 40%;
