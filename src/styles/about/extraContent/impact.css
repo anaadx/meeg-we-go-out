@@ -44,6 +44,15 @@
     content: "";
 }
 
+.about .impact .containerGrid .numbers.readingTime {
+    position: absolute;
+    bottom: 0px;
+}
+
+.about .impact .containerGrid .containerNumbers {
+    position: relative;
+}
+
 .about .impact .containerGrid .numbers p {
     margin-top: 30px;
     margin-left: 15px;
@@ -126,6 +135,10 @@
         text-align: center;
         margin-bottom: 20px;
         font-size: 12px;
+    }
+
+    .about .impact .containerGrid .numbers.readingTime {
+        position: relative;
     }
 
     .about .impact button:before {
