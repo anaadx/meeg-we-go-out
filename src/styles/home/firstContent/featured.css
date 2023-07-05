@@ -20,7 +20,6 @@
 .home .emphasis {
     z-index: 1;
     width: calc(60% - 30px);
-    overflow: hidden;
 }
 
 .home .emphasis .title {

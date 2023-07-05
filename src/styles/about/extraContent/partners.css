@@ -33,6 +33,10 @@
     transition: var(--transitionFast);
 }
 
+.about .partners .carouselPartners .item img {
+    object-fit: contain;
+}
+
 .about .partners .owl-carousel .owl-nav {
     position: absolute;
     top: -45px;
