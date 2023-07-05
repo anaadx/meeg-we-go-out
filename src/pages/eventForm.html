@@ -108,7 +108,7 @@
             </div>
         </nav> 
     </header>   
-    <header class="menu floated">
+    <header class="menu floated scroll">
         <nav class="navStatic">
             <div class="modal">
                 <span></span>
@@ -227,7 +227,11 @@
                 <div class="eventData">
                     <h2 class="title">DADOS DO EVENTO</h2>
                     <div class="imgInput">
-                        <div class="picture"></div>
+                        <div class="picture">
+                            <p>Clique aqui para adicionar uma imagem.</p>
+                            <input type="file" id="inputImg" accept="image/*">
+                            <div id="imgPrev"></div>
+                        </div>
                         <div class="text">
                             <h3>Faça upload da imagem do evento</h3>
                             <p>A imagem deve ter menos de 5MB.</p>

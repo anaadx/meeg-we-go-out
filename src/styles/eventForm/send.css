@@ -6,12 +6,12 @@
     background-size: 630px;
     background-position: 142% 0%;
     background-repeat: no-repeat;
+
 }
 
-
 .send .container {
-    width: calc(100% - 240px);
     margin: 40px 120px;
+    width: calc(100% - 240px);
 }
 
 .send h1 {

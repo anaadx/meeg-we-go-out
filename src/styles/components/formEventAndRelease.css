@@ -12,7 +12,7 @@ form .clientData {
 }
 
 form .SumoSelect>.optWrapper>.options::-webkit-scrollbar-track {
-    background: var(--neutral4);
+    background: transparent;
 }
 
 form .container::-webkit-scrollbar {
@@ -20,20 +20,20 @@ form .container::-webkit-scrollbar {
 }
 
 form .container::-webkit-scrollbar-track {
-    background: var(--neutral5);
+    background: transparent;
+    margin-top: 40px;
 }
 
 form .container::-webkit-scrollbar-thumb {
-    background-color: var(--main1);
+    background-color: var(--neutral4);
     border-radius: 20px;
 }
 
 form .container {
     height: calc(100vh - 20px);
     overflow-y: scroll;
-    margin: 40px 40px;
-    margin-bottom: 80px;
-    width: calc(100% - 80px);
+    padding: 40px;
+    width: 100%;
 }
 
 form .coupon {
@@ -147,14 +147,47 @@ form .imgInput {
 }
 
 form .imgInput .picture {
-    background-image: url(../../assets/form/no-img.jpg);
     width: 230px;
     height: 230px;
     margin-right: 20px;
-    background-size: 100%;
-    background-repeat: no-repeat;
     display: block;
     float: left;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid var(--neutral5);
+    border-style: dashed;
+}
+
+form .imgInput .picture:hover {
+    background-color: var(--neutral5);
+    border: 3px solid var(--neutral4);
+}
+
+form .imgInput .picture p {
+    font-size: 12px;
+    color: var(--neutral3);
+    font-family: var(--font2);
+    line-height: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: calc(100% - 40px);
+    transform: translate(0px, -50%);
+    text-align: center;
+    background-image: url(../../assets/form/cloud.svg);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    padding-top: 50px;
+}
+
+form .imgInput .imgPreview {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
 }
 
 form .imgInput .text {
@@ -207,7 +240,6 @@ form span {
 
 form input {
     box-sizing: border-box;
-    margin-top: 5px;
     padding: 20px;
     padding-left: 10px;
     border-radius: 5px;
@@ -215,7 +247,26 @@ form input {
     margin-bottom: 25px;
     width: 100%;
     color: var(--neutral1);
-    height: 50px;
+    font-family: var(--font2);
+}
+
+form input::placeholder {
+    color: var(--neutral3);
+}
+
+form input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+form .SumoSelect>.CaptionCont {
+    padding: 20px 0px;
+}
+
+form .picture input[type="file"] {
+    height: 230px;
+    opacity: 0%;
+    cursor: pointer;
 }
 
 form input::placeholder {
@@ -333,7 +384,6 @@ form .SumoSelect p {
 }
 
 form .SumoSelect {
-    margin-top: 5px;
     margin-bottom: 25px;
     overflow: visible;
     height: 52px;
@@ -346,6 +396,7 @@ form .SumoSelect span {
     font-size: 14px;
     width: calc(100% - 5px);
     font-weight: 400;
+    margin-left: 10px;
 }
 
 form .SumoSelect .whatsapp span {
@@ -435,6 +486,7 @@ form button {
     font-size: 14px;
     font-family: var(--font1);
     margin-right: 20px;
+    margin-bottom: 80px;
 }
 
 form button:hover {

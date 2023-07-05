@@ -81,7 +81,7 @@
 
 @media (max-width: 1024px) {
 
-    .search .together .carouselCommnunity {
+    .search .together .carouselCommunity {
         width: calc(100% - 50px);
     }
 
