@@ -244,7 +244,6 @@ form input {
     padding-left: 10px;
     border-radius: 5px;
     border: 3px solid var(--neutral4);
-    margin-bottom: 25px;
     width: 100%;
     color: var(--neutral1);
     font-family: var(--font2);
@@ -254,13 +253,31 @@ form input::placeholder {
     color: var(--neutral3);
 }
 
-form input:focus {
+form input:focus,
+form input:hover {
+    border: 3px solid var(--neutral3);
     box-shadow: 0 0 0 0;
     outline: 0;
 }
 
+form .SumoSelect>.optWrapper>.options li.opt:hover {
+    background-color: var(--main1);
+}
+
+form .SumoSelect>.optWrapper>.options li.opt:hover label {
+    color: var(--neutral7);
+}
+
+form .SumoSelect>.optWrapper>.options li.opt label {
+    margin-bottom: 0px;
+}
+
 form .SumoSelect>.CaptionCont {
     padding: 20px 0px;
+}
+
+form .SumoSelect.open>.CaptionCont {
+    border: 3px solid var(--neutral3);
 }
 
 form .picture input[type="file"] {
@@ -280,6 +297,7 @@ form .block {
 form .block .field {
     width: calc(50% - 10px);
     float: left;
+    margin-bottom: 25px;
 }
 
 form .block .address {
@@ -334,7 +352,7 @@ form .checkLabel input {
 
 form .check {
     left: 0;
-    top: -8px;
+    top: -4px;
     width: 25px;
     height: 25px;
     background-color: var(--neutral7);
@@ -345,11 +363,12 @@ form .check {
 
 form .checkLabel input:checked~.check {
     background-color: var(--main1);
+    border: 3px solid var(--main1);
 }
 
 form .checkLabel .check:after {
-    top: 4px;
-    left: 9px;
+    top: 2px;
+    left: 6.5px;
     width: 5px;
     height: 10px;
     background-color: var(--main1);
@@ -383,8 +402,11 @@ form .SumoSelect p {
     background-color: var(--neutral7);
 }
 
+form .SumoSelect.open p {
+    border: 3px solid var(--neutral3);
+}
+
 form .SumoSelect {
-    margin-bottom: 25px;
     overflow: visible;
     height: 52px;
     max-height: 52px;
@@ -405,10 +427,6 @@ form .SumoSelect .whatsapp span {
 
 form .SumoSelect>.CaptionCont>label {
     margin-bottom: 0px;
-}
-
-form .SumoSelect.open>.CaptionCont>label>i {
-    background-image: url(../../assets/seta-vertical-cima-dark.svg);
 }
 
 form .SumoSelect>.CaptionCont>label>i {
@@ -441,15 +459,16 @@ form .SumoSelect>.optWrapper>.options>li.opt:last-child {
     border-radius: 5px;
 }
 
-form .SumoSelect>.optWrapper>.options:hover {
+form .SumoSelect>.optWrapper>.options li.opt:hover {
     color: var(--neutral7);
+    background-color: var(--main1);
 }
 
 form .SumoSelect.open>.CaptionCont,
 form .SumoSelect:focus>.CaptionCont,
-form .SumoSelect:hover>.CaptionCont {
+form .SumoSelect:hover>.CaptionCont:hover {
     box-shadow: none;
-    border-color: var(--neutral4)
+    border-color: var(--neutral3)
 }
 
 form .fieldWrapper {
@@ -457,6 +476,7 @@ form .fieldWrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 10px;
+    margin-bottom: 25px;
 }
 
 form .fieldWrapper2 {
@@ -529,6 +549,7 @@ form button:hover {
         margin-bottom: 70px;
         width: calc(100% - 40px);
         overflow: hidden;
+        padding: 0px;
     }
 
     form button {
@@ -547,9 +568,9 @@ form button:hover {
         font-size: 14px;
     }
 
-    form input {
+    /* form input {
         margin-bottom: 10px;
-    }
+    } */
 
     form .SumoSelect {
         margin-bottom: 10px;
@@ -562,6 +583,7 @@ form button:hover {
     form .block .field {
         float: none;
         width: 100%;
+        margin-bottom: 10px;
     }
 
     form .fieldWrapper {
