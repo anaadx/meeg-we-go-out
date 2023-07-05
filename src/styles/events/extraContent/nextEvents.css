@@ -190,12 +190,6 @@
     display: none;
 }
 
-.events .nextEvents .listItems a img {
-    width: 100%;
-    height: 100%;
-    transition: var(--transitionFast);
-}
-
 .events .nextEvents .listItems .item:hover img {
     margin-left: -5px;
     margin-top: -5px;

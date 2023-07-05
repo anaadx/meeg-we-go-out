@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 form {
     background-color: var(--neutral7);
     border-radius: 20px 20px 0px 0px;
@@ -247,6 +251,7 @@ form input {
     width: 100%;
     color: var(--neutral1);
     font-family: var(--font2);
+    height: min-content;
 }
 
 form input::placeholder {
