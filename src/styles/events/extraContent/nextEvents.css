@@ -74,6 +74,8 @@
 .events .nextEvents .listItems .ads a img {
     object-fit: cover;
     border-radius: 10px;
+    position: relative;
+    height: 100%
 }
 
 .events .nextEvents .listItems .item .calendar {
