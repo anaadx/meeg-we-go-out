@@ -77,7 +77,8 @@
         font-size: 14px;
     }
 
-    .home .launchOnTheSite button {
+    .home .launchOnTheSite a {
         width: 100%;
+        text-align: center;
     }
 }

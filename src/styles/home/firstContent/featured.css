@@ -2,7 +2,7 @@
     margin-top: 150px;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 40px;
     align-content: baseline;
     margin-bottom: 30px;
 }
@@ -19,7 +19,8 @@
 
 .home .emphasis {
     z-index: 1;
-    width: calc(60% - 30px);
+    width: calc(60% - 20px);
+    overflow: hidden;
 }
 
 .home .emphasis .title {
@@ -164,7 +165,7 @@
 
 .home .countdown {
     z-index: 1;
-    width: calc(60% - 30px);
+    width: calc(40% - 20px);
     overflow: hidden;
     height: 100%;
 }
@@ -272,6 +273,7 @@
         width: 100%;
         height: min-content;
         margin-top: 80px;
+        overflow: visible;
     }
 
     .home .emphasis .carouselEvents .item {
