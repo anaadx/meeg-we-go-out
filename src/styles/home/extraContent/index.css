@@ -40,7 +40,7 @@
 @media(max-width: 1024px) {
     .home .containerExtra {
         margin-top: 0px;
-        gap: 45px;
+        gap: 40px;
         width: calc(100% - 40px);
     }
 
