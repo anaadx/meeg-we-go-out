@@ -133,6 +133,8 @@
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    padding-right: 385px;
+    width: 0px;
 }
 
 .home .emphasis .carouselEvents figure img {
@@ -140,6 +142,8 @@
     object-fit: cover;
     transition: var(--transitionFast);
     height: 100%;
+    position: absolute;
+    right: 0px;
 }
 
 .home .emphasis .carouselEvents .text {
@@ -317,13 +321,14 @@
     }
 
     .home .emphasis .carouselEvents .item figure {
+        padding-right: 0px;
+        padding-top: 100%;
+        height: 0px;
         width: 100%;
-        height: 260px;
-        max-width: 100%;
     }
 
     .home .emphasis .carouselEvents .item figure img {
-        height: min-content;
+        top: 0px;
     }
 
     .home .emphasis .carouselEvents {

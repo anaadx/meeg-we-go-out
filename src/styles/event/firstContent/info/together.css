@@ -26,6 +26,12 @@
     line-height: 1.5em;
 }
 
+.event .together p a {
+    color: var(--main1);
+    text-decoration: underline;
+    cursor: pointer
+}
+
 .event .together ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
