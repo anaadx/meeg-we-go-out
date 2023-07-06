@@ -1,10 +1,10 @@
 .home .featured {
-    margin-top: 150px;
+    margin-top: 130px;
     display: flex;
     justify-content: space-between;
     gap: 40px;
     align-content: baseline;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .home .featured .owl-carousel .owl-stage {
@@ -114,6 +114,10 @@
     align-items: center;
 }
 
+.home .featured .emphasis .calendar {
+    padding: 3px;
+}
+
 .home .emphasis .iconWrapper {
     display: flex;
     flex-direction: column;
@@ -199,6 +203,8 @@
 .home .countdown .card img {
     transition: var(--transitionFast);
     height: 100%;
+    position: absolute;
+    right: 0px;
 }
 
 .home .countdown .card:hover {
@@ -214,11 +220,12 @@
 
 .home .countdown .card figure {
     position: relative;
-    width: 160px;
+    width: 0px;
     display: block;
     overflow: hidden;
     border-radius: 10px;
     height: 100%;
+    padding-right: 160px;
 }
 
 .home .countdown .carouselCountdown .text h2 {
@@ -272,7 +279,7 @@
     .home .emphasis {
         width: 100%;
         height: min-content;
-        margin-top: 80px;
+        margin-top: 160px;
         overflow: visible;
     }
 
@@ -380,12 +387,11 @@
     }
 
     .home .countdown .card figure {
-        width: 130px;
+        padding-right: 130px;
         height: 100%;
     }
 
     .home .countdown .card img {
-        width: 130px;
         height: 100%;
     }
 

@@ -252,6 +252,11 @@ form input {
     color: var(--neutral1);
     font-family: var(--font2);
     height: min-content;
+    background-color: var(--neutral7);
+}
+
+form input[type="text"]:valid {
+    background-color: var(--neutral7) !important;
 }
 
 form input::placeholder {
@@ -482,6 +487,10 @@ form .fieldWrapper {
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 10px;
     margin-bottom: 25px;
+}
+
+form .SumoSelect[is-selected=true]>.CaptionCont>span {
+    color: var(--neutral1);
 }
 
 form .fieldWrapper2 {

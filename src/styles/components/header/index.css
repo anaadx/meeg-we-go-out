@@ -376,7 +376,7 @@ body.menuDrop .menu.floated {
     gap: 20px;
     height: calc(100vh - 40px);
     overflow-y: scroll;
-    width: calc(100% - 40px);
+    width: 100%;
     box-shadow: 80px 0px 0px 0px var(--greyOpacity);
 }
 
@@ -429,9 +429,23 @@ body.menuDrop .menu.floated {
 
 .modalMenu .buttons {
     padding: 60px 20px 0px 20px;
-    display: flex;
-    flex-direction: column;
     gap: 10px;
+    overflow: hidden;
+}
+
+.modalMenu .buttons a {
+    width: calc(50% - 10px);
+    float: right;
+    text-align: center;
+}
+
+.modalMenu .buttons a:nth-child(2) {
+    float: left;
+    border: 3px solid var(--main1);
+}
+
+.modalMenu .buttons a:nth-child(2):hover {
+    border: 3px solid var(--pinkHover);
 }
 
 .modalMenu .icons a {
@@ -454,7 +468,7 @@ body.menuDrop .menu.floated {
     display: flex;
     gap: 5px;
     padding: 0px 20px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 .modalMenu .icons a:hover {
@@ -472,7 +486,7 @@ body.modalLupaActive {
 }
 
 .menuDrop .modalMenu {
-    top: 80px;
+    top: 100px;
 }
 
 .menuDrop .menu.floated nav {
@@ -675,5 +689,12 @@ body.modalLupaActive {
 
     .modalMenu {
         width: 100%;
+    }
+
+    .menu .containerLupa input,
+    .modalLupaActive .menu.static .containerHide,
+    .modalLupaActive .menu.floated .containerHide,
+    .modalLupaActive .menu .containerLupa .closeLupa {
+        background-color: var(--neutral2);
     }
 }

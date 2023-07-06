@@ -28,21 +28,23 @@
 .home .together .smokeEffect {
     top: 0px;
     position: absolute;
-    height: 100%;
+    transform: translate(0px, -50%);
+
+    height: 50%;
     width: 60px;
-    right: 0px;
+    bottom: 50%;
+    top: 50%;
+    right: -10px;
     z-index: 2;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ededed+0,ededed+56,ededed+56,f3f3f3+81,ffffff+96,ffffff+96,ffffff+96 */
-    background: rgb(255, 255, 255);
+    background: rgb(242, 242, 242);
     /* Old browsers */
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 0.74) 56%, rgba(237, 237, 237, 0.76) 56%, rgba(243, 243, 243, 1) 81%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%);
+    background: -moz-linear-gradient(left, rgba(242, 242, 242, 0) 0%, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 0.74) 56%, rgba(237, 237, 237, 0.76) 56%, rgba(243, 243, 243, 1) 81%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 0.74) 56%, rgba(237, 237, 237, 0.76) 56%, rgba(243, 243, 243, 1) 81%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%);
+    background: -webkit-linear-gradient(left, rgba(242, 242, 242, 0) 0%, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 0.74) 56%, rgba(237, 237, 237, 0.76) 56%, rgba(243, 243, 243, 1) 81%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 0.74) 56%, rgba(237, 237, 237, 0.76) 56%, rgba(243, 243, 243, 1) 81%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%);
+    background: linear-gradient(to right, rgba(242, 242, 242, 0) 0%, rgba(237, 237, 237, 0) 0%, rgba(237, 237, 237, 0.74) 56%, rgba(237, 237, 237, 0.76) 56%, rgba(243, 243, 243, 1) 81%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%, rgba(255, 255, 255, 1) 96%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
-    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#ffffff', GradientType=1);
 }
 
 .home .together .carouselContainer {
