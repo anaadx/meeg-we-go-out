@@ -146,6 +146,9 @@
     height: 15px;
 }
 
+.SumoSelect[is-selected=true]>.CaptionCont>span {
+    color: var(--neutral7);
+}
 
 .SumoSelect>.CaptionCont>label {
     position: absolute;

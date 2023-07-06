@@ -185,10 +185,16 @@
 .searchTool .searchModalClose {
     background-color: var(--neutral1);
     position: absolute;
-    top: -10000px;
-    transition: var(--transitionMedium);
-    margin-top: 10px;
+    right: 14px;
+    top: 10px;
+    width: 20px;
+    height: 30px;
+    background-image: url(../../assets/botao-lupa-X.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
     opacity: 40%;
+    transition: var(--transitionFast);
 }
 
 .searchTool .searchModalClose {
@@ -281,7 +287,7 @@
 .searchTool .SumoSelect[is-selected="true"]+.clearButton,
 .searchTool .SumoSelect.open+.clearButton {
     opacity: 100%;
-    z-index: 10;
+    z-index: 3;
 }
 
 .searchTool .SumoSelect[is-selected="true"]+.clearButton:hover,
