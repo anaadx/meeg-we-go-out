@@ -11,6 +11,10 @@
     margin-bottom: 10px;
 }
 
+.news .guide .SumoSelect[is-selected=true]>.CaptionCont>span {
+    color: var(--main1);
+}
+
 .news .guide .text {
     display: flex;
     gap: 10px;
