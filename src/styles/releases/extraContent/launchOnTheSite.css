@@ -63,7 +63,7 @@
     background-color: var(--neutral5);
     position: relative;
     z-index: 1;
-    width: calc(50% - 30px);
+    width: calc(50% - 15px);
     height: 100%;
     align-items: center;
     display: flex;
@@ -71,7 +71,7 @@
 }
 
 .releases .launchOnTheSite iframe {
-    width: calc(50% - 30px);
+    width: calc(50% - 15px);
     height: 100%;
     z-index: 1;
 }
