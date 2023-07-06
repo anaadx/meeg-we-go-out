@@ -173,9 +173,13 @@
 
 .about .contact .SumoSelect p {
     border: 3px solid var(--neutral4);
-    color: var(--neutral4);
+    color: var(--neutral3);
     padding: 20px;
     background-color: var(--neutral7);
+}
+
+.about .SumoSelect[is-selected=true]>.CaptionCont>span {
+    color: var(--neutral1);
 }
 
 .about .contact .SumoSelect {
