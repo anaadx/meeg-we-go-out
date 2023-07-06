@@ -8,6 +8,7 @@
 
 .singleNews .advertisement .container {
     height: 120px;
+    width: 100%;
 }
 
 @media(max-width: 1025px) {
@@ -20,5 +21,4 @@
     .singleNews .advertisement .container {
         height: min-content;
     }
-
 }

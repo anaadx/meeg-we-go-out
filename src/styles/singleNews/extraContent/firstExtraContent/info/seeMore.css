@@ -43,7 +43,6 @@
     justify-self: end;
 }
 
-
 .singleNews .info .seeMore a:hover {
     color: var(--pinkHover);
     transition: var(--transitionFast);
