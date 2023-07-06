@@ -24,9 +24,6 @@
     color: var(--pinkHover);
 }
 
-.releases .artistHighlights .carouselArtists {
-    width: calc(100% - 50px);
-}
 
 .releases .artistHighlights .carouselArtists .item {
     border-radius: 5px;
@@ -53,7 +50,6 @@
 .releases .artistHighlights .owl-carousel .owl-nav {
     position: absolute;
     top: -45px;
-    right: -50px;
     margin-top: 0px;
 }
 
@@ -83,6 +79,10 @@
     font-size: 10px;
 }
 
+.releases .artistHighlights .carouselArtists {
+    width: calc(100% - 50px);
+}
+
 @media(min-width: 1024px) {
 
     .releases .artistHighlights .carouselArtists .item a img {
@@ -90,6 +90,7 @@
         min-height: 100%;
         object-fit: cover;
     }
+
 
     .releases .artistHighlights .text h2 {
         font-size: 24px;
@@ -99,4 +100,7 @@
         font-size: 14px;
     }
 
+    .releases .artistHighlights .carouselArtists {
+        width: 100%
+    }
 }
