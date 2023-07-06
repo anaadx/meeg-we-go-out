@@ -118,6 +118,7 @@
         padding: 20px;
         border-radius: 20px 20px 0px 0px;
         width: 100%;
+        top: -35px;
         background-color: var(--neutral7);
         color: black;
         background-position: right 5% bottom 55%;
