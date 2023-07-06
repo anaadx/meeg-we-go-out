@@ -22,6 +22,10 @@
     border: none;
 }
 
+.artists .allArtists .SumoSelect[is-selected=true]>.CaptionCont>span {
+    color: var(--main1);
+}
+
 .artists .allArtists .SumoSelect>.CaptionCont>label>i {
     background-image: url(../../../assets/seta-pink.svg);
     margin-left: 30px;
@@ -45,8 +49,12 @@
     left: -65px;
 }
 
-.artists .allArtists .SumoSelect>.optWrapper>.options:hover {
+.artists .allArtists .SumoSelect>.optWrapper>.options li.opt:hover {
     color: var(--neutral7);
+}
+
+.artists .allArtists .SumoSelect>.optWrapper>.options li.opt:hover {
+    background-color: var(--main1);
 }
 
 .artists .allArtists .text .filterAZ {

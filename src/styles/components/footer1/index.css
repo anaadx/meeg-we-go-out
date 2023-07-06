@@ -59,6 +59,7 @@ footer .container {
 
     footer {
         margin-top: 40px;
+        border-radius: 10px 10px 0px 0px;
     }
 
     footer .rights .politics {
