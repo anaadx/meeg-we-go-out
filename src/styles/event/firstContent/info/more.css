@@ -142,7 +142,7 @@
     background-size: 10px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../../../../../assets/abrir-pink.svg);
+    background-image: url(../../../../../src/assets/abrir-pink.svg);
     float: right;
     margin-top: 4px;
 }
