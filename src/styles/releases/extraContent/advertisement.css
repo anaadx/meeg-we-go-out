@@ -9,4 +9,8 @@
         margin-bottom: 80px;
     }
 
+    .releases .advertisement .container {
+        width: calc(100% - 40px);
+    }
+
 }

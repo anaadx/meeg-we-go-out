@@ -9,7 +9,7 @@
 .releases .containerExtra {
     display: flex;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 40px;
     width: calc(100% - 120px);
     flex-direction: column;
     gap: 80px;
