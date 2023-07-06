@@ -59,6 +59,7 @@
     float: left;
     font-family: "Lato";
     color: var(--neutral3);
+    line-height: 1.15em;
 }
 
 .about .impact .containerGrid .numbers {
