@@ -108,7 +108,6 @@
 
 .event .fixedContent .house:before {
     background-image: url(../../../../assets/icone-casa.svg);
-    margin-top: -1px;
 }
 
 .event .fixedContent .place:before {
