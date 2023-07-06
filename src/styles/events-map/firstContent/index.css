@@ -6,7 +6,7 @@
     background-color: var(--neutral1);
     display: flex;
     justify-content: center;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 20px 20px;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -31,6 +31,11 @@ body.searchOff .events-map .container {
 }
 
 @media(max-width: 1024px) {
+
+    .events-map .firstContent {
+        border-radius: 0px 0px 10px 10px;
+    }
+
     .events-map .firstContent {
         border-radius: 0px 0px 5px 5px;
         margin-bottom: 40px;

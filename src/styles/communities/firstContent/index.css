@@ -36,7 +36,7 @@
 
 @media(max-width: 1024px) {
     .together .firstContent {
-        border-radius: 0px 0px 5px 5px;
+        border-radius: 0px 0px 10px 10px;
     }
 
     .together .container {

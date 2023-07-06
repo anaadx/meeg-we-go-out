@@ -57,7 +57,7 @@
         height: min-content;
         z-index: 10;
         box-shadow: 0px -364px 0px 0px var(--boxShadowOpacity);
-        width: calc(100% - 40px);
+        width: 100%;
         padding: 20px;
         padding-bottom: 380px;
         border-radius: 0px;
