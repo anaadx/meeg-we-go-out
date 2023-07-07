@@ -32,6 +32,10 @@
     cursor: pointer
 }
 
+.event .together p a:hover {
+    color: var(--pinkHover);
+}
+
 .event .together ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
