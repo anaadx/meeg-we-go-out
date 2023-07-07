@@ -60,7 +60,7 @@
     width: 100%;
 }
 
-.eventForm form .middleContent button:nth-child(1) {
+.eventForm form .middleContent a:nth-child(1) {
     width: calc(50% - 10px);
     background-color: var(--main1);
     color: var(--neutral7);
@@ -72,30 +72,33 @@
     float: left;
     padding: 15px 0px;
     border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
 }
 
 form label {
     color: var(--neutral1);
 }
 
-.eventForm form .middleContent button:nth-child(1):hover {
+.eventForm form .middleContent a:nth-child(1):hover {
     background-color: var(--pinkHover);
     transition: var(--transitionFast);
     border: 3px solid var(--pinkHover);
 }
 
-.eventForm form .middleContent button:nth-child(2):hover {
+.eventForm form .middleContent a:nth-child(2):hover {
     background-color: var(--neutral4);
     transition: var(--transitionFast);
 }
 
-.eventForm form .lastContent button:hover {
+.eventForm form .lastContent a:hover {
     background-color: var(--greenHover);
     border: 3px solid var(--greenHover);
     transition: var(--transitionFast);
 }
 
-.eventForm form .middleContent button:nth-child(2) {
+.eventForm form .middleContent a:nth-child(2) {
     width: calc(50% - 10px);
     background-color: var(--neutral7);
     color: var(--neutral1);
@@ -106,6 +109,9 @@ form label {
     float: left;
     padding: 15px 0px;
     border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
 }
 
 .eventForm form .lastContent {
@@ -119,7 +125,7 @@ form label {
     float: left;
 }
 
-.eventForm form .lastContent button {
+.eventForm form .lastContent a {
     width: calc(50% - 10px);
     background-color: var(--main5);
     border: none;
@@ -128,9 +134,12 @@ form label {
     border-radius: 5px;
     float: left;
     padding-left: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
 }
 
-.eventForm form .lastContent button p {
+.eventForm form .lastContent a p {
     color: var(--neutral7);
     font-family: var(--font1);
     font-size: 14px;
@@ -143,7 +152,7 @@ form label {
     float: none;
 }
 
-.eventForm form .lastContent button p:before {
+.eventForm form .lastContent a p:before {
     background-image: url(../../assets/icone-whatsapp-button.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -194,19 +203,19 @@ form label {
         margin-bottom: 0px;
     }
 
-    .eventForm form .middleContent button:nth-child(1) {
+    .eventForm form .middleContent a:nth-child(1) {
         margin-bottom: 15px;
         margin-right: 0px;
     }
 
-    .eventForm form .middleContent button:nth-child(2) {
+    .eventForm form .middleContent a:nth-child(2) {
         margin-top: 0px;
     }
 
-    .eventForm form .middleContent button:nth-child(2),
-    .eventForm form .middleContent button:nth-child(1),
+    .eventForm form .middleContent a:nth-child(2),
+    .eventForm form .middleContent a:nth-child(1),
     .eventForm form .lastContent p,
-    .eventForm form .lastContent button {
+    .eventForm form .lastContent a {
         width: 100%;
         float: none;
         font-size: 12px;

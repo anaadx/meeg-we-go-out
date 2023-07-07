@@ -509,7 +509,7 @@ form .fieldWrapper p {
 }
 
 
-form button {
+form .sendButton {
     margin-top: 20px;
     padding: 20px;
     color: var(--neutral6);
@@ -521,9 +521,11 @@ form button {
     font-family: var(--font1);
     margin-right: 20px;
     margin-bottom: 80px;
+    text-decoration: none;
+    text-align: center;
 }
 
-form button:hover {
+form .sendButton:hover {
     background-color: var(--pinkHover);
 }
 
@@ -566,7 +568,7 @@ form button:hover {
         padding: 0px;
     }
 
-    form button {
+    form .sendButton {
         width: 100%;
         margin-top: 20px;
         font-size: 12px;
