@@ -365,6 +365,10 @@ body.menuDrop .menu.floated {
     width: 100%;
 }
 
+.modalLupaActive.menuDrop .modalMenu {
+    top: -10000px;
+}
+
 .modalMenu {
     display: flex;
     flex-direction: column;
@@ -432,7 +436,6 @@ body.menuDrop .menu.floated {
 .modalMenu .buttons {
     padding: 60px 40px 0px 40px;
     gap: 10px;
-    overflow: hidden;
 }
 
 .modalMenu .buttons a {
