@@ -34,6 +34,10 @@
         margin-top: 20px;
     }
 
+    .releases .firstContent {
+        border-radius: 0px 0px 5px 5px;
+    }
+
     .filterSearchMode .container {
         width: calc(100% - 40px);
     }
