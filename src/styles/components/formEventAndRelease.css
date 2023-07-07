@@ -533,6 +533,10 @@ form .sendButton:hover {
 
 @media(max-width: 1024px) {
 
+    form .imgInput .text {
+        width: calc(100% - 141px);
+    }
+
     .placeTipActive form .placeTip .placeTipOpen {
         left: -210px;
     }
