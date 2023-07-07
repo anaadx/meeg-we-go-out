@@ -486,8 +486,8 @@ form .SumoSelect:hover>.CaptionCont:hover {
 form .fieldWrapper {
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2cqmax;
     margin-bottom: 25px;
 }
 
@@ -507,7 +507,6 @@ form .fieldWrapper p {
     color: var(--neutral3);
     font-size: 14px;
     line-height: 1.5em;
-    padding: 12px 8px;
 }
 
 
