@@ -24,7 +24,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .artist .info .artistNews .listItems .item {
@@ -216,7 +216,7 @@
 
 @media(max-width: 1024px) {
     .artist .info .artistNews {
-        padding: 35px 20px 10px 20px;
+        padding: 40px 20px 40px 20px;
     }
 
     .artist .content {
@@ -250,5 +250,9 @@
 
     .artist .info .artistNews .title h2 {
         font-size: 18px;
+    }
+
+    .artist .info .artistNews .listItems {
+        gap: 10px;
     }
 }
