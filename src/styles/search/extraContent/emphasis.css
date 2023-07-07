@@ -42,11 +42,12 @@
 
 .search .emphasis .house:before {
     background-image: url("../../../assets/icone-casa-dark.svg");
+    margin-top: 2px;
 }
 
 .search .emphasis .location:before {
     background-image: url("../../../assets/icone-localizacao-dark.svg");
-    margin-top: -5px;
+    margin-top: -2px;
 }
 
 .search .emphasis .calendar:before {

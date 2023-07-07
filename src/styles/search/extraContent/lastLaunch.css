@@ -78,7 +78,7 @@
 }
 
 .search .lastLaunch .item div span {
-    margin-top: 5px
+    margin-top: 20px
 }
 
 .search .lastLaunch .item div span,
@@ -110,6 +110,10 @@
 }
 
 @media(max-width: 1024px) {
+
+    .search .lastLaunch .item div span {
+        margin-top: 5px
+    }
 
     .search .lastLaunch .carouselLaunch {
         width: calc(100% - 50px);
