@@ -1,10 +1,12 @@
 /* options (where to put the class and type of header)
-menu > noBackground (background transparent)
+header > noBackground (background transparent)
 modalMenu > activeHighlight (active-on nav)
 links > highlightLink (active-on link)
-menu > bigLogo (bigger mobile logo)
-menu > noBackgroundColor (transparent background)
-menu > scroll (header scroll) */
+header > bigLogo (bigger mobile logo)
+header > noBackgroundColor (transparent background)
+header > scroll (header scroll) 
+header > noMenuMobile (without mobile menu)
+*/
 
 .menu {
     background-color: var(--neutral1);
@@ -526,6 +528,10 @@ body.modalLupaActive {
 @media(max-width: 1024px) {
     .menu nav {
         padding: 20px;
+    }
+
+    header.noMenuMobile {
+        display: none;
     }
 
     .modalMenu .icons {
