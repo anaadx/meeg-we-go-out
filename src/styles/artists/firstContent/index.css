@@ -33,6 +33,10 @@
         width: calc(100% - 40px);
     }
 
+    .artists .firstContent {
+        border-radius: 0px 0px 10px 10px;
+    }
+
     .filterSearchMode .artists .container {
         width: calc(100% - 40px);
         max-width: calc(100% - 40px);
