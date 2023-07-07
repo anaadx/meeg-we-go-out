@@ -31,7 +31,7 @@
 @media(max-width: 1024px) {
 
     .releases .searchTool {
-        border-radius: 5px;
+        border-radius: 10px 10px 0px 0px;
         position: fixed;
         left: 0px;
         right: 0px;
@@ -39,8 +39,6 @@
         background-color: var(--neutral1);
         z-index: 10;
         box-shadow: 0px -500px 0px 0px var(--greyOpacity);
-        height: min-content;
-        border-radius: 10px;
         margin-bottom: 0px
     }
 
@@ -79,4 +77,9 @@
         grid-row-gap: 10px;
         width: calc(100% - 40px);
     }
+
+    .releases .searchTool form .go {
+        margin-bottom: 200px;
+    }
+
 }
