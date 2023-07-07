@@ -20,9 +20,10 @@
 }
 
 .search .searchEvents form {
-    display: flex;
+    display: grid;
     gap: 10px;
     width: 100%;
+    grid-template-columns: 1fr 1fr 140px;
     z-index: 4;
 }
 
@@ -31,7 +32,7 @@
 }
 
 .search .searchEvents form button {
-    width: 95px;
+    width: 140px;
     padding: 18px 20px;
     align-self: flex-end;
     color: var(--neutral5);
@@ -270,10 +271,10 @@
 
     .search .searchEvents form {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 10px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+        grid-row-gap: 20px;
     }
 
     .search .searchEvents form .field {
