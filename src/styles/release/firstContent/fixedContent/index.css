@@ -99,6 +99,11 @@
     background-repeat: no-repeat;
 }
 
+.release .fixedContent iframe {
+    border: 1px solid var(--neutral3);
+    height: 170px;
+}
+
 @media(max-width: 1024px) {
     .release .fixedContent {
         display: none;
