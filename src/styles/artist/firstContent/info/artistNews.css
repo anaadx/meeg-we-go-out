@@ -29,7 +29,7 @@
 
 .artist .info .artistNews .listItems .item {
     width: 100%;
-    height: 130px;
+    height: 150px;
 }
 
 .artist .info .artistNews .listItems .item a:hover {
@@ -65,7 +65,7 @@
 }
 
 .artist .info .artistNews .listItems .item figure {
-    width: 130px;
+    width: 200px;
     border-radius: 5px 0px 0px 5px;
     height: 100%;
     position: relative;
@@ -73,8 +73,8 @@
 }
 
 .artist .info .artistNews .listItems .item div {
-    width: calc(100% - 20px);
-    padding: 10px;
+    width: calc(100% - 200px);
+    padding: 20px;
     height: 100%;
 }
 
@@ -226,6 +226,10 @@
         top: 0px;
     }
 
+    .artist .info .artistNews .listItems .item figure {
+        width: 130px;
+    }
+
     .artist .info .artistNews .listItems .item {
         height: 100px;
     }
@@ -237,6 +241,11 @@
     .artist .info .artistNews .listItems .item h2,
     .artist .info .artistNews .listItems .item .date {
         font-size: 12px;
+    }
+
+    .artist .info .artistNews .listItems .item div {
+        width: calc(100% - 130px);
+        padding: 10px;
     }
 
     .artist .info .artistNews .title h2 {
