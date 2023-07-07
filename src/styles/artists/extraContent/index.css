@@ -9,7 +9,7 @@
 .artists .containerExtra {
     display: flex;
     justify-content: center;
-    margin-top: 45px;
+    margin-top: 40px;
     width: calc(100% - 180px);
     flex-direction: column;
     gap: 80px;
