@@ -33,6 +33,10 @@ header a {
     background-color: transparent;
 }
 
+.menuDrop .menu.noBackground {
+    background-color: var(--neutral1);
+}
+
 .menu.floated.on {
     z-index: 5;
     position: fixed;
