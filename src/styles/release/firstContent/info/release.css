@@ -91,7 +91,7 @@
     display: flex;
     border-bottom: 1px solid var(--greyHover);
     padding: 10px 0px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     gap: 10px;
 }
 
@@ -151,7 +151,11 @@
         margin-top: 50px;
         align-items: center;
         margin-left: 0px;
-        height: min-content;
+        height: calc(100vh - 127px);
+    }
+
+    .release .releasetMain iframe {
+        height: 80px;
     }
 
     .release .releasetMain .photo {
@@ -201,7 +205,7 @@
         background-color: var(--neutral2);
         position: relative;
         padding: 0px 20px;
-        top: -25px;
+        top: -45px;
     }
 
     .release .releasetMain .content h1 {
