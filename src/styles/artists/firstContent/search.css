@@ -42,6 +42,7 @@
     .artists .searchModalButton {
         position: fixed;
         bottom: 0px;
+        border-radius: 5px 5px 0px 0px;
     }
 
     .artists .searchTool form {
