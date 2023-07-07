@@ -53,11 +53,11 @@ footer {
     .terms .beforeMobile h1 {
         font-size: 24px;
         text-align: center;
-        margin-bottom: 35px;
-    }
-
-    .terms .containerExtra {
-        margin-top: 220px;
+        bottom: 30px;
+        width: 100%;
+        position: absolute;
+        margin: 0px;
+        padding: 0px 60px;
     }
 
     .terms .extraContent .indexButton {

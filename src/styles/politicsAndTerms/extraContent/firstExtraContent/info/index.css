@@ -39,7 +39,8 @@
     .terms .info {
         width: 100%;
         min-width: 300px;
-        border-radius: 10px 10px 0px 0px;
+        margin-top: -15px;
+        border-radius: 0px;
     }
 
     .terms .info .moreInfo {
@@ -47,7 +48,10 @@
     }
 
     .terms .beforeMobile {
-        position: absolute;
+        position: relative;
+        height: 200px;
         top: 0px;
+        border-radius: 0px 0px 10px 10px;
+        z-index: 5;
     }
 }
