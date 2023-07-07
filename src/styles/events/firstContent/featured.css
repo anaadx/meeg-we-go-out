@@ -123,13 +123,17 @@
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    padding-right: 320px;
+    width: 0px;
+    height: 100%;
 }
 
+
 .events .emphasis .carouselEvents figure img {
-    width: 100%;
-    object-fit: cover;
-    transition: var(--transitionFast);
     height: 100%;
+    transition: var(--transitionFast);
+    position: absolute;
+    right: 0px;
 }
 
 .events .emphasis .carouselEvents .text {
@@ -202,12 +206,15 @@
 
     .events .emphasis .carouselEvents .item figure {
         width: 100%;
-        height: 260px;
-        max-width: 100%;
+        height: 0px;
+        padding-right: 0px;
+        padding-top: 100%;
     }
 
     .events .emphasis .carouselEvents .item figure img {
-        height: min-content;
+        height: 100%;
+        width: 100%;
+        top: 0px;
     }
 
     .events .emphasis .carouselEvents {
