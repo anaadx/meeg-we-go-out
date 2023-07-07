@@ -57,6 +57,7 @@
         z-index: 5;
         margin-bottom: 0px;
         text-align: start;
+        border-radius: 5px 5px 0px 0px;
     }
 
     .modalLupaActive .releases .searchModalButton {

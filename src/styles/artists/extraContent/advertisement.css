@@ -2,6 +2,10 @@
     margin-bottom: 80px;
 }
 
+.artists .advertisement .container {
+    width: 100%
+}
+
 @media(max-width: 1025px) {
 
     .artists .advertisement {
