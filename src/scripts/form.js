@@ -6,10 +6,6 @@ const prevBtnDark =
   '<img src="../assets/seta-esq-dark.svg" alt:"seta esquerda">';
 
 $(document).ready(function () {
-  $(window).resize(function () {
-    disableItems();
-  });
-
   $('input[name="daterange"]').daterangepicker({
     autoApply: true,
   });
