@@ -38,6 +38,7 @@
     bottom: 0px;
     border-bottom: 1px solid var(--neutral4);
     text-align: start;
+    cursor: pointer;
 }
 
 .event .info .questions h3:nth-child(2) {
