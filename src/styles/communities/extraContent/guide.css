@@ -75,6 +75,7 @@
 .together .guide .item h2 {
     line-height: 1.5em;
     margin-top: 5px;
+    text-transform: uppercase;
 }
 
 .together .guide .item a {
