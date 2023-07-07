@@ -111,4 +111,12 @@
         flex-direction: row;
         height: 100%;
     }
+
+    .search .emphasis .house:before {
+        margin-top: 0px;
+    }
+
+    .search .emphasis .location:before {
+        margin-top: -4px;
+    }
 }
