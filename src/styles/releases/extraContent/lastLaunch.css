@@ -109,7 +109,9 @@
     cursor: pointer;
 }
 
-
+.releases .lastLaunch .item div p {
+    line-height: 1.5em;
+}
 
 @media(max-width: 1024px) {
 
@@ -133,7 +135,7 @@
     }
 
     .releases .lastLaunch .item div h3 {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .releases .lastLaunch .item div p {
