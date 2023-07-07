@@ -130,7 +130,7 @@
 
 @media (max-width: 1024px) {
     .terms .info .content {
-        width: calc(100% - 40px);
+        width: 100%;
         padding: 0px 20px;
     }
 
