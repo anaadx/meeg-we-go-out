@@ -132,4 +132,8 @@
     .release .releaseHighlights .item a {
         gap: 5px;
     }
+
+    .release .releaseHighlights .carouselRelease .item .icon {
+        margin-top: 10px;
+    }
 }
