@@ -143,6 +143,10 @@
     background-repeat: no-repeat;
 }
 
+.release .releasetMain iframe {
+    border: 1px solid var(--neutral3)
+}
+
 @media(max-width: 1025px) {
 
     .release .releasetMain {
@@ -155,7 +159,7 @@
     }
 
     .release .releasetMain iframe {
-        height: 80px;
+        height: 86px;
     }
 
     .release .releasetMain .photo {
