@@ -23,7 +23,8 @@
 }
 
 .search .lastLaunch .carouselLaunch {
-    width: calc(100% - 50px);
+    width: 100%;
+    position: relative;
 }
 
 .search .lastLaunch .text {
@@ -104,8 +105,15 @@
     overflow: visible;
 }
 
+.search .lastLaunch .owl-carousel .owl-nav {
+    top: -40px;
+}
 
 @media(max-width: 1024px) {
+
+    .search .lastLaunch .carouselLaunch {
+        width: calc(100% - 50px);
+    }
 
     .search .lastLaunch {
         margin-top: 20px;

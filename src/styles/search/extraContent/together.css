@@ -9,6 +9,10 @@
     align-items: center;
 }
 
+.search .together .owl-carousel .owl-nav {
+    top: -40px;
+}
+
 .search .together .title h3 {
     font-size: 18px;
 }
@@ -72,7 +76,8 @@
 }
 
 .search .together .carouselCommnunity {
-    width: 100%
+    width: 100%;
+    position: relative;
 }
 
 .search .together .owl-carousel .owl-stage-outer {

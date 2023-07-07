@@ -1,9 +1,9 @@
 const nextBtn = '<img src="src/assets/seta-dir.svg" alt:"seta direita">';
 const prevBtn = '<img src="src/assets/seta-esq.svg" alt:"seta esquerda">';
 const nextBtnDark =
-  '<img src="src/assets/seta-dir-dark.svg" alt:"seta direita">';
+  '<img src="../assets/seta-dir-dark.svg" alt:"seta direita">';
 const prevBtnDark =
-  '<img src="src/assets/seta-esq-dark.svg" alt:"seta esquerda">';
+  '<img src="../assets/seta-esq-dark.svg" alt:"seta esquerda">';
 
 $(document).ready(function () {
   $(".carouselEvents").owlCarousel({
@@ -12,8 +12,8 @@ $(document).ready(function () {
     center: false,
     margin: 20,
     responsiveClass: true,
-    nav: false,
-    navText: [prevBtn, nextBtn],
+    nav: true,
+    navText: [prevBtnDark, nextBtnDark],
     dots: false,
     autoWidth: false,
     responsive: {
@@ -37,13 +37,15 @@ $(document).ready(function () {
     center: false,
     margin: 20,
     responsiveClass: true,
-    nav: false,
+    navText: [prevBtnDark, nextBtnDark],
+    nav: true,
     dots: false,
     autoWidth: false,
     responsive: {
       0: {
         items: 1,
         margin: 10,
+        nav: false,
       },
       1024: {
         items: 4,
@@ -60,7 +62,8 @@ $(document).ready(function () {
     center: false,
     margin: 20,
     responsiveClass: true,
-    nav: false,
+    navText: [prevBtnDark, nextBtnDark],
+    nav: true,
     dots: false,
     autoWidth: false,
     responsive: {
@@ -74,10 +77,7 @@ $(document).ready(function () {
         nav: false,
         margin: 10,
       },
-      950: {
-        items: 3,
-      },
-      1350: {
+      1024: {
         items: 4,
       },
       1500: {
@@ -92,17 +92,20 @@ $(document).ready(function () {
     center: false,
     margin: 20,
     responsiveClass: true,
-    nav: false,
+    navText: [prevBtnDark, nextBtnDark],
+    nav: true,
     dots: false,
     autoWidth: false,
     responsive: {
       0: {
         items: 3,
         margin: 10,
+        nav: false,
       },
       940: {
         items: 3,
         margin: 10,
+        nav: false,
       },
       1024: {
         items: 8,
@@ -119,17 +122,20 @@ $(document).ready(function () {
     center: false,
     margin: 20,
     responsiveClass: true,
-    nav: false,
+    nav: true,
+    navText: [prevBtnDark, nextBtnDark],
     dots: false,
     autoWidth: false,
     responsive: {
       0: {
         items: 3,
         margin: 10,
+        nav: false,
       },
       350: {
         items: 3,
         margin: 10,
+        nav: false,
       },
       1024: {
         items: 6,
